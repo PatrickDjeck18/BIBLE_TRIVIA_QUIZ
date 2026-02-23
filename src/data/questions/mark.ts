@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const markQuestions: Question[] = [
     {
         id: 'mar_1',
-        text: 'Quel est le mot caractéristique de l\'Évangile de Marc (répété souvent) ?',
-        options: ['Aussitôt (ou Immédiatement)', 'Amen', 'Amour', 'Loi'],
-        correctAnswer: 'Aussitôt (ou Immédiatement)',
-        explanation: 'Marc met l\'accent sur l\'action immédiate de Jésus.'
+        text: 'What is the characteristic word of the Gospel of Mark (often repeated)?',
+        options: ['Immediately (or At once)', 'Amen', 'Love', 'Law'],
+        correctAnswer: 'Immediately (or At once)',
+        explanation: 'Mark emphasizes the immediate action of Jesus.'
     },
     {
         id: 'mar_2',
-        text: 'Comment commence l\'Évangile de Marc ?',
-        options: ['Commencement de l\'Évangile de Jésus-Christ, Fils de Dieu', 'Par une généalogie', 'Par la naissance de Jésus', 'Au commencement était la Parole'],
-        correctAnswer: 'Commencement de l\'Évangile de Jésus-Christ, Fils de Dieu',
-        explanation: 'Marc 1:1 Pas de récit de naissance, on entre direct dans le ministère.'
+        text: 'How does the Gospel of Mark begin?',
+        options: ['The beginning of the good news about Jesus the Messiah, the Son of God', 'With a genealogy', 'With the birth of Jesus', 'In the beginning was the Word'],
+        correctAnswer: 'The beginning of the good news about Jesus the Messiah, the Son of God',
+        explanation: 'Mark 1:1 No birth narrative, goes straight into ministry.'
     },
     {
         id: 'mar_3',
-        text: 'Qui préparait le chemin du Seigneur dans le désert ?',
-        options: ['Jean-Baptiste', 'Ésaïe', 'Élie', 'Moïse'],
-        correctAnswer: 'Jean-Baptiste',
-        explanation: 'Marc 1:4'
+        text: 'Who prepared the way for the Lord in the wilderness?',
+        options: ['John the Baptist', 'Isaiah', 'Elijah', 'Moses'],
+        correctAnswer: 'John the Baptist',
+        explanation: 'Mark 1:4'
     },
     {
         id: 'mar_4',
-        text: 'Que dit Dieu lors du baptême de Jésus ?',
-        options: ['Tu es mon Fils bien-aimé, en qui j\'ai mis toute mon affection', 'Voici le Roi des Juifs', 'Écoutez-le', 'Il est saint'],
-        correctAnswer: 'Tu es mon Fils bien-aimé, en qui j\'ai mis toute mon affection',
-        explanation: 'Marc 1:11'
+        text: 'What does God say at the baptism of Jesus?',
+        options: ['You are my Son, whom I love; with you I am well pleased', 'Behold the King of the Jews', 'Listen to him', 'He is holy'],
+        correctAnswer: 'You are my Son, whom I love; with you I am well pleased',
+        explanation: 'Mark 1:11'
     },
     {
         id: 'mar_5',
-        text: 'Jésus dit aux pêcheurs : Suivez-moi, et je vous ferai... ?',
-        options: ['Pêcheurs d\'hommes', 'Rois', 'Riches', 'Savants'],
-        correctAnswer: 'Pêcheurs d\'hommes',
-        explanation: 'Marc 1:17'
+        text: 'Jesus tells the fishermen: Follow me, and I will make you...?',
+        options: ['Fishers of men', 'Kings', 'Rich', 'Wise'],
+        correctAnswer: 'Fishers of men',
+        explanation: 'Mark 1:17'
     },
     {
         id: 'mar_6',
-        text: 'Quel miracle Jésus a-t-il fait dans la synagogue de Capernaüm un jour de sabbat ?',
-        options: ['Il a chassé un esprit impur', 'Il a guéri un aveugle', 'Il a marché sur l\'eau', 'Il a multiplié les pains'],
-        correctAnswer: 'Il a chassé un esprit impur',
-        explanation: 'Marc 1:23-26'
+        text: 'What miracle did Jesus perform in the synagogue in Capernaum on a Sabbath?',
+        options: ['He drove out an impure spirit', 'He healed a blind man', 'He walked on water', 'He multiplied the loaves'],
+        correctAnswer: 'He drove out an impure spirit',
+        explanation: 'Mark 1:23-26'
     },
     {
         id: 'mar_7',
-        text: 'Qui a dit : "Qu\'y a-t-il entre nous et toi, Jésus de Nazareth ?" ?',
-        options: ['Un esprit impur (démon)', 'Les pharisiens', 'Pierre', 'Pilate'],
-        correctAnswer: 'Un esprit impur (démon)',
-        explanation: 'Marc 1:24'
+        text: 'Who said: "What do you want with us, Jesus of Nazareth?"?',
+        options: ['An impure spirit (demon)', 'The Pharisees', 'Peter', 'Pilate'],
+        correctAnswer: 'An impure spirit (demon)',
+        explanation: 'Mark 1:24'
     },
     {
         id: 'mar_8',
-        text: 'Le sabbat a été fait pour l\'homme, et non... ?',
-        options: ['L\'homme pour le sabbat', 'Dieu pour le sabbat', 'Le sabbat pour Dieu', 'L\'homme pour la loi'],
-        correctAnswer: 'L\'homme pour le sabbat',
-        explanation: 'Marc 2:27'
+        text: 'The Sabbath was made for man, not...?',
+        options: ['Man for the Sabbath', 'God for the Sabbath', 'The Sabbath for God', 'Man for the law'],
+        correctAnswer: 'Man for the Sabbath',
+        explanation: 'Mark 2:27'
     },
     {
         id: 'mar_9',
-        text: 'Quelle parabole explique les différents types de réception de la Parole ?',
-        options: ['La parabole du semeur', 'Le bon Samaritain', 'Le fils prodigue', 'La brebis perdue'],
-        correctAnswer: 'La parabole du semeur',
-        explanation: 'Marc 4'
+        text: 'Which parable explains the different types of reception of the Word?',
+        options: ['The parable of the sower', 'The Good Samaritan', 'The Prodigal Son', 'The Lost Sheep'],
+        correctAnswer: 'The parable of the sower',
+        explanation: 'Mark 4'
     },
     {
         id: 'mar_10',
-        text: 'Jésus dormait à la poupe sur le coussin. Que se passait-il ?',
-        options: ['Une grande tempête', 'Une fête', 'Un miracle', 'Rien'],
-        correctAnswer: 'Une grande tempête',
-        explanation: 'Marc 4:38'
+        text: 'Jesus was in the stern, sleeping on a cushion. What was happening?',
+        options: ['A great storm', 'A feast', 'A miracle', 'Nothing'],
+        correctAnswer: 'A great storm',
+        explanation: 'Mark 4:38'
     },
     {
         id: 'mar_11',
-        text: 'Que dit Jésus à la tempête ?',
-        options: ['Silence ! tais-toi !', 'Arrête !', 'Calme-toi !', 'Souffle !'],
-        correctAnswer: 'Silence ! tais-toi !',
-        explanation: 'Marc 4:39'
+        text: 'What does Jesus say to the storm?',
+        options: ['Quiet! Be still!', 'Stop!', 'Calm down!', 'Blow!'],
+        correctAnswer: 'Quiet! Be still!',
+        explanation: 'Mark 4:39'
     },
     {
         id: 'mar_12',
-        text: 'Quel nom le démoniaque de Gérasa s\'est-il donné ?',
-        options: ['Légion', 'Satan', 'Belzébul', 'Abaddon'],
-        correctAnswer: 'Légion',
-        explanation: 'Marc 5:9 "Mon nom est Légion, car nous sommes plusieurs."'
+        text: 'What name did the Gerasene demoniac give himself?',
+        options: ['Legion', 'Satan', 'Beelzebul', 'Abaddon'],
+        correctAnswer: 'Legion',
+        explanation: 'Mark 5:9 "My name is Legion, for we are many."'
     },
     {
         id: 'mar_13',
-        text: 'Qui a touché le vêtement de Jésus pour être guérie ?',
-        options: ['Une femme atteinte d\'une perte de sang depuis 12 ans', 'La fille de Jaïrus', 'Marie', 'Marthe'],
-        correctAnswer: 'Une femme atteinte d\'une perte de sang depuis 12 ans',
-        explanation: 'Marc 5:27'
+        text: 'Who touched Jesus’ clothes to be healed?',
+        options: ['A woman who had been subject to bleeding for twelve years', 'Jairus’ daughter', 'Mary', 'Martha'],
+        correctAnswer: 'A woman who had been subject to bleeding for twelve years',
+        explanation: 'Mark 5:27'
     },
     {
         id: 'mar_14',
-        text: 'Talitha koumi, ce qui signifie... ?',
-        options: ['Jeune fille, lève-toi, je te le dis', 'Dieu est grand', 'Paix à toi', 'Sois guérie'],
-        correctAnswer: 'Jeune fille, lève-toi, je te le dis',
-        explanation: 'Marc 5:41 Résurrection de la fille de Jaïrus.'
+        text: 'Talitha koum, which means...?',
+        options: ['Little girl, I say to you, get up!', 'God is great', 'Peace to you', 'Be healed'],
+        correctAnswer: 'Little girl, I say to you, get up!',
+        explanation: 'Mark 5:41 Resurrection of Jairus’ daughter.'
     },
     {
         id: 'mar_15',
-        text: 'Qu\'est-ce qui sort de l\'homme et le souille ?',
-        options: ['Les mauvaises pensées venant du coeur', 'Ce qu\'il mange', 'La boue', 'La maladie'],
-        correctAnswer: 'Les mauvaises pensées venant du coeur',
-        explanation: 'Marc 7:21'
+        text: 'What comes out of a person that defiles them?',
+        options: ['The evil thoughts coming from the heart', 'What they eat', 'Mud', 'Disease'],
+        correctAnswer: 'The evil thoughts coming from the heart',
+        explanation: 'Mark 7:21'
     },
     {
         id: 'mar_16',
-        text: 'Effata, ce qui signifie... ?',
-        options: ['Ouvre-toi', 'Lève-toi', 'Entends', 'Vois'],
-        correctAnswer: 'Ouvre-toi',
-        explanation: 'Marc 7:34 Guérison d\'un sourd-muet.'
+        text: 'Ephphatha, which means...?',
+        options: ['Be opened!', 'Get up!', 'Hear!', 'See!'],
+        correctAnswer: 'Be opened!',
+        explanation: 'Mark 7:34 Healing of a deaf and mute man.'
     },
     {
         id: 'mar_17',
-        text: 'Car le Fils de l\'homme est venu, non pour être servi, mais pour... ?',
-        options: ['Servir et donner sa vie en rançon', 'Régner', 'Juger', 'Être adoré'],
-        correctAnswer: 'Servir et donner sa vie en rançon',
-        explanation: 'Marc 10:45 Verset clé de l\'évangile.'
+        text: 'For even the Son of Man did not come to be served, but to...?',
+        options: ['Serve, and to give his life as a ransom', 'Reign', 'Judge', 'Be worshiped'],
+        correctAnswer: 'Serve, and to give his life as a ransom',
+        explanation: 'Mark 10:45 Key verse of the gospel.'
     },
     {
         id: 'mar_18',
-        text: 'Quel commandement est le premier de tous ?',
-        options: ['Écoute, Israël, le Seigneur notre Dieu est l\'unique Seigneur...', 'Tu ne tueras point', 'Tu ne voleras point', 'Honore ton père'],
-        correctAnswer: 'Écoute, Israël, le Seigneur notre Dieu est l\'unique Seigneur...',
-        explanation: 'Marc 12:29 Shema Israël.'
+        text: 'Which commandment is the most important of all?',
+        options: ['Hear, O Israel: The Lord our God, the Lord is one...', 'You shall not kill', 'You shall not steal', 'Honor your father'],
+        correctAnswer: 'Hear, O Israel: The Lord our God, the Lord is one...',
+        explanation: 'Mark 12:29 Shema Israel.'
     },
     {
         id: 'mar_19',
-        text: 'Mon Dieu, mon Dieu, pourquoi m\'as-tu abandonné ? (Eloï, Eloï...)',
-        options: ['Paroles de Jésus sur la croix', 'Paroles de David', 'Parole de Pierre', 'Prière de Moïse'],
-        correctAnswer: 'Paroles de Jésus sur la croix',
-        explanation: 'Marc 15:34'
+        text: 'My God, my God, why have you forsaken me? (Eloi, Eloi...)',
+        options: ['Words of Jesus on the cross', 'Words of David', 'Word of Peter', 'Prayer of Moses'],
+        correctAnswer: 'Words of Jesus on the cross',
+        explanation: 'Mark 15:34'
     },
     {
         id: 'mar_20',
-        text: 'Allez par tout le monde, et... ?',
-        options: ['Prêchez la bonne nouvelle à toute la création', 'Faites des miracles', 'Écrivez des livres', 'Construisez des églises'],
-        correctAnswer: 'Prêchez la bonne nouvelle à toute la création',
-        explanation: 'Marc 16:15'
+        text: 'Go into all the world and...?',
+        options: ['Preach the gospel to all creation', 'Perform miracles', 'Write books', 'Build churches'],
+        correctAnswer: 'Preach the gospel to all creation',
+        explanation: 'Mark 16:15'
     }
 ];

@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const lamentationsQuestions: Question[] = [
     {
         id: 'lam_1',
-        text: 'Quel événement tragique a inspiré les Lamentations ?',
-        options: ['La destruction de Jérusalem et du Temple', 'Le déluge', 'La mort de Moïse', 'La famine en Égypte'],
-        correctAnswer: 'La destruction de Jérusalem et du Temple',
-        explanation: 'Écrit après la prise de la ville par Babylone en 586 av. J.-C.'
+        text: 'What tragic event inspired Lamentations?',
+        options: ['The destruction of Jerusalem and the Temple', 'The flood', 'The death of Moses', 'Famine in Egypt'],
+        correctAnswer: 'The destruction of Jerusalem and the Temple',
+        explanation: 'Written after the city was taken by Babylon in 586 BC.'
     },
     {
         id: 'lam_2',
-        text: 'Qui est traditionnellement considéré comme l\'auteur des Lamentations ?',
-        options: ['Jérémie', 'Ésaïe', 'Ézéchiel', 'David'],
-        correctAnswer: 'Jérémie',
-        explanation: 'Le "prophète pleureur" qui a vu la destruction de ses propres yeux.'
+        text: 'Who is traditionally considered the author of Lamentations?',
+        options: ['Jeremiah', 'Isaiah', 'Ezekiel', 'David'],
+        correctAnswer: 'Jeremiah',
+        explanation: 'The "weeping prophet" who saw the destruction with his own eyes.'
     },
     {
         id: 'lam_3',
-        text: 'Combien de chapitres compte ce livre ?',
+        text: 'How many chapters are in this book?',
         options: ['5', '10', '3', '12'],
         correctAnswer: '5',
-        explanation: 'Cinq poèmes élégiaques.'
+        explanation: 'Five elegiac poems.'
     },
     {
         id: 'lam_4',
-        text: 'Quelle est la particularité littéraire des 4 premiers chapitres ?',
-        options: ['Ce sont des acrostiches alphabétiques', 'Ils sont en rimes', 'Ils sont écrits en rouge', 'Il n\'y a pas de voyelles'],
-        correctAnswer: 'Ce sont des acrostiches alphabétiques',
-        explanation: 'Chaque verset commence par une lettre de l\'alphabet hébreu (Aleph, Beth, Gimel...).'
+        text: 'What is the literary peculiarity of the first 4 chapters?',
+        options: ['They are alphabetic acrostics', 'They are in rhyme', 'They are written in red', 'There are no vowels'],
+        correctAnswer: 'They are alphabetic acrostics',
+        explanation: 'Each verse begins with a letter of the Hebrew alphabet (Aleph, Beth, Gimel...).'
     },
     {
         id: 'lam_5',
-        text: 'Les bontés de l\'Éternel ne sont pas épuisées... Elles se renouvellent... ?',
-        options: ['Chaque matin', 'Chaque année', 'Chaque siècle', 'Quand on prie'],
-        correctAnswer: 'Chaque matin',
-        explanation: 'Lamentations 3:22-23 C\'est l\'espoir central du livre.'
+        text: 'The Lord’s mercies are not exhausted... They are new...?',
+        options: ['Every morning', 'Every year', 'Every century', 'When we pray'],
+        correctAnswer: 'Every morning',
+        explanation: 'Lamentations 3:22-23 This is the central hope of the book.'
     },
     {
         id: 'lam_6',
-        text: 'Il est bon d\'attendre en silence... ?',
-        options: ['Le secours de l\'Éternel', 'La mort', 'La pluie', 'La fin de la guerre'],
-        correctAnswer: 'Le secours de l\'Éternel',
+        text: 'It is good to wait in silence...?',
+        options: ['For the salvation of the Lord', 'For death', 'For rain', 'For the end of the war'],
+        correctAnswer: 'For the salvation of the Lord',
         explanation: 'Lamentations 3:26'
     },
     {
         id: 'lam_7',
-        text: 'Comment commence le livre (Lamentations 1:1) ?',
-        options: ['Eh quoi ! Elle est assise solitaire, cette ville si peuplée !', 'Louez l\'Éternel', 'Au commencement', 'Parole de Jérémie'],
-        correctAnswer: 'Eh quoi ! Elle est assise solitaire, cette ville si peuplée !',
-        explanation: 'L\'image de Jérusalem veuve et dévastée.'
+        text: 'How does the book begin (Lamentations 1:1)?',
+        options: ['How solitary sits the city that was full of people!', 'Praise the Lord', 'In the beginning', 'Word of Jeremiah'],
+        correctAnswer: 'How solitary sits the city that was full of people!',
+        explanation: 'The image of Jerusalem widowed and devastated.'
     },
     {
         id: 'lam_8',
-        text: 'Pourquoi ce malheur est-il arrivé à Jérusalem selon l\'auteur ?',
-        options: ['À cause de la multitude de ses péchés', 'Par hasard', 'Parce que Dieu est faible', 'Parce que Babylone est plus forte'],
-        correctAnswer: 'À cause de la multitude de ses péchés',
-        explanation: 'Lamentations 1:5 "L\'Éternel l\'a humiliée à cause de la multitude de ses péchés."'
+        text: 'Why did this misfortune happen to Jerusalem according to the author?',
+        options: ['Because of the multitude of her sins', 'By chance', 'Because God is weak', 'Because Babylon is stronger'],
+        correctAnswer: 'Because of the multitude of her sins',
+        explanation: 'Lamentations 1:5 "The Lord has afflicted her for the multitude of her transgressions."'
     },
     {
         id: 'lam_9',
-        text: 'Les enfants demandent du pain, et... ?',
-        options: ['Personne ne leur en donne', 'Il en pleut du ciel', 'Le roi leur en donne', 'Ils en ont trop'],
-        correctAnswer: 'Personne ne leur en donne',
-        explanation: 'Lamentations 4:4 Description de la famine terrible.'
+        text: 'The children ask for bread, but...?',
+        options: ['No one gives it to them', 'It rains from the sky', 'The king gives it to them', 'They have too much'],
+        correctAnswer: 'No one gives it to them',
+        explanation: 'Lamentations 4:4 Description of the terrible famine.'
     },
     {
         id: 'lam_10',
-        text: 'Fais-nous revenir vers toi, ô Éternel, et nous reviendrons ! Donne-nous... ?',
-        options: ['Nos jours d\'autrefois', 'De l\'or', 'La victoire', 'Un roi'],
-        correctAnswer: 'Nos jours d\'autrefois',
-        explanation: 'Lamentations 5:21 Prière finale de restauration.'
+        text: 'Turn us back to you, O Lord, and we will be turned! Renew...?',
+        options: ['Our days as of old', 'Our gold', 'Our victory', 'Our king'],
+        correctAnswer: 'Our days as of old',
+        explanation: 'Lamentations 5:21 Final prayer for restoration.'
     },
     {
         id: 'lam_11',
-        text: 'De quoi la fille de Sion est-elle devenue la proie ?',
-        options: ['De ses ennemis', 'Des bêtes sauvages', 'De la maladie', 'De la mer'],
-        correctAnswer: 'De ses ennemis',
-        explanation: 'Lamentations 1:5 "Ses ennemis ont dominé sur elle."'
+        text: 'To what has the daughter of Zion become a prey?',
+        options: ['To her enemies', 'To wild beasts', 'To disease', 'To the sea'],
+        correctAnswer: 'To her enemies',
+        explanation: 'Lamentations 1:5 "Her adversaries have become her masters."'
     },
     {
         id: 'lam_12',
-        text: 'Qu\'est-ce qui est grand selon Lamentations 3 ?',
-        options: ['La fidélité de Dieu (Grande est ta fidélité)', 'La douleur', 'Le péché', 'Le Temple'],
-        correctAnswer: 'La fidélité de Dieu (Grande est ta fidélité)',
+        text: 'What is great according to Lamentations 3?',
+        options: ['God’s faithfulness (Great is your faithfulness)', 'Pain', 'Sin', 'The Temple'],
+        correctAnswer: 'God’s faithfulness (Great is your faithfulness)',
         explanation: 'Lamentations 3:23'
     },
     {
         id: 'lam_13',
-        text: 'Qui a dévoré Jacob et brûlé ses demeures ?',
-        options: ['L\'Éternel (dans sa colère)', 'Satan', 'Les Égyptiens', 'Personne'],
-        correctAnswer: 'L\'Éternel (dans sa colère)',
-        explanation: 'Lamentations 2:3 L\'auteur reconnaît que c\'est le jugement de Dieu.'
+        text: 'Who has devoured Jacob and burned his dwelling places?',
+        options: ['The Lord (in his anger)', 'Satan', 'The Egyptians', 'No one'],
+        correctAnswer: 'The Lord (in his anger)',
+        explanation: 'Lamentations 2:3 The author recognizes it is God\'s judgment.'
     },
     {
         id: 'lam_14',
-        text: 'Les femmes ont fait cuire... ?',
-        options: ['Leurs propres enfants', 'Du pain', 'Des agneaux', 'Des herbes'],
-        correctAnswer: 'Leurs propres enfants',
-        explanation: 'Lamentations 4:10 Horreur du siège et de la famine.'
+        text: 'The women cooked...?',
+        options: ['Their own children', 'Bread', 'Lambs', 'Herbs'],
+        correctAnswer: 'Their own children',
+        explanation: 'Lamentations 4:10 Horror of the siege and famine.'
     },
     {
         id: 'lam_15',
-        text: 'Il est bon pour l\'homme de porter... ?',
-        options: ['Le joug dans sa jeunesse', 'Des vêtements riches', 'Une épée', 'La barbe'],
-        correctAnswer: 'Le joug dans sa jeunesse',
+        text: 'It is good for a man to bear...?',
+        options: ['The yoke in his youth', 'Rich clothes', 'A sword', 'A beard'],
+        correctAnswer: 'The yoke in his youth',
         explanation: 'Lamentations 3:27'
     },
     {
         id: 'lam_16',
-        text: 'Pourquoi Jérémie dit "Mon âme est abattue au-dedans de moi" ?',
-        options: ['Quand je pense à ma misère', 'Quand je suis malade', 'Quand il pleut', 'Quand je dors'],
-        correctAnswer: 'Quand je pense à ma misère',
+        text: 'Why does Jeremiah say "My soul is bowed down within me"?',
+        options: ['When I think of my misery', 'When I am sick', 'When it rains', 'When I sleep'],
+        correctAnswer: 'When I think of my misery',
         explanation: 'Lamentations 3:20'
     },
     {
         id: 'lam_17',
-        text: 'Tes prophètes t\'ont annoncé... ?',
-        options: ['Des visions vaines et fausses', 'La vérité', 'La justice', 'La paix véritable'],
-        correctAnswer: 'Des visions vaines et fausses',
-        explanation: 'Lamentations 2:14 Dénonciation des faux prophètes qui n\'ont pas averti le peuple.'
+        text: 'Your prophets have predicted for you...?',
+        options: ['False and foolish visions', 'Truth', 'Justice', 'True peace'],
+        correctAnswer: 'False and foolish visions',
+        explanation: 'Lamentations 2:14 Denunciation of false prophets who did not warn the people.'
     },
     {
         id: 'lam_18',
-        text: 'L\'Éternel est ma part, dit mon âme, c\'est pourquoi... ?',
-        options: ['J\'espérerai en lui', 'Je serai riche', 'Je ne crains rien', 'Je chante'],
-        correctAnswer: 'J\'espérerai en lui',
+        text: 'The Lord is my portion, says my soul, therefore...?',
+        options: ['I will hope in him', 'I will be rich', 'I fear nothing', 'I sing'],
+        correctAnswer: 'I will hope in him',
         explanation: 'Lamentations 3:24'
     },
     {
         id: 'lam_19',
-        text: 'Quel est l\'état des princes de Jérusalem dans le chapitre 4 ?',
-        options: ['Leur visage est plus noir que la suie (à cause de la famine)', 'Ils sont glorieux', 'Ils sont bien nourris', 'Ils rient'],
-        correctAnswer: 'Leur visage est plus noir que la suie (à cause de la famine)',
-        explanation: 'Lamentations 4:8 Contrastre avec leur éclat passé.'
+        text: 'What is the state of the princes of Jerusalem in chapter 4?',
+        options: ['Their faces are blacker than soot (due to famine)', 'They are glorious', 'They are well fed', 'They are laughing'],
+        correctAnswer: 'Their faces are blacker than soot (due to famine)',
+        explanation: 'Lamentations 4:8 Contrast with their past brilliance.'
     },
     {
         id: 'lam_20',
-        text: 'Qui a accompli ce qu\'il avait résolu ?',
-        options: ['L\'Éternel', 'Le roi de Babylone', 'Moïse', 'Le hasard'],
-        correctAnswer: 'L\'Éternel',
-        explanation: 'Lamentations 2:17 "L\'Éternel a exécuté ce qu\'il avait résolu."'
+        text: 'Who has accomplished what he purposed?',
+        options: ['The Lord', 'The king of Babylon', 'Moses', 'Chance'],
+        correctAnswer: 'The Lord',
+        explanation: 'Lamentations 2:17 "The Lord has done what he purposed."'
     }
 ];

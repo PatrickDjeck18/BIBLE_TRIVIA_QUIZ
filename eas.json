@@ -8,9 +8,16 @@
             "distribution": "internal"
         },
         "preview": {
-            "distribution": "internal"
+            "distribution": "internal",
+            "android": {
+                "credentialsSource": "remote"
+            }
         },
-        "production": {}
+        "production": {
+            "android": {
+                "credentialsSource": "remote"
+            }
+        }
     },
     "submit": {
         "production": {}

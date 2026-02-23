@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const psalmsQuestions: Question[] = [
     {
         id: 'psa_1',
-        text: 'Qui est l\'auteur principal des Psaumes ?',
-        options: ['David', 'Moïse', 'Salomon', 'Asaph'],
+        text: 'Who is the main author of the Psalms?',
+        options: ['David', 'Moses', 'Solomon', 'Asaph'],
         correctAnswer: 'David',
-        explanation: 'Bien qu\'il y ait plusieurs auteurs, David en a écrit la majorité (environ 73).'
+        explanation: 'Although there are several authors, David wrote the majority of them (about 73).'
     },
     {
         id: 'psa_2',
-        text: 'Combien de livres composent le livre des Psaumes ?',
-        options: ['5 livres', '1 seul livre', '12 livres', '3 livres'],
-        correctAnswer: '5 livres',
-        explanation: 'Le livre des Psaumes est divisé en 5 sections, chacune se terminant par une doxologie.'
+        text: 'How many books make up the Book of Psalms?',
+        options: ['5 books', 'Only 1 book', '12 books', '3 books'],
+        correctAnswer: '5 books',
+        explanation: 'The Book of Psalms is divided into 5 sections, each ending with a doxology.'
     },
     {
         id: 'psa_3',
-        text: 'Que dit le Psaume 23 ?',
-        options: ['L\'Éternel est mon berger', 'Aie pitié de moi, ô Dieu', 'Les cieux racontent la gloire de Dieu', 'Heureux l\'homme qui ne marche pas...'],
-        correctAnswer: 'L\'Éternel est mon berger',
-        explanation: 'Psaume 23:1 "L\'Éternel est mon berger : je ne manquerai de rien."'
+        text: 'What does Psalm 23 say?',
+        options: ['The Lord is my shepherd', 'Have mercy on me, O God', 'The heavens declare the glory of God', 'Blessed is the man who does not walk...'],
+        correctAnswer: 'The Lord is my shepherd',
+        explanation: 'Psalm 23:1 "The Lord is my shepherd, I lack nothing."'
     },
     {
         id: 'psa_4',
-        text: 'Quel est le Psaume le plus long de la Bible ?',
-        options: ['Psaume 119', 'Psaume 1', 'Psaume 23', 'Psaume 150'],
-        correctAnswer: 'Psaume 119',
-        explanation: 'Il compte 176 versets et célèbre la Loi de Dieu (acrostiche alphabétique).'
+        text: 'What is the longest Psalm in the Bible?',
+        options: ['Psalm 119', 'Psalm 1', 'Psalm 23', 'Psalm 150'],
+        correctAnswer: 'Psalm 119',
+        explanation: 'It has 176 verses and celebrates God\'s Law (alphabetical acrostic).'
     },
     {
         id: 'psa_5',
-        text: 'Par quel mot commence le livre des Psaumes ?',
-        options: ['Heureux', 'Éternel', 'Louez', 'Sauve-moi'],
-        correctAnswer: 'Heureux',
-        explanation: 'Psaume 1:1 "Heureux l\'homme qui ne marche pas selon le conseil des méchants..."'
+        text: 'With what word does the Book of Psalms begin?',
+        options: ['Blessed', 'Lord', 'Praise', 'Save me'],
+        correctAnswer: 'Blessed',
+        explanation: 'Psalm 1:1 "Blessed is the one who does not walk in step with the wicked..."'
     },
     {
         id: 'psa_6',
-        text: 'Quel Psaume est une prière de repentance de David (après Bath-Schéba) ?',
-        options: ['Psaume 51', 'Psaume 23', 'Psaume 100', 'Psaume 91'],
-        correctAnswer: 'Psaume 51',
-        explanation: 'Psaume 51:1 "O Dieu ! aie pitié de moi dans ta bonté..."'
+        text: 'Which Psalm is David\'s prayer of repentance (after Bathsheba)?',
+        options: ['Psalm 51', 'Psalm 23', 'Psalm 100', 'Psalm 91'],
+        correctAnswer: 'Psalm 51',
+        explanation: 'Psalm 51:1 "Have mercy on me, O God, according to your unfailing love..."'
     },
     {
         id: 'psa_7',
-        text: 'Que prophétise le Psaume 22 ("Mon Dieu, mon Dieu, pourquoi m\'as-tu abandonné") ?',
-        options: ['La crucifixion du Messie', 'La naissance de Jésus', 'Le règne de Salomon', 'L\'exil à Babylone'],
-        correctAnswer: 'La crucifixion du Messie',
-        explanation: 'Ce psaume décrit avec précision les souffrances du Christ.'
+        text: 'What does Psalm 22 prophesy ("My God, my God, why have you forsaken me")?',
+        options: ['The crucifixion of the Messiah', 'The birth of Jesus', 'The reign of Solomon', 'The exile to Babylon'],
+        correctAnswer: 'The crucifixion of the Messiah',
+        explanation: 'This psalm accurately describes the sufferings of Christ.'
     },
     {
         id: 'psa_8',
-        text: 'Quel Psaume dit "Les cieux racontent la gloire de Dieu" ?',
-        options: ['Psaume 19', 'Psaume 8', 'Psaume 139', 'Psaume 24'],
-        correctAnswer: 'Psaume 19',
-        explanation: 'Psaume 19:1'
+        text: 'Which Psalm says "The heavens declare the glory of God"?',
+        options: ['Psalm 19', 'Psalm 8', 'Psalm 139', 'Psalm 24'],
+        correctAnswer: 'Psalm 19',
+        explanation: 'Psalm 19:1'
     },
     {
         id: 'psa_9',
-        text: 'Quel est le dernier Psaume (Psaume 150) ?',
-        options: ['Une grande louange finale (Que tout ce qui respire loue l\'Éternel)', 'Une prière', 'Une plainte', 'Une prophétie'],
-        correctAnswer: 'Une grande louange finale (Que tout ce qui respire loue l\'Éternel)',
-        explanation: 'Psaume 150:6 "Que tout ce qui respire loue l\'Éternel !"'
+        text: 'What is the last Psalm (Psalm 150)?',
+        options: ['A great final praise (Let everything that has breath praise the Lord)', 'A prayer', 'A complaint', 'A prophecy'],
+        correctAnswer: 'A great final praise (Let everything that has breath praise the Lord)',
+        explanation: 'Psalm 150:6 "Let everything that has breath praise the Lord."'
     },
     {
         id: 'psa_10',
-        text: 'Qui a écrit le Psaume 90 ("Seigneur, tu as été pour nous un refuge...") ?',
-        options: ['Moïse', 'David', 'Salomon', 'Abraham'],
-        correctAnswer: 'Moïse',
-        explanation: 'C\'est le seul psaume attribué à Moïse (Homme de Dieu).'
+        text: 'Who wrote Psalm 90 ("Lord, you have been our dwelling place...")?',
+        options: ['Moses', 'David', 'Solomon', 'Abraham'],
+        correctAnswer: 'Moses',
+        explanation: 'It is the only psalm attributed to Moses (Man of God).'
     },
     {
         id: 'psa_11',
-        text: 'Que dit le Psaume 139 sur la présence de Dieu ?',
-        options: ['Qu\'il est omniprésent (Où irais-je loin de ton esprit ?)', 'Qu\'il est au Temple', 'Qu\'il est loin', 'Qu\'il est caché'],
-        correctAnswer: 'Qu\'il est omniprésent (Où irais-je loin de ton esprit ?)',
-        explanation: 'Psaume 139:7-10'
+        text: 'What does Psalm 139 say about God\'s presence?',
+        options: ['That he is omnipresent (Where can I go from your Spirit?)', 'That he is in the Temple', 'That he is far away', 'That he is hidden'],
+        correctAnswer: 'That he is omnipresent (Where can I go from your Spirit?)',
+        explanation: 'Psalm 139:7-10'
     },
     {
         id: 'psa_12',
-        text: 'Quel Psaume commence par "Celui qui demeure sous l\'abri du Très-Haut" ?',
-        options: ['Psaume 91', 'Psaume 23', 'Psaume 121', 'Psaume 46'],
-        correctAnswer: 'Psaume 91',
-        explanation: 'Psaume de protection par excellence.'
+        text: 'Which Psalm begins with "Whoever dwells in the shelter of the Most High"?',
+        options: ['Psalm 91', 'Psalm 23', 'Psalm 121', 'Psalm 46'],
+        correctAnswer: 'Psalm 91',
+        explanation: 'A psalm of protection par excellence.'
     },
     {
         id: 'psa_13',
-        text: 'Qu\'est-ce que "Sélah" dans les Psaumes ?',
-        options: ['Une pause musicale ou méditative', 'Le nom de Dieu', 'Une ville', 'Une arme'],
-        correctAnswer: 'Une pause musicale ou méditative',
-        explanation: 'Terme technique musical pour indiquer une pause ou une élévation.'
+        text: 'What is "Selah" in the Psalms?',
+        options: ['A musical or meditative pause', 'The name of God', 'A city', 'A weapon'],
+        correctAnswer: 'A musical or meditative pause',
+        explanation: 'Technical musical term to indicate a pause or an elevation.'
     },
     {
         id: 'psa_14',
-        text: 'Quel Psaume dit "L\'insensé dit en son coeur : Il n\'y a point de Dieu" ?',
-        options: ['Psaume 14 (et 53)', 'Psaume 1', 'Psaume 119', 'Psaume 2'],
-        correctAnswer: 'Psaume 14 (et 53)',
-        explanation: 'Psaume 14:1'
+        text: 'Which Psalm says "The fool says in his heart, \'There is no God\'"?',
+        options: ['Psalm 14 (and 53)', 'Psalm 1', 'Psalm 119', 'Psalm 2'],
+        correctAnswer: 'Psalm 14 (and 53)',
+        explanation: 'Psalm 14:1'
     },
     {
         id: 'psa_15',
-        text: 'De quoi parle le Psaume 110 ("Parole de l\'Éternel à mon Seigneur") ?',
-        options: ['Du règne du Messie (Roi et Prêtre)', 'De David', 'De la guerre', 'Du Temple'],
-        correctAnswer: 'Du règne du Messie (Roi et Prêtre)',
-        explanation: 'Le psaume le plus cité dans le Nouveau Testament concernant Jésus.'
+        text: 'What is Psalm 110 about ("The Lord says to my Lord")?',
+        options: ['The reign of the Messiah (King and Priest)', 'David', 'War', 'The Temple'],
+        correctAnswer: 'The reign of the Messiah (King and Priest)',
+        explanation: 'The most cited psalm in the New Testament concerning Jesus.'
     },
     {
         id: 'psa_16',
-        text: 'Quel Psaume est le plus court ?',
-        options: ['Psaume 117', 'Psaume 100', 'Psaume 1', 'Psaume 150'],
-        correctAnswer: 'Psaume 117',
-        explanation: 'Il ne comporte que 2 versets.'
+        text: 'Which Psalm is the shortest?',
+        options: ['Psalm 117', 'Psalm 100', 'Psalm 1', 'Psalm 150'],
+        correctAnswer: 'Psalm 117',
+        explanation: 'It consists of only 2 verses.'
     },
     {
         id: 'psa_17',
-        text: 'Qu\'est-ce qu\'un psaume "imprécatoire" ?',
-        options: ['Un psaume qui appelle le jugement de Dieu sur les ennemis', 'Un psaume joyeux', 'Un psaume de mariage', 'Un psaume de sagesse'],
-        correctAnswer: 'Un psaume qui appelle le jugement de Dieu sur les ennemis',
-        explanation: 'Exemple : Psaume 109.'
+        text: 'What is an "imprecatory" psalm?',
+        options: ['A psalm that calls for God\'s judgment on enemies', 'A joyful psalm', 'A wedding psalm', 'A wisdom psalm'],
+        correctAnswer: 'A psalm that calls for God\'s judgment on enemies',
+        explanation: 'Example: Psalm 109.'
     },
     {
         id: 'psa_18',
-        text: 'Selon le Psaume 1, à quoi ressemble l\'homme juste ?',
-        options: ['À un arbre planté près d\'un courant d\'eau', 'À la paille que le vent dissipe', 'À un lion', 'À un rocher'],
-        correctAnswer: 'À un arbre planté près d\'un courant d\'eau',
-        explanation: 'Psaume 1:3'
+        text: 'According to Psalm 1, what is the righteous person like?',
+        options: ['Like a tree planted by streams of water', 'Like chaff that the wind blows away', 'Like a lion', 'Like a rock'],
+        correctAnswer: 'Like a tree planted by streams of water',
+        explanation: 'Psalm 1:3'
     },
     {
         id: 'psa_19',
-        text: 'Que dit le Psaume 127 sur la maison ?',
-        options: ['Si l\'Éternel ne bâtit la maison, ceux qui la bâtissent travaillent en vain', 'Il faut de bonnes fondations', 'Une grande maison est une bénédiction', 'L\'architecte est important'],
-        correctAnswer: 'Si l\'Éternel ne bâtit la maison, ceux qui la bâtissent travaillent en vain',
-        explanation: 'Psaume 127:1'
+        text: 'What does Psalm 127 say about the house?',
+        options: ['Unless the Lord builds the house, the builders labor in vain', 'Good foundations are needed', 'A large house is a blessing', 'The architect is important'],
+        correctAnswer: 'Unless the Lord builds the house, the builders labor in vain',
+        explanation: 'Psalm 127:1'
     },
     {
         id: 'psa_20',
-        text: 'Quels sont les "Psaumes des montées" (ou degrés) ?',
-        options: ['Ceux chantés par les pèlerins montant à Jérusalem (120-134)', 'Ceux écrits sur une montagne', 'Les psaumes les plus spirituels', 'Ceux écrits par Ésaïe'],
-        correctAnswer: 'Ceux chantés par les pèlerins montant à Jérusalem (120-134)',
-        explanation: 'Chantés lors des pèlerinages vers le Temple.'
+        text: 'What are the "Psalms of Ascents" (or degrees)?',
+        options: ['Those sung by pilgrims going up to Jerusalem (120-134)', 'Those written on a mountain', 'The most spiritual psalms', 'Those written by Isaiah'],
+        correctAnswer: 'Those sung by pilgrims going up to Jerusalem (120-134)',
+        explanation: 'Sung during pilgrimages to the Temple.'
     }
 ];

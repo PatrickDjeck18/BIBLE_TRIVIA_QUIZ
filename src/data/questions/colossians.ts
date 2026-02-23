@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const colossiansQuestions: Question[] = [
     {
         id: 'col_1',
-        text: 'Il (Christ) est l\'image du Dieu invisible, le premier-né de... ?',
-        options: ['Toute la création', 'Tout les hommes', 'Des morts', 'Des rois'],
-        correctAnswer: 'Toute la création',
-        explanation: 'Colossiens 1:15 Himno christologique.'
+        text: 'He (Christ) is the image of the invisible God, the firstborn over all...?',
+        options: ['Creation', 'Mankind', 'The dead', 'Kings'],
+        correctAnswer: 'Creation',
+        explanation: 'Colossians 1:15 Christological hymn.'
     },
     {
         id: 'col_2',
-        text: 'Car en lui ont été créées... ?',
-        options: ['Toutes les choses', 'Certaines choses', 'La terre seulement', 'Les hommes'],
-        correctAnswer: 'Toutes les choses',
-        explanation: 'Colossiens 1:16'
+        text: 'For in him... were created?',
+        options: ['All things', 'Some things', 'Only the earth', 'Mankind'],
+        correctAnswer: 'All things',
+        explanation: 'Colossians 1:16'
     },
     {
         id: 'col_3',
-        text: 'Il est avant toutes choses, et toutes choses... ?',
-        options: ['Subsistent en lui', 'Sont mortes', 'Sont perdues', 'Sont nouvelles'],
-        correctAnswer: 'Subsistent en lui',
-        explanation: 'Colossiens 1:17'
+        text: 'He is before all things, and in him all things...?',
+        options: ['Hold together', 'Are dead', 'Are lost', 'Are new'],
+        correctAnswer: 'Hold together',
+        explanation: 'Colossians 1:17'
     },
     {
         id: 'col_4',
-        text: 'Car Dieu a voulu que toute... habitât en lui ?',
-        options: ['Plénitude', 'Gloire', 'Sagesse', 'Force'],
-        correctAnswer: 'Plénitude',
-        explanation: 'Colossiens 1:19'
+        text: 'For God was pleased to have all his... dwell in him?',
+        options: ['Fullness', 'Glory', 'Wisdom', 'Strength'],
+        correctAnswer: 'Fullness',
+        explanation: 'Colossians 1:19'
     },
     {
         id: 'col_5',
-        text: 'Christ en vous, l\'espérance de... ?',
-        options: ['La gloire', 'La vie', 'La paix', 'La richesse'],
-        correctAnswer: 'La gloire',
-        explanation: 'Colossiens 1:27'
+        text: 'Christ in you, the hope of...?',
+        options: ['Glory', 'Life', 'Peace', 'Wealth'],
+        correctAnswer: 'Glory',
+        explanation: 'Colossians 1:27'
     },
     {
         id: 'col_6',
-        text: 'En lui sont cachés tous les trésors de... ?',
-        options: ['La sagesse et de la science', 'L\'or et l\'argent', 'La terre', 'L\'histoire'],
-        correctAnswer: 'La sagesse et de la science',
-        explanation: 'Colossiens 2:3'
+        text: 'In whom are hidden all the treasures of...?',
+        options: ['Wisdom and knowledge', 'Gold and silver', 'The earth', 'History'],
+        correctAnswer: 'Wisdom and knowledge',
+        explanation: 'Colossians 2:3'
     },
     {
         id: 'col_7',
-        text: 'Prenez garde que personne ne fasse de vous sa proie par... ?',
-        options: ['La philosophie et par une vaine tromperie', 'La force', 'L\'argent', 'La peur'],
-        correctAnswer: 'La philosophie et par une vaine tromperie',
-        explanation: 'Colossiens 2:8'
+        text: 'See to it that no one takes you captive through...?',
+        options: ['Philosophy and empty deceit', 'Force', 'Money', 'Fear'],
+        correctAnswer: 'Philosophy and empty deceit',
+        explanation: 'Colossians 2:8'
     },
     {
         id: 'col_8',
-        text: 'Car en lui habite corporellement toute... ?',
-        options: ['La plénitude de la divinité', 'La puissance', 'La gloire des anges', 'La loi'],
-        correctAnswer: 'La plénitude de la divinité',
-        explanation: 'Colossiens 2:9'
+        text: 'For in him the whole... dwells bodily?',
+        options: ['Fullness of Deity', 'Power', 'Glory of angels', 'Law'],
+        correctAnswer: 'Fullness of Deity',
+        explanation: 'Colossians 2:9'
     },
     {
         id: 'col_9',
-        text: 'Il a effacé l\'acte dont les ordonnances nous condamnaient... il l\'a détruit en... ?',
-        options: ['Le clouant à la croix', 'Le brûlant', 'Le jetant à la mer', 'L\'enterrant'],
-        correctAnswer: 'Le clouant à la croix',
-        explanation: 'Colossiens 2:14'
+        text: 'He erased the record of debt... he took it away, nailing it to...?',
+        options: ['The cross', 'The fire', 'The sea', 'The ground'],
+        correctAnswer: 'The cross',
+        explanation: 'Colossians 2:14'
     },
     {
         id: 'col_10',
-        text: 'Que personne donc ne vous juge au sujet du manger ou du boire, ou au sujet... ?',
-        options: ['D\'une fête, d\'une nouvelle lune, ou des sabbats', 'De vos vêtements', 'De votre travail', 'De votre maison'],
-        correctAnswer: 'D\'une fête, d\'une nouvelle lune, ou des sabbats',
-        explanation: 'Colossiens 2:16'
+        text: 'Therefore do not let anyone judge you by what you eat or drink, or with regard to...?',
+        options: ['A religious festival, a New Moon celebration or a Sabbath day', 'Your clothes', 'Your work', 'Your house'],
+        correctAnswer: 'A religious festival, a New Moon celebration or a Sabbath day',
+        explanation: 'Colossians 2:16'
     },
     {
         id: 'col_11',
-        text: 'Si donc vous êtes ressuscités avec Christ, cherchez... ?',
-        options: ['Les choses d\'en haut', 'Les richesses', 'La gloire humaine', 'Le repos'],
-        correctAnswer: 'Les choses d\'en haut',
-        explanation: 'Colossiens 3:1'
+        text: 'Since, then, you have been raised with Christ, set your hearts on...?',
+        options: ['Things above', 'Riches', 'Human glory', 'Rest'],
+        correctAnswer: 'Things above',
+        explanation: 'Colossians 3:1'
     },
     {
         id: 'col_12',
-        text: 'Faites mourir les membres qui sont sur la terre : ... ?',
-        options: ['L\'impudicité, l\'impureté, les passions...', 'La faim', 'La soif', 'Le sommeil'],
-        correctAnswer: 'L\'impudicité, l\'impureté, les passions...',
-        explanation: 'Colossiens 3:5'
+        text: 'Put to death, therefore, whatever belongs to your earthly nature: ...?',
+        options: ['Sexual immorality, impurity, lust...', 'Hunger', 'Thirst', 'Sleep'],
+        correctAnswer: 'Sexual immorality, impurity, lust...',
+        explanation: 'Colossians 3:5'
     },
     {
         id: 'col_13',
-        text: 'Supportez-vous les uns les autres, et... ?',
-        options: ['Pardonnez-vous réciproquement', 'Jugez-vous', 'Ignorez-vous', 'Battez-vous'],
-        correctAnswer: 'Pardonnez-vous réciproquement',
-        explanation: 'Colossiens 3:13'
+        text: 'Bear with each other and...?',
+        options: ['Forgive one another', 'Judge one another', 'Ignore one another', 'Fight each other'],
+        correctAnswer: 'Forgive one another',
+        explanation: 'Colossians 3:13'
     },
     {
         id: 'col_14',
-        text: 'Et par-dessus toutes ces choses, revêtez-vous de... ?',
-        options: ['L\'amour (la charité), qui est le lien de la perfection', 'La gloire', 'La force', 'L\'or'],
-        correctAnswer: 'L\'amour (la charité), qui est le lien de la perfection',
-        explanation: 'Colossiens 3:14'
+        text: 'And over all these virtues put on...?',
+        options: ['Love, which binds them all together in perfect unity', 'Glory', 'Strength', 'Gold'],
+        correctAnswer: 'Love, which binds them all together in perfect unity',
+        explanation: 'Colossians 3:14'
     },
     {
         id: 'col_15',
-        text: 'Que la parole du Christ habite parmi vous... ?',
-        options: ['Abondamment', 'Un peu', 'Rarement', 'En secret'],
-        correctAnswer: 'Abondamment',
-        explanation: 'Colossiens 3:16'
+        text: 'Let the message of Christ dwell among you...?',
+        options: ['Richly', 'A little', 'Rarely', 'In secret'],
+        correctAnswer: 'Richly',
+        explanation: 'Colossians 3:16'
     },
     {
         id: 'col_16',
-        text: 'Tout ce que vous faites, faites-le... ?',
-        options: ['De bon coeur, comme pour le Seigneur et non pour les hommes', 'Vite', 'Pour l\'argent', 'Pour la gloire'],
-        correctAnswer: 'De bon coeur, comme pour le Seigneur et non pour les hommes',
-        explanation: 'Colossiens 3:23'
+        text: 'Whatever you do, work at it...?',
+        options: ['With all your heart, as working for the Lord, not for human masters', 'Quickly', 'For money', 'For glory'],
+        correctAnswer: 'With all your heart, as working for the Lord, not for human masters',
+        explanation: 'Colossians 3:23'
     },
     {
         id: 'col_17',
-        text: 'Que votre parole soit toujours accompagnée de... ?',
-        options: ['Grâce, assaisonnée de sel', 'Colère', 'Force', 'Rire'],
-        correctAnswer: 'Grâce, assaisonnée de sel',
-        explanation: 'Colossiens 4:6'
+        text: 'Let your conversation be always full of...?',
+        options: ['Grace, seasoned with salt', 'Anger', 'Strength', 'Laughter'],
+        correctAnswer: 'Grace, seasoned with salt',
+        explanation: 'Colossians 4:6'
     },
     {
         id: 'col_18',
-        text: 'Qui est "le médecin bien-aimé" qui salue les Colossiens ?',
-        options: ['Luc', 'Marc', 'Barnabas', 'Silas'],
-        correctAnswer: 'Luc',
-        explanation: 'Colossiens 4:14'
+        text: 'Who is "the dear doctor" who sends greetings to the Colossians?',
+        options: ['Luke', 'Mark', 'Barnabas', 'Silas'],
+        correctAnswer: 'Luke',
+        explanation: 'Colossians 4:14'
     },
     {
         id: 'col_19',
-        text: 'Paul demande de lire aussi la lettre de... ?',
-        options: ['Laodicée', 'Éphèse', 'Rome', 'Corinthe'],
-        correctAnswer: 'Laodicée',
-        explanation: 'Colossiens 4:16'
+        text: 'Paul asks to also read the letter from...?',
+        options: ['Laodicea', 'Ephesus', 'Rome', 'Corinth'],
+        correctAnswer: 'Laodicea',
+        explanation: 'Colossians 4:16'
     },
     {
         id: 'col_20',
-        text: 'Il nous a délivrés de la puissance des ténèbres et nous a transportés... ?',
-        options: ['Dans le royaume du Fils de son amour', 'Au ciel', 'En sécurité', 'Loin'],
-        correctAnswer: 'Dans le royaume du Fils de son amour',
-        explanation: 'Colossiens 1:13'
+        text: 'For he has rescued us from the dominion of darkness and brought us into...?',
+        options: ['The kingdom of the Son he loves', 'Heaven', 'Safety', 'Away'],
+        correctAnswer: 'The kingdom of the Son he loves',
+        explanation: 'Colossians 1:13'
     }
 ];

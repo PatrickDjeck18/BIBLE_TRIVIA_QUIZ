@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const thessalonians1Questions: Question[] = [
     {
         id: '1th_1',
-        text: 'Nous rappelant sans cesse l\'oeuvre de votre foi, le travail de votre... ?',
-        options: ['Charité (amour)', 'Espérance', 'Famille', 'Main'],
-        correctAnswer: 'Charité (amour)',
-        explanation: '1 Thessaloniciens 1:3 "La foi, l\'amour, l\'espérance".'
+        text: 'We remember before our God and Father your work produced by faith, your labor prompted by...?',
+        options: ['Love', 'Hope', 'Family', 'Hand'],
+        correctAnswer: 'Love',
+        explanation: '1 Thessalonians 1:3 "Your work produced by faith, your labor prompted by love, and your endurance inspired by hope."'
     },
     {
         id: '1th_2',
-        text: 'Comment l\'Évangile est-il venu aux Thessaloniciens ?',
-        options: ['Non en paroles seulement, mais avec puissance et Esprit Saint', 'Par écrit', 'Par des anges', 'En secret'],
-        correctAnswer: 'Non en paroles seulement, mais avec puissance et Esprit Saint',
-        explanation: '1 Thessaloniciens 1:5'
+        text: 'How did the gospel come to the Thessalonians?',
+        options: ['Not simply with words but also with power, with the Holy Spirit', 'By writing', 'By angels', 'In secret'],
+        correctAnswer: 'Not simply with words but also with power, with the Holy Spirit',
+        explanation: '1 Thessalonians 1:5'
     },
     {
         id: '1th_3',
-        text: 'Vous vous êtes convertis à Dieu, en abandonnant les idoles pour servir... ?',
-        options: ['Le Dieu vivant et vrai', 'La loi', 'Les anges', 'Les hommes'],
-        correctAnswer: 'Le Dieu vivant et vrai',
-        explanation: '1 Thessaloniciens 1:9'
+        text: 'You turned to God from idols to serve...?',
+        options: ['The living and true God', 'The law', 'Angels', 'Men'],
+        correctAnswer: 'The living and true God',
+        explanation: '1 Thessalonians 1:9'
     },
     {
         id: '1th_4',
-        text: 'Pour attendre des cieux son Fils... qui nous délivre de... ?',
-        options: ['La colère à venir', 'La mort', 'L\'enfer', 'La pauvreté'],
-        correctAnswer: 'La colère à venir',
-        explanation: '1 Thessaloniciens 1:10'
+        text: 'And to wait for his Son from heaven... who rescues us from...?',
+        options: ['The coming wrath', 'Death', 'Hell', 'Poverty'],
+        correctAnswer: 'The coming wrath',
+        explanation: '1 Thessalonians 1:10'
     },
     {
         id: '1th_5',
-        text: 'Quelle est notre espérance, ou notre joie... ? N\'est-ce pas... ?',
-        options: ['Vous aussi, devant Jésus', 'Le ciel', 'La richesse', 'La santé'],
-        correctAnswer: 'Vous aussi, devant Jésus',
-        explanation: '1 Thessaloniciens 2:19'
+        text: 'For what is our hope, our joy... Is it not...?',
+        options: ['You, in the presence of our Lord Jesus', 'Heaven', 'Wealth', 'Health'],
+        correctAnswer: 'You, in the presence of our Lord Jesus',
+        explanation: '1 Thessalonians 2:19'
     },
     {
         id: '1th_6',
-        text: 'Que personne ne vous trouble au sujet de... ?',
-        options: ['Vos afflictions (persécutions)', 'Vos péchés', 'Votre passé', 'Vos dettes'],
-        correctAnswer: 'Vos afflictions (persécutions)',
-        explanation: '1 Thessaloniciens 3:3'
+        text: 'So that no one would be unsettled by...?',
+        options: ['These trials (persecutions)', 'Your sins', 'Your past', 'Your debts'],
+        correctAnswer: 'These trials (persecutions)',
+        explanation: '1 Thessalonians 3:3'
     },
     {
         id: '1th_7',
-        text: 'Ce que Dieu veut, c\'est votre... ?',
-        options: ['Sanctification', 'Bonheur', 'Richesse', 'Gloire'],
-        correctAnswer: 'Sanctification',
-        explanation: '1 Thessaloniciens 4:3'
+        text: 'It is God’s will that you should be...?',
+        options: ['Sanctified', 'Happy', 'Rich', 'Glorified'],
+        correctAnswer: 'Sanctified',
+        explanation: '1 Thessalonians 4:3'
     },
     {
         id: '1th_8',
-        text: 'Ce que Dieu veut... c\'est que vous vous absteniez de... ?',
-        options: ['L\'impudicité', 'La viande', 'L\'alcool', 'La fête'],
-        correctAnswer: 'L\'impudicité',
-        explanation: '1 Thessaloniciens 4:3'
+        text: 'It is God’s will... that you should avoid...?',
+        options: ['Sexual immorality', 'Meat', 'Alcohol', 'Partying'],
+        correctAnswer: 'Sexual immorality',
+        explanation: '1 Thessalonians 4:3'
     },
     {
         id: '1th_9',
-        text: 'Nous ne voulons pas, frères, que vous soyez dans l\'ignorance au sujet de... ?',
-        options: ['Ceux qui dorment (les morts)', 'La loi', 'L\'avenir', 'La fin du monde'],
-        correctAnswer: 'Ceux qui dorment (les morts)',
-        explanation: '1 Thessaloniciens 4:13'
+        text: 'Brothers and sisters, we do not want you to be uninformed about...?',
+        options: ['Those who sleep in death (the dead)', 'The law', 'The future', 'The end of the world'],
+        correctAnswer: 'Those who sleep in death (the dead)',
+        explanation: '1 Thessalonians 4:13'
     },
     {
         id: '1th_10',
-        text: 'Car le Seigneur lui-même, à un signal donné, à la voix d\'un archange... descendra... ?',
-        options: ['Du ciel', 'De la montagne', 'Du temple', 'Du trône'],
-        correctAnswer: 'Du ciel',
-        explanation: '1 Thessaloniciens 4:16'
+        text: 'For the Lord himself will come down from heaven, with a loud command, with the voice of the archangel...?',
+        options: ['From heaven', 'From the mountain', 'From the temple', 'From the throne'],
+        correctAnswer: 'From heaven',
+        explanation: '1 Thessalonians 4:16'
     },
     {
         id: '1th_11',
-        text: 'Et les morts en Christ... ?',
-        options: ['Ressusciteront premièrement', 'Resteront dans la tombe', 'Seront jugés', 'Seront oubliés'],
-        correctAnswer: 'Ressusciteront premièrement',
-        explanation: '1 Thessaloniciens 4:16'
+        text: 'And the dead in Christ...?',
+        options: ['Will rise first', 'Will stay in the grave', 'Will be judged', 'Will be forgotten'],
+        correctAnswer: 'Will rise first',
+        explanation: '1 Thessalonians 4:16'
     },
     {
         id: '1th_12',
-        text: 'Ensuite, nous les vivants... nous serons tous ensemble... ?',
-        options: ['Enlevés avec eux sur des nuées', 'Morts', 'Laissés', 'Jugés'],
-        correctAnswer: 'Enlevés avec eux sur des nuées',
-        explanation: '1 Thessaloniciens 4:17 L\'enlèvement de l\'Église.'
+        text: 'After that, we who are still alive... will be caught up together...?',
+        options: ['With them in the clouds', 'Dead', 'Left behind', 'Judged'],
+        correctAnswer: 'With them in the clouds',
+        explanation: '1 Thessalonians 4:17 The Rapture of the Church.'
     },
     {
         id: '1th_13',
-        text: 'Le jour du Seigneur viendra comme... ?',
-        options: ['Un voleur dans la nuit', 'Un roi', 'Un éclair', 'Un ami'],
-        correctAnswer: 'Un voleur dans la nuit',
-        explanation: '1 Thessaloniciens 5:2'
+        text: 'The day of the Lord will come like...?',
+        options: ['A thief in the night', 'A king', 'A flash of lightning', 'A friend'],
+        correctAnswer: 'A thief in the night',
+        explanation: '1 Thessalonians 5:2'
     },
     {
         id: '1th_14',
-        text: 'Quand les hommes diront : Paix et sûreté ! alors... ?',
-        options: ['Une ruine soudaine les surprendra', 'Tout ira bien', 'La fin viendra', 'Ils dormiront'],
-        correctAnswer: 'Une ruine soudaine les surprendra',
-        explanation: '1 Thessaloniciens 5:3'
+        text: 'While people are saying, "Peace and safety," then...?',
+        options: ['Destruction will come on them suddenly', 'All will be well', 'The end will come', 'They will sleep'],
+        correctAnswer: 'Destruction will come on them suddenly',
+        explanation: '1 Thessalonians 5:3'
     },
     {
         id: '1th_15',
-        text: 'Soyez toujours... ?',
-        options: ['Joyeux', 'Tristes', 'Sérieux', 'Calmes'],
-        correctAnswer: 'Joyeux',
-        explanation: '1 Thessaloniciens 5:16'
+        text: 'Rejoice...?',
+        options: ['Always', 'Sometimes', 'Daily', 'Weekly'],
+        correctAnswer: 'Always',
+        explanation: '1 Thessalonians 5:16'
     },
     {
         id: '1th_16',
-        text: 'Priez... ?',
-        options: ['Sans cesse', 'Le matin', 'Le soir', 'Le dimanche'],
-        correctAnswer: 'Sans cesse',
-        explanation: '1 Thessaloniciens 5:17'
+        text: 'Pray...?',
+        options: ['Continually', 'In the morning', 'In the evening', 'On Sundays'],
+        correctAnswer: 'Continually',
+        explanation: '1 Thessalonians 5:17'
     },
     {
         id: '1th_17',
-        text: 'Rendez grâces en... ?',
-        options: ['Toutes choses', 'Les bonnes choses', 'La richesse', 'La santé'],
-        correctAnswer: 'Toutes choses',
-        explanation: '1 Thessaloniciens 5:18'
+        text: 'Give thanks in...?',
+        options: ['All circumstances', 'Good things', 'Wealth', 'Health'],
+        correctAnswer: 'All circumstances',
+        explanation: '1 Thessalonians 5:18'
     },
     {
         id: '1th_18',
-        text: 'N\'éteignez pas... ?',
-        options: ['L\'Esprit', 'La lumière', 'Le feu', 'La joie'],
-        correctAnswer: 'L\'Esprit',
-        explanation: '1 Thessaloniciens 5:19'
+        text: 'Do not quench...?',
+        options: ['The Spirit', 'The light', 'The fire', 'Joy'],
+        correctAnswer: 'The Spirit',
+        explanation: '1 Thessalonians 5:19'
     },
     {
         id: '1th_19',
-        text: 'Ne méprisez pas... ?',
-        options: ['Les prophéties', 'Les pauvres', 'Les faibles', 'Les lois'],
-        correctAnswer: 'Les prophéties',
-        explanation: '1 Thessaloniciens 5:20'
+        text: 'Do not treat... with contempt?',
+        options: ['Prophecies', 'The poor', 'The weak', 'Laws'],
+        correctAnswer: 'Prophecies',
+        explanation: '1 Thessalonians 5:20'
     },
     {
         id: '1th_20',
-        text: 'Examinez toutes choses; retenez... ?',
-        options: ['Ce qui est bon', 'Tout', 'Rien', 'Ce qui brille'],
-        correctAnswer: 'Ce qui est bon',
-        explanation: '1 Thessaloniciens 5:21'
+        text: 'Test them all; hold on to...?',
+        options: ['What is good', 'Everything', 'Nothing', 'What shines'],
+        correctAnswer: 'What is good',
+        explanation: '1 Thessalonians 5:21'
     }
 ];

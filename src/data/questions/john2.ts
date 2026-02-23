@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const john2Questions: Question[] = [
     {
         id: '2jn_1',
-        text: 'À qui Jean adresse-t-il sa deuxième épître ?',
-        options: ['À l\'élue (dame élue) et à ses enfants', 'À Gaïus', 'À l\'église', 'À Timothée'],
-        correctAnswer: 'À l\'élue (dame élue) et à ses enfants',
-        explanation: '2 Jean 1:1 (Personne ou Église personnifiée).'
+        text: 'To whom does John address his second epistle?',
+        options: ['To the lady chosen by God and to her children', 'To Gaius', 'To the church', 'To Timothy'],
+        correctAnswer: 'To the lady chosen by God and to her children',
+        explanation: '2 John 1:1 (Either a person or the church personified).'
     },
     {
         id: '2jn_2',
-        text: 'J\'ai eu beaucoup de joie à trouver de tes enfants qui marchent dans... ?',
-        options: ['La vérité', 'La lumière', 'La richesse', 'La gloire'],
-        correctAnswer: 'La vérité',
-        explanation: '2 Jean 1:4'
+        text: 'It has given me great joy to find some of your children walking in...?',
+        options: ['The truth', 'The light', 'Wealth', 'Glory'],
+        correctAnswer: 'The truth',
+        explanation: '2 John 1:4'
     },
     {
         id: '2jn_3',
-        text: 'Et l\'amour consiste à... ?',
-        options: ['Marcher selon ses commandements', 'Aimer tout le monde', 'Donner tout', 'Prier'],
-        correctAnswer: 'Marcher selon ses commandements',
-        explanation: '2 Jean 1:6'
+        text: 'And this is love: that we...?',
+        options: ['Walk in obedience to his commands', 'Love everyone', 'Give everything', 'Pray'],
+        correctAnswer: 'Walk in obedience to his commands',
+        explanation: '2 John 1:6'
     },
     {
         id: '2jn_4',
-        text: 'Car plusieurs séducteurs sont entrés dans le monde, qui ne confessent point... ?',
-        options: ['Que Jésus-Christ est venu en chair', 'Que Dieu existe', 'Que la Bible est vraie', 'Que l\'amour est grand'],
-        correctAnswer: 'Que Jésus-Christ est venu en chair',
-        explanation: '2 Jean 1:7'
+        text: 'For many deceivers have gone out into the world, who do not acknowledge...?',
+        options: ['Jesus Christ as coming in the flesh', 'That God exists', 'That the Bible is true', 'That love is great'],
+        correctAnswer: 'Jesus Christ as coming in the flesh',
+        explanation: '2 John 1:7'
     },
     {
         id: '2jn_5',
-        text: 'Prenez garde à vous-mêmes, afin que vous ne perdiez pas... ?',
-        options: ['Le fruit de votre travail', 'Votre argent', 'Votre temps', 'Votre vie'],
-        correctAnswer: 'Le fruit de votre travail',
-        explanation: '2 Jean 1:8'
+        text: 'Watch out that you do not lose...?',
+        options: ['What we have worked for', 'Your money', 'Your time', 'Your life'],
+        correctAnswer: 'What we have worked for',
+        explanation: '2 John 1:8'
     },
     {
         id: '2jn_6',
-        text: 'Quiconque va plus loin et ne demeure pas dans la doctrine de Christ... ?',
-        options: ['N\'a point Dieu', 'Est sage', 'Est fort', 'Est libre'],
-        correctAnswer: 'N\'a point Dieu',
-        explanation: '2 Jean 1:9'
+        text: 'Anyone who runs ahead and does not continue in the teaching of Christ...?',
+        options: ['Does not have God', 'Is wise', 'Is strong', 'Is free'],
+        correctAnswer: 'Does not have God',
+        explanation: '2 John 1:9'
     },
     {
         id: '2jn_7',
-        text: 'Si quelqu\'un vient à vous et n\'apporte pas cette doctrine... ?',
-        options: ['Ne le recevez pas dans votre maison, et ne lui dites pas : Salut !', 'Accueillez-le', 'Écoutez-le', 'Priez pour lui'],
-        correctAnswer: 'Ne le recevez pas dans votre maison, et ne lui dites pas : Salut !',
-        explanation: '2 Jean 1:10'
+        text: 'If anyone comes to you and does not bring this teaching...?',
+        options: ['Do not take them into your house or welcome them', 'Welcome them', 'Listen to them', 'Pray for them'],
+        correctAnswer: 'Do not take them into your house or welcome them',
+        explanation: '2 John 1:10'
     },
     {
         id: '2jn_8',
-        text: 'Pourquoi Jean n\'a-t-il pas voulu écrire avec le papier et l\'encre ?',
-        options: ['Il espère aller les voir et leur parler bouche à bouche', 'Il n\'avait pas d\'encre', 'Il était fatigué', 'C\'était interdit'],
-        correctAnswer: 'Il espère aller les voir et leur parler bouche à bouche',
-        explanation: '2 Jean 1:12'
+        text: 'Why did John not want to write with paper and ink?',
+        options: ['He hopes to visit and talk with them face to face', 'He had no ink', 'He was tired', 'It was forbidden'],
+        correctAnswer: 'He hopes to visit and talk with them face to face',
+        explanation: '2 John 1:12'
     },
     {
         id: '2jn_9',
-        text: 'Afin que notre joie soit... ?',
-        options: ['Parfaite', 'Grande', 'Bonne', 'Éternelle'],
-        correctAnswer: 'Parfaite',
-        explanation: '2 Jean 1:12'
+        text: 'So that our joy may be...?',
+        options: ['Complete', 'Great', 'Good', 'Eternal'],
+        correctAnswer: 'Complete',
+        explanation: '2 John 1:12'
     },
     {
         id: '2jn_10',
-        text: 'Qui salue les destinataires à la fin ?',
-        options: ['Les enfants de ta soeur l\'élue', 'Pierre', 'Paul', 'Les anges'],
-        correctAnswer: 'Les enfants de ta soeur l\'élue',
-        explanation: '2 Jean 1:13'
+        text: 'Who greets the recipients at the end?',
+        options: ['The children of your sister, who is chosen by God', 'Peter', 'Paul', 'The angels'],
+        correctAnswer: 'The children of your sister, who is chosen by God',
+        explanation: '2 John 1:13'
     },
     {
         id: '2jn_11',
-        text: 'Celui qui lui dit : Salut ! participe à... ?',
-        options: ['Ses mauvaises oeuvres', 'Sa joie', 'Sa maison', 'Sa richesse'],
-        correctAnswer: 'Ses mauvaises oeuvres',
-        explanation: '2 Jean 1:11'
+        text: 'Anyone who welcomes them shares in...?',
+        options: ['Their wicked work', 'Their joy', 'Their house', 'Their wealth'],
+        correctAnswer: 'Their wicked work',
+        explanation: '2 John 1:11'
     },
     {
         id: '2jn_12',
-        text: 'C\'est ici l\'antéchrist et le... ?',
-        options: ['Séducteur', 'Menteur', 'Voleur', 'Tueur'],
-        correctAnswer: 'Séducteur',
-        explanation: '2 Jean 1:7'
+        text: 'Any such person is the antichrist and the...?',
+        options: ['Deceiver', 'Liar', 'Thief', 'Killer'],
+        correctAnswer: 'Deceiver',
+        explanation: '2 John 1:7'
     },
     {
         id: '2jn_13',
-        text: 'Celui qui demeure dans cette doctrine a... ?',
-        options: ['Le Père et le Fils', 'La vie', 'La paix', 'Tout'],
-        correctAnswer: 'Le Père et le Fils',
-        explanation: '2 Jean 1:9'
+        text: 'Whoever continues in the teaching has...?',
+        options: ['Both the Father and the Son', 'Life', 'Peace', 'Everything'],
+        correctAnswer: 'Both the Father and the Son',
+        explanation: '2 John 1:9'
     },
     {
         id: '2jn_14',
-        text: 'Jean s\'appelle lui-même... ?',
-        options: ['L\'ancien', 'L\'apôtre', 'Le prophète', 'Le disciple'],
-        correctAnswer: 'L\'ancien',
-        explanation: '2 Jean 1:1'
+        text: 'What does John call himself?',
+        options: ['The elder', 'The apostle', 'The prophet', 'The disciple'],
+        correctAnswer: 'The elder',
+        explanation: '2 John 1:1'
     },
     {
         id: '2jn_15',
-        text: 'Ce commandement... c\'est que vous... ?',
-        options: ['Vous aimiez les uns les autres', 'Priiez', 'Jeûniez', 'Donniez'],
-        correctAnswer: 'Vous aimiez les uns les autres',
-        explanation: '2 Jean 1:5'
+        text: 'This is the command: that you...?',
+        options: ['Love one another', 'Pray', 'Fast', 'Give'],
+        correctAnswer: 'Love one another',
+        explanation: '2 John 1:5'
     },
     {
         id: '2jn_16',
-        text: 'Combien de versets a 2 Jean ?',
+        text: 'How many verses does 2 John have?',
         options: ['13', '25', '5', '50'],
         correctAnswer: '13',
-        explanation: 'C\'est un des livres les plus courts.'
+        explanation: 'It is one of the shortest books.'
     },
     {
         id: '2jn_17',
-        text: 'À qui s\'applique le terme "Dame élue" selon certains ?',
-        options: ['À une église locale', 'À Marie', 'À Marthe', 'À une reine'],
-        correctAnswer: 'À une église locale',
-        explanation: 'Interprétation courante (Kyria = Dame).'
+        text: 'To whom does the term "chosen lady" apply according to some?',
+        options: ['To a local church', 'To Mary', 'To Martha', 'To a queen'],
+        correctAnswer: 'To a local church',
+        explanation: 'Common interpretation (Kyria = Lady).'
     },
     {
         id: '2jn_18',
-        text: 'Le thème principal est la vérité et... ?',
-        options: ['L\'amour', 'La foi', 'L\'espérance', 'La paix'],
-        correctAnswer: 'L\'amour',
-        explanation: 'Vérité et Amour sont liés dans tout le livre.'
+        text: 'The main theme is truth and...?',
+        options: ['Love', 'Faith', 'Hope', 'Peace'],
+        correctAnswer: 'Love',
+        explanation: 'Truth and Love are linked throughout the book.'
     },
     {
         id: '2jn_19',
-        text: 'Recevoir un plein... ?',
-        options: ['Salaire', 'Repas', 'Coeur', 'Esprit'],
-        correctAnswer: 'Salaire',
-        explanation: '2 Jean 1:8'
+        text: 'Receiving a full...?',
+        options: ['Reward', 'Meal', 'Heart', 'Spirit'],
+        correctAnswer: 'Reward',
+        explanation: '2 John 1:8'
     },
     {
         id: '2jn_20',
-        text: 'Je t\'écris, non comme t\'écrivant un commandement... ?',
-        options: ['Nouveau', 'Ancien', 'Difficile', 'Long'],
-        correctAnswer: 'Nouveau',
-        explanation: '2 Jean 1:5'
+        text: 'I am writing you—not as though I were writing a... command?',
+        options: ['New', 'Old', 'Difficult', 'Long'],
+        correctAnswer: 'New',
+        explanation: '2 John 1:5'
     }
 ];

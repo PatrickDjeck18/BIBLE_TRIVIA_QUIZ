@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const danielQuestions: Question[] = [
     {
         id: 'dan_1',
-        text: 'Pourquoi Daniel a-t-il refusé de manger les mets du roi ?',
-        options: ['Pour ne pas se souiller (loi mosaïque)', 'Il était végétarien', 'Il n\'avait pas faim', 'C\'était empoisonné'],
-        correctAnswer: 'Pour ne pas se souiller (loi mosaïque)',
-        explanation: 'Daniel 1:8 "Daniel résolut... de ne pas se souiller par les mets du roi."'
+        text: 'Why did Daniel refuse to eat the king\'s food?',
+        options: ['To not defile himself (Mosaic law)', 'He was a vegetarian', 'He was not hungry', 'It was poisoned'],
+        correctAnswer: 'To not defile himself (Mosaic law)',
+        explanation: 'Daniel 1:8 "Daniel resolved... to not defile himself with the royal food."'
     },
     {
         id: 'dan_2',
-        text: 'Quels sont les noms babyloniens des 3 amis de Daniel ?',
-        options: ['Schadrac, Méschac et Abed-Nego', 'Hanania, Mischaël et Azaria', 'Pierre, Jacques et Jean', 'Ruben, Siméon et Lévi'],
-        correctAnswer: 'Schadrac, Méschac et Abed-Nego',
+        text: 'What are the Babylonian names of Daniel\'s three friends?',
+        options: ['Shadrach, Meshach and Abednego', 'Hananiah, Mishael and Azariah', 'Peter, James and John', 'Reuben, Simeon and Levi'],
+        correctAnswer: 'Shadrach, Meshach and Abednego',
         explanation: 'Daniel 1:7'
     },
     {
         id: 'dan_3',
-        text: 'Qu\'a vu Nebucadnetsar en rêve (chapitre 2) ?',
-        options: ['Une grande statue de différents métaux', 'Un arbre immense', 'Quatre bêtes', 'Une montagne'],
-        correctAnswer: 'Une grande statue de différents métaux',
-        explanation: 'Tête d\'or, poitrine d\'argent, ventre d\'airain, jambes de fer...'
+        text: 'What did Nebuchadnezzar see in his dream (Chapter 2)?',
+        options: ['A large statue made of different metals', 'An immense tree', 'Four beasts', 'A mountain'],
+        correctAnswer: 'A large statue made of different metals',
+        explanation: 'Head of gold, chest of silver, belly of bronze, legs of iron...'
     },
     {
         id: 'dan_4',
-        text: 'Que représentait la pierre qui a détruit la statue ?',
-        options: ['Le Royaume de Dieu qui subsistera éternellement', 'Un astéroïde', 'L\'empire perse', 'Alexandre le Grand'],
-        correctAnswer: 'Le Royaume de Dieu qui subsistera éternellement',
+        text: 'What did the stone that destroyed the statue represent?',
+        options: ['The Kingdom of God which will endure forever', 'An asteroid', 'The Persian Empire', 'Alexander the Great'],
+        correctAnswer: 'The Kingdom of God which will endure forever',
         explanation: 'Daniel 2:44'
     },
     {
         id: 'dan_5',
-        text: 'Pourquoi les 3 amis ont-ils été jetés dans la fournaise ?',
-        options: ['Ils ont refusé d\'adorer la statue d\'or', 'Ils ont volé', 'Ils ont prié', 'Ils ont conspiré'],
-        correctAnswer: 'Ils ont refusé d\'adorer la statue d\'or',
+        text: 'Why were the three friends thrown into the furnace?',
+        options: ['They refused to worship the gold statue', 'They stole', 'They prayed', 'They conspired'],
+        correctAnswer: 'They refused to worship the gold statue',
         explanation: 'Daniel 3:12'
     },
     {
         id: 'dan_6',
-        text: 'Qui a-t-on vu marcher avec eux dans le feu ?',
-        options: ['Un quatrième homme, semblable à un fils des dieux', 'Un ange', 'Personne', 'Le roi'],
-        correctAnswer: 'Un quatrième homme, semblable à un fils des dieux',
+        text: 'Who was seen walking with them in the fire?',
+        options: ['A fourth man, looking like a son of the gods', 'An angel', 'No one', 'The king'],
+        correctAnswer: 'A fourth man, looking like a son of the gods',
         explanation: 'Daniel 3:25'
     },
     {
         id: 'dan_7',
-        text: 'Quel jugement est tombé sur Nebucadnetsar (l\'arbre coupé) ?',
-        options: ['Il a perdu la raison et vécu comme une bête 7 ans', 'Il est mort', 'Il a perdu son trône', 'Il est devenu aveugle'],
-        correctAnswer: 'Il a perdu la raison et vécu comme une bête 7 ans',
+        text: 'What judgment fell upon Nebuchadnezzar (the cut down tree)?',
+        options: ['He lost his mind and lived like a beast for 7 years', 'He died', 'He lost his throne', 'He became blind'],
+        correctAnswer: 'He lost his mind and lived like a beast for 7 years',
         explanation: 'Daniel 4:33'
     },
     {
         id: 'dan_8',
-        text: 'Quelle main a écrit sur le mur lors du festin de Belschatsar ?',
-        options: ['Mene, Mene, Tekel, Upharsin', 'Dieu est grand', 'Fin du monde', 'Repentez-vous'],
-        correctAnswer: 'Mene, Mene, Tekel, Upharsin',
-        explanation: 'Daniel 5:25 (Compté, compté, pesé, divisé).'
+        text: 'What hand wrote on the wall during Belshazzar\'s feast?',
+        options: ['Mene, Mene, Tekel, Parsin', 'God is great', 'End of the world', 'Repent'],
+        correctAnswer: 'Mene, Mene, Tekel, Parsin',
+        explanation: 'Daniel 5:25 (Numbered, Numbered, Weighed, Divided).'
     },
     {
         id: 'dan_9',
-        text: 'Pourquoi Daniel a-t-il été jeté dans la fosse aux lions ?',
-        options: ['Il a continué à prier son Dieu malgré l\'interdiction', 'Il a volé', 'Il a insulté le roi', 'Il a refusé de manger'],
-        correctAnswer: 'Il a continué à prier son Dieu malgré l\'interdiction',
-        explanation: 'Daniel 6:10 "Il se mettait à genoux trois fois par jour et priait."'
+        text: 'Why was Daniel thrown into the lions\' den?',
+        options: ['He continued to pray to his God despite the prohibition', 'He stole', 'He insulted the king', 'He refused to eat'],
+        correctAnswer: 'He continued to pray to his God despite the prohibition',
+        explanation: 'Daniel 6:10 "Three times a day he got down on his knees and prayed."'
     },
     {
         id: 'dan_10',
-        text: 'Comment Daniel a-t-il survécu aux lions ?',
-        options: ['Dieu a envoyé son ange fermer la gueule des lions', 'Il les a combattus', 'Ils n\'avaient pas faim', 'Il s\'est caché'],
-        correctAnswer: 'Dieu a envoyé son ange fermer la gueule des lions',
+        text: 'How did Daniel survive the lions?',
+        options: ['God sent his angel to shut the mouths of the lions', 'He fought them', 'They were not hungry', 'He hid'],
+        correctAnswer: 'God sent his angel to shut the mouths of the lions',
         explanation: 'Daniel 6:22'
     },
     {
         id: 'dan_11',
-        text: 'Que représentent les quatre bêtes du chapitre 7 ?',
-        options: ['Quatre royaumes (Babylone, Mèdes-Perses, Grèce, Rome)', 'Quatre démons', 'Quatre saisons', 'Quatre anges'],
-        correctAnswer: 'Quatre royaumes (Babylone, Mèdes-Perses, Grèce, Rome)',
-        explanation: 'Daniel 7:17 "Ces quatre grands animaux, ce sont quatre rois..."'
+        text: 'What do the four beasts of Chapter 7 represent?',
+        options: ['Four kingdoms (Babylon, Medo-Persia, Greece, Rome)', 'Four demons', 'Four seasons', 'Four angels'],
+        correctAnswer: 'Four kingdoms (Babylon, Medo-Persia, Greece, Rome)',
+        explanation: 'Daniel 7:17 "The four great beasts are four kings..."'
     },
     {
         id: 'dan_12',
-        text: 'Qui est "l\'Ancien des jours" dans Daniel 7 ?',
-        options: ['Dieu le Père', 'Adam', 'Moïse', 'Un ange'],
-        correctAnswer: 'Dieu le Père',
+        text: 'Who is the "Ancient of Days" in Daniel 7?',
+        options: ['God the Father', 'Adam', 'Moses', 'An angel'],
+        correctAnswer: 'God the Father',
         explanation: 'Daniel 7:9'
     },
     {
         id: 'dan_13',
-        text: 'Combien de "semaines" sont prophétisées dans Daniel 9 ?',
-        options: ['70 semaines (d\'années)', '7 semaines', '3 semaines', '12 semaines'],
-        correctAnswer: '70 semaines (d\'années)',
-        explanation: 'Daniel 9:24 "Soixante-dix semaines ont été fixées..."'
+        text: 'How many "weeks" are prophesied in Daniel 9?',
+        options: ['70 weeks (of years)', '7 weeks', '3 weeks', '12 weeks'],
+        correctAnswer: '70 weeks (of years)',
+        explanation: 'Daniel 9:24 "Seventy weeks are decreed..."'
     },
     {
         id: 'dan_14',
-        text: 'Quel archange est venu expliquer les visions à Daniel ?',
-        options: ['Gabriel', 'Michel', 'Raphaël', 'Uriel'],
+        text: 'Which archangel came to explain the visions to Daniel?',
+        options: ['Gabriel', 'Michael', 'Raphael', 'Uriel'],
         correctAnswer: 'Gabriel',
-        explanation: 'Daniel 8:16 "Gabriel, explique-lui la vision."'
+        explanation: 'Daniel 8:16 "Gabriel, tell this man the meaning of the vision."'
     },
     {
         id: 'dan_15',
-        text: 'Contre quel prince spirituel Michel a-t-il lutté ?',
-        options: ['Le chef (prince) du royaume de Perse', 'Le prince d\'Égypte', 'Satan', 'Le roi de Babylone'],
-        correctAnswer: 'Le chef (prince) du royaume de Perse',
+        text: 'Against which spiritual prince did Michael struggle?',
+        options: ['The prince of the Persian kingdom', 'The prince of Egypt', 'Satan', 'The king of Babylon'],
+        correctAnswer: 'The prince of the Persian kingdom',
         explanation: 'Daniel 10:13'
     },
     {
         id: 'dan_16',
-        text: 'Ceux qui auront enseigné la justice brilleront comme... ?',
-        options: ['Les étoiles, à toujours et à perpétuité', 'Le soleil', 'La lune', 'L\'or'],
-        correctAnswer: 'Les étoiles, à toujours et à perpétuité',
+        text: 'Those who lead many to righteousness will shine like...?',
+        options: ['The stars for ever and ever', 'The sun', 'The moon', 'Gold'],
+        correctAnswer: 'The stars for ever and ever',
         explanation: 'Daniel 12:3'
     },
     {
         id: 'dan_17',
-        text: 'De quel roi perse Daniel a-t-il été le ministre ?',
-        options: ['Darius (le Mède) et Cyrus', 'Xerxès', 'Salomon', 'Pharaon'],
-        correctAnswer: 'Darius (le Mède) et Cyrus',
-        explanation: 'Daniel 6:28 "Daniel prospéra sous le règne de Darius et sous... Cyrus."'
+        text: 'Of which Persian king was Daniel the minister?',
+        options: ['Darius (the Mede) and Cyrus', 'Xerxes', 'Solomon', 'Pharaoh'],
+        correctAnswer: 'Darius (the Mede) and Cyrus',
+        explanation: 'Daniel 6:28 "So Daniel prospered during the reign of Darius and the reign of Cyrus."'
     },
     {
         id: 'dan_18',
-        text: 'Quelle promesse est faite à la fin du livre ?',
-        options: ['La connaissance augmentera', 'Tout sera détruit', 'La paix régnera', 'Rien ne changera'],
-        correctAnswer: 'La connaissance augmentera',
-        explanation: 'Daniel 12:4 "...plusieurs courront çà et là, et la connaissance augmentera."'
+        text: 'What promise is made at the end of the book?',
+        options: ['Knowledge will increase', 'Everything will be destroyed', 'Peace will reign', 'Nothing will change'],
+        correctAnswer: 'Knowledge will increase',
+        explanation: 'Daniel 12:4 "...many will go here and there to increase knowledge."'
     },
     {
         id: 'dan_19',
-        text: 'Qu\'a fait Daniel en lisant la prophétie de Jérémie sur les 70 ans ?',
-        options: ['Il a prié, jeûné et confessé les péchés du peuple', 'Il a fait la fête', 'Il a dormi', 'Il a écrit une lettre'],
-        correctAnswer: 'Il a prié, jeûné et confessé les péchés du peuple',
+        text: 'What did Daniel do upon reading Jeremiah\'s prophecy of the 70 years?',
+        options: ['He prayed, fasted and confessed the sins of the people', 'He celebrated', 'He slept', 'He wrote a letter'],
+        correctAnswer: 'He prayed, fasted and confessed the sins of the people',
         explanation: 'Daniel 9:3'
     },
     {
         id: 'dan_20',
-        text: 'Quel nom babylonien a été donné à Daniel ?',
-        options: ['Belteschatsar', 'Schadrac', 'Méschac', 'Abed-Nego'],
-        correctAnswer: 'Belteschatsar',
+        text: 'What Babylonian name was given to Daniel?',
+        options: ['Belteshazzar', 'Shadrach', 'Meshach', 'Abednego'],
+        correctAnswer: 'Belteshazzar',
         explanation: 'Daniel 1:7'
     }
 ];

@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const hoseaQuestions: Question[] = [
     {
         id: 'hos_1',
-        text: 'Qu\'est-ce que Dieu a demandé à Osée de faire comme signe prophétique ?',
-        options: ['D\'épouser une femme prostituée', 'De ne pas manger', 'De marcher nu', 'De raser sa tête'],
-        correctAnswer: 'D\'épouser une femme prostituée',
-        explanation: 'Osée 1:2 "Va, prends une femme prostituée..." pour illustrer l\'infidélité d\'Israël.'
+        text: 'What did God ask Hosea to do as a prophetic sign?',
+        options: ['Marry a promiscuous woman', 'Not eat', 'Walk naked', 'Shave his head'],
+        correctAnswer: 'Marry a promiscuous woman',
+        explanation: 'Hosea 1:2 "Go, marry a promiscuous woman..." to illustrate Israel\'s unfaithfulness.'
     },
     {
         id: 'hos_2',
-        text: 'Comment s\'appelait la femme d\'Osée ?',
-        options: ['Gomer', 'Rahab', 'Dalila', 'Jézabel'],
+        text: 'What was the name of Hosea\'s wife?',
+        options: ['Gomer', 'Rahab', 'Delilah', 'Jezebel'],
         correctAnswer: 'Gomer',
-        explanation: 'Osée 1:3 "Il alla, et il prit Gomer, fille de Diblaïm."'
+        explanation: 'Hosea 1:3 "So he married Gomer daughter of Diblaim."'
     },
     {
         id: 'hos_3',
-        text: 'Mon peuple est détruit, parce qu\'il lui manque... ?',
-        options: ['La connaissance', 'L\'argent', 'Des armes', 'Un roi'],
-        correctAnswer: 'La connaissance',
-        explanation: 'Osée 4:6 "Mon peuple est détruit, parce qu\'il lui manque la connaissance."'
+        text: 'My people are destroyed from lack of...?',
+        options: ['Knowledge', 'Money', 'Weapons', 'A king'],
+        correctAnswer: 'Knowledge',
+        explanation: 'Hosea 4:6 "My people are destroyed from lack of knowledge."'
     },
     {
         id: 'hos_4',
-        text: 'Car je prends plaisir à la miséricorde (bonté), et non... ?',
-        options: ['Aux sacrifices', 'À la guerre', 'Aux chants', 'Aux fêtes'],
-        correctAnswer: 'Aux sacrifices',
-        explanation: 'Osée 6:6 (Cité par Jésus).'
+        text: 'For I desire mercy (kindness), not...?',
+        options: ['Sacrifice', 'War', 'Songs', 'Festivals'],
+        correctAnswer: 'Sacrifice',
+        explanation: 'Hosea 6:6 (Cited by Jesus).'
     },
     {
         id: 'hos_5',
-        text: 'À quoi Osée compare-t-il l\'amour d\'Israël (éphémère) ?',
-        options: ['À la nuée du matin et à la rosée', 'À un feu ardent', 'À un rocher', 'À un lion'],
-        correctAnswer: 'À la nuée du matin et à la rosée',
-        explanation: 'Osée 6:4'
+        text: 'To what does Hosea compare Israel\'s love (fleeting)?',
+        options: ['A morning mist and the early dew', 'A burning fire', 'A rock', 'A lion'],
+        correctAnswer: 'A morning mist and the early dew',
+        explanation: 'Hosea 6:4'
     },
     {
         id: 'hos_6',
-        text: 'Ils ont semé du vent, ils moissonneront... ?',
-        options: ['La tempête', 'Le calme', 'Du blé', 'La pluie'],
-        correctAnswer: 'La tempête',
-        explanation: 'Osée 8:7'
+        text: 'They sow the wind and reap...?',
+        options: ['The whirlwind', 'The calm', 'Wheat', 'Rain'],
+        correctAnswer: 'The whirlwind',
+        explanation: 'Hosea 8:7'
     },
     {
         id: 'hos_7',
-        text: 'Quel nom signifie "Pas mon peuple" (fils d\'Osée) ?',
-        options: ['Lo-Ammi', 'Jizréel', 'Lo-Ruchama', 'Osée'],
+        text: 'Which name means "Not my people" (Hosea\'s son)?',
+        options: ['Lo-Ammi', 'Jezreel', 'Lo-Ruhamah', 'Hosea'],
         correctAnswer: 'Lo-Ammi',
-        explanation: 'Osée 1:9'
+        explanation: 'Hosea 1:9'
     },
     {
         id: 'hos_8',
-        text: 'Revenez à l\'Éternel ! Dites-lui : ... ?',
-        options: ['Pardonne toutes les iniquités et reçois-nous favorablement', 'Venge-nous', 'Donne-nous de l\'or', 'Pourquoi nous as-tu frappés'],
-        correctAnswer: 'Pardonne toutes les iniquités et reçois-nous favorablement',
-        explanation: 'Osée 14:2'
+        text: 'Return to the Lord! Say to him: ...?',
+        options: ['Forgive all our sins and receive us graciously', 'Avenge us', 'Give us gold', 'Why have you struck us'],
+        correctAnswer: 'Forgive all our sins and receive us graciously',
+        explanation: 'Hosea 14:2'
     },
     {
         id: 'hos_9',
-        text: 'Je serai ton fiancé pour toujours... je serai ton fiancé par... ?',
-        options: ['La justice, la droiture, la grâce et la miséricorde', 'La force', 'La richesse', 'La peur'],
-        correctAnswer: 'La justice, la droiture, la grâce et la miséricorde',
-        explanation: 'Osée 2:19'
+        text: 'I will betroth you to me forever... I will betroth you in...?',
+        options: ['Righteousness, justice, love and compassion', 'Strength', 'Wealth', 'Fear'],
+        correctAnswer: 'Righteousness, justice, love and compassion',
+        explanation: 'Hosea 2:19'
     },
     {
         id: 'hos_10',
-        text: 'Quelle nation est souvent citée comme une fausse source de sécurité ?',
-        options: ['L\'Égypte (et l\'Assyrie)', 'Rome', 'La Grèce', 'Moab'],
-        correctAnswer: 'L\'Égypte (et l\'Assyrie)',
-        explanation: 'Osée 7:11 "Ils appellent l\'Égypte, ils vont en Assyrie."'
+        text: 'Which nation is often cited as a false source of security?',
+        options: ['Egypt (and Assyria)', 'Rome', 'Greece', 'Moab'],
+        correctAnswer: 'Egypt (and Assyria)',
+        explanation: 'Hosea 7:11 "They call to Egypt, they go to Assyria."'
     },
     {
         id: 'hos_11',
-        text: 'Quand Israël était enfant, je l\'aimais, et j\'ai appelé mon fils hors... ?',
-        options: ['D\'Égypte', 'De Babylone', 'De Chaldée', 'Du désert'],
-        correctAnswer: 'D\'Égypte',
-        explanation: 'Osée 11:1 (Prophétie appliquée aussi à Jésus).'
+        text: 'When Israel was a child, I loved him, and out of... I called my son?',
+        options: ['Egypt', 'Babylon', 'Chaldea', 'The desert'],
+        correctAnswer: 'Egypt',
+        explanation: 'Hosea 11:1 (Prophecy also applied to Jesus).'
     },
     {
         id: 'hos_12',
-        text: 'Venez, retournons à l\'Éternel ! Car il a déchiré, mais il... ?',
-        options: ['Nous guérira', 'Nous tuera', 'Nous chassera', 'Nous oubliera'],
-        correctAnswer: 'Nous guérira',
-        explanation: 'Osée 6:1'
+        text: 'Come, let us return to the Lord. He has torn us to pieces but he...?',
+        options: ['Will heal us', 'Will kill us', 'Will drive us away', 'Will forget us'],
+        correctAnswer: 'Will heal us',
+        explanation: 'Hosea 6:1'
     },
     {
         id: 'hos_13',
-        text: 'Quelle image Osée utilise-t-il pour décrire l\'idolâtrie du peuple ?',
-        options: ['L\'adultère / La prostitution', 'Le vol', 'Le meurtre', 'Le mensonge'],
-        correctAnswer: 'L\'adultère / La prostitution',
-        explanation: 'Thème central du livre.'
+        text: 'What image does Hosea use to describe the people\'s idolatry?',
+        options: ['Adultery / Prostitution', 'Theft', 'Murder', 'Lying'],
+        correctAnswer: 'Adultery / Prostitution',
+        explanation: 'Central theme of the book.'
     },
     {
         id: 'hos_14',
-        text: 'Que dit Dieu à propos des idoles (veau de Samarie) ?',
-        options: ['Il est mis en pièces', 'Il est saint', 'Il est beau', 'Il est éternel'],
-        correctAnswer: 'Il est mis en pièces',
-        explanation: 'Osée 8:6'
+        text: 'What does God say about the idols (calf of Samaria)?',
+        options: ['It will be broken in pieces', 'It is holy', 'It is beautiful', 'It is eternal'],
+        correctAnswer: 'It will be broken in pieces',
+        explanation: 'Hosea 8:6'
     },
     {
         id: 'hos_15',
-        text: 'Défrichez-vous un champ nouveau ! Il est temps de... ?',
-        options: ['Chercher l\'Éternel', 'Planter du blé', 'Faire la guerre', 'Construire des maisons'],
-        correctAnswer: 'Chercher l\'Éternel',
-        explanation: 'Osée 10:12'
+        text: 'Sow righteousness for yourselves... it is time to...?',
+        options: ['Seek the Lord', 'Plant wheat', 'Make war', 'Build houses'],
+        correctAnswer: 'Seek the Lord',
+        explanation: 'Hosea 10:12'
     },
     {
         id: 'hos_16',
-        text: 'Où la mort est-elle défiée : "O mort, où est ta peste ?" ?',
-        options: ['Osée 13:14', 'Osée 1:1', 'Osée 5:5', 'Osée 10:10'],
-        correctAnswer: 'Osée 13:14',
-        explanation: 'Repris par Paul dans 1 Corinthiens 15.'
+        text: 'Where is death challenged: "O death, where are your plagues?"?',
+        options: ['Hosea 13:14', 'Hosea 1:1', 'Hosea 5:5', 'Hosea 10:10'],
+        correctAnswer: 'Hosea 13:14',
+        explanation: 'Quoted by Paul in 1 Corinthians 15.'
     },
     {
         id: 'hos_17',
-        text: 'Comment est décrit Éphraïm (Israël) ?',
-        options: ['Comme une colombe stupide, sans intelligence', 'Comme un lion rugissant', 'Comme un aigle royal', 'Comme un serpent rusé'],
-        correctAnswer: 'Comme une colombe stupide, sans intelligence',
-        explanation: 'Osée 7:11'
+        text: 'How is Ephraim (Israel) described?',
+        options: ['Like a silly dove, without sense', 'Like a roaring lion', 'Like a royal eagle', 'Like a cunning serpent'],
+        correctAnswer: 'Like a silly dove, without sense',
+        explanation: 'Hosea 7:11'
     },
     {
         id: 'hos_18',
-        text: 'Je les attirerai avec des liens d\'humanité, avec des cordages... ?',
-        options: ['D\'amour', 'De fer', 'De peur', 'De justice'],
-        correctAnswer: 'D\'amour',
-        explanation: 'Osée 11:4'
+        text: 'I led them with cords of human kindness, with ties of...?',
+        options: ['Love', 'Iron', 'Fear', 'Justice'],
+        correctAnswer: 'Love',
+        explanation: 'Hosea 11:4'
     },
     {
         id: 'hos_19',
-        text: 'Que devait faire Osée pour racheter sa femme adultère ?',
-        options: ['Payer une rançon (argent et orge)', 'La tuer', 'La laisser', 'Se battre'],
-        correctAnswer: 'Payer une rançon (argent et orge)',
-        explanation: 'Osée 3:2'
+        text: 'What did Hosea have to do to redeem his adulterous wife?',
+        options: ['Pay a ransom (silver and barley)', 'Kill her', 'Leave her', 'Fight'],
+        correctAnswer: 'Pay a ransom (silver and barley)',
+        explanation: 'Hosea 3:2'
     },
     {
         id: 'hos_20',
-        text: 'Qui est sage pour comprendre ces choses ?',
-        options: ['Que les voies de l\'Éternel sont droites', 'Qu\'il faut être riche', 'Qu\'il faut être fort', 'Que la vie est courte'],
-        correctAnswer: 'Que les voies de l\'Éternel sont droites',
-        explanation: 'Osée 14:9 (Conclusion du livre).'
+        text: 'Who is wise? Let them realize these things.',
+        options: ['That the ways of the Lord are right', 'That one must be rich', 'That one must be strong', 'That life is short'],
+        correctAnswer: 'That the ways of the Lord are right',
+        explanation: 'Hosea 14:9 (Conclusion of the book).'
     }
 ];

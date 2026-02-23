@@ -11,16 +11,16 @@ import {
 const INTERSTITIAL_ID = __DEV__
     ? TestIds.INTERSTITIAL
     : Platform.select({
-        android: 'ca-app-pub-4253750298784159/5928126125',
-        ios: 'ca-app-pub-4253750298784159/7897472478',
+        android: 'ca-app-pub-4253750298784159/2978932109',
+        ios: 'ca-app-pub-4253750298784159/9241088127',
         default: TestIds.INTERSTITIAL,
     }) || TestIds.INTERSTITIAL;
 
 const REWARDED_ID = __DEV__
     ? TestIds.REWARDED
     : Platform.select({
-        android: 'ca-app-pub-4253750298784159/4994318403',
-        ios: 'ca-app-pub-4253750298784159/8308536012',
+        android: 'ca-app-pub-4253750298784159/3429019513',
+        ios: 'ca-app-pub-4253750298784159/7928006459',
         default: TestIds.REWARDED,
     }) || TestIds.REWARDED;
 
@@ -81,7 +81,7 @@ export const AdProvider: React.FC<{ children: React.ReactNode }> = ({ children }
         });
 
         const unsubscribeError = interstitial.addAdEventListener(AdEventType.ERROR, (error) => {
-            console.error('Interstitial Ad Error:', error);
+            console.warn('Interstitial Ad Error:', error);
             setIsInterstitialLoaded(false);
             isInterstitialLoadedRef.current = false;
             // Retry loading with backoff? For now just simple retry
@@ -122,7 +122,7 @@ export const AdProvider: React.FC<{ children: React.ReactNode }> = ({ children }
         });
 
         const unsubscribeError = rewarded.addAdEventListener(AdEventType.ERROR, (error) => {
-            console.error('Rewarded Ad Error:', error);
+            console.warn('Rewarded Ad Error:', error);
             setIsRewardedLoaded(false);
             isRewardedLoadedRef.current = false;
             setTimeout(() => rewarded.load(), 5000);

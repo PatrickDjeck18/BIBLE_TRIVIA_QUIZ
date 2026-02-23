@@ -6,8 +6,8 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 const adUnitId = __DEV__
     ? TestIds.BANNER
     : Platform.select({
-        android: 'ca-app-pub-4253750298784159/1715207504',
-        ios: 'ca-app-pub-4253750298784159/1523635813',
+        android: 'ca-app-pub-4253750298784159/6918177117',
+        ios: 'ca-app-pub-4253750298784159/1359417036',
         default: TestIds.BANNER,
     }) || TestIds.BANNER;
 

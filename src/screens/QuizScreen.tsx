@@ -1,134 +1,101 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Dimensions, TouchableOpacity, Platform } from 'react-native';
+import {
+    View, Text, StyleSheet, Dimensions, TouchableOpacity, ScrollView
+} from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { GlassContainer } from '../components/GlassContainer';
 import { GlassButton } from '../components/GlassButton';
+import { AnimatedBackground } from '../components/AnimatedBackground';
 import { colors } from '../theme/colors';
 import { typography } from '../theme/typography';
 import Animated, {
-    FadeInDown,
-    ZoomIn,
-    ZoomInDown,
-    FadeIn,
-    SlideInUp,
-    SlideOutDown,
-    BounceIn,
-    BounceOut,
-    withSpring,
-    withTiming,
-    withRepeat,
-    withSequence,
-    useAnimatedStyle,
-    useSharedValue,
-    runOnJS,
-    Easing,
-    SlideInRight,
-    SlideOutRight,
-    FadeOut,
-    FadeOutDown,
-    RollInLeft,
-    RollOutRight
+    FadeInDown, ZoomIn, FadeIn, SlideInUp, SlideOutDown,
+    BounceIn, withSpring, withTiming, withRepeat, withSequence,
+    useAnimatedStyle, useSharedValue, runOnJS, Easing, FadeOut,
 } from 'react-native-reanimated';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import { ArrowLeft, Trophy, Star, CheckCircle, XCircle, PartyPopper, Sparkles } from 'lucide-react-native';
+import {
+    ArrowLeft, Trophy, Star, CheckCircle, XCircle,
+    Check, X, BookOpen, Lightbulb, RefreshCw, List
+} from 'lucide-react-native';
 import { useGame } from '../context/GameContext';
 import { getQuestionsForBook, Question } from '../data/questions';
-
 import { useAds } from '../context/AdContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const { width, height } = Dimensions.get('window');
 
-// Confetti particle component for celebrations
+// ──────────────────────────────────────────────────────────────
+// Confetti
+// ──────────────────────────────────────────────────────────────
 const ConfettiParticle = ({ delay, color, left }: { delay: number; color: string; left: number }) => {
     const rotation = useSharedValue(0);
     const translateY = useSharedValue(-20);
 
     useEffect(() => {
-        rotation.value = withRepeat(
-            withTiming(360, { duration: 1000 + Math.random() * 1000 }),
-            -1
-        );
-        translateY.value = withTiming(height + 50, {
+        rotation.value = withRepeat(withTiming(360, { duration: 1000 + Math.random() * 500 }), -1);
+        translateY.value = withTiming(height + 60, {
             duration: 2000 + Math.random() * 1000,
-            easing: Easing.out(Easing.quad)
+            easing: Easing.out(Easing.quad),
         });
     }, []);
 
-    const animatedStyle = useAnimatedStyle(() => ({
-        transform: [
-            { translateY: translateY.value },
-            { rotateZ: `${rotation.value}deg` },
-            { rotateX: `${rotation.value * 0.5}deg` }
-        ],
-        opacity: 1 - (translateY.value / (height + 50))
+    const style = useAnimatedStyle(() => ({
+        transform: [{ translateY: translateY.value }, { rotateZ: `${rotation.value}deg` }],
+        opacity: Math.max(0, 1 - translateY.value / (height + 60)),
     }));
 
     return (
         <Animated.View
-            style={[
-                styles.confettiParticle,
-                { backgroundColor: color, left },
-                animatedStyle
-            ]}
+            style={[styles.confetti, { backgroundColor: color, left }, style]}
         />
     );
 };
 
-// Animated feedback overlay for correct/wrong answers
-const AnswerFeedbackOverlay = ({ type, onAnimationEnd }: { type: 'correct' | 'wrong' | 'none'; onAnimationEnd: () => void }) => {
+// ──────────────────────────────────────────────────────────────
+// Answer Feedback Overlay
+// ──────────────────────────────────────────────────────────────
+const FeedbackOverlay = ({ type, onDone }: { type: 'correct' | 'wrong' | 'none'; onDone: () => void }) => {
     const scale = useSharedValue(0);
     const opacity = useSharedValue(0);
 
     useEffect(() => {
-        if (type !== 'none') {
-            scale.value = withSequence(
-                withSpring(1.2, { damping: 8 }),
-                withSpring(1, { damping: 12 })
-            );
-            opacity.value = withSequence(
-                withTiming(1, { duration: 200 }),
-                withTiming(1, { duration: 800 }),
-                withTiming(0, { duration: 300 })
-            );
+        if (type === 'none') return;
 
-            const timer = setTimeout(() => {
-                onAnimationEnd();
-            }, 1500);
+        scale.value = 0;
+        opacity.value = 0;
 
-            return () => clearTimeout(timer);
-        }
+        scale.value = withSequence(withSpring(1.15, { damping: 7 }), withSpring(1, { damping: 12 }));
+        opacity.value = withSequence(
+            withTiming(1, { duration: 150 }),
+            withTiming(1, { duration: 800 }),
+            withTiming(0, { duration: 300 })
+        );
+        const t = setTimeout(onDone, 1400);
+        return () => clearTimeout(t);
     }, [type]);
 
-    const animatedStyle = useAnimatedStyle(() => ({
-        transform: [{ scale: scale.value }],
-        opacity: opacity.value
-    }));
+    const animStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.value }], opacity: opacity.value }));
 
     if (type === 'none') return null;
 
+    const isCorrect = type === 'correct';
     return (
-        <Animated.View style={[styles.feedbackOverlay, animatedStyle]}>
-            <View style={[styles.feedbackContainer, type === 'correct' ? styles.correctContainer : styles.wrongContainer]}>
-                {type === 'correct' ? (
+        <Animated.View style={[styles.feedbackOverlay, animStyle]}>
+            <View style={[styles.feedbackCard, isCorrect ? styles.feedbackCorrect : styles.feedbackWrong]}>
+                {isCorrect ? (
                     <>
-                        <Animated.View entering={BounceIn.delay(200)}>
-                            <CheckCircle color={colors.success} size={80} />
-                        </Animated.View>
-                        <Animated.Text entering={FadeInDown.delay(400)} style={styles.correctText}>
-                            Correct!
-                        </Animated.Text>
-                        <Animated.View entering={ZoomIn.delay(600)} style={styles.pointsBadge}>
-                            <Star color="#fbbf24" size={20} fill="#fbbf24" />
-                            <Text style={styles.pointsText}>+10</Text>
-                        </Animated.View>
+                        <CheckCircle color={colors.success} size={72} />
+                        <Text style={styles.feedbackTextCorrect}>Correct!</Text>
+                        <View style={styles.feedbackBadge}>
+                            <Star color={colors.gold} size={16} fill={colors.gold} />
+                            <Text style={styles.feedbackPoints}>+10 pts</Text>
+                        </View>
                     </>
                 ) : (
                     <>
-                        <Animated.View entering={BounceIn.delay(200)}>
-                            <XCircle color="#ef4444" size={80} />
-                        </Animated.View>
-                        <Animated.Text entering={FadeInDown.delay(400)} style={styles.wrongText}>
-                            Incorrect
-                        </Animated.Text>
+                        <XCircle color={colors.error} size={72} />
+                        <Text style={styles.feedbackTextWrong}>Incorrect</Text>
                     </>
                 )}
             </View>
@@ -136,52 +103,147 @@ const AnswerFeedbackOverlay = ({ type, onAnimationEnd }: { type: 'correct' | 'wr
     );
 };
 
-// Level Complete Celebration Component
-const LevelCompleteCelebration = ({
-    visible,
-    stars,
-    score,
-    correctAnswers,
-    totalQuestions,
-    onPlayAgain,
-    onGoToLevels,
-    onClose
+// ──────────────────────────────────────────────────────────────
+// Explanation Bottom Sheet  (auto-advances after 5 s)
+// ──────────────────────────────────────────────────────────────
+const AUTO_ADVANCE_SECS = 5;
+
+const ExplanationSheet = ({
+    visible, text, isCorrect, onNext
 }: {
     visible: boolean;
-    stars: number;
-    score: number;
-    correctAnswers: number;
-    totalQuestions: number;
-    onPlayAgain: () => void;
-    onGoToLevels: () => void;
-    onClose: () => void;
+    text: string;
+    isCorrect: boolean | null;
+    onNext: () => void;
 }) => {
-    const [showConfetti, setShowConfetti] = useState(false);
-    const confettiColors = ['#fbbf24', '#f97316', '#22c55e', '#3b82f6', '#ec4899', '#8b5cf6'];
+    const [countdown, setCountdown] = useState(AUTO_ADVANCE_SECS);
+    const timerProgress = useSharedValue(1); // 1 → 0 over 5 s
 
     useEffect(() => {
-        if (visible) {
-            setShowConfetti(true);
-            const timer = setTimeout(() => setShowConfetti(false), 4000);
-            return () => clearTimeout(timer);
-        }
+        if (!visible) return;
+
+        // Reset each time the sheet appears
+        setCountdown(AUTO_ADVANCE_SECS);
+        timerProgress.value = 1;
+        timerProgress.value = withTiming(0, {
+            duration: AUTO_ADVANCE_SECS * 1000,
+            easing: Easing.linear,
+        });
+
+        // Tick every second
+        const interval = setInterval(() => {
+            setCountdown(prev => {
+                if (prev <= 1) { clearInterval(interval); return 0; }
+                return prev - 1;
+            });
+        }, 1000);
+
+        // Auto-advance after 5 s
+        const timeout = setTimeout(() => {
+            clearInterval(interval);
+            onNext();
+        }, AUTO_ADVANCE_SECS * 1000);
+
+        return () => {
+            clearInterval(interval);
+            clearTimeout(timeout);
+        };
     }, [visible]);
+
+    const progressBarStyle = useAnimatedStyle(() => ({
+        width: `${timerProgress.value * 100}%` as any,
+    }));
 
     if (!visible) return null;
 
     return (
+        <View style={styles.explanationSheet}>
+            <LinearGradient
+                colors={
+                    isCorrect
+                        ? ['rgba(74,222,128,0.12)', 'rgba(22,163,74,0.06)']
+                        : ['rgba(248,113,113,0.12)', 'rgba(239,68,68,0.06)']
+                }
+                style={styles.explanationGradient}
+            >
+                <View style={styles.explanationHeader}>
+                    <View style={[styles.explanationIconWrap, { backgroundColor: isCorrect ? colors.successDim : colors.errorDim }]}>
+                        <Lightbulb color={isCorrect ? colors.success : colors.error} size={20} />
+                    </View>
+                    <Text style={[styles.explanationTitle, { color: isCorrect ? colors.success : colors.error }]}>
+                        {isCorrect ? 'Correct!' : 'Explanation'}
+                    </Text>
+                    {/* Live countdown badge */}
+                    <View style={styles.countdownBadge}>
+                        <Text style={styles.countdownText}>{countdown}</Text>
+                    </View>
+                </View>
+
+                <Text style={styles.explanationText}>{text}</Text>
+
+                {/* Shrinking timer bar */}
+                <View style={styles.timerBarBg}>
+                    <Animated.View
+                        style={[
+                            styles.timerBarFill,
+                            { backgroundColor: isCorrect ? colors.success : colors.error },
+                            progressBarStyle,
+                        ]}
+                    />
+                </View>
+
+                <GlassButton
+                    title={`Next Question (${countdown}s) →`}
+                    onPress={onNext}
+                    variant="primary"
+                    style={styles.nextBtn}
+                />
+            </LinearGradient>
+        </View>
+    );
+};
+
+
+// ──────────────────────────────────────────────────────────────
+// Level Complete
+// ──────────────────────────────────────────────────────────────
+const LevelComplete = ({
+    visible, stars, score, correct, total, onPlayAgain, onGoToLevels,
+}: {
+    visible: boolean;
+    stars: number;
+    score: number;
+    correct: number;
+    total: number;
+    onPlayAgain: () => void;
+    onGoToLevels: () => void;
+}) => {
+    const [showConfetti, setShowConfetti] = useState(false);
+    const confettiColors = ['#fbbf24', '#f97316', '#4ade80', '#3b82f6', '#ec4899', '#a78bfa'];
+
+    useEffect(() => {
+        if (visible) {
+            setShowConfetti(true);
+            setTimeout(() => setShowConfetti(false), 4500);
+        }
+    }, [visible]);
+
+    if (!visible) return null;
+    const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+    return (
         <Animated.View
-            entering={FadeIn.duration(300)}
-            exiting={FadeOut.duration(300)}
-            style={styles.celebrationOverlay}
+            entering={FadeIn.duration(250)}
+            exiting={FadeOut.duration(250)}
+            style={styles.completionOverlay}
         >
             {/* Confetti */}
             {showConfetti && (
-                <View style={styles.confettiContainer} pointerEvents="none">
-                    {Array.from({ length: 30 }).map((_, i) => (
+                <View style={StyleSheet.absoluteFill} pointerEvents="none">
+                    {Array.from({ length: 35 }).map((_, i) => (
                         <ConfettiParticle
                             key={i}
-                            delay={i * 50}
+                            delay={i * 60}
                             color={confettiColors[i % confettiColors.length]}
                             left={Math.random() * width}
                         />
@@ -189,92 +251,80 @@ const LevelCompleteCelebration = ({
                 </View>
             )}
 
-            <Animated.View
-                entering={ZoomIn.springify().damping(12)}
-                style={styles.celebrationCard}
-            >
-                <GlassContainer style={styles.celebrationContent} intensity={90}>
-                    {/* Trophy Icon */}
-                    <Animated.View
-                        entering={BounceIn.delay(300)}
-                        style={styles.trophyContainer}
-                    >
-                        <Trophy color={colors.accent} size={64} fill={colors.accent} />
+            <Animated.View entering={ZoomIn.springify().damping(11)} style={styles.completionCard}>
+                <LinearGradient
+                    colors={['rgba(255, 202, 40, 0.15)', 'rgba(13, 71, 161, 0.4)']}
+                    style={styles.completionGradient}
+                >
+                    {/* Trophy */}
+                    <Animated.View entering={BounceIn.delay(300)} style={styles.trophyWrap}>
+                        <LinearGradient
+                            colors={[colors.gold, '#D97706']}
+                            style={styles.trophyCircle}
+                        >
+                            <Trophy color="#000" size={44} fill="#000" />
+                        </LinearGradient>
                     </Animated.View>
 
-                    {/* Title */}
-                    <Animated.Text
-                        entering={FadeInDown.delay(400)}
-                        style={styles.celebrationTitle}
-                    >
+                    <Animated.Text entering={FadeInDown.delay(400)} style={styles.completionTitle}>
                         Level Complete!
                     </Animated.Text>
 
                     {/* Stars */}
-                    <Animated.View
-                        entering={FadeInDown.delay(500)}
-                        style={styles.starsRow}
-                    >
-                        {[0, 1, 2].map((index) => (
-                            <Animated.View
-                                key={index}
-                                entering={ZoomIn.delay(600 + index * 200).springify()}
-                            >
+                    <Animated.View entering={FadeInDown.delay(500)} style={styles.starsRow}>
+                        {[0, 1, 2].map((i) => (
+                            <Animated.View key={i} entering={ZoomIn.delay(600 + i * 180).springify()}>
                                 <Star
-                                    color="#fbbf24"
-                                    size={40}
-                                    fill={index < stars ? "#fbbf24" : "transparent"}
+                                    color={colors.gold}
+                                    size={42}
+                                    fill={i < stars ? colors.gold : 'transparent'}
                                 />
                             </Animated.View>
                         ))}
                     </Animated.View>
 
                     {/* Stats */}
-                    <Animated.View
-                        entering={FadeInDown.delay(900)}
-                        style={styles.celebrationStats}
-                    >
-                        <View style={styles.statRow}>
-                            <Text style={styles.statLabel}>Score</Text>
-                            <Text style={styles.statValue}>{score}</Text>
-                        </View>
-                        <View style={styles.statRow}>
-                            <Text style={styles.statLabel}>Correct</Text>
-                            <Text style={styles.statValue}>{correctAnswers}/{totalQuestions}</Text>
-                        </View>
-                        <View style={styles.statRow}>
-                            <Text style={styles.statLabel}>Accuracy</Text>
-                            <Text style={styles.statValue}>
-                                {totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0}%
-                            </Text>
-                        </View>
+                    <Animated.View entering={FadeInDown.delay(900)} style={styles.completionStats}>
+                        <CompletionStat label="Points" value={String(score)} color={colors.gold} />
+                        <View style={styles.statDivider} />
+                        <CompletionStat label="Correct" value={`${correct}/${total}`} color={colors.success} />
+                        <View style={styles.statDivider} />
+                        <CompletionStat label="Accuracy" value={`${accuracy}%`} color="#A78BFA" />
                     </Animated.View>
 
                     {/* Buttons */}
-                    <Animated.View
-                        entering={SlideInUp.delay(1000)}
-                        style={styles.celebrationButtons}
-                    >
+                    <Animated.View entering={SlideInUp.delay(1000)} style={styles.completionBtns}>
                         <GlassButton
                             title="Play Again"
                             onPress={onPlayAgain}
                             variant="primary"
-                            style={styles.celebrationButton}
+                            icon={<RefreshCw color="#000" size={16} />}
+                            style={styles.completionBtn}
                         />
                         <GlassButton
-                            title="All Levels"
+                            title="Levels"
                             onPress={onGoToLevels}
                             variant="secondary"
-                            style={styles.celebrationButton}
+                            icon={<List color={colors.card.textSecondary} size={16} />}
+                            style={styles.completionBtn}
                         />
                     </Animated.View>
-                </GlassContainer>
+                </LinearGradient>
             </Animated.View>
         </Animated.View>
     );
 };
 
-type GamePhase = 'playing' | 'result';
+const CompletionStat = ({ label, value, color }: { label: string; value: string; color: string }) => (
+    <View style={styles.completionStatItem}>
+        <Text style={[styles.completionStatValue, { color }]}>{value}</Text>
+        <Text style={styles.completionStatLabel}>{label}</Text>
+    </View>
+);
+
+// ──────────────────────────────────────────────────────────────
+// Main Quiz Screen
+// ──────────────────────────────────────────────────────────────
 type AnswerFeedback = 'none' | 'correct' | 'wrong';
 
 export default function QuizScreen() {
@@ -282,642 +332,534 @@ export default function QuizScreen() {
     const { levelId } = useLocalSearchParams<{ levelId: string }>();
     const { state, addPoints, completeLevel, recordAnswers } = useGame();
     const { showInterstitial, showRewarded } = useAds();
+    const insets = useSafeAreaInsets();
 
-    const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [questionIndex, setQuestionIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
     const [score, setScore] = useState(0);
-    const [correctAnswers, setCorrectAnswers] = useState(0);
+    const [correct, setCorrect] = useState(0);
     const [questions, setQuestions] = useState<Question[]>([]);
-    const [gamePhase, setGamePhase] = useState<GamePhase>('playing');
+    const [isFinished, setIsFinished] = useState(false);
     const [showExplanation, setShowExplanation] = useState(false);
-    const [answerFeedback, setAnswerFeedback] = useState<AnswerFeedback>('none');
-    const [showLevelComplete, setShowLevelComplete] = useState(false);
-    const [animatedPoints, setAnimatedPoints] = useState(0);
+    const [feedback, setFeedback] = useState<AnswerFeedback>('none');
+    const [showComplete, setShowComplete] = useState(false);
 
-    // Animation values for wrong answer shake
-    const shakeValue = useSharedValue(0);
-
-    // Animation for correct answer pulse
-    const pulseValue = useSharedValue(1);
+    const shakeX = useSharedValue(0);
+    const pulseScale = useSharedValue(1);
 
     useEffect(() => {
         if (levelId) {
-            const levelQuestions = getQuestionsForBook(levelId);
-            // Shuffle and take up to 10 questions
-            const shuffled = [...levelQuestions].sort(() => Math.random() - 0.5).slice(0, 10);
-            setQuestions(shuffled);
+            const qs = getQuestionsForBook(levelId);
+            setQuestions([...qs].sort(() => Math.random() - 0.5).slice(0, 10));
         }
     }, [levelId]);
 
-    const currentQuestion = questions[currentQuestionIndex];
-    const totalQuestions = questions.length;
-    const progress = totalQuestions > 0 ? ((currentQuestionIndex + 1) / totalQuestions) * 100 : 0;
+    const currentQ = questions[questionIndex];
+    const total = questions.length;
+    const progressPct = total > 0 ? ((questionIndex) / total) * 100 : 0;
 
-    // Shake animation for wrong answer
     const triggerShake = () => {
-        shakeValue.value = withSequence(
+        shakeX.value = withSequence(
             withTiming(-10, { duration: 50 }),
-            withRepeat(withSequence(
-                withTiming(10, { duration: 100 }),
-                withTiming(-10, { duration: 100 })
-            ), 3, true),
+            withRepeat(withSequence(withTiming(10, { duration: 80 }), withTiming(-10, { duration: 80 })), 3, true),
             withTiming(0, { duration: 50 })
         );
     };
 
-    // Pulse animation for correct answer
     const triggerPulse = () => {
-        pulseValue.value = withSequence(
-            withTiming(1.1, { duration: 150 }),
-            withTiming(1, { duration: 150 }),
-            withTiming(1.05, { duration: 100 }),
-            withTiming(1, { duration: 100 })
+        pulseScale.value = withSequence(
+            withTiming(1.06, { duration: 120 }),
+            withTiming(1, { duration: 120 })
         );
     };
 
-    const shakeStyle = useAnimatedStyle(() => ({
-        transform: [{ translateX: shakeValue.value }]
-    }));
-
-    const pulseStyle = useAnimatedStyle(() => ({
-        transform: [{ scale: pulseValue.value }]
-    }));
+    const shakeStyle = useAnimatedStyle(() => ({ transform: [{ translateX: shakeX.value }] }));
+    const pulseStyle = useAnimatedStyle(() => ({ transform: [{ scale: pulseScale.value }] }));
 
     const handleAnswer = (answer: string) => {
-        if (selectedAnswer || !currentQuestion) return;
-
+        if (selectedAnswer || !currentQ) return;
         setSelectedAnswer(answer);
-        const correct = answer === currentQuestion.correctAnswer;
-        setIsCorrect(correct);
-
-        // Show answer feedback animation
-        if (correct) {
-            setAnswerFeedback('correct');
-            setScore(prev => prev + 10);
-            setCorrectAnswers(prev => prev + 1);
-            setAnimatedPoints(10);
+        const ok = answer === currentQ.correctAnswer;
+        setIsCorrect(ok);
+        if (ok) {
+            setFeedback('correct');
+            setScore(p => p + 10);
+            setCorrect(p => p + 1);
             triggerPulse();
         } else {
-            setAnswerFeedback('wrong');
+            setFeedback('wrong');
             triggerShake();
         }
-
-        // Hide feedback and show explanation after animation
         setTimeout(() => {
-            setAnswerFeedback('none');
+            setFeedback('none');
             setShowExplanation(true);
-            setTimeout(() => {
-                moveToNextQuestion();
-            }, 1500);
-        }, 1200);
+        }, 1300);
     };
 
-    const moveToNextQuestion = () => {
+    const handleNext = () => {
         setSelectedAnswer(null);
         setIsCorrect(null);
         setShowExplanation(false);
-
-        if (currentQuestionIndex < questions.length - 1) {
-            setCurrentQuestionIndex(prev => prev + 1);
+        if (questionIndex < questions.length - 1) {
+            setQuestionIndex(p => p + 1);
         } else {
-            // Quiz completed
             finishQuiz();
         }
     };
 
     const finishQuiz = () => {
-        // Show Rewarded Ad on completion
         showRewarded(
-            () => {
-                // User earned reward - maybe double points?
-                // For now just proceed
-                finalizeQuiz(true);
-            },
-            () => {
-                // Ad closed
-                finalizeQuiz(false);
-            }
+            () => finalizeQuiz(true),
+            () => finalizeQuiz(false)
         );
     };
 
     const finalizeQuiz = (rewarded: boolean) => {
-        let finalScore = score;
-        if (rewarded) {
-            finalScore += 50; // Bonus for watching ad?
-        }
-
-        const finalCorrect = correctAnswers;
-        const totalAnswered = questions.length;
-
-        // Record stats
-        recordAnswers(totalAnswered, finalCorrect);
+        const finalScore = score + (rewarded ? 50 : 0);
+        recordAnswers(questions.length, correct);
         addPoints(finalScore);
-
-        if (levelId) {
-            completeLevel(levelId, finalScore, finalCorrect, totalAnswered);
-        }
-
-        setGamePhase('result');
-        setShowLevelComplete(true);
+        if (levelId) completeLevel(levelId, finalScore, correct, questions.length);
+        setIsFinished(true);
+        setShowComplete(true);
     };
 
     const handlePlayAgain = () => {
-        setCurrentQuestionIndex(0);
+        setQuestionIndex(0);
         setSelectedAnswer(null);
         setIsCorrect(null);
         setScore(0);
-        setCorrectAnswers(0);
-        setGamePhase('playing');
+        setCorrect(0);
+        setIsFinished(false);
         setShowExplanation(false);
-        setShowLevelComplete(false);
-
-        // Reshuffle questions
+        setShowComplete(false);
         if (levelId) {
-            const levelQuestions = getQuestionsForBook(levelId);
-            const shuffled = [...levelQuestions].sort(() => Math.random() - 0.5).slice(0, 10);
-            setQuestions(shuffled);
+            const qs = getQuestionsForBook(levelId);
+            setQuestions([...qs].sort(() => Math.random() - 0.5).slice(0, 10));
         }
     };
 
     const handleGoToLevels = () => {
         showInterstitial(() => {
-            if (router.canGoBack()) {
-                router.back();
-            } else {
-                router.replace('/levels');
-            }
+            if (router.canGoBack()) router.back();
+            else router.replace('/levels');
         });
-    };
-
-    const getStars = (): number => {
-        if (totalQuestions === 0) return 0;
-        const percentage = (correctAnswers / totalQuestions) * 100;
-        if (percentage >= 90) return 3;
-        if (percentage >= 70) return 2;
-        if (percentage >= 50) return 1;
-        return 0;
-    };
-
-    // Helper to format question text with highlights
-    // Assuming format is regular string for now, but could support Markdown-like highlighting
-    const renderQuestionText = (text: string) => {
-        // Simple heuristic: highlight words inside *asterisks*
-        const parts = text.split(/(\*[^*]+\*)/g);
-        return (
-            <Text style={styles.questionText}>
-                {parts.map((part, index) => {
-                    if (part.startsWith('*') && part.endsWith('*')) {
-                        return (
-                            <Text key={index} style={styles.questionHighlight}>
-                                {part.slice(1, -1)}
-                            </Text>
-                        );
-                    }
-                    return <Text key={index}>{part}</Text>;
-                })}
-            </Text>
-        );
     };
 
     const handleBack = () => {
         showInterstitial(() => {
-            if (router.canGoBack()) {
-                router.back();
-            } else {
-                router.replace('/levels');
-            }
+            if (router.canGoBack()) router.back();
+            else router.replace('/levels');
         });
     };
 
-    return (
-        <View style={styles.container}>
-            {/* Top Bar */}
-            <View style={styles.topBar}>
-                <TouchableOpacity
-                    onPress={handleBack}
-                    style={styles.iconButton}
-                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
-                >
-                    <ArrowLeft color={colors.card.text} size={24} />
-                </TouchableOpacity>
+    const getStars = () => {
+        if (total === 0) return 0;
+        const pct = (correct / total) * 100;
+        return pct >= 90 ? 3 : pct >= 70 ? 2 : pct >= 50 ? 1 : 0;
+    };
 
-                <View style={styles.headerStats}>
-                    <View style={styles.streakContainer}>
-                        <Trophy color={colors.accent} size={16} fill={colors.accent} />
-                        <Text style={styles.streakText}>{state.currentStreak}</Text>
-                    </View>
-                    <Animated.View style={[styles.pointsContainer, isCorrect ? pulseStyle : null]}>
-                        <Star color="#fbbf24" size={16} fill="#fbbf24" />
-                        <Text style={styles.pointsText}>
-                            {gamePhase === 'playing' ? state.totalPoints + score : state.totalPoints}
+    const bookName = levelId
+        ? levelId.charAt(0).toUpperCase() + levelId.slice(1).replace(/-/g, ' ')
+        : 'Biblical';
+
+    return (
+        <AnimatedBackground variant="quiz">
+            <View style={[styles.container, { paddingTop: insets.top || 40 }]}>
+
+                {/* ── Top Bar ── */}
+                <View style={styles.topBar}>
+                    <TouchableOpacity onPress={handleBack} style={styles.backBtn} hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}>
+                        <ArrowLeft color={colors.card.text} size={22} />
+                    </TouchableOpacity>
+
+                    <View style={styles.progressSection}>
+                        <View style={styles.progressBarBg}>
+                            <View style={[styles.progressBarFill, { width: `${progressPct}%` }]} />
+                        </View>
+                        <Text style={styles.progressLabel}>
+                            {questionIndex + 1} / {total || '—'}
                         </Text>
+                    </View>
+
+                    <Animated.View style={[styles.scoreChip, pulseStyle]}>
+                        <Star color={colors.gold} size={14} fill={colors.gold} />
+                        <Text style={styles.scoreText}>{state.totalPoints + score}</Text>
                     </Animated.View>
                 </View>
-            </View>
 
-            {/* Main Content Area */}
-            <Animated.View style={[styles.contentArea, isCorrect === false ? shakeStyle : null]}>
-                <GlassContainer style={styles.questionCard} intensity={20}>
-                    {/* Book Info / Citation Badge */}
-                    <View style={styles.citationContainer}>
-                        <View style={styles.historyBadge}>
-                            <Text style={styles.historyText}>HISTOIRE</Text>
+                {/* ── Question Card ── */}
+                <Animated.View style={[styles.questionArea, shakeStyle]}>
+                    <GlassContainer variant="elevated" gradient style={styles.questionCard}>
+                        {/* Book badge */}
+                        <View style={styles.bookBadge}>
+                            <BookOpen color={colors.accent} size={13} />
+                            <Text style={styles.bookName}>{bookName}</Text>
+                            <View style={styles.categoryPill}>
+                                <Text style={styles.categoryText}>Q{questionIndex + 1}</Text>
+                            </View>
                         </View>
-                        <Text style={styles.citationText}>
-                            Quiz {levelId ? levelId.replace(/^\w/, (c) => c.toUpperCase()) : 'Biblique'}
-                        </Text>
-                    </View>
 
-                    {/* Question Section */}
-                    <Animated.View
-                        key={`q-${currentQuestionIndex}`}
-                        entering={FadeInDown.springify()}
-                        style={styles.questionContainer}
-                    >
-                        {currentQuestion && renderQuestionText(currentQuestion.text)}
+                        {/* Question text */}
+                        <Animated.View key={`q-${questionIndex}`} entering={FadeInDown.springify()}>
+                            <Text style={styles.questionText}>
+                                {currentQ?.text ?? '…'}
+                            </Text>
+                        </Animated.View>
+                    </GlassContainer>
+                </Animated.View>
 
-                        <Text style={styles.subText}>
-                            Testez vos connaissances bibliques. Sélectionnez la bonne réponse ci-dessous.
-                        </Text>
-                    </Animated.View>
-                </GlassContainer>
-            </Animated.View>
-
-            {/* Options Area (Bottom Half) */}
-            <View style={styles.optionsArea}>
-                <View style={styles.optionsList}>
-                    {currentQuestion?.options.map((option, index) => {
+                {/* ── Options ── */}
+                <ScrollView
+                    contentContainerStyle={styles.optionsScroll}
+                    showsVerticalScrollIndicator={false}
+                >
+                    {currentQ?.options.map((option, index) => {
                         const isSelected = selectedAnswer === option;
-                        const isAnswerCorrect = option === currentQuestion.correctAnswer;
+                        const isAnswerCorrect = option === currentQ.correctAnswer;
+
                         let variant: 'primary' | 'secondary' | 'success' | 'error' = 'secondary';
+                        let trailingIcon: React.ReactNode = null;
 
                         if (selectedAnswer) {
                             if (isAnswerCorrect) {
                                 variant = 'success';
+                                trailingIcon = <Check color="#000" size={18} strokeWidth={3} />;
                             } else if (isSelected) {
                                 variant = 'error';
+                                trailingIcon = <X color={colors.error} size={18} strokeWidth={3} />;
                             }
                         }
 
-                        // Map A, B, C, D
-                        const label = String.fromCharCode(65 + index); // 65 is 'A'
+                        const label = String.fromCharCode(65 + index);
 
                         return (
                             <Animated.View
-                                key={`${currentQuestionIndex}-${option}`}
-                                entering={FadeInDown.delay(100 + (index * 50)).springify()}
-                                style={{ width: '100%' }}
+                                key={`${questionIndex}-${option}`}
+                                entering={FadeInDown.delay(80 + index * 60).springify()}
                             >
                                 <GlassButton
-                                    title={option.toUpperCase()} // Screenshot shows uppercase options
+                                    title={option}
                                     label={label}
+                                    icon={trailingIcon ?? undefined}
                                     onPress={() => handleAnswer(option)}
-                                    style={styles.optionButton}
+                                    style={styles.optionBtn}
                                     variant={variant}
                                     disabled={selectedAnswer !== null}
                                 />
                             </Animated.View>
                         );
                     })}
-                </View>
+                </ScrollView>
 
+                {/* ── Feedback Overlay ── */}
+                <FeedbackOverlay type={feedback} onDone={() => { }} />
 
+                {/* ── Explanation Sheet ── */}
+                {showExplanation && (
+                    <ExplanationSheet
+                        visible={showExplanation}
+                        text={currentQ?.explanation ?? ''}
+                        isCorrect={isCorrect}
+                        onNext={handleNext}
+                    />
+                )}
+
+                {/* ── Level Complete ── */}
+                <LevelComplete
+                    visible={showComplete}
+                    stars={getStars()}
+                    score={score}
+                    correct={correct}
+                    total={total}
+                    onPlayAgain={handlePlayAgain}
+                    onGoToLevels={handleGoToLevels}
+                />
             </View>
-
-            {/* Answer Feedback Overlay */}
-            <AnswerFeedbackOverlay
-                type={answerFeedback}
-                onAnimationEnd={() => { }}
-            />
-
-            {/* Explanation Modal/Overlay */}
-            {showExplanation && (
-                <View style={styles.explanationOverlay}>
-                    <GlassContainer style={styles.explanationCard} intensity={80}>
-                        <Text style={styles.explanationTitle}>Explanation</Text>
-                        <Text style={styles.explanationTextNative}>
-                            {currentQuestion?.explanation}
-                        </Text>
-                    </GlassContainer>
-                </View>
-            )}
-
-            {/* Level Complete Celebration */}
-            <LevelCompleteCelebration
-                visible={showLevelComplete}
-                stars={getStars()}
-                score={score}
-                correctAnswers={correctAnswers}
-                totalQuestions={totalQuestions}
-                onPlayAgain={handlePlayAgain}
-                onGoToLevels={handleGoToLevels}
-                onClose={() => setShowLevelComplete(false)}
-            />
-        </View>
+        </AnimatedBackground>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        paddingTop: 50, // More top padding for status bar
-    },
+    container: { flex: 1, paddingHorizontal: 18 },
+
+    // Top Bar
     topBar: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 20,
-        zIndex: 10,
+        gap: 10,
+        marginBottom: 18,
     },
-    headerStats: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 12,
+    backBtn: { padding: 6 },
+    progressSection: { flex: 1, gap: 4 },
+    progressBarBg: {
+        height: 6,
+        borderRadius: 3,
+        backgroundColor: 'rgba(15,23,42,0.08)',
+        overflow: 'hidden',
     },
-    streakContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: 'rgba(255,255,255,0.1)',
-        paddingVertical: 6,
-        paddingHorizontal: 12,
-        borderRadius: 20,
-        gap: 6,
+    progressBarFill: {
+        height: '100%',
+        borderRadius: 3,
+        backgroundColor: colors.accent,
+        shadowColor: colors.accent,
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
     },
-    streakText: {
-        color: '#FFF',
-        fontWeight: 'bold',
-        fontSize: 14,
-        fontFamily: typography.fontFamily.bold,
-    },
-    pointsContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: 'rgba(251, 191, 36, 0.1)',
-        paddingVertical: 6,
-        paddingHorizontal: 12,
-        borderRadius: 20,
-        gap: 6,
-    },
-    pointsText: {
-        color: '#fbbf24',
-        fontWeight: 'bold',
-        fontSize: 14,
-        fontFamily: typography.fontFamily.bold,
-    },
-    iconButton: {
-        padding: 8,
-        marginLeft: -8,
-        zIndex: 10,
-    },
-    contentArea: {
-        paddingHorizontal: 4,
-        marginTop: 10,
-        zIndex: 1,
-    },
-    questionCard: {
-        padding: 24,
-        borderRadius: 24,
-        width: '100%',
-    },
-    // Explanation / Result Styles
-    explanationOverlay: {
-        ...StyleSheet.absoluteFillObject,
-        backgroundColor: 'rgba(0,0,0,0.8)',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 20,
-        zIndex: 100,
-    },
-    explanationCard: {
-        padding: 24,
-        width: '100%',
-        alignItems: 'center',
-    },
-    citationContainer: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: 20,
-        gap: 12,
-    },
-    historyBadge: {
-        backgroundColor: 'rgba(57, 255, 20, 0.2)',
-        paddingHorizontal: 8,
-        paddingVertical: 4,
-        borderRadius: 4,
-        borderWidth: 1,
-        borderColor: 'rgba(57, 255, 20, 0.4)',
-    },
-    historyText: {
-        color: colors.accent,
-        fontSize: 10,
-        fontWeight: 'bold',
-        letterSpacing: 1,
-        textTransform: 'uppercase',
-    },
-    citationText: {
-        color: 'rgba(255,255,255,0.6)',
-        fontStyle: 'italic',
-        fontFamily: typography.fontFamily.serif,
-        fontSize: 13,
-    },
-    questionContainer: {
-        // Removed unnecessary margin
-    },
-    questionText: {
-        color: '#FFF',
-        fontSize: 24,
-        lineHeight: 34,
-        fontFamily: typography.fontFamily.serif,
-        marginBottom: 16,
-    },
-    questionHighlight: {
-        color: colors.accent,
-        fontStyle: 'italic',
-    },
-    subText: {
-        color: 'rgba(255,255,255,0.5)',
-        fontSize: 14,
-        lineHeight: 22,
-    },
-    optionsArea: {
-        gap: 12,
-        marginTop: 24,
-        paddingBottom: 40,
-    },
-    optionsList: {
-        gap: 12,
-    },
-    optionButton: {
-        width: '100%',
-        justifyContent: 'flex-start', // Align left
-    },
-
-
-    explanationTitle: {
-        color: colors.accent,
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginBottom: 12,
-    },
-    explanationTextNative: {
-        color: '#FFF',
-        fontSize: 16,
-        textAlign: 'center',
-        lineHeight: 24,
-    },
-    // Result styles
-    resultContainer: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    resultCard: {
-        width: width - 40,
-        alignItems: 'center',
-        padding: 32,
-    },
-    trophyIcon: {
-        marginBottom: 16,
-    },
-    resultTitle: {
-        fontSize: 32,
-        fontFamily: typography.fontFamily.bold,
-        color: colors.card.text,
-        marginBottom: 24,
-    },
-    starsContainer: {
-        flexDirection: 'row',
-        gap: 16,
-        marginBottom: 32,
-    },
-    statsContainer: {
-        width: '100%',
-        marginBottom: 32,
-    },
-    statRow: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingVertical: 12,
-        borderBottomWidth: 1,
-        borderBottomColor: 'rgba(255,255,255,0.1)',
-    },
-    statLabel: {
+    progressLabel: {
         color: colors.card.textSecondary,
-        fontSize: 16,
+        fontSize: 11,
+        fontFamily: typography.fontFamily.medium,
+        letterSpacing: typography.letterSpacing.wide,
+        textAlign: 'right',
     },
-    statValue: {
-        color: colors.card.text,
-        fontSize: 18,
-        fontFamily: typography.fontFamily.bold,
-    },
-    resultButtons: {
-        flexDirection: 'row',
-        gap: 16,
-        width: '100%',
-    },
-    resultButton: {
-        flex: 1,
-    },
-    // Feedback overlay styles
-    feedbackOverlay: {
-        ...StyleSheet.absoluteFillObject,
-        justifyContent: 'center',
-        alignItems: 'center',
-        zIndex: 200,
-    },
-    feedbackContainer: {
-        alignItems: 'center',
-        padding: 40,
-        borderRadius: 30,
-    },
-    correctContainer: {
-        backgroundColor: 'rgba(34, 197, 94, 0.3)',
-        borderWidth: 2,
-        borderColor: colors.success,
-    },
-    wrongContainer: {
-        backgroundColor: 'rgba(239, 68, 68, 0.3)',
-        borderWidth: 2,
-        borderColor: '#ef4444',
-    },
-    correctText: {
-        fontSize: 32,
-        fontFamily: typography.fontFamily.bold,
-        color: colors.success,
-        marginTop: 16,
-    },
-    wrongText: {
-        fontSize: 32,
-        fontFamily: typography.fontFamily.bold,
-        color: '#ef4444',
-        marginTop: 16,
-    },
-    pointsBadge: {
+    scoreChip: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: 'rgba(251, 191, 36, 0.2)',
-        paddingHorizontal: 16,
-        paddingVertical: 8,
+        gap: 5,
+        backgroundColor: colors.goldDim,
+        borderWidth: 1,
+        borderColor: 'rgba(245,158,11,0.30)',
+        paddingHorizontal: 12,
+        paddingVertical: 7,
         borderRadius: 20,
-        marginTop: 12,
+    },
+    scoreText: {
+        color: colors.gold,
+        fontSize: 14,
+        fontFamily: typography.fontFamily.bold,
+    },
+
+    // Question card
+    questionArea: { marginBottom: 18 },
+    questionCard: { gap: 14 },
+    bookBadge: {
+        flexDirection: 'row',
+        alignItems: 'center',
         gap: 8,
     },
-    // Confetti styles
-    confettiContainer: {
-        ...StyleSheet.absoluteFillObject,
-        overflow: 'hidden',
-        zIndex: 1,
+    bookName: {
+        color: colors.accent,
+        fontSize: 12,
+        fontFamily: typography.fontFamily.bold,
+        flex: 1,
+        letterSpacing: typography.letterSpacing.wide,
     },
-    confettiParticle: {
-        position: 'absolute',
-        width: 10,
-        height: 20,
-        borderRadius: 5,
-        top: -20,
+    categoryPill: {
+        backgroundColor: colors.accentDim,
+        borderRadius: 10,
+        paddingHorizontal: 8,
+        paddingVertical: 2,
     },
-    // Celebration overlay styles
-    celebrationOverlay: {
+    categoryText: {
+        color: colors.accent,
+        fontSize: 10,
+        fontFamily: typography.fontFamily.bold,
+        letterSpacing: typography.letterSpacing.wider,
+    },
+    questionText: {
+        color: colors.card.text,
+        fontSize: 20,
+        lineHeight: 30,
+        fontFamily: typography.fontFamily.regular,
+    },
+
+    // Options
+    optionsScroll: { gap: 10, paddingBottom: 40 },
+    optionBtn: { width: '100%' },
+
+    // Feedback overlay
+    feedbackOverlay: {
         ...StyleSheet.absoluteFillObject,
-        backgroundColor: 'rgba(0,0,0,0.85)',
+        alignItems: 'center',
         justifyContent: 'center',
+        zIndex: 200,
+    },
+    feedbackCard: {
         alignItems: 'center',
+        gap: 12,
+        padding: 36,
+        borderRadius: 24,
+        borderWidth: 1,
+    },
+    feedbackCorrect: {
+        backgroundColor: 'rgba(74,222,128,0.12)',
+        borderColor: 'rgba(74,222,128,0.30)',
+    },
+    feedbackWrong: {
+        backgroundColor: 'rgba(248,113,113,0.12)',
+        borderColor: 'rgba(248,113,113,0.30)',
+    },
+    feedbackTextCorrect: {
+        color: colors.success,
+        fontSize: 28,
+        fontFamily: typography.fontFamily.bold,
+    },
+    feedbackTextWrong: {
+        color: colors.error,
+        fontSize: 28,
+        fontFamily: typography.fontFamily.bold,
+    },
+    feedbackBadge: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        backgroundColor: colors.goldDim,
+        borderRadius: 20,
+        paddingHorizontal: 14,
+        paddingVertical: 5,
+    },
+    feedbackPoints: {
+        color: colors.gold,
+        fontSize: 14,
+        fontFamily: typography.fontFamily.bold,
+    },
+
+    // Confetti
+    confetti: {
+        position: 'absolute',
+        width: 9,
+        height: 14,
+        borderRadius: 3,
+        top: 0,
+    },
+
+    // Explanation sheet
+    explanationSheet: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
         zIndex: 300,
+        borderTopLeftRadius: 28,
+        borderTopRightRadius: 28,
+        overflow: 'hidden',
     },
-    celebrationCard: {
-        width: width - 40,
-        maxWidth: 400,
+    explanationGradient: {
+        padding: 24,
+        gap: 14,
+        borderWidth: 1,
+        borderColor: colors.card.border,
+        borderTopLeftRadius: 28,
+        borderTopRightRadius: 28,
     },
-    celebrationContent: {
+    explanationHeader: {
+        flexDirection: 'row',
         alignItems: 'center',
-        padding: 32,
-        borderRadius: 30,
+        gap: 12,
     },
-    trophyContainer: {
-        marginBottom: 16,
+    explanationIconWrap: {
+        width: 36,
+        height: 36,
+        borderRadius: 18,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    celebrationTitle: {
-        fontSize: 32,
+    explanationTitle: {
+        fontSize: typography.fontSize.h4,
+        fontFamily: typography.fontFamily.bold,
+    },
+    explanationText: {
+        color: colors.card.text,
+        fontSize: typography.fontSize.body,
+        lineHeight: 26,
+        fontFamily: typography.fontFamily.regular,
+    },
+    nextBtn: { width: '100%' },
+
+    // Auto-advance countdown
+    countdownBadge: {
+        marginLeft: 'auto' as any,
+        backgroundColor: 'rgba(255,255,255,0.12)',
+        borderRadius: 14,
+        paddingHorizontal: 10,
+        paddingVertical: 4,
+        minWidth: 30,
+        alignItems: 'center',
+    },
+    countdownText: {
+        color: colors.card.text,
+        fontSize: 13,
+        fontFamily: typography.fontFamily.bold,
+    },
+    timerBarBg: {
+        height: 4,
+        borderRadius: 2,
+        backgroundColor: 'rgba(255,255,255,0.10)',
+        overflow: 'hidden',
+        width: '100%',
+    },
+    timerBarFill: {
+        height: '100%',
+        borderRadius: 2,
+    },
+
+    // Level complete
+    completionOverlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'rgba(2,6,23,0.92)',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 500,
+        padding: 20,
+    },
+    completionCard: {
+        width: '100%',
+        maxWidth: 380,
+        borderRadius: 28,
+        overflow: 'hidden',
+        borderWidth: 1,
+        borderColor: colors.card.border,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 6 },
+        shadowOpacity: 0.5,
+        shadowRadius: 20,
+        elevation: 12,
+    },
+    completionGradient: { padding: 28, alignItems: 'center', gap: 14 },
+    trophyWrap: {
+        shadowColor: colors.gold,
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.8,
+        shadowRadius: 24,
+    },
+    trophyCircle: {
+        width: 90, height: 90, borderRadius: 45,
+        alignItems: 'center', justifyContent: 'center',
+    },
+    completionTitle: {
+        fontSize: typography.fontSize.h2,
         fontFamily: typography.fontFamily.bold,
         color: colors.card.text,
-        marginBottom: 24,
+        letterSpacing: typography.letterSpacing.tight,
     },
-    starsRow: {
+    starsRow: { flexDirection: 'row', gap: 12 },
+    completionStats: {
         flexDirection: 'row',
-        gap: 16,
-        marginBottom: 24,
-    },
-    celebrationStats: {
+        backgroundColor: 'rgba(255,255,255,0.05)',
+        borderRadius: 16,
+        padding: 18,
         width: '100%',
-        marginBottom: 24,
+        alignItems: 'center',
     },
-    celebrationButtons: {
-        flexDirection: 'row',
-        gap: 12,
-        width: '100%',
+    statDivider: {
+        width: 1, height: 40,
+        backgroundColor: 'rgba(255,255,255,0.10)',
+        marginHorizontal: 8,
     },
-    celebrationButton: {
-        flex: 1,
+    completionStatItem: { flex: 1, alignItems: 'center', gap: 4 },
+    completionStatValue: {
+        fontSize: 22,
+        fontFamily: typography.fontFamily.bold,
     },
+    completionStatLabel: {
+        color: colors.card.textSecondary,
+        fontSize: 11,
+        fontFamily: typography.fontFamily.medium,
+        textTransform: 'uppercase',
+        letterSpacing: typography.letterSpacing.wide,
+    },
+    completionBtns: { flexDirection: 'row', gap: 12, width: '100%' },
+    completionBtn: { flex: 1 },
 });

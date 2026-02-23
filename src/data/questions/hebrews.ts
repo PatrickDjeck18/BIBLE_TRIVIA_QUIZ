@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const hebrewsQuestions: Question[] = [
     {
         id: 'heb_1',
-        text: 'Après avoir autrefois, à plusieurs reprises et de plusieurs manières, parlé à nos pères par les prophètes, Dieu... ?',
-        options: ['Nous a parlé par le Fils', 'S\'est tu', 'A envoyé des anges', 'A écrit un livre'],
-        correctAnswer: 'Nous a parlé par le Fils',
-        explanation: 'Hébreux 1:1-2'
+        text: 'In the past God spoke to our ancestors through the prophets at many times and in various ways, but in these last days...?',
+        options: ['He has spoken to us by his Son', 'He has remained silent', 'He has sent angels', 'He has written a book'],
+        correctAnswer: 'He has spoken to us by his Son',
+        explanation: 'Hebrews 1:1-2'
     },
     {
         id: 'heb_2',
-        text: 'Le Fils est le reflet de sa gloire et l\'empreinte de... ?',
-        options: ['Sa personne (son être)', 'Sa main', 'Son coeur', 'Son esprit'],
-        correctAnswer: 'Sa personne (son être)',
-        explanation: 'Hébreux 1:3'
+        text: 'The Son is the radiance of God’s glory and the exact representation of...?',
+        options: ['His being', 'His hand', 'His heart', 'His spirit'],
+        correctAnswer: 'His being',
+        explanation: 'Hebrews 1:3'
     },
     {
         id: 'heb_3',
-        text: 'Jésus est devenu d\'autant supérieur aux anges qu\'il a hérité d\'un nom... ?',
-        options: ['Plus excellent que le leur', 'Égal', 'Nouveau', 'Secret'],
-        correctAnswer: 'Plus excellent que le leur',
-        explanation: 'Hébreux 1:4'
+        text: 'So he became as much superior to the angels as the name he has inherited is...?',
+        options: ['Superior to theirs', 'Equal', 'New', 'Secret'],
+        correctAnswer: 'Superior to theirs',
+        explanation: 'Hebrews 1:4'
     },
     {
         id: 'heb_4',
-        text: 'Comment échapperons-nous, si nous négligeons... ?',
-        options: ['Un si grand salut', 'La loi', 'Les prières', 'Les anges'],
-        correctAnswer: 'Un si grand salut',
-        explanation: 'Hébreux 2:3'
+        text: 'How shall we escape if we ignore...?',
+        options: ['So great a salvation', 'The law', 'Prayers', 'The angels'],
+        correctAnswer: 'So great a salvation',
+        explanation: 'Hebrews 2:3'
     },
     {
         id: 'heb_5',
-        text: 'Car la parole de Dieu est... ?',
-        options: ['Vivante et efficace, plus tranchante qu\'une épée à deux tranchants', 'Morte', 'Douce', 'Lente'],
-        correctAnswer: 'Vivante et efficace, plus tranchante qu\'une épée à deux tranchants',
-        explanation: 'Hébreux 4:12'
+        text: 'For the word of God is...?',
+        options: ['Alive and active, sharper than any double-edged sword', 'Dead', 'Sweet', 'Slow'],
+        correctAnswer: 'Alive and active, sharper than any double-edged sword',
+        explanation: 'Hebrews 4:12'
     },
     {
         id: 'heb_6',
-        text: 'Approchons-nous donc avec assurance du trône de... ?',
-        options: ['La grâce', 'La gloire', 'Jugement', 'Dieu'],
-        correctAnswer: 'La grâce',
-        explanation: 'Hébreux 4:16'
+        text: 'Let us then approach God’s throne of... with confidence?',
+        options: ['Grace', 'Glory', 'Judgment', 'God'],
+        correctAnswer: 'Grace',
+        explanation: 'Hebrews 4:16'
     },
     {
         id: 'heb_7',
-        text: 'Tu es sacrificateur pour toujours, selon l\'ordre de... ?',
-        options: ['Melchisédek', 'Aaron', 'Lévi', 'Moïse'],
-        correctAnswer: 'Melchisédek',
-        explanation: 'Hébreux 5:6'
+        text: 'You are a priest forever, in the order of...?',
+        options: ['Melchizedek', 'Aaron', 'Levi', 'Moses'],
+        correctAnswer: 'Melchizedek',
+        explanation: 'Hebrews 5:6'
     },
     {
         id: 'heb_8',
-        text: 'Il est impossible que ceux qui ont été une fois éclairés... s\'ils tombent... ?',
-        options: ['Soient encore renouvelés à la repentance', 'Soient sauvés', 'Soient pardonnés', 'Soient riches'],
-        correctAnswer: 'Soient encore renouvelés à la repentance',
-        explanation: 'Hébreux 6:4-6 Passage difficile sur l\'apostasie.'
+        text: 'It is impossible for those who have once been enlightened... if they fall away...?',
+        options: ['To be brought back to repentance', 'To be saved', 'To be forgiven', 'To be rich'],
+        correctAnswer: 'To be brought back to repentance',
+        explanation: 'Hebrews 6:4-6 Difficult passage on apostasy.'
     },
     {
         id: 'heb_9',
-        text: 'Christ est médiateur d\'une... alliance ?',
-        options: ['Nouvelle (et meilleure)', 'Ancienne', 'Secrète', 'Temporaire'],
-        correctAnswer: 'Nouvelle (et meilleure)',
-        explanation: 'Hébreux 8:6'
+        text: 'Christ is the mediator of a... covenant?',
+        options: ['New (and better)', 'Old', 'Secret', 'Temporary'],
+        correctAnswer: 'New (and better)',
+        explanation: 'Hebrews 8:6'
     },
     {
         id: 'heb_10',
-        text: 'Sans effusion de sang, il n\'y a pas de... ?',
-        options: ['Pardon', 'Vie', 'Guerre', 'Joie'],
-        correctAnswer: 'Pardon',
-        explanation: 'Hébreux 9:22'
+        text: 'Without the shedding of blood there is no...?',
+        options: ['Forgiveness', 'Life', 'War', 'Joy'],
+        correctAnswer: 'Forgiveness',
+        explanation: 'Hebrews 9:22'
     },
     {
         id: 'heb_11',
-        text: 'Il est réservé aux hommes de mourir une seule fois, après quoi vient... ?',
-        options: ['Le jugement', 'Le néant', 'La réincarnation', 'Le paradis'],
-        correctAnswer: 'Le jugement',
-        explanation: 'Hébreux 9:27'
+        text: 'Just as people are destined to die once, and after that to face...?',
+        options: ['Judgment', 'Nothingness', 'Reincarnation', 'Paradise'],
+        correctAnswer: 'Judgment',
+        explanation: 'Hebrews 9:27'
     },
     {
         id: 'heb_12',
-        text: 'La loi, qui possède une ombre des biens à venir, et non... ?',
-        options: ['L\'exacte représentation des choses', 'La lumière', 'La vérité', 'La vie'],
-        correctAnswer: 'L\'exacte représentation des choses',
-        explanation: 'Hébreux 10:1'
+        text: 'The law is only a shadow of the good things that are coming—not...?',
+        options: ['The realities themselves', 'The light', 'The truth', 'The life'],
+        correctAnswer: 'The realities themselves',
+        explanation: 'Hebrews 10:1'
     },
     {
         id: 'heb_13',
-        text: 'N\'abandonnons pas notre assemblée, comme c\'est la coutume de quelques-uns, mais... ?',
-        options: ['Exhortons-nous réciproquement', 'Critiquons', 'Dormons', 'Partons'],
-        correctAnswer: 'Exhortons-nous réciproquement',
-        explanation: 'Hébreux 10:25'
+        text: 'And let us not neglect our meeting together, as some are in the habit of doing, but...?',
+        options: ['Encouraging one another', 'Criticizing', 'Sleeping', 'Leaving'],
+        correctAnswer: 'Encouraging one another',
+        explanation: 'Hebrews 10:25'
     },
     {
         id: 'heb_14',
-        text: 'Or la foi est une ferme assurance des choses qu\'on espère, une démonstration... ?',
-        options: ['De celles qu\'on ne voit pas', 'De celles qu\'on voit', 'Des miracles', 'De la science'],
-        correctAnswer: 'De celles qu\'on ne voit pas',
-        explanation: 'Hébreux 11:1 Définition de la foi.'
+        text: 'Now faith is confidence in what we hope for and assurance about...?',
+        options: ['What we do not see', 'What we see', 'Miracles', 'Science'],
+        correctAnswer: 'What we do not see',
+        explanation: 'Hebrews 11:1 Definition of faith.'
     },
     {
         id: 'heb_15',
-        text: 'Sans la foi, il est... de lui être agréable ?',
-        options: ['Impossible', 'Difficile', 'Facile', 'Possible'],
+        text: 'And without faith it is... to please God?',
+        options: ['Impossible', 'Difficult', 'Easy', 'Possible'],
         correctAnswer: 'Impossible',
-        explanation: 'Hébreux 11:6'
+        explanation: 'Hebrews 11:6'
     },
     {
         id: 'heb_16',
-        text: 'Nous donc aussi, puisque nous sommes environnés d\'une si grande nuée de témoins... ?',
-        options: ['Rejetons tout fardeau et le péché... et courons avec persévérance', 'Regardons', 'Asseyons-nous', 'Pleurons'],
-        correctAnswer: 'Rejetons tout fardeau et le péché... et courons avec persévérance',
-        explanation: 'Hébreux 12:1'
+        text: 'Therefore, since we are surrounded by such a great cloud of witnesses...?',
+        options: ['Let us throw off everything that hinders... and run with perseverance', 'Let us watch', 'Let us sit down', 'Let us weep'],
+        correctAnswer: 'Let us throw off everything that hinders... and run with perseverance',
+        explanation: 'Hebrews 12:1'
     },
     {
         id: 'heb_17',
-        text: 'Ayant les regards fixés sur Jésus, le chef et le... de la foi ?',
-        options: ['Consommateur (celui qui la mène à la perfection)', 'Roi', 'Père', 'Serviteur'],
-        correctAnswer: 'Consommateur (celui qui la mène à la perfection)',
-        explanation: 'Hébreux 12:2'
+        text: 'Fixing our eyes on Jesus, the pioneer and... of faith?',
+        options: ['Perfecter', 'King', 'Father', 'Servant'],
+        correctAnswer: 'Perfecter',
+        explanation: 'Hebrews 12:2'
     },
     {
         id: 'heb_18',
-        text: 'Car notre Dieu est aussi un... ?',
-        options: ['Feu dévorant', 'Vent doux', 'Rocher', 'Père sévère'],
-        correctAnswer: 'Feu dévorant',
-        explanation: 'Hébreux 12:29'
+        text: 'For our "God is a...?"',
+        options: ['Consuming fire', 'Gentle wind', 'Rock', 'Severe Father'],
+        correctAnswer: 'Consuming fire',
+        explanation: 'Hebrews 12:29'
     },
     {
         id: 'heb_19',
-        text: 'Jésus-Christ est le même hier, aujourd\'hui, et... ?',
-        options: ['Éternellement', 'Demain', 'Toujours', 'Parfois'],
-        correctAnswer: 'Éternellement',
-        explanation: 'Hébreux 13:8'
+        text: 'Jesus Christ is the same yesterday and today and...?',
+        options: ['Forever', 'Tomorrow', 'Always', 'Sometimes'],
+        correctAnswer: 'Forever',
+        explanation: 'Hebrews 13:8'
     },
     {
         id: 'heb_20',
-        text: 'N\'oubliez pas l\'hospitalité; car, en l\'exerçant, quelques-uns ont logé... ?',
-        options: ['Des anges, sans le savoir', 'Des rois', 'Des prophètes', 'Dieu'],
-        correctAnswer: 'Des anges, sans le savoir',
-        explanation: 'Hébreux 13:2'
+        text: 'Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to...?',
+        options: ['Angels without knowing it', 'Kings', 'Prophets', 'God'],
+        correctAnswer: 'Angels without knowing it',
+        explanation: 'Hebrews 13:2'
     }
 ];

@@ -1,24 +1,40 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Dimensions } from 'react-native';
-import { GlassContainer } from '../components/GlassContainer';
 import { LevelNode } from '../components/LevelNode';
+import { AnimatedBackground } from '../components/AnimatedBackground';
 import { colors } from '../theme/colors';
 import { typography } from '../theme/typography';
 import { useRouter } from 'expo-router';
 import { levels } from '../data/questions';
-import { ArrowLeft, Trophy } from 'lucide-react-native';
-import Animated, { FadeInDown } from 'react-native-reanimated';
+import { ArrowLeft, Trophy, BookOpen } from 'lucide-react-native';
+import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import { useGame } from '../context/GameContext';
 import { useAds } from '../context/AdContext';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
 
 const { width } = Dimensions.get('window');
+
+// Testament boundaries (first level index of each section)
+const TESTAMENT_SECTIONS = [
+    { label: 'Old Testament', startIndex: 0, endIndex: 38 },
+    { label: 'New Testament', startIndex: 39, endIndex: 65 },
+];
+
+function getSectionLabel(index: number): string | null {
+    for (const s of TESTAMENT_SECTIONS) {
+        if (index === s.startIndex) return s.label;
+    }
+    return null;
+}
 
 export default function LevelSelectionScreen() {
     const router = useRouter();
     const { state, getLevelProgress, isLevelUnlocked } = useGame();
     const { showInterstitial } = useAds();
+    const insets = useSafeAreaInsets();
 
-    const getLevelStatus = (levelId: string, index: number): 'completed' | 'current' | 'locked' => {
+    const getLevelStatus = (levelId: string): 'completed' | 'current' | 'locked' => {
         const progress = getLevelProgress(levelId);
         if (progress?.completed) return 'completed';
         if (isLevelUnlocked(levelId)) return 'current';
@@ -27,158 +43,217 @@ export default function LevelSelectionScreen() {
 
     const handleBack = () => {
         showInterstitial(() => {
-            if (router.canGoBack()) {
-                router.back();
-            } else {
-                router.replace('/');
-            }
+            if (router.canGoBack()) router.back();
+            else router.replace('/');
         });
     };
 
     const completedCount = Object.values(state.levelsProgress).filter(l => l.completed).length;
+    const totalLevels = levels.length;
+    const progressPct = Math.min(100, (completedCount / totalLevels) * 100);
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity
-                    onPress={handleBack}
-                    style={styles.backButton}
-                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
-                >
-                    <ArrowLeft color={colors.card.text} size={24} />
-                </TouchableOpacity>
-                <Text style={styles.headerTitle}>Voyage Biblique</Text>
-                <View style={styles.progressBadge}>
-                    <Trophy color={colors.accent} size={18} />
-                    <Text style={styles.progressText}>{completedCount}/{levels.length}</Text>
-                </View>
-            </View>
+        <AnimatedBackground variant="levels">
+            <View style={[styles.container, { paddingTop: insets.top }]}>
+                {/* ── Header ── */}
+                <Animated.View entering={FadeInDown.springify()} style={styles.header}>
+                    <TouchableOpacity
+                        onPress={handleBack}
+                        style={styles.backBtn}
+                        hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+                    >
+                        <ArrowLeft color={colors.card.text} size={24} />
+                    </TouchableOpacity>
 
-            <ScrollView
-                contentContainerStyle={styles.scrollContent}
-                showsVerticalScrollIndicator={false}
-            >
-                <View style={styles.pathContainer}>
+                    <View style={styles.headerCenter}>
+                        <Text style={styles.headerTitle}>Biblical Journey</Text>
+                        <Text style={styles.headerSub}>{completedCount} / {totalLevels} books</Text>
+                    </View>
+
+                    <View style={styles.trophyBadge}>
+                        <Trophy color={colors.gold} size={18} fill={colors.gold} />
+                        <Text style={styles.trophyText}>{completedCount}</Text>
+                    </View>
+                </Animated.View>
+
+                {/* ── Progress bar ── */}
+                <Animated.View entering={FadeIn.delay(200)} style={styles.progressContainer}>
+                    <View style={styles.progressBg}>
+                        <View style={[styles.progressFill, { width: `${progressPct}%` }]} />
+                    </View>
+                </Animated.View>
+
+                {/* ── Level path ── */}
+                <ScrollView
+                    contentContainerStyle={styles.scrollContent}
+                    showsVerticalScrollIndicator={false}
+                >
                     {levels.map((level, index) => {
-                        const status = getLevelStatus(level.id, index);
+                        const status = getLevelStatus(level.id);
                         const alignLeft = index % 2 === 0;
                         const progress = getLevelProgress(level.id);
+                        const sectionLabel = getSectionLabel(index);
 
                         return (
-                            <Animated.View
-                                key={level.id}
-                                entering={FadeInDown.delay(index * 50).springify()}
-                                style={styles.levelRow}
-                            >
-                                {/* Central Timeline Line */}
-                                {index < levels.length - 1 && (
-                                    <View style={[
-                                        styles.centralLine,
-                                        status === 'completed' && styles.centralLineCompleted
-                                    ]} />
+                            <React.Fragment key={level.id}>
+                                {/* Section header */}
+                                {sectionLabel && (
+                                    <Animated.View
+                                        entering={FadeInDown.delay(index * 30).springify()}
+                                        style={styles.sectionHeader}
+                                    >
+                                        <BookOpen color={colors.gold} size={16} />
+                                        <Text style={styles.sectionLabel}>{sectionLabel}</Text>
+                                        <View style={styles.sectionLine} />
+                                    </Animated.View>
                                 )}
 
-                                <View style={[
-                                    styles.nodeWrapper,
-                                    alignLeft ? styles.alignRight : styles.alignLeft
-                                ]}>
-                                    <LevelNode
-                                        levelNumber={index + 1}
-                                        title={level.title}
-                                        status={status}
-                                        stars={progress?.stars || 0}
-                                        onPress={() => {
-                                            if (status !== 'locked') {
-                                                router.push({ pathname: '/quiz', params: { levelId: level.id } });
-                                            }
-                                        }}
-                                        color={level.color}
-                                    />
+                                <View style={styles.levelRow}>
+                                    {/* Vertical connector */}
+                                    {index < levels.length - 1 && (
+                                        <View style={[
+                                            styles.connector,
+                                            status === 'completed' && styles.connectorDone
+                                        ]} />
+                                    )}
+
+                                    {/* Node */}
+                                    <View style={[
+                                        styles.nodeWrapper,
+                                        alignLeft ? styles.alignRight : styles.alignLeft
+                                    ]}>
+                                        <LevelNode
+                                            levelNumber={index + 1}
+                                            title={level.title}
+                                            status={status}
+                                            stars={progress?.stars || 0}
+                                            delay={Math.min(index * 40, 600)}
+                                            onPress={() => {
+                                                if (status !== 'locked') {
+                                                    router.push({ pathname: '/quiz', params: { levelId: level.id } });
+                                                }
+                                            }}
+                                            color={level.color}
+                                        />
+                                    </View>
                                 </View>
-                            </Animated.View>
+                            </React.Fragment>
                         );
                     })}
-                </View>
-            </ScrollView>
-        </View>
+                </ScrollView>
+            </View>
+        </AnimatedBackground>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 60,
-        zIndex: 1,
-    },
+    container: { flex: 1 },
+
+    // Header
     header: {
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 20,
-        marginBottom: 24,
-        zIndex: 100, // High z-index to sit above scroll view
-        position: 'relative',
+        paddingBottom: 12,
+        gap: 12,
     },
-    backButton: {
-        padding: 8,
-        marginRight: 16,
-        zIndex: 101, // Ensure button is top-most
-    },
+    backBtn: { padding: 8 },
+    headerCenter: { flex: 1 },
     headerTitle: {
-        flex: 1,
         color: colors.card.text,
         fontSize: typography.fontSize.h2,
         fontFamily: typography.fontFamily.bold,
+        letterSpacing: typography.letterSpacing.tight,
     },
-    progressBadge: {
+    headerSub: {
+        color: colors.card.textSecondary,
+        fontSize: typography.fontSize.caption,
+        fontFamily: typography.fontFamily.medium,
+        letterSpacing: typography.letterSpacing.wide,
+        marginTop: 2,
+    },
+    trophyBadge: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 4,
-        backgroundColor: 'rgba(57, 255, 20, 0.2)', // Updated to neon green tint
+        gap: 5,
+        backgroundColor: colors.goldDim,
+        borderWidth: 1,
+        borderColor: 'rgba(245,158,11,0.35)',
         paddingHorizontal: 12,
-        paddingVertical: 6,
-        borderRadius: 16,
+        paddingVertical: 7,
+        borderRadius: 20,
     },
-    progressText: {
-        color: colors.accent,
+    trophyText: {
+        color: colors.gold,
         fontSize: 14,
         fontFamily: typography.fontFamily.bold,
     },
-    scrollContent: {
-        paddingBottom: 100,
-        paddingTop: 20,
+
+    // Progress bar
+    progressContainer: { paddingHorizontal: 20, marginBottom: 8 },
+    progressBg: {
+        height: 6, borderRadius: 3,
+        backgroundColor: 'rgba(255,255,255,0.1)', overflow: 'hidden',
     },
-    pathContainer: {
+    progressFill: {
+        height: '100%', borderRadius: 2,
+        backgroundColor: colors.accent,
+        shadowColor: colors.accent,
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.8,
+        shadowRadius: 6,
+    },
+
+    // Scroll
+    scrollContent: { paddingBottom: 100, paddingTop: 16 },
+
+    // Section headers
+    sectionHeader: {
+        flexDirection: 'row',
         alignItems: 'center',
-        width: '100%',
+        gap: 10,
+        paddingHorizontal: 24,
+        marginTop: 16,
+        marginBottom: 8,
     },
+    sectionLabel: {
+        color: colors.gold,
+        fontSize: 11,
+        fontFamily: typography.fontFamily.bold,
+        letterSpacing: typography.letterSpacing.widest,
+        textTransform: 'uppercase',
+    },
+    sectionLine: {
+        flex: 1,
+        height: 1,
+        backgroundColor: 'rgba(245,158,11,0.20)',
+    },
+
+    // Level rows
     levelRow: {
-        width: width,
+        width,
         height: 120,
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: -20,
+        marginBottom: -18,
     },
-    centralLine: {
+    connector: {
         position: 'absolute',
         width: 4,
         height: 140,
         backgroundColor: 'rgba(255,255,255,0.1)',
         top: 40,
+        borderRadius: 2,
         zIndex: -1,
     },
-    centralLineCompleted: {
+    connectorDone: {
         backgroundColor: colors.accent,
+        shadowColor: colors.accent,
+        shadowOffset: { width: 0, height: 0 },
+        shadowOpacity: 0.3,
+        shadowRadius: 6,
     },
-    nodeWrapper: {
-        width: 300,
-        alignItems: 'center',
-    },
-    alignLeft: {
-        alignItems: 'flex-start',
-        paddingLeft: 20,
-    },
-    alignRight: {
-        alignItems: 'flex-end',
-        paddingRight: 20,
-    }
+    nodeWrapper: { width: 310, alignItems: 'center' },
+    alignLeft: { alignItems: 'flex-start', paddingLeft: 24 },
+    alignRight: { alignItems: 'flex-end', paddingRight: 24 },
 });

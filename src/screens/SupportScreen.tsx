@@ -35,55 +35,55 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
     {
-        question: 'Comment fonctionne le système de niveaux ?',
+        question: 'How does the levels system work?',
         answer:
-            'Chaque livre de la Bible correspond à un niveau. Vous devez compléter un niveau pour débloquer le suivant. Chaque niveau contient 10 questions sélectionnées aléatoirement parmi les questions disponibles pour ce livre.',
+            'Each book of the Bible corresponds to a level. You must complete one level to unlock the next. Each level contains 10 questions randomly selected from the available questions for that book.',
     },
     {
-        question: 'Comment gagner des étoiles ?',
+        question: 'How do I earn stars?',
         answer:
-            'Les étoiles sont attribuées en fonction de votre pourcentage de bonnes réponses :\n\n⭐ 1 étoile : 50% ou plus\n⭐⭐ 2 étoiles : 70% ou plus\n⭐⭐⭐ 3 étoiles : 90% ou plus',
+            'Stars are awarded based on your percentage of correct answers:\n\n⭐ 1 star: 50% or more\n⭐⭐ 2 stars: 70% or more\n⭐⭐⭐ 3 stars: 90% or more',
     },
     {
-        question: 'Comment fonctionne la série quotidienne ?',
+        question: 'How does the daily streak work?',
         answer:
-            'Votre série augmente chaque jour où vous jouez. Si vous manquez un jour, votre série est réinitialisée. Maintenez une longue série pour gagner des bonus de récompense quotidienne !',
+            'Your streak increases every day you play. If you miss a day, your streak is reset. Maintain a long streak to earn daily reward bonuses!',
     },
     {
-        question: 'Puis-je rejouer un niveau ?',
+        question: 'Can I replay a level?',
         answer:
-            'Oui ! Vous pouvez rejouer n\'importe quel niveau déjà débloqué autant de fois que vous le souhaitez. Les questions seront différentes à chaque tentative car elles sont sélectionnées aléatoirement.',
+            'Yes! You can replay any already unlocked level as many times as you want. The questions will be different each time as they are randomly selected.',
     },
     {
-        question: 'Ma progression est-elle sauvegardée ?',
+        question: 'Is my progress saved?',
         answer:
-            'Oui, votre progression est automatiquement sauvegardée sur votre appareil. Cependant, si vous désinstallez l\'application ou changez d\'appareil, votre progression sera perdue.',
+            'Yes, your progress is automatically saved on your device. However, if you uninstall the application or change devices, your progress will be lost.',
     },
     {
-        question: 'Comment réinitialiser ma progression ?',
+        question: 'How do I reset my progress?',
         answer:
-            'Vous pouvez réinitialiser votre progression dans Paramètres > Données > Réinitialiser la progression. Attention : cette action est irréversible !',
+            'You can reset your progress in Settings > Data > Reset Progress. Warning: this action is irreversible!',
     },
 ];
 
 const contactOptions = [
     {
         icon: <Bug color={colors.accent} size={22} />,
-        title: 'Signaler un bug',
-        description: 'Un problème technique ? Dites-le nous.',
-        subject: 'Bug Report - Quiz Biblique',
+        title: 'Report a bug',
+        description: 'A technical problem? Tell us about it.',
+        subject: 'Bug Report - Bible Quiz',
     },
     {
         icon: <Lightbulb color={colors.accent} size={22} />,
-        title: 'Suggérer une fonctionnalité',
-        description: 'Vous avez une idée ? Nous sommes à l\'écoute.',
-        subject: 'Feature Suggestion - Quiz Biblique',
+        title: 'Suggest a feature',
+        description: 'Have an idea? We are listening.',
+        subject: 'Feature Suggestion - Bible Quiz',
     },
     {
         icon: <MessageCircle color={colors.accent} size={22} />,
-        title: 'Question générale',
-        description: 'Toute autre question ou commentaire.',
-        subject: 'General Question - Quiz Biblique',
+        title: 'General question',
+        description: 'Any other question or comment.',
+        subject: 'General Question - Bible Quiz',
     },
 ];
 
@@ -128,7 +128,17 @@ export default function SupportScreen() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                <TouchableOpacity
+                    onPress={() => {
+                        if (router.canGoBack()) {
+                            router.back();
+                        } else {
+                            router.replace('/');
+                        }
+                    }}
+                    style={styles.backButton}
+                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+                >
                     <ArrowLeft color={colors.card.text} size={24} />
                 </TouchableOpacity>
                 <Text style={styles.headerTitle}>Support</Text>
@@ -143,9 +153,9 @@ export default function SupportScreen() {
                     <View style={styles.heroIcon}>
                         <Headphones color={colors.accent} size={28} />
                     </View>
-                    <Text style={styles.heroTitle}>Comment pouvons-nous vous aider ?</Text>
+                    <Text style={styles.heroTitle}>How can we help you?</Text>
                     <Text style={styles.heroSubtitle}>
-                        Consultez notre FAQ ou contactez-nous directement
+                        Check our FAQ or contact us directly
                     </Text>
                 </View>
 
@@ -153,14 +163,14 @@ export default function SupportScreen() {
                 <TouchableOpacity style={styles.emailBanner} onPress={handleEmailPress} activeOpacity={0.7}>
                     <Mail color={colors.accent} size={20} />
                     <View style={styles.emailBannerText}>
-                        <Text style={styles.emailLabel}>Envoyez-nous un email</Text>
+                        <Text style={styles.emailLabel}>Send us an email</Text>
                         <Text style={styles.emailAddress}>{SUPPORT_EMAIL}</Text>
                     </View>
                     <Send color={colors.card.textSecondary} size={18} />
                 </TouchableOpacity>
 
                 {/* Contact Options */}
-                <Text style={styles.sectionHeader}>NOUS CONTACTER</Text>
+                <Text style={styles.sectionHeader}>CONTACT US</Text>
                 <View style={styles.contactGrid}>
                     {contactOptions.map((option, index) => (
                         <TouchableOpacity
@@ -179,7 +189,7 @@ export default function SupportScreen() {
                 </View>
 
                 {/* FAQ */}
-                <Text style={styles.sectionHeader}>QUESTIONS FRÉQUENTES</Text>
+                <Text style={styles.sectionHeader}>FREQUENTLY ASKED QUESTIONS</Text>
                 <View style={styles.faqContainer}>
                     {faqItems.map((item, index) => (
                         <View key={index}>
@@ -191,14 +201,14 @@ export default function SupportScreen() {
 
                 {/* Bottom CTA */}
                 <View style={styles.bottomCta}>
-                    <Text style={styles.bottomCtaTitle}>Vous n'avez pas trouvé de réponse ?</Text>
+                    <Text style={styles.bottomCtaTitle}>Didn't find an answer?</Text>
                     <TouchableOpacity
                         style={styles.bottomCtaButton}
-                        onPress={() => handleContactPress('Help Request - Quiz Biblique')}
+                        onPress={() => handleContactPress('Help Request - Bible Quiz')}
                         activeOpacity={0.7}
                     >
-                        <Mail color="#000" size={18} />
-                        <Text style={styles.bottomCtaButtonText}>Contactez-nous</Text>
+                        <Mail color="#FFFFFF" size={18} />
+                        <Text style={styles.bottomCtaButtonText}>Contact Us</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -218,6 +228,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         marginBottom: 8,
+        zIndex: 50,
     },
     backButton: {
         padding: 8,
@@ -247,7 +258,7 @@ const styles = StyleSheet.create({
         width: 56,
         height: 56,
         borderRadius: 28,
-        backgroundColor: 'rgba(92, 179, 56, 0.12)',
+        backgroundColor: colors.accentDim,
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 14,
@@ -274,7 +285,7 @@ const styles = StyleSheet.create({
         backgroundColor: colors.card.background,
         borderRadius: 12,
         borderWidth: 1,
-        borderColor: 'rgba(92, 179, 56, 0.25)',
+        borderColor: colors.accentDim,
         padding: 16,
         marginBottom: 24,
         gap: 14,
@@ -320,7 +331,7 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 12,
-        backgroundColor: 'rgba(92, 179, 56, 0.1)',
+        backgroundColor: colors.accentDim,
         alignItems: 'center',
         justifyContent: 'center',
         marginBottom: 12,
@@ -400,7 +411,7 @@ const styles = StyleSheet.create({
         borderRadius: 25,
     },
     bottomCtaButtonText: {
-        color: '#000',
+        color: '#FFFFFF',
         fontSize: 15,
         fontFamily: typography.fontFamily.bold,
     },

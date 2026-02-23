@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const philemonQuestions: Question[] = [
     {
         id: 'phm_1',
-        text: 'Qui était Philémon ?',
-        options: ['Un compagnon d\'oeuvre de Paul (maître d\'Onésime)', 'Un esclave', 'Un soldat', 'Un roi'],
-        correctAnswer: 'Un compagnon d\'oeuvre de Paul (maître d\'Onésime)',
-        explanation: 'Philémon 1:1'
+        text: 'Who was Philemon?',
+        options: ['A fellow worker of Paul (master of Onesimus)', 'A slave', 'A soldier', 'A king'],
+        correctAnswer: 'A fellow worker of Paul (master of Onesimus)',
+        explanation: 'Philemon 1:1'
     },
     {
         id: 'phm_2',
-        text: 'Qui était Onésime ?',
-        options: ['Un esclave enfui de chez Philémon', 'Le fils de Paul', 'Un frère de Philémon', 'Un soldat'],
-        correctAnswer: 'Un esclave enfui de chez Philémon',
-        explanation: 'Philémon 1:10'
+        text: 'Who was Onesimus?',
+        options: ['A slave who had run away from Philemon', 'The son of Paul', 'A brother of Philemon', 'A soldier'],
+        correctAnswer: 'A slave who had run away from Philemon',
+        explanation: 'Philemon 1:10'
     },
     {
         id: 'phm_3',
-        text: 'Que veut dire "Onésime" ?',
-        options: ['Utile', 'Aimé', 'Fidèle', 'Fort'],
-        correctAnswer: 'Utile',
-        explanation: 'Jeu de mots de Paul au verset 11.'
+        text: 'What does "Onesimus" mean?',
+        options: ['Useful', 'Loved', 'Faithful', 'Strong'],
+        correctAnswer: 'Useful',
+        explanation: 'Paul’s wordplay in verse 11.'
     },
     {
         id: 'phm_4',
-        text: 'Paul renvoie Onésime à Philémon, non plus comme un esclave, mais comme... ?',
-        options: ['Un frère bien-aimé', 'Un serviteur', 'Un ami', 'Un étranger'],
-        correctAnswer: 'Un frère bien-aimé',
-        explanation: 'Philémon 1:16'
+        text: 'Paul sends Onesimus back to Philemon, no longer as a slave, but as...?',
+        options: ['A dear brother', 'A servant', 'A friend', 'A stranger'],
+        correctAnswer: 'A dear brother',
+        explanation: 'Philemon 1:16'
     },
     {
         id: 'phm_5',
-        text: 'Si Onésime t\'a fait tort ou te doit quelque chose... ?',
-        options: ['Mets-le sur mon compte (Paul paiera)', 'Punis-le', 'Oublie', 'Chasse-le'],
-        correctAnswer: 'Mets-le sur mon compte (Paul paiera)',
-        explanation: 'Philémon 1:18 Principe d\'imputation.'
+        text: 'If Onesimus has done you any wrong or owes you anything...?',
+        options: ['Charge it to me (Paul will pay)', 'Punish him', 'Forget it', 'Drive him away'],
+        correctAnswer: 'Charge it to me (Paul will pay)',
+        explanation: 'Philemon 1:18 Principle of imputation.'
     },
     {
         id: 'phm_6',
-        text: 'Moi Paul, je l\'écris de ma propre main... ?',
-        options: ['Je paierai', 'Je viendrai', 'Je prierai', 'Je te bénis'],
-        correctAnswer: 'Je paierai',
-        explanation: 'Philémon 1:19'
+        text: 'I, Paul, am writing this with my own hand...?',
+        options: ['I will pay it back', 'I will come', 'I will pray', 'I bless you'],
+        correctAnswer: 'I will pay it back',
+        explanation: 'Philemon 1:19'
     },
     {
         id: 'phm_7',
-        text: 'Paul espère même que Philémon fera... ?',
-        options: ['Au-delà de ce que je demande (l\'affranchir ?)', 'Juste ce que je demande', 'Rien', 'Le contraire'],
-        correctAnswer: 'Au-delà de ce que je demande (l\'affranchir ?)',
-        explanation: 'Philémon 1:21'
+        text: 'Paul even hopes that Philemon will do...?',
+        options: ['Even more than I ask (set him free?)', 'Just what I ask', 'Nothing', 'The opposite'],
+        correctAnswer: 'Even more than I ask (set him free?)',
+        explanation: 'Philemon 1:21'
     },
     {
         id: 'phm_8',
-        text: 'Où se réunissait l\'église mentionnée dans cette lettre ?',
-        options: ['Dans la maison de Philémon', 'Dans une synagogue', 'Au temple', 'Dans une grotte'],
-        correctAnswer: 'Dans la maison de Philémon',
-        explanation: 'Philémon 1:2'
+        text: 'Where did the church mentioned in this letter meet?',
+        options: ['In Philemon’s house', 'In a synagogue', 'At the temple', 'In a cave'],
+        correctAnswer: 'In Philemon’s house',
+        explanation: 'Philemon 1:2'
     },
     {
         id: 'phm_9',
-        text: 'Comment Paul s\'appelle-t-il au début de la lettre ?',
-        options: ['Prisonnier de Jésus-Christ', 'Apôtre', 'Serviteur', 'Prophète'],
-        correctAnswer: 'Prisonnier de Jésus-Christ',
-        explanation: 'Philémon 1:1 Pour émouvoir Philémon.'
+        text: 'How does Paul call himself at the beginning of the letter?',
+        options: ['A prisoner of Christ Jesus', 'Apostle', 'Servant', 'Prophet'],
+        correctAnswer: 'A prisoner of Christ Jesus',
+        explanation: 'Philemon 1:1 To move Philemon.'
     },
     {
         id: 'phm_10',
-        text: 'Paul demande à Philémon de lui préparer... ?',
-        options: ['Un logement', 'Un repas', 'Un bateau', 'Un cheval'],
-        correctAnswer: 'Un logement',
-        explanation: 'Philémon 1:22 Il espère être libéré.'
+        text: 'Paul asks Philemon to prepare... for him?',
+        options: ['A guest room', 'A meal', 'A boat', 'A horse'],
+        correctAnswer: 'A guest room',
+        explanation: 'Philemon 1:22 He hopes to be released.'
     },
     {
         id: 'phm_11',
-        text: 'Onésime est devenu l\'enfant de Paul... ?',
-        options: ['Dans ses liens (en prison)', 'À sa naissance', 'À Antioche', 'À Rome'],
-        correctAnswer: 'Dans ses liens (en prison)',
-        explanation: 'Philémon 1:10 Paul l\'a converti en prison.'
+        text: 'Onesimus became Paul’s child...?',
+        options: ['While I was in chains (in prison)', 'At his birth', 'In Antioch', 'In Rome'],
+        correctAnswer: 'While I was in chains (in prison)',
+        explanation: 'Philemon 1:10 Paul converted him in prison.'
     },
     {
         id: 'phm_12',
-        text: 'Paul aurait voulu garder Onésime pour le servir, mais il n\'a rien voulu faire sans... ?',
-        options: ['L\'avis de Philémon', 'L\'avis de César', 'L\'avis de Dieu', 'L\'argent'],
-        correctAnswer: 'L\'avis de Philémon',
-        explanation: 'Philémon 1:14'
+        text: 'Paul would have liked to keep Onesimus to serve him, but he did not want to do anything without...?',
+        options: ['Philemon’s consent', 'Caesar’s consent', 'God’s consent', 'Money'],
+        correctAnswer: 'Philemon’s consent',
+        explanation: 'Philemon 1:14'
     },
     {
         id: 'phm_13',
-        text: 'Afin que ton bienfait ne soit pas comme forcé, mais... ?',
-        options: ['Volontaire', 'Rapide', 'Grand', 'Petit'],
-        correctAnswer: 'Volontaire',
-        explanation: 'Philémon 1:14'
+        text: 'So that any favor you do would not seem forced but...?',
+        options: ['Voluntary', 'Quick', 'Great', 'Small'],
+        correctAnswer: 'Voluntary',
+        explanation: 'Philemon 1:14'
     },
     {
         id: 'phm_14',
-        text: 'Peut-être a-t-il été séparé de toi pour un temps, afin que tu le recouvres... ?',
-        options: ['Pour l\'éternité', 'Pour un an', 'Riche', 'Sage'],
-        correctAnswer: 'Pour l\'éternité',
-        explanation: 'Philémon 1:15'
+        text: 'Perhaps he was separated from you for a little while so that you might have him back...?',
+        options: ['For good (forever)', 'For a year', 'Rich', 'Wise'],
+        correctAnswer: 'For good (forever)',
+        explanation: 'Philemon 1:15'
     },
     {
         id: 'phm_15',
-        text: 'Si tu me tiens pour ton ami, reçois-le comme... ?',
-        options: ['Moi-même', 'Un roi', 'Un ange', 'Un serviteur'],
-        correctAnswer: 'Moi-même',
-        explanation: 'Philémon 1:17'
+        text: 'So if you consider me a partner, welcome him as you would welcome...?',
+        options: ['Me', 'A king', 'An angel', 'A servant'],
+        correctAnswer: 'Me',
+        explanation: 'Philemon 1:17'
     },
     {
         id: 'phm_16',
-        text: 'Oui, frère, que j\'obtienne de toi cet avantage... Fais-moi ce... ?',
-        options: ['Plaisir (Réjouis mes entrailles)', 'Don', 'Service', 'Signe'],
-        correctAnswer: 'Plaisir (Réjouis mes entrailles)',
-        explanation: 'Philémon 1:20'
+        text: 'I do wish, brother, that I may have some benefit from you in the Lord...?',
+        options: ['Refresh my heart (in Christ)', 'Give a gift', 'A service', 'A sign'],
+        correctAnswer: 'Refresh my heart (in Christ)',
+        explanation: 'Philemon 1:20'
     },
     {
         id: 'phm_17',
-        text: 'Qui sont les collaborateurs cités à la fin ?',
-        options: ['Marc, Aristarque, Démas, Luc', 'Pierre, Jean', 'Barnabas', 'Silas'],
-        correctAnswer: 'Marc, Aristarque, Démas, Luc',
-        explanation: 'Philémon 1:24'
+        text: 'Who are the coworkers mentioned at the end?',
+        options: ['Mark, Aristarchus, Demas, Luke', 'Peter, John', 'Barnabas', 'Silas'],
+        correctAnswer: 'Mark, Aristarchus, Demas, Luke',
+        explanation: 'Philemon 1:24'
     },
     {
         id: 'phm_18',
-        text: 'Que la grâce de notre Seigneur Jésus-Christ soit avec... ?',
-        options: ['Votre esprit', 'Votre maison', 'Votre argent', 'Votre corps'],
-        correctAnswer: 'Votre esprit',
-        explanation: 'Philémon 1:25'
+        text: 'The grace of the Lord Jesus Christ be with...?',
+        options: ['Your spirit', 'Your house', 'Your money', 'Your body'],
+        correctAnswer: 'Your spirit',
+        explanation: 'Philemon 1:25'
     },
     {
         id: 'phm_19',
-        text: 'À qui d\'autre la lettre est-elle adressée (la femme) ?',
-        options: ['Apphia', 'Marie', 'Lydie', 'Priscille'],
+        text: 'To whom else is the letter addressed (the woman)?',
+        options: ['Apphia', 'Mary', 'Lydia', 'Priscilla'],
         correctAnswer: 'Apphia',
-        explanation: 'Philémon 1:2 (Probablement la femme de Philémon).'
+        explanation: 'Philemon 1:2 (Probably Philemon’s wife).'
     },
     {
         id: 'phm_20',
-        text: 'Quel est le thème principal de Philémon ?',
-        options: ['Le pardon et la réconciliation', 'La guerre', 'L\'argent', 'La loi'],
-        correctAnswer: 'Le pardon et la réconciliation',
-        explanation: 'Illustration pratique de la grâce.'
+        text: 'What is the main theme of Philemon?',
+        options: ['Forgiveness and reconciliation', 'War', 'Money', 'The law'],
+        correctAnswer: 'Forgiveness and reconciliation',
+        explanation: 'A practical illustration of grace.'
     }
 ];

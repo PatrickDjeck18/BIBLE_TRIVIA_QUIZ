@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Quiz Biblique",
-    "slug": "quiz_biblique",
-    "version": "1.0.2",
+    "name": "Bible Quiz",
+    "slug": "bible-quiz",
+    "version": "1.0.5",
     "orientation": "portrait",
-    "scheme": "quiz-biblique",
+    "scheme": "bible-quiz",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
@@ -15,8 +15,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.quiz.biblique.app",
-      "buildNumber": "2",
+      "bundleIdentifier": "com.bible.quiz.trivia",
+      "buildNumber": "5",
       "infoPlist": {
         "UIBackgroundModes": [
           "remote-notification",
@@ -26,8 +26,8 @@
       }
     },
     "android": {
-      "package": "com.quiz.biblique.app",
-      "versionCode": 2,
+      "package": "com.bible.quiz.trivia",
+      "versionCode": 5,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -48,8 +48,8 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId": "ca-app-pub-4253750298784159~3493534470",
-          "iosAppId": "ca-app-pub-4253750298784159~8362717771"
+          "androidAppId": "ca-app-pub-4253750298784159~9432659814",
+          "iosAppId": "ca-app-pub-4253750298784159~5900608913"
         }
       ],
       [
@@ -65,8 +65,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "a4a9b7b7-890b-4f62-827d-58936deb664b"
+        "projectId": "773a7a76-7a37-47a2-9558-ce2ce93352d3"
       }
-    }
+    },
+    "owner": "amunazo"
   }
 }

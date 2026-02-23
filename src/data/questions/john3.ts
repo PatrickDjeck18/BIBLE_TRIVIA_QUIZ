@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const john3Questions: Question[] = [
     {
         id: '3jn_1',
-        text: 'À qui Jean adresse-t-il sa troisième épître ?',
-        options: ['À Gaïus', 'À l\'élue', 'À Timothée', 'À Tite'],
-        correctAnswer: 'À Gaïus',
-        explanation: '3 Jean 1:1'
+        text: 'To whom does John address his third epistle?',
+        options: ['To Gaius', 'To the chosen lady', 'To Timothy', 'To Titus'],
+        correctAnswer: 'To Gaius',
+        explanation: '3 John 1:1'
     },
     {
         id: '3jn_2',
-        text: 'Je souhaite que tu prospères à tous égards et sois en bonne santé, comme... ?',
-        options: ['Prospère l\'état de ton âme', 'Tu es riche', 'Tu es fort', 'Tu es sage'],
-        correctAnswer: 'Prospère l\'état de ton âme',
-        explanation: '3 Jean 1:2'
+        text: 'I pray that you may enjoy good health and that all may go well with you, even as...?',
+        options: ['Your soul is getting along well', 'You are rich', 'You are strong', 'You are wise'],
+        correctAnswer: 'Your soul is getting along well',
+        explanation: '3 John 1:2'
     },
     {
         id: '3jn_3',
-        text: 'Je n\'ai pas de plus grande joie que d\'apprendre que mes enfants marchent dans... ?',
-        options: ['La vérité', 'La lumière', 'L\'amour', 'La foi'],
-        correctAnswer: 'La vérité',
-        explanation: '3 Jean 1:4'
+        text: 'I have no greater joy than to hear that my children are walking in...?',
+        options: ['The truth', 'The light', 'Love', 'Faith'],
+        correctAnswer: 'The truth',
+        explanation: '3 John 1:4'
     },
     {
         id: '3jn_4',
-        text: 'Tu agis fidèlement dans ce que tu fais pour les frères, et même pour... ?',
-        options: ['Les frères étrangers', 'Les pauvres', 'Les riches', 'Les anges'],
-        correctAnswer: 'Les frères étrangers',
-        explanation: '3 Jean 1:5 (Hospitalité).'
+        text: 'You are faithful in what you are doing for the brothers and sisters, even though...?',
+        options: ['They are strangers to you', 'They are poor', 'They are rich', 'They are angels'],
+        correctAnswer: 'They are strangers to you',
+        explanation: '3 John 1:5 (Hospitality).'
     },
     {
         id: '3jn_5',
-        text: 'Car c\'est pour le nom de Jésus-Christ qu\'ils sont partis, sans rien recevoir... ?',
-        options: ['Des païens', 'De l\'église', 'De Dieu', 'De toi'],
-        correctAnswer: 'Des païens',
-        explanation: '3 Jean 1:7'
+        text: 'It was for the sake of the Name that they went out, receiving no help...?',
+        options: ['From the pagans', 'From the church', 'From God', 'From you'],
+        correctAnswer: 'From the pagans',
+        explanation: '3 John 1:7'
     },
     {
         id: '3jn_6',
-        text: 'J\'ai écrit quelques mots à l\'Église; mais Diotrèphe... ?',
-        options: ['Ne nous reçoit pas', 'Est mort', 'Est malade', 'Est parti'],
-        correctAnswer: 'Ne nous reçoit pas',
-        explanation: '3 Jean 1:9'
+        text: 'I wrote to the church, but Diotrephes...?',
+        options: ['Will have nothing to do with us', 'Is dead', 'Is sick', 'Has left'],
+        correctAnswer: 'Will have nothing to do with us',
+        explanation: '3 John 1:9'
     },
     {
         id: '3jn_7',
-        text: 'Quel est le défaut de Diotrèphe ?',
-        options: ['Il aime à être le premier parmi eux', 'Il est avare', 'Il est paresseux', 'Il est menteur'],
-        correctAnswer: 'Il aime à être le premier parmi eux',
-        explanation: '3 Jean 1:9'
+        text: 'What is Diotrephes\' flaw?',
+        options: ['He loves to be first', 'He is greedy', 'He is lazy', 'He is a liar'],
+        correctAnswer: 'He loves to be first',
+        explanation: '3 John 1:9'
     },
     {
         id: '3jn_8',
-        text: 'Bien-aimé, n\'imite pas le mal, mais... ?',
-        options: ['Le bien', 'La vérité', 'La justice', 'La foi'],
-        correctAnswer: 'Le bien',
-        explanation: '3 Jean 1:11'
+        text: 'Dear friend, do not imitate what is evil but...?',
+        options: ['What is good', 'History', 'Justice', 'Faith'],
+        correctAnswer: 'What is good',
+        explanation: '3 John 1:11'
     },
     {
         id: '3jn_9',
-        text: 'Celui qui fait le bien est de Dieu; celui qui fait le mal... ?',
-        options: ['N\'a point vu Dieu', 'Est du diable', 'Est fou', 'Est perdu'],
-        correctAnswer: 'N\'a point vu Dieu',
-        explanation: '3 Jean 1:11'
+        text: 'Anyone who does what is good is from God. Anyone who does what is evil...?',
+        options: ['Has not seen God', 'Is of the devil', 'Is foolish', 'Is lost'],
+        correctAnswer: 'Has not seen God',
+        explanation: '3 John 1:11'
     },
     {
         id: '3jn_10',
-        text: 'Tout le monde, et la vérité elle-même, rendent un bon témoignage à... ?',
-        options: ['Démétrius', 'Diotrèphe', 'Gaïus', 'Jean'],
-        correctAnswer: 'Démétrius',
-        explanation: '3 Jean 1:12'
+        text: 'Demetrius is well spoken of by everyone—and even by... itself?',
+        options: ['The truth', 'Diotrephes', 'Gaius', 'John'],
+        correctAnswer: 'The truth',
+        explanation: '3 John 1:12'
     },
     {
         id: '3jn_11',
-        text: 'Nous devons donc accueillir de tels hommes, afin d\'être... ?',
-        options: ['Ouvriers avec la vérité', 'Riches', 'Bénis', 'Heureux'],
-        correctAnswer: 'Ouvriers avec la vérité',
-        explanation: '3 Jean 1:8'
+        text: 'We ought therefore to show hospitality to such people so that we may...?',
+        options: ['Work together for the truth', 'Be rich', 'Be blessed', 'Be happy'],
+        correctAnswer: 'Work together for the truth',
+        explanation: '3 John 1:8'
     },
     {
         id: '3jn_12',
-        text: 'Que fait Diotrèphe aux frères ?',
-        options: ['Il ne les reçoit pas et chasse de l\'Église ceux qui veulent le faire', 'Il les tue', 'Il les vole', 'Il les insulte'],
-        correctAnswer: 'Il ne les reçoit pas et chasse de l\'Église ceux qui veulent le faire',
-        explanation: '3 Jean 1:10'
+        text: 'What does Diotrephes do to the brothers?',
+        options: ['He refuses to welcome them and also stops those who want to do so and puts them out of the church', 'He kills them', 'He steals from them', 'He insults them'],
+        correctAnswer: 'He refuses to welcome them and also stops those who want to do so and puts them out of the church',
+        explanation: '3 John 1:10'
     },
     {
         id: '3jn_13',
-        text: 'La paix soit avec toi ! Les... te saluent ?',
-        options: ['Amis', 'Frères', 'Saints', 'Anges'],
-        correctAnswer: 'Amis',
-        explanation: '3 Jean 1:15'
+        text: 'Peace to you. The... send their greetings?',
+        options: ['Friends', 'Brothers', 'Saints', 'Angels'],
+        correctAnswer: 'Friends',
+        explanation: '3 John 1:15'
     },
     {
         id: '3jn_14',
-        text: 'Salue les amis... ?',
-        options: ['Chacun en particulier (par leur nom)', 'Tous', 'En général', 'De loin'],
-        correctAnswer: 'Chacun en particulier (par leur nom)',
-        explanation: '3 Jean 1:15'
+        text: 'Greet the friends...?',
+        options: ['By name', 'All of them', 'In general', 'From afar'],
+        correctAnswer: 'By name',
+        explanation: '3 John 1:15'
     },
     {
         id: '3jn_15',
-        text: 'Combien de versets a 3 Jean ?',
+        text: 'How many verses does 3 John have?',
         options: ['15', '20', '10', '50'],
         correctAnswer: '15',
-        explanation: 'Très court.'
+        explanation: 'Very short.'
     },
     {
         id: '3jn_16',
-        text: 'Gaïus est loué pour sa... ?',
-        options: ['Fidélité et son hospitalité', 'Richesse', 'Force', 'Sagesse'],
-        correctAnswer: 'Fidélité et son hospitalité',
-        explanation: '3 Jean 1:5'
+        text: 'Gaius is praised for his...?',
+        options: ['Faithfulness and hospitality', 'Wealth', 'Strength', 'Wisdom'],
+        correctAnswer: 'Faithfulness and hospitality',
+        explanation: '3 John 1:5'
     },
     {
         id: '3jn_17',
-        text: 'Il tient des propos... contre nous ?',
-        options: ['Méchants', 'Doux', 'Faux', 'Vrais'],
-        correctAnswer: 'Méchants',
-        explanation: '3 Jean 1:10'
+        text: 'He gossips... about us?',
+        options: ['Maliciously', 'Softly', 'Falsely', 'Truly'],
+        correctAnswer: 'Maliciously',
+        explanation: '3 John 1:10'
     },
     {
         id: '3jn_18',
-        text: 'Tu feras bien de pourvoir à leur voyage d\'une manière... ?',
-        options: ['Digne de Dieu', 'Rapide', 'Pas chère', 'Simple'],
-        correctAnswer: 'Digne de Dieu',
-        explanation: '3 Jean 1:6'
+        text: 'You will do well to send them on their journey in a manner...?',
+        options: ['Worthy of God', 'Quickly', 'Cheaply', 'Simply'],
+        correctAnswer: 'Worthy of God',
+        explanation: '3 John 1:6'
     },
     {
         id: '3jn_19',
-        text: 'Jean espère le voir... ?',
-        options: ['Bientôt', 'Jamais', 'Au ciel', 'L\'année prochaine'],
-        correctAnswer: 'Bientôt',
-        explanation: '3 Jean 1:14'
+        text: 'John hopes to see him...?',
+        options: ['Soon', 'Never', 'In heaven', 'Next year'],
+        correctAnswer: 'Soon',
+        explanation: '3 John 1:14'
     },
     {
         id: '3jn_20',
-        text: 'Quel est le contraste entre Diotrèphe et Démétrius ?',
-        options: ['L\'orgueil contre le bon témoignage', 'La richesse contre la pauvreté', 'Le vieux contre le jeune', 'Le juif contre le grec'],
-        correctAnswer: 'L\'orgueil contre le bon témoignage',
-        explanation: 'Thème de l\'épître.'
+        text: 'What is the contrast between Diotrephes and Demetrius?',
+        options: ['Pride versus a good testimony', 'Wealth versus poverty', 'Old versus young', 'Jew versus Greek'],
+        correctAnswer: 'Pride versus a good testimony',
+        explanation: 'A theme of the epistle.'
     }
 ];

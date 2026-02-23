@@ -3,21 +3,27 @@ import * as Notifications from 'expo-notifications';
 import { Platform } from 'react-native';
 import { useRouter } from 'expo-router';
 
-// Configure notification behavior
-Notifications.setNotificationHandler({
-    handleNotification: async () => ({
-        shouldShowAlert: true,
-        shouldPlaySound: true,
-        shouldSetBadge: false,
-    }),
-});
+// Configure notification behavior (native only)
+if (Platform.OS !== 'web') {
+    Notifications.setNotificationHandler({
+        handleNotification: async () => ({
+            shouldShowAlert: true,
+            shouldPlaySound: true,
+            shouldSetBadge: false,
+            shouldShowBanner: true,
+            shouldShowList: true,
+        }),
+    });
+}
 
 export function useNotifications() {
-    const notificationListener = useRef<Notifications.EventSubscription>();
-    const responseListener = useRef<Notifications.EventSubscription>();
+    const notificationListener = useRef<Notifications.EventSubscription | undefined>(undefined);
+    const responseListener = useRef<Notifications.EventSubscription | undefined>(undefined);
     const router = useRouter();
 
     useEffect(() => {
+        if (Platform.OS === 'web') return;
+
         // Request permissions on mount
         requestPermissions();
 
@@ -37,11 +43,12 @@ export function useNotifications() {
         scheduleDailyNotifications();
 
         return () => {
+            if (Platform.OS === 'web') return;
             if (notificationListener.current) {
-                Notifications.removeNotificationSubscription(notificationListener.current);
+                notificationListener.current.remove();
             }
             if (responseListener.current) {
-                Notifications.removeNotificationSubscription(responseListener.current);
+                responseListener.current.remove();
             }
         };
     }, []);
@@ -54,6 +61,8 @@ export function useNotifications() {
 }
 
 async function requestPermissions() {
+    if (Platform.OS === 'web') return false;
+
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
     let finalStatus = existingStatus;
 
@@ -69,7 +78,7 @@ async function requestPermissions() {
 
     if (Platform.OS === 'android') {
         await Notifications.setNotificationChannelAsync('default', {
-            name: 'Quiz Biblique',
+            name: 'Bible Quiz',
             importance: Notifications.AndroidImportance.HIGH,
             vibrationPattern: [0, 250, 250, 250],
             lightColor: '#39FF14',
@@ -80,49 +89,53 @@ async function requestPermissions() {
 }
 
 async function scheduleDailyNotifications() {
+    if (Platform.OS === 'web') return;
+
     // Cancel existing scheduled notifications first
     await Notifications.cancelAllScheduledNotificationsAsync();
 
     // Morning notification at 8:00 AM
     await Notifications.scheduleNotificationAsync({
         content: {
-            title: 'Quiz Biblique - Bonjour!  sunrise',
-            body: 'Commencez votre journée avec un quiz biblique! Testez vos connaissances et gagnez des points.',
+            title: 'Bible Quiz - Good Morning! ☀️',
+            body: 'Start your day with a Bible quiz! Test your knowledge and earn points.',
             data: { type: 'morning_reminder' },
             sound: 'default',
         },
         trigger: {
+            type: Notifications.SchedulableTriggerInputTypes.DAILY,
             hour: 8,
             minute: 0,
-            repeats: true,
-        } as Notifications.DailyTriggerInput,
+        },
     });
 
     // Evening notification at 6:00 PM (18:00)
     await Notifications.scheduleNotificationAsync({
         content: {
-            title: 'Quiz Biblique - Bonsoir!  evening',
-            body: 'N\'oubliez pas votre quiz quotidien! Votre récompense quotidienne vous attend.',
+            title: 'Bible Quiz - Good Evening! 🌙',
+            body: "Don't forget your daily quiz! Your daily reward is waiting for you.",
             data: { type: 'evening_reminder' },
             sound: 'default',
         },
         trigger: {
+            type: Notifications.SchedulableTriggerInputTypes.DAILY,
             hour: 18,
             minute: 0,
-            repeats: true,
-        } as Notifications.DailyTriggerInput,
+        },
     });
 
     console.log('Daily notifications scheduled for 8:00 AM and 6:00 PM');
 }
 
 async function cancelAllNotifications() {
+    if (Platform.OS === 'web') return;
     await Notifications.cancelAllScheduledNotificationsAsync();
     console.log('All notifications cancelled');
 }
 
 // Function to get all scheduled notifications (for debugging)
 export async function getScheduledNotifications() {
+    if (Platform.OS === 'web') return [];
     const scheduled = await Notifications.getAllScheduledNotificationsAsync();
     console.log('Scheduled notifications:', scheduled);
     return scheduled;

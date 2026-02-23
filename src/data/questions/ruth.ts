@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const ruthQuestions: Question[] = [
     {
         id: 'rut_1',
-        text: 'De quel pays venait Ruth ?',
-        options: ['Moab', 'Israël', 'Égypte', 'Ammon'],
+        text: 'From which country did Ruth come?',
+        options: ['Moab', 'Israel', 'Egypt', 'Ammon'],
         correctAnswer: 'Moab',
-        explanation: 'Ruth 1:4 "...ils prirent des femmes moabites, dont l\'une se nommait Orpa, et l\'autre Ruth."'
+        explanation: 'Ruth 1:4 "...they married Moabite women, one named Orpah and the other Ruth."'
     },
     {
         id: 'rut_2',
-        text: 'Qui était la belle-mère de Ruth ?',
-        options: ['Naomi', 'Orpa', 'Mara', 'Rahab'],
+        text: 'Who was Ruth’s mother-in-law?',
+        options: ['Naomi', 'Orpah', 'Mara', 'Rahab'],
         correctAnswer: 'Naomi',
-        explanation: 'Ruth 1:2 "Le nom de sa femme était Naomi."'
+        explanation: 'Ruth 1:2 "His wife’s name was Naomi."'
     },
     {
         id: 'rut_3',
-        text: 'Que signifie le nom "Naomi" ?',
-        options: ['Douce / Agréable', 'Amère', 'Princesse', 'Mère'],
-        correctAnswer: 'Douce / Agréable',
-        explanation: 'Ruth 1:20 "Ne m\'appelez pas Naomi (Douce), appelez-moi Mara (Amère)."'
+        text: 'What does the name "Naomi" mean?',
+        options: ['Pleasant / Sweet', 'Bitter', 'Princess', 'Mother'],
+        correctAnswer: 'Pleasant / Sweet',
+        explanation: 'Ruth 1:20 "Don’t call me Naomi (Pleasant), call me Mara (Bitter)."'
     },
     {
         id: 'rut_4',
-        text: 'Pourquoi Naomi et sa famille sont-ils allés à Moab ?',
-        options: ['À cause d\'une famine à Bethléem', 'À cause de la guerre', 'Pour le commerce', 'Exilés par le roi'],
-        correctAnswer: 'À cause d\'une famine à Bethléem',
-        explanation: 'Ruth 1:1 "...il y eut une famine dans le pays."'
+        text: 'Why did Naomi and her family go to Moab?',
+        options: ['Because of a famine in Bethlehem', 'Because of war', 'For trade', 'Exiled by the king'],
+        correctAnswer: 'Because of a famine in Bethlehem',
+        explanation: 'Ruth 1:1 "...there was a famine in the land."'
     },
     {
         id: 'rut_5',
-        text: 'Qui a épousé Ruth en second ?',
-        options: ['Boaz', 'Machlon', 'Kiljon', 'Élimélec'],
+        text: 'Who was Ruth’s second husband?',
+        options: ['Boaz', 'Mahlon', 'Kilion', 'Elimelek'],
         correctAnswer: 'Boaz',
-        explanation: 'Ruth 4:13 "Boaz prit Ruth, qui devint sa femme."'
+        explanation: 'Ruth 4:13 "So Boaz took Ruth and she became his wife."'
     },
     {
         id: 'rut_6',
-        text: 'Quel lien de parenté Boaz avait-il avec Naomi ?',
-        options: ['Un parent ayant droit de rachat', 'Son frère', 'Son fils', 'Un inconnu'],
-        correctAnswer: 'Un parent ayant droit de rachat',
-        explanation: 'Ruth 2:20 "Cet homme est notre parent, il est de ceux qui ont sur nous droit de rachat."'
+        text: 'What was Boaz’s relationship to Naomi?',
+        options: ['A guardian-redeemer (kinsman-redeemer)', 'Her brother', 'Her son', 'A stranger'],
+        correctAnswer: 'A guardian-redeemer (kinsman-redeemer)',
+        explanation: 'Ruth 2:20 "That man is our close relative; he is one of our guardian-redeemers."'
     },
     {
         id: 'rut_7',
-        text: 'Où Ruth a-t-elle rencontré Boaz la première fois ?',
-        options: ['Dans un champ d\'orge (en glanant)', 'Au puits', 'Au temple', 'Au marché'],
-        correctAnswer: 'Dans un champ d\'orge (en glanant)',
-        explanation: 'Ruth 2:3 "Elle alla glaner dans un champ..."'
+        text: 'Where did Ruth first meet Boaz?',
+        options: ['In a barley field (gleaning)', 'At the well', 'At the temple', 'At the market'],
+        correctAnswer: 'In a barley field (gleaning)',
+        explanation: 'Ruth 2:3 "She went out and began to glean in the fields..."'
     },
     {
         id: 'rut_8',
-        text: 'Qui est le célèbre arrière-petit-fils de Ruth ?',
-        options: ['Le roi David', 'Saül', 'Salomon', 'Samuel'],
-        correctAnswer: 'Le roi David',
-        explanation: 'Ruth 4:21-22 "Boaz engendra Obed... Obed engendra Isaï... Isaï engendra David."'
+        text: 'Who is Ruth’s famous great-grandson?',
+        options: ['King David', 'Saul', 'Solomon', 'Samuel'],
+        correctAnswer: 'King David',
+        explanation: 'Ruth 4:21-22 "Boaz the father of Obed... Obed the father of Jesse... Jesse the father of David."'
     },
     {
         id: 'rut_9',
-        text: 'Quelle déclaration de fidélité Ruth a-t-elle faite à Naomi ?',
-        options: ['Ton peuple sera mon peuple, et ton Dieu sera mon Dieu', 'Je retournerai chez mon père', 'Donne-moi de l\'argent', 'Adieu'],
-        correctAnswer: 'Ton peuple sera mon peuple, et ton Dieu sera mon Dieu',
-        explanation: 'Ruth 1:16 "Où tu iras j\'irai... ton peuple sera mon peuple, et ton Dieu sera mon Dieu."'
+        text: 'What declaration of loyalty did Ruth make to Naomi?',
+        options: ['Your people will be my people and your God my God', 'I will return to my father', 'Give me some money', 'Goodbye'],
+        correctAnswer: 'Your people will be my people and your God my God',
+        explanation: 'Ruth 1:16 "Where you go I will go... Your people will be my people and your God my God."'
     },
     {
         id: 'rut_10',
-        text: 'Comment s\'appelait le premier mari de Ruth ?',
-        options: ['Machlon', 'Chilion', 'Boaz', 'Élimélec'],
-        correctAnswer: 'Machlon',
-        explanation: 'Ruth 4:10 "J\'acquiers aussi pour femme Ruth la Moabite, femme de Machlon."'
+        text: 'What was the name of Ruth’s first husband?',
+        options: ['Mahlon', 'Kilion', 'Boaz', 'Elimelek'],
+        correctAnswer: 'Mahlon',
+        explanation: 'Ruth 4:10 "I have also acquired Ruth the Moabite, Mahlon’s widow, as my wife."'
     },
     {
         id: 'rut_11',
-        text: 'Qu\'a fait l\'autre belle-fille, Orpa ?',
-        options: ['Elle est retournée vers son peuple et ses dieux', 'Elle est venue avec Naomi', 'Elle est morte', 'Elle s\'est remariée tout de suite'],
-        correctAnswer: 'Elle est retournée vers son peuple et ses dieux',
-        explanation: 'Ruth 1:15 "Voic, ta belle-soeur est retournée vers son peuple..."'
+        text: 'What did the other daughter-in-law, Orpah, do?',
+        options: ['She returned to her people and her gods', 'She came with Naomi', 'She died', 'She remarried immediately'],
+        correctAnswer: 'She returned to her people and her gods',
+        explanation: 'Ruth 1:15 "Look, your sister-in-law is going back to her people..."'
     },
     {
         id: 'rut_12',
-        text: 'Où Ruth s\'est-elle couchée pour demander le rachat à Boaz ?',
-        options: ['À ses pieds, sur l\'aire de battage', 'Dans son lit', 'Devant sa porte', 'Dans le champ'],
-        correctAnswer: 'À ses pieds, sur l\'aire de battage',
-        explanation: 'Ruth 3:7 "Elle vint doucement, découvrit ses pieds, et se coucha."'
+        text: 'Where did Ruth lie down to request redemption from Boaz?',
+        options: ['At his feet, on the threshing floor', 'In his bed', 'In front of his door', 'In the field'],
+        correctAnswer: 'At his feet, on the threshing floor',
+        explanation: 'Ruth 3:7 "She went secretly, uncovered his feet and lay down."'
     },
     {
         id: 'rut_13',
-        text: 'Quelle coutume validait le rachat ?',
-        options: ['Ôter son soulier et le donner à l\'autre', 'Se serrer la main', 'Signer un parchemin', 'Échanger une bague'],
-        correctAnswer: 'Ôter son soulier et le donner à l\'autre',
-        explanation: 'Ruth 4:7 "...l\'homme ôtait son soulier et le donnait à l\'autre."'
+        text: 'What custom validated the redemption?',
+        options: ['Taking off a sandal and giving it to the other', 'Shaking hands', 'Signing a parchment', 'Exchanging a ring'],
+        correctAnswer: 'Taking off a sandal and giving it to the other',
+        explanation: 'Ruth 4:7 "...one party took off his sandal and gave it to the other."'
     },
     {
         id: 'rut_14',
-        text: 'Comment s\'appelait le fils de Ruth et Boaz ?',
-        options: ['Obed', 'Isaï', 'David', 'Salomon'],
+        text: 'What was the name of Ruth and Boaz’s son?',
+        options: ['Obed', 'Jesse', 'David', 'Solomon'],
         correctAnswer: 'Obed',
-        explanation: 'Ruth 4:17 "On lui donna le nom d\'Obed."'
+        explanation: 'Ruth 4:17 "They named him Obed."'
     },
     {
         id: 'rut_15',
-        text: 'De quelle tribu était Boaz ?',
-        options: ['Juda', 'Benjamin', 'Lévi', 'Éphraïm'],
-        correctAnswer: 'Juda',
-        explanation: 'Il habitait Bethléem (Juda) et est un ancêtre de David (tribu de Juda).'
+        text: 'Which tribe was Boaz from?',
+        options: ['Judah', 'Benjamin', 'Levi', 'Ephraim'],
+        correctAnswer: 'Judah',
+        explanation: 'He lived in Bethlehem (Judah) and is an ancestor of David (tribe of Judah).'
     },
     {
         id: 'rut_16',
-        text: 'Que signifie "Glaner" ?',
-        options: ['Ramasser les épis laissés par les moissonneurs', 'Planter du blé', 'Voler la récolte', 'Vendre du grain'],
-        correctAnswer: 'Ramasser les épis laissés par les moissonneurs',
-        explanation: 'C\'était un droit pour les pauvres et les veuves (Lévitique 19:9).'
+        text: 'What does "Glean" mean?',
+        options: ['To pick up stalks left by the harvesters', 'To plant wheat', 'To steal the harvest', 'To sell grain'],
+        correctAnswer: 'To pick up stalks left by the harvesters',
+        explanation: 'It was a right for the poor and widows (Leviticus 19:9).'
     },
     {
         id: 'rut_17',
-        text: 'Combien de mesures d\'orge Boaz a-t-il données à Ruth ?',
-        options: ['Six', 'Dix', 'Deux', 'Une'],
+        text: 'How many measures of barley did Boaz give to Ruth?',
+        options: ['Six', 'Ten', 'Two', 'One'],
         correctAnswer: 'Six',
-        explanation: 'Ruth 3:15 "Il mesura six mesures d\'orge."'
+        explanation: 'Ruth 3:15 "He measured out six measures of barley."'
     },
     {
         id: 'rut_18',
-        text: 'À quel moment de l\'année se passe l\'histoire (chapitre 1-2) ?',
-        options: ['Au début de la moisson des orges', 'En hiver', 'Pendant les semailles', 'À la fête des Tabernacles'],
-        correctAnswer: 'Au début de la moisson des orges',
-        explanation: 'Ruth 1:22 "Ils arrivèrent à Bethléem au commencement de la moisson des orges."'
+        text: 'At what time of year does the story take place (chapters 1-2)?',
+        options: ['At the beginning of the barley harvest', 'In winter', 'During sowing', 'At the Feast of Tabernacles'],
+        correctAnswer: 'At the beginning of the barley harvest',
+        explanation: 'Ruth 1:22 "Arriving in Bethlehem as the barley harvest was beginning."'
     },
     {
         id: 'rut_19',
-        text: 'Quel nom Naomi voulait-elle porter à son retour ?',
+        text: 'What name did Naomi want to go by upon her return?',
         options: ['Mara', 'Sarah', 'Rachel', 'Esther'],
         correctAnswer: 'Mara',
-        explanation: 'Ruth 1:20 "Appelez-moi Mara, car le Tout-Puissant m\'a remplie d\'amertume."'
+        explanation: 'Ruth 1:20 "Call me Mara, because the Almighty has made my life very bitter."'
     },
     {
         id: 'rut_20',
-        text: 'Pourquoi le livre de Ruth est-il important théologiquement ?',
-        options: ['Il montre qu\'une étrangère peut faire partie de la lignée du Messie', 'Il explique l\'agriculture', 'Il raconte une guerre', 'Il parle de Moïse'],
-        correctAnswer: 'Il montre qu\'une étrangère peut faire partie de la lignée du Messie',
-        explanation: 'Ruth, une Moabite, devient l\'arrière-grand-mère de David et ancêtre de Jésus.'
+        text: 'Why is the book of Ruth theologically important?',
+        options: ['It shows that a foreigner can be part of the Messiah’s lineage', 'It explains agriculture', 'It tells of a war', 'It speaks of Moses'],
+        correctAnswer: 'It shows that a foreigner can be part of the Messiah’s lineage',
+        explanation: 'Ruth, a Moabite, becomes the great-grandmother of David and an ancestor of Jesus.'
     }
 ];

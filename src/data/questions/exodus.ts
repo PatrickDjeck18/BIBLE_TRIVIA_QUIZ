@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const exodusQuestions: Question[] = [
     {
         id: 'exo_1',
-        text: 'Comment s\'appelait la mère de Moïse ?',
-        options: ['Jochébed', 'Miriam', 'Zippora', 'Élisabeth'],
-        correctAnswer: 'Jochébed',
-        explanation: 'Exode 6:20 "Amram prit pour femme Jochébed, sa tante."'
+        text: 'What was the name of Moses\' mother?',
+        options: ['Jochebed', 'Miriam', 'Zipporah', 'Elizabeth'],
+        correctAnswer: 'Jochebed',
+        explanation: 'Exodus 6:20 "Amram married his father’s sister Jochebed."'
     },
     {
         id: 'exo_2',
-        text: 'Quel signe Dieu a-t-il donné à Moïse dans le désert ?',
-        options: ['Un buisson ardent', 'Une colonne de feu', 'Une étoile', 'Un tremblement de terre'],
-        correctAnswer: 'Un buisson ardent',
-        explanation: 'Exode 3:2 "L\'ange de l\'Éternel lui apparut dans une flamme de feu, au milieu d\'un buisson."'
+        text: 'What sign did God give to Moses in the desert?',
+        options: ['A burning bush', 'A pillar of fire', 'A star', 'An earthquake'],
+        correctAnswer: 'A burning bush',
+        explanation: 'Exodus 3:2 "There the angel of the Lord appeared to him in flames of fire from within a bush."'
     },
     {
         id: 'exo_3',
-        text: 'Combien de plaies Dieu a-t-il envoyées sur l\'Égypte ?',
+        text: 'How many plagues did God send on Egypt?',
         options: ['7', '10', '12', '3'],
         correctAnswer: '10',
-        explanation: 'Dieu a envoyé 10 plaies pour contraindre Pharaon à laisser partir les Israélites.'
+        explanation: 'God sent 10 plagues to compel Pharaoh to let the Israelites go.'
     },
     {
         id: 'exo_4',
-        text: 'Quelle mer les Israélites ont-ils traversée à sec ?',
-        options: ['La Mer Morte', 'La Mer Rouge', 'La Mer de Galilée', 'La Méditerranée'],
-        correctAnswer: 'La Mer Rouge',
-        explanation: 'Exode 14:21 "L\'Éternel refoula la mer... et les enfants d\'Israël entrèrent au milieu de la mer à sec."'
+        text: 'Which sea did the Israelites cross on dry ground?',
+        options: ['The Dead Sea', 'The Red Sea', 'The Sea of Galilee', 'The Mediterranean'],
+        correctAnswer: 'The Red Sea',
+        explanation: 'Exodus 14:21 "The Lord drove the sea back... and the Israelites went through the sea on dry ground."'
     },
     {
         id: 'exo_5',
-        text: 'Quelle nourriture Dieu a-t-il donnée aux Israélites dans le désert ?',
-        options: ['Du pain et du poisson', 'La Manne', 'Des fruits', 'Du lait et du miel'],
-        correctAnswer: 'La Manne',
-        explanation: 'Exode 16:31 "La maison d\'Israël donna à cette nourriture le nom de manne."'
+        text: 'What food did God give to the Israelites in the desert?',
+        options: ['Bread and fish', 'Manna', 'Fruits', 'Milk and honey'],
+        correctAnswer: 'Manna',
+        explanation: 'Exodus 16:31 "The people of Israel called the bread manna."'
     },
     {
         id: 'exo_6',
-        text: 'Où Moïse a-t-il reçu les Dix Commandements ?',
-        options: ['Mont Sinaï', 'Mont Horeb', 'Mont Nebo', 'Mont Sion'],
-        correctAnswer: 'Mont Sinaï',
-        explanation: 'Exode 19:20 "L\'Éternel descendit sur la montagne de Sinaï... et il appela Moïse."'
+        text: 'Where did Moses receive the Ten Commandments?',
+        options: ['Mount Sinai', 'Mount Horeb', 'Mount Nebo', 'Mount Zion'],
+        correctAnswer: 'Mount Sinai',
+        explanation: 'Exodus 19:20 "The Lord descended to the top of Mount Sinai and called Moses."'
     },
     {
         id: 'exo_7',
-        text: 'De quoi était fait le veau d\'or ?',
-        options: ['De bois', 'D\'or fondu (bijoux)', 'De pierre', 'De bronze'],
-        correctAnswer: 'D\'or fondu (bijoux)',
-        explanation: 'Exode 32:4 "Il reçut l\'or de leurs mains, il le jeta dans un moule, et fit un veau en fonte."'
+        text: 'What was the golden calf made of?',
+        options: ['Wood', 'Cast gold (jewelry)', 'Stone', 'Bronze'],
+        correctAnswer: 'Cast gold (jewelry)',
+        explanation: 'Exodus 32:4 "He took what they handed him and made it into an idol cast in the shape of a calf."'
     },
     {
         id: 'exo_8',
-        text: 'Qui a été nommé grand-prêtre ?',
-        options: ['Moïse', 'Aaron', 'Josué', 'Hur'],
+        text: 'Who was appointed high priest?',
+        options: ['Moses', 'Aaron', 'Joshua', 'Hur'],
         correctAnswer: 'Aaron',
-        explanation: 'Exode 28:1 "Fais approcher de toi Aaron, ton frère... pour qu\'il exerce mon sacerdoce."'
+        explanation: 'Exodus 28:1 "Have Aaron your brother brought to you... so he may serve me as priest."'
     },
     {
         id: 'exo_9',
-        text: 'Quel commandement porte une promesse ?',
-        options: ['Tu ne tueras point', 'Honore ton père et ta mère', 'Tu ne voleras point', 'Tu n\'auras pas d\'autres dieux'],
-        correctAnswer: 'Honore ton père et ta mère',
-        explanation: 'Exode 20:12 "...afin que tes jours se prolongent dans le pays que l\'Éternel, ton Dieu, te donne."'
+        text: 'Which commandment carries a promise?',
+        options: ['You shall not kill', 'Honor your father and your mother', 'You shall not steal', 'You shall have no other gods'],
+        correctAnswer: 'Honor your father and your mother',
+        explanation: 'Exodus 20:12 "...so that you may live long in the land the Lord your God is giving you."'
     },
     {
         id: 'exo_10',
-        text: 'Comment Dieu guidait-il Israël le jour ?',
-        options: ['Par une colonne de feu', 'Par une colonne de nuée', 'Par un aigle', 'Par une étoile'],
-        correctAnswer: 'Par une colonne de nuée',
-        explanation: 'Exode 13:21 "L\'Éternel allait devant eux, le jour dans une colonne de nuée pour les guider."'
+        text: 'How did God lead Israel by day?',
+        options: ['By a pillar of fire', 'By a pillar of cloud', 'By an eagle', 'By a star'],
+        correctAnswer: 'By a pillar of cloud',
+        explanation: 'Exodus 13:21 "By day the Lord went ahead of them in a pillar of cloud to guide them on their way."'
     },
     {
         id: 'exo_11',
-        text: 'Quel objet contenait les tables de la loi ?',
-        options: ['L\'Arche de l\'Alliance', 'La table des pains', 'L\'autel des parfums', 'Le chandelier d\'or'],
-        correctAnswer: 'L\'Arche de l\'Alliance',
-        explanation: 'Exode 25:16 "Tu mettras dans l\'arche le témoignage que je te donnerai."'
+        text: 'What object contained the tables of the law?',
+        options: ['The Ark of the Covenant', 'The table of bread', 'The altar of incense', 'The golden lampstand'],
+        correctAnswer: 'The Ark of the Covenant',
+        explanation: 'Exodus 25:16 "Then put in the ark the tablets of the covenant law, which I will give you."'
     },
     {
         id: 'exo_12',
-        text: 'Qui a aidé Moïse à tenir ses mains levées pendant la bataille contre Amalek ?',
-        options: ['Josué et Caleb', 'Aaron et Hur', 'Aaron et Miriam', 'Jéthro et Gershom'],
-        correctAnswer: 'Aaron et Hur',
-        explanation: 'Exode 17:12 "Aaron et Hur soutenaient ses mains, l\'un d\'un côté, l\'autre de l\'autre."'
+        text: 'Who helped Moses hold his hands up during the battle against Amalek?',
+        options: ['Joshua and Caleb', 'Aaron and Hur', 'Aaron and Miriam', 'Jethro and Gershom'],
+        correctAnswer: 'Aaron and Hur',
+        explanation: 'Exodus 17:12 "Aaron and Hur held his hands up—one on one side, one on the other."'
     },
     {
         id: 'exo_13',
-        text: 'Quel était le métier de Moïse en Madian ?',
-        options: ['Berger', 'Forgeron', 'Agriculteur', 'Marchand'],
-        correctAnswer: 'Berger',
-        explanation: 'Exode 3:1 "Moïse faisait paître le troupeau de Jéthro, son beau-père."'
+        text: 'What was Moses\' occupation in Midian?',
+        options: ['Shepherd', 'Blacksmith', 'Farmer', 'Merchant'],
+        correctAnswer: 'Shepherd',
+        explanation: 'Exodus 3:1 "Now Moses was tending the flock of Jethro his father-in-law."'
     },
     {
         id: 'exo_14',
-        text: 'Combien d\'années les Israélites ont-ils mangé de la manne ?',
-        options: ['40 ans', '10 ans', '7 ans', '20 ans'],
-        correctAnswer: '40 ans',
-        explanation: 'Exode 16:35 "Les enfants d\'Israël mangèrent la manne pendant quarante ans."'
+        text: 'How many years did the Israelites eat manna?',
+        options: ['40 years', '10 years', '7 years', '20 years'],
+        correctAnswer: '40 years',
+        explanation: 'Exodus 16:35 "The Israelites ate manna forty years."'
     },
     {
         id: 'exo_15',
-        text: 'Quel était le premier commandement ?',
-        options: ['Tu ne tueras point', 'Tu n\'auras pas d\'autres dieux devant ma face', 'Tu ne commettras point d\'adultère', 'Tu ne déroberas point'],
-        correctAnswer: 'Tu n\'auras pas d\'autres dieux devant ma face',
-        explanation: 'Exode 20:3 "Tu n\'auras pas d\'autres dieux devant ma face."'
+        text: 'What was the first commandment?',
+        options: ['You shall not kill', 'You shall have no other gods before me', 'You shall not commit adultery', 'You shall not steal'],
+        correctAnswer: 'You shall have no other gods before me',
+        explanation: 'Exodus 20:3 "You shall have no other gods before me."'
     },
     {
         id: 'exo_16',
-        text: 'Qui était le beau-père de Moïse ?',
-        options: ['Jéthro', 'Laban', 'Potiphar', 'Balak'],
-        correctAnswer: 'Jéthro',
-        explanation: 'Exode 3:1 "...troupeau de Jéthro, son beau-père, sacrificateur de Madian."'
+        text: 'Who was Moses\' father-in-law?',
+        options: ['Jethro', 'Laban', 'Potiphar', 'Balak'],
+        correctAnswer: 'Jethro',
+        explanation: 'Exodus 3:1 "...the flock of Jethro his father-in-law, the priest of Midian."'
     },
     {
         id: 'exo_17',
-        text: 'De quoi était recouvert l\'autel des holocaustes ?',
-        options: ['D\'or', 'D\'airain (bronze)', 'D\'argent', 'De fer'],
-        correctAnswer: 'D\'airain (bronze)',
-        explanation: 'Exode 27:2 "...et tu le couvriras d\'airain."'
+        text: 'What was the altar of burnt offering covered with?',
+        options: ['Gold', 'Bronze (brass)', 'Silver', 'Iron'],
+        correctAnswer: 'Bronze (brass)',
+        explanation: 'Exodus 27:2 "...overlay the altar with bronze."'
     },
     {
         id: 'exo_18',
-        text: 'Quelle fête commémore la sortie d\'Égypte ?',
-        options: ['La Pentecôte', 'La Pâque', 'La Fête des Tabernacles', 'Le Sabbat'],
-        correctAnswer: 'La Pâque',
-        explanation: 'Exode 12:11 "C\'est la Pâque de l\'Éternel."'
+        text: 'Which festival commemorates the departure from Egypt?',
+        options: ['Pentecost', 'Passover', 'The Feast of Tabernacles', 'The Sabbath'],
+        correctAnswer: 'Passover',
+        explanation: 'Exodus 12:11 "It is the Lord’s Passover."'
     },
     {
         id: 'exo_19',
-        text: 'Que signifie le nom "Moïse" ?',
-        options: ['Sauvé des eaux', 'Aimé de Dieu', 'Prince d\'Égypte', 'Prophète'],
-        correctAnswer: 'Sauvé des eaux',
-        explanation: 'Exode 2:10 "Elle lui donna le nom de Moïse, car, dit-elle, je l\'ai retiré des eaux."'
+        text: 'What does the name "Moses" mean?',
+        options: ['Drawn out of the water', 'Loved of God', 'Prince of Egypt', 'Prophet'],
+        correctAnswer: 'Drawn out of the water',
+        explanation: 'Exodus 2:10 "She named him Moses, saying, \'I drew him out of the water.\'"'
     },
     {
         id: 'exo_20',
-        text: 'Qui a mené le chant de victoire après la traversée de la Mer Rouge ?',
-        options: ['Sarah', 'Miriam', 'Rachel', 'Léa'],
+        text: 'Who led the victory song after crossing the Red Sea?',
+        options: ['Sarah', 'Miriam', 'Rachel', 'Leah'],
         correctAnswer: 'Miriam',
-        explanation: 'Exode 15:20 "Miriam la prophétesse, soeur d\'Aaron, prit à la main un tambourin."'
+        explanation: 'Exodus 15:20 "Then Miriam the prophet, Aaron’s sister, took a timbrel in her hand."'
     }
 ];

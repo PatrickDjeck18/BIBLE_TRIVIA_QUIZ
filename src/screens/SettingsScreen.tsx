@@ -63,7 +63,7 @@ const SettingRow: React.FC<SettingRowProps> = ({
                     <Switch
                         value={toggleValue}
                         onValueChange={onToggle}
-                        trackColor={{ false: 'rgba(255,255,255,0.1)', true: 'rgba(92, 179, 56, 0.4)' }}
+                        trackColor={{ false: 'rgba(255,255,255,0.1)', true: colors.accentDim }}
                         thumbColor={toggleValue ? colors.accent : '#555'}
                     />
                 ) : (
@@ -83,7 +83,7 @@ export default function SettingsScreen() {
     const [vibration, setVibration] = useState(true);
 
     const handleRateApp = () => {
-        const androidPackageName = 'com.quiz.biblique.app';
+        const androidPackageName = 'com.bible.quiz.trivia';
         const iosAppId = '6759291543';
 
         if (Platform.OS === 'android') {
@@ -94,18 +94,18 @@ export default function SettingsScreen() {
     };
 
     const handleShare = async () => {
-        const androidLink = 'https://play.google.com/store/apps/details?id=com.quiz.biblique.app';
+        const androidLink = 'https://play.google.com/store/apps/details?id=com.bible.quiz.trivia';
         const iosLink = 'https://apps.apple.com/app/id6759291543';
 
         const message = Platform.OS === 'ios'
-            ? 'Découvrez Quiz Biblique ! Testez vos connaissances bibliques.'
-            : `Découvrez Quiz Biblique ! Testez vos connaissances bibliques.\n\nAndroid: ${androidLink}\niOS: ${iosLink}`;
+            ? 'Check out Bible Quiz! Test your biblical knowledge.'
+            : `Check out Bible Quiz! Test your biblical knowledge.\n\nAndroid: ${androidLink}\niOS: ${iosLink}`;
 
         try {
             await Share.share({
                 message,
                 url: Platform.OS === 'ios' ? iosLink : undefined, // iOS supports a separate url field
-                title: 'Quiz Biblique'
+                title: 'Bible Quiz'
             });
         } catch (error) {
             console.error(error);
@@ -125,10 +125,20 @@ export default function SettingsScreen() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                <TouchableOpacity
+                    onPress={() => {
+                        if (router.canGoBack()) {
+                            router.back();
+                        } else {
+                            router.replace('/');
+                        }
+                    }}
+                    style={styles.backButton}
+                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+                >
                     <ArrowLeft color={colors.card.text} size={24} />
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Paramètres</Text>
+                <Text style={styles.headerTitle}>Settings</Text>
             </View>
 
             <ScrollView
@@ -148,17 +158,17 @@ export default function SettingsScreen() {
                 </GlassContainer>
 
                 {/* Legal Section */}
-                <Text style={styles.sectionHeader}>LÉGAL</Text>
+                <Text style={styles.sectionHeader}>LEGAL</Text>
                 <GlassContainer style={styles.section}>
                     <SettingRow
                         icon={<Shield color={colors.accent} size={20} />}
-                        label="Politique de confidentialité"
+                        label="Privacy Policy"
                         onPress={() => router.push('/privacy')}
                     />
                     <View style={styles.divider} />
                     <SettingRow
                         icon={<FileText color={colors.accent} size={20} />}
-                        label="Conditions d'utilisation"
+                        label="Terms of Service"
                         onPress={() => router.push('/terms')}
                     />
                 </GlassContainer>
@@ -168,35 +178,35 @@ export default function SettingsScreen() {
                 <GlassContainer style={styles.section}>
                     <SettingRow
                         icon={<Star color={colors.accent} size={20} />}
-                        label="Noter l'application"
+                        label="Rate the App"
                         onPress={handleRateApp}
                     />
                     <View style={styles.divider} />
                     <SettingRow
                         icon={<Share2 color={colors.accent} size={20} />}
-                        label="Partager l'application"
+                        label="Share the App"
                         onPress={handleShare}
                     />
                     <View style={styles.divider} />
                     <SettingRow
                         icon={<Mail color={colors.accent} size={20} />}
-                        label="Nous contacter"
+                        label="Contact Us"
                         onPress={handleContact}
                     />
                     <View style={styles.divider} />
                     <SettingRow
                         icon={<Headphones color={colors.accent} size={20} />}
-                        label="Centre d'aide"
+                        label="Help Center"
                         onPress={() => router.push('/support')}
                     />
                 </GlassContainer>
 
                 {/* Danger Zone */}
-                <Text style={styles.sectionHeader}>DONNÉES</Text>
+                <Text style={styles.sectionHeader}>DATA</Text>
                 <GlassContainer style={styles.section}>
                     <SettingRow
                         icon={<Trash2 color={colors.error} size={20} />}
-                        label="Réinitialiser la progression"
+                        label="Reset Progress"
                         onPress={handleResetProgress}
                         danger
                     />
@@ -206,10 +216,10 @@ export default function SettingsScreen() {
                 <GlassContainer style={[styles.section, styles.aboutSection]}>
                     <View style={styles.aboutRow}>
                         <Info color={colors.card.textSecondary} size={16} />
-                        <Text style={styles.aboutText}>Quiz Biblique v1.2.8</Text>
+                        <Text style={styles.aboutText}>Bible Quiz v1.2.8</Text>
                     </View>
                     <Text style={styles.aboutSubtext}>
-                        Développé avec ❤️ pour la gloire de Dieu
+                        Developed with ❤️ for the glory of God
                     </Text>
                 </GlassContainer>
 
@@ -229,6 +239,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         marginBottom: 8,
+        zIndex: 50,
     },
     backButton: {
         padding: 8,
@@ -277,13 +288,13 @@ const styles = StyleSheet.create({
         width: 36,
         height: 36,
         borderRadius: 10,
-        backgroundColor: 'rgba(92, 179, 56, 0.1)',
+        backgroundColor: colors.accentDim,
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 14,
     },
     iconWrapperDanger: {
-        backgroundColor: 'rgba(255, 77, 77, 0.1)',
+        backgroundColor: colors.errorDim,
     },
     settingLabel: {
         color: colors.card.text,
@@ -320,7 +331,7 @@ const styles = StyleSheet.create({
         fontFamily: typography.fontFamily.medium,
     },
     aboutSubtext: {
-        color: 'rgba(255,255,255,0.3)',
+        color: colors.card.textMuted,
         fontSize: 12,
         fontFamily: typography.fontFamily.regular,
         marginTop: 4,

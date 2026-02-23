@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const kings1Questions: Question[] = [
     {
         id: '1ki_1',
-        text: 'Qui a succédé à David sur le trône d\'Israël ?',
-        options: ['Salomon', 'Adonija', 'Absalom', 'Roboam'],
-        correctAnswer: 'Salomon',
-        explanation: '1 Rois 1:39 "Tsador le sacrificateur... oignit Salomon."'
+        text: 'Who succeeded David on the throne of Israel?',
+        options: ['Solomon', 'Adonijah', 'Absalom', 'Rehoboam'],
+        correctAnswer: 'Solomon',
+        explanation: '1 Kings 1:39 "Zadok the priest... anointed Solomon."'
     },
     {
         id: '1ki_2',
-        text: 'Qu\'a demandé Salomon à Dieu dans un songe à Gabaon ?',
-        options: ['Un coeur intelligent (la sagesse)', 'La richesse', 'La mort de ses ennemis', 'Une longue vie'],
-        correctAnswer: 'Un coeur intelligent (la sagesse)',
-        explanation: '1 Rois 3:9 "Accorde donc à ton serviteur un coeur intelligent pour juger ton peuple."'
+        text: 'What did Solomon ask God for in a dream at Gibeon?',
+        options: ['A discerning heart (wisdom)', 'Wealth', 'The death of his enemies', 'A long life'],
+        correctAnswer: 'A discerning heart (wisdom)',
+        explanation: '1 Kings 3:9 "So give your servant a discerning heart to govern your people."'
     },
     {
         id: '1ki_3',
-        text: 'Comment Salomon a-t-il résolu le litige entre deux femmes pour un bébé ?',
-        options: ['Il a proposé de couper l\'enfant en deux', 'Il a tiré au sort', 'Il a demandé à l\'enfant', 'Il a chassé les deux femmes'],
-        correctAnswer: 'Il a proposé de couper l\'enfant en deux',
-        explanation: '1 Rois 3:25 "Coupez en deux l\'enfant... La vraie mère dit : Donnez-lui l\'enfant vivant !"'
+        text: 'How did Solomon solve the dispute between two women over a baby?',
+        options: ['He proposed to cut the child in two', 'He cast lots', 'He asked the child', 'He drove both women away'],
+        correctAnswer: 'He proposed to cut the child in two',
+        explanation: '1 Kings 3:25 "Cut the living child in two... The real mother said, \'Please, my lord, give her the living baby!\'"'
     },
     {
         id: '1ki_4',
-        text: 'Combien d\'années a duré la construction du Temple de Salomon ?',
-        options: ['7 ans', '40 ans', '3 ans', '12 ans'],
-        correctAnswer: '7 ans',
-        explanation: '1 Rois 6:38 "Il (Salomon) le bâtit en sept ans."'
+        text: 'How many years did the construction of Solomon\'s Temple take?',
+        options: ['7 years', '40 years', '3 years', '12 years'],
+        correctAnswer: '7 years',
+        explanation: '1 Kings 6:38 "He (Solomon) had spent seven years building it."'
     },
     {
         id: '1ki_5',
-        text: 'Qui a visité Salomon pour éprouver sa sagesse avec des énigmes ?',
-        options: ['La reine de Séba', 'La reine d\'Angleterre', 'Le Pharaon', 'La reine Esther'],
-        correctAnswer: 'La reine de Séba',
-        explanation: '1 Rois 10:1 "La reine de Séba apprit la renommée de Salomon... et vint l\'éprouver."'
+        text: 'Who visited Solomon to test his wisdom with hard questions?',
+        options: ['The Queen of Sheba', 'The Queen of England', 'Pharaoh', 'Queen Esther'],
+        correctAnswer: 'The Queen of Sheba',
+        explanation: '1 Kings 10:1 "When the queen of Sheba heard about the fame of Solomon... she came to test Solomon with hard questions."'
     },
     {
         id: '1ki_6',
-        text: 'Qu\'est-ce qui a détourné le cœur de Salomon de Dieu ?',
-        options: ['Ses nombreuses femmes étrangères', 'Sa richesse', 'Ses ennemis', 'Son âge'],
-        correctAnswer: 'Ses nombreuses femmes étrangères',
-        explanation: '1 Rois 11:4 "À l\'époque de la vieillesse de Salomon, ses femmes détournèrent son coeur vers d\'autres dieux."'
+        text: 'What turned Solomon\'s heart away from God?',
+        options: ['His many foreign wives', 'His wealth', 'His enemies', 'His age'],
+        correctAnswer: 'His many foreign wives',
+        explanation: '1 Kings 11:4 "As Solomon grew old, his wives turned his heart after other gods."'
     },
     {
         id: '1ki_7',
-        text: 'Qui a déchiré le manteau neuf d\'Ahiija en 12 morceaux ?',
-        options: ['Le prophète Ahiija de Silo', 'Jéroboam', 'Salomon', 'Roboam'],
-        correctAnswer: 'Le prophète Ahiija de Silo',
-        explanation: '1 Rois 11:30 "Ahiija saisit le manteau neuf qu\'il avait sur lui, le déchira en douze morceaux."'
+        text: 'Who tore Ahijah\'s new cloak into 12 pieces?',
+        options: ['The prophet Ahijah of Shiloh', 'Jeroboam', 'Solomon', 'Rehoboam'],
+        correctAnswer: 'The prophet Ahijah of Shiloh',
+        explanation: '1 Kings 11:30 "Ahijah took hold of the new cloak he was wearing and tore it into twelve pieces."'
     },
     {
         id: '1ki_8',
-        text: 'Qui est devenu roi des 10 tribus du Nord (Israël) après le schisme ?',
-        options: ['Jéroboam', 'Roboam', 'Salomon', 'Achab'],
-        correctAnswer: 'Jéroboam',
-        explanation: '1 Rois 12:20 "Tout Israël... établit Jéroboam roi sur tout Israël."'
+        text: 'Who became king of the 10 northern tribes (Israel) after the schism?',
+        options: ['Jeroboam', 'Rehoboam', 'Solomon', 'Ahab'],
+        correctAnswer: 'Jeroboam',
+        explanation: '1 Kings 12:20 "All Israel... made Jeroboam king over all Israel."'
     },
     {
         id: '1ki_9',
-        text: 'Quel péché Jéroboam a-t-il commis pour empêcher le peuple d\'aller à Jérusalem ?',
-        options: ['Il a fait deux veaux d\'or', 'Il a fermé les frontières', 'Il a tué les prêtres', 'Il a adoré Baal'],
-        correctAnswer: 'Il a fait deux veaux d\'or',
-        explanation: '1 Rois 12:28 "Il fit deux veaux d\'or et dit : Voici tes dieux, Israël."'
+        text: 'What sin did Jeroboam commit to prevent the people from going to Jerusalem?',
+        options: ['He made two golden calves', 'He closed the borders', 'He killed the priests', 'He worshipped Baal'],
+        correctAnswer: 'He made two golden calves',
+        explanation: '1 Kings 12:28 "He made two golden calves, and said... \'Here are your gods, Israel.\'"'
     },
     {
         id: '1ki_10',
-        text: 'Quel prophète a nourri la veuve de Sarepta ?',
-        options: ['Élie', 'Élisée', 'Samuel', 'Nathan'],
-        correctAnswer: 'Élie',
-        explanation: '1 Rois 17:9 "Lève-toi, va à Sarepta... j\'y ai ordonné à une femme veuve de te nourrir."'
+        text: 'Which prophet fed the widow of Zarephath?',
+        options: ['Elijah', 'Elisha', 'Samuel', 'Nathan'],
+        correctAnswer: 'Elijah',
+        explanation: '1 Kings 17:9 "Go at once to Zarephath... I have directed a widow there to supply you with food."'
     },
     {
         id: '1ki_11',
-        text: 'Sur quelle montagne Élie a-t-il défié les prophètes de Baal ?',
-        options: ['Mont Carmel', 'Mont Sinaï', 'Mont Sion', 'Mont Horeb'],
-        correctAnswer: 'Mont Carmel',
-        explanation: '1 Rois 18:19 "Rassemble tout Israël vers moi, à la montagne du Carmel."'
+        text: 'On which mountain did Elijah challenge the prophets of Baal?',
+        options: ['Mount Carmel', 'Mount Sinai', 'Mount Zion', 'Mount Horeb'],
+        correctAnswer: 'Mount Carmel',
+        explanation: '1 Kings 18:19 "Now summon the people from all over Israel to meet me on Mount Carmel."'
     },
     {
         id: '1ki_12',
-        text: 'Comment Dieu a-t-il répondu à la prière d\'Élie sur le Mont Carmel ?',
-        options: ['Le feu est tombé du ciel', 'La pluie est tombée', 'Un tremblement de terre', 'Une voix tonnante'],
-        correctAnswer: 'Le feu est tombé du ciel',
-        explanation: '1 Rois 18:38 "Le feu de l\'Éternel tomba, et il consuma l\'holocauste."'
+        text: 'How did God answer Elijah\'s prayer on Mount Carmel?',
+        options: ['Fire fell from heaven', 'Rain fell', 'An earthquake', 'A thundering voice'],
+        correctAnswer: 'Fire fell from heaven',
+        explanation: '1 Kings 18:38 "Then the fire of the Lord fell and burned up the sacrifice."'
     },
     {
         id: '1ki_13',
-        text: 'Comment Dieu s\'est-il révélé à Élie à Horeb ?',
-        options: ['Dans un murmure doux et léger', 'Dans le vent fort', 'Dans le tremblement de terre', 'Dans le feu'],
-        correctAnswer: 'Dans un murmure doux et léger',
-        explanation: '1 Rois 19:12 "Et après le feu, un murmure doux et léger."'
+        text: 'How did God reveal himself to Elijah at Horeb?',
+        options: ['In a gentle whisper', 'In a powerful wind', 'In an earthquake', 'In fire'],
+        correctAnswer: 'In a gentle whisper',
+        explanation: '1 Kings 19:12 "And after the fire came a gentle whisper."'
     },
     {
         id: '1ki_14',
-        text: 'Qui était la femme méchante du roi Achab ?',
-        options: ['Jézabel', 'Athalie', 'Hérodias', 'Michal'],
-        correctAnswer: 'Jézabel',
-        explanation: '1 Rois 16:31 "Il (Achab) prit pour femme Jézabel, fille d\'Ethbaal."'
+        text: 'Who was the wicked wife of King Ahab?',
+        options: ['Jezebel', 'Athaliah', 'Herodias', 'Michal'],
+        correctAnswer: 'Jezebel',
+        explanation: '1 Kings 16:31 "He (Ahab) married Jezebel daughter of Ethbaal."'
     },
     {
         id: '1ki_15',
-        text: 'De qui Achab voulait-il la vigne ?',
-        options: ['Naboth', 'Gédéon', 'Élie', 'Obadiah'],
+        text: 'Whose vineyard did Ahab want?',
+        options: ['Naboth', 'Gideon', 'Elijah', 'Obadiah'],
         correctAnswer: 'Naboth',
-        explanation: '1 Rois 21:1 "Naboth... avait une vigne à Jizreel, à côté du palais d\'Achab."'
+        explanation: '1 Kings 21:1 "Naboth... had a vineyard in Jezreel, close to the palace of Ahab."'
     },
     {
         id: '1ki_16',
-        text: 'Qui a succédé à Élie comme prophète ?',
-        options: ['Élisée', 'Ésaïe', 'Jérémie', 'Amos'],
-        correctAnswer: 'Élisée',
-        explanation: '1 Rois 19:16 "Tu oindras Élisée... pour prophète à ta place."'
+        text: 'Who succeeded Elijah as prophet?',
+        options: ['Elisha', 'Isaiah', 'Jeremiah', 'Amos'],
+        correctAnswer: 'Elisha',
+        explanation: '1 Kings 19:16 "Anoint Elisha... to succeed you as prophet."'
     },
     {
         id: '1ki_17',
-        text: 'Comment Élie est-il nourri au torrent de Kerith ?',
-        options: ['Par des corbeaux', 'Par des anges', 'Par des lions', 'Par des poissons'],
-        correctAnswer: 'Par des corbeaux',
-        explanation: '1 Rois 17:6 "Les corbeaux lui apportaient du pain et de la viande."'
+        text: 'How was Elijah fed at the Kerith Ravine?',
+        options: ['By ravens', 'By angels', 'By lions', 'By fish'],
+        correctAnswer: 'By ravens',
+        explanation: '1 Kings 17:6 "The ravens brought him bread and meat in the morning and bread and meat in the evening."'
     },
     {
         id: '1ki_18',
-        text: 'Que s\'est-il passé quand la reine de Séba a vu la sagesse de Salomon ?',
-        options: ['Elle en eut le souffle coupé', 'Elle s\'est moquée', 'Elle est partie en colère', 'Elle s\'est endormie'],
-        correctAnswer: 'Elle en eut le souffle coupé',
-        explanation: '1 Rois 10:5 "Elle en eut le souffle coupé."'
+        text: 'What happened when the Queen of Sheba saw Solomon\'s wisdom?',
+        options: ['She was overwhelmed', 'She mocked him', 'She left in anger', 'She fell asleep'],
+        correctAnswer: 'She was overwhelmed',
+        explanation: '1 Kings 10:5 "When the queen of Sheba saw all the wisdom of Solomon... she was overwhelmed."'
     },
     {
         id: '1ki_19',
-        text: 'Quelle était l\'ombre au tableau du règne de Salomon ?',
-        options: ['L\'idolâtrie à la fin de sa vie', 'La guerre civile', 'La pauvreté', 'La maladie'],
-        correctAnswer: 'L\'idolâtrie à la fin de sa vie',
-        explanation: '1 Rois 11 décrit sa chute spirituelle.'
+        text: 'What was the major failure of Solomon\'s reign?',
+        options: ['His idolatry at the end of his life', 'Civil war', 'Poverty', 'Sickness'],
+        correctAnswer: 'His idolatry at the end of his life',
+        explanation: '1 Kings 11 describes his spiritual downfall.'
     },
     {
         id: '1ki_20',
-        text: 'Combien de chars Salomon avait-il ?',
-        options: ['1 400', '100', '10 000', '500'],
-        correctAnswer: '1 400',
-        explanation: '1 Rois 10:26 "Salomon rassembla des chars... il en avait mille quatre cents."'
+        text: 'How many chariots did Solomon have?',
+        options: ['1,400', '100', '10,000', '500'],
+        correctAnswer: '1,400',
+        explanation: '1 Kings 10:26 "Solomon accumulated chariots... he had fourteen hundred chariots."'
     }
 ];

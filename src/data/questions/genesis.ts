@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const genesisQuestions: Question[] = [
     {
         id: 'gen_1',
-        text: 'Au commencement, Dieu créa...',
-        options: ['La terre et la mer', 'Les cieux et la terre', 'L\'homme et la femme', 'La lumière et les ténèbres'],
-        correctAnswer: 'Les cieux et la terre',
-        explanation: 'Genèse 1:1 "Au commencement, Dieu créa les cieux et la terre."'
+        text: 'In the beginning, God created...',
+        options: ['The earth and the sea', 'The heavens and the earth', 'Man and woman', 'Light and darkness'],
+        correctAnswer: 'The heavens and the earth',
+        explanation: 'Genesis 1:1 "In the beginning God created the heavens and the earth."'
     },
     {
         id: 'gen_2',
-        text: 'Qu\'est-ce que Dieu a créé le premier jour ?',
-        options: ['Les animaux', 'Le soleil', 'La lumière', 'Les plantes'],
-        correctAnswer: 'La lumière',
-        explanation: 'Genèse 1:3 "Dieu dit : Que la lumière soit ! Et la lumière fut."'
+        text: 'What did God create on the first day?',
+        options: ['Animals', 'The sun', 'Light', 'Plants'],
+        correctAnswer: 'Light',
+        explanation: 'Genesis 1:3 "And God said, \'Let there be light,\' and there was light."'
     },
     {
         id: 'gen_3',
-        text: 'De quoi Dieu a-t-il formé Adam ?',
-        options: ['De la poussière de la terre', 'D\'une côte', 'De l\'eau', 'De lumière'],
-        correctAnswer: 'De la poussière de la terre',
-        explanation: 'Genèse 2:7 "L\'Éternel Dieu forma l\'homme de la poussière de la terre."'
+        text: 'From what did God form Adam?',
+        options: ['Dust of the ground', 'A rib', 'Water', 'Light'],
+        correctAnswer: 'Dust of the ground',
+        explanation: 'Genesis 2:7 "Then the Lord God formed a man from the dust of the ground."'
     },
     {
         id: 'gen_4',
-        text: 'Quel était le nom de la femme d\'Adam ?',
-        options: ['Sarah', 'Ève', 'Marie', 'Rebecca'],
-        correctAnswer: 'Ève',
-        explanation: 'Genèse 3:20 "Adam donna à sa femme le nom d\'Ève."'
+        text: 'What was the name of Adam\'s wife?',
+        options: ['Sarah', 'Eve', 'Mary', 'Rebekah'],
+        correctAnswer: 'Eve',
+        explanation: 'Genesis 3:20 "Adam named his wife Eve."'
     },
     {
         id: 'gen_5',
-        text: 'Qui a commis le premier meurtre dans la Bible ?',
-        options: ['Abel', 'Caïn', 'Seth', 'Lémec'],
-        correctAnswer: 'Caïn',
-        explanation: 'Genèse 4:8 "Caïn s\'éleva contre son frère Abel, et le tua."'
+        text: 'Who committed the first murder in the Bible?',
+        options: ['Abel', 'Cain', 'Seth', 'Lamech'],
+        correctAnswer: 'Cain',
+        explanation: 'Genesis 4:8 "Cain attacked his brother Abel and killed him."'
     },
     {
         id: 'gen_6',
-        text: 'Combien de jours a duré le déluge (la pluie) ?',
-        options: ['7 jours', '40 jours et 40 nuits', '150 jours', '100 jours'],
-        correctAnswer: '40 jours et 40 nuits',
-        explanation: 'Genèse 7:12 "La pluie tomba sur la terre quarante jours et quarante nuits."'
+        text: 'How many days did the flood (rain) last?',
+        options: ['7 days', '40 days and 40 nights', '150 days', '100 days'],
+        correctAnswer: '40 days and 40 nights',
+        explanation: 'Genesis 7:12 "And rain fell on the earth forty days and forty nights."'
     },
     {
         id: 'gen_7',
-        text: 'Quel oiseau Noé a-t-il envoyé qui est revenu avec une feuille d\'olivier ?',
-        options: ['Un corbeau', 'Une colombe', 'Un aigle', 'Un faucon'],
-        correctAnswer: 'Une colombe',
-        explanation: 'Genèse 8:11 "La colombe revint... et voici, une feuille d\'olivier arrachée était dans son bec."'
+        text: 'Which bird did Noah send out that returned with an olive leaf?',
+        options: ['A raven', 'A dove', 'An eagle', 'A hawk'],
+        correctAnswer: 'A dove',
+        explanation: 'Genesis 8:11 "When the dove returned... there in its beak was a freshly plucked olive leaf!"'
     },
     {
         id: 'gen_8',
-        text: 'Quel signe Dieu a-t-il donné pour l\'alliance avec Noé ?',
-        options: ['Le feu', 'L\'arc-en-ciel', 'Le soleil', 'Une étoile'],
-        correctAnswer: 'L\'arc-en-ciel',
-        explanation: 'Genèse 9:13 "J\'ai placé mon arc dans la nue, et il servira de signe d\'alliance."'
+        text: 'What sign did God give for the covenant with Noah?',
+        options: ['Fire', 'A rainbow', 'The sun', 'A star'],
+        correctAnswer: 'A rainbow',
+        explanation: 'Genesis 9:13 "I have set my rainbow in the clouds, and it will be the sign of the covenant."'
     },
     {
         id: 'gen_9',
-        text: 'Quelle ville avait une tour construite pour atteindre le ciel ?',
-        options: ['Jéricho', 'Babel', 'Sodome', 'Ninive'],
+        text: 'Which city had a tower built to reach the heavens?',
+        options: ['Jericho', 'Babel', 'Sodom', 'Nineveh'],
         correctAnswer: 'Babel',
-        explanation: 'Genèse 11:9 "C\'est pourquoi on l\'appela du nom de Babel."'
+        explanation: 'Genesis 11:9 "That is why it was called Babel."'
     },
     {
         id: 'gen_10',
-        text: 'Qui était le père d\'Isaac ?',
-        options: ['Lot', 'Abraham', 'Jacob', 'Noé'],
+        text: 'Who was the father of Isaac?',
+        options: ['Lot', 'Abraham', 'Jacob', 'Noah'],
         correctAnswer: 'Abraham',
-        explanation: 'Genèse 21:3 "Abraham donna le nom d\'Isaac au fils qui lui était né."'
+        explanation: 'Genesis 21:3 "Abraham gave the name Isaac to the son Sarah bore him."'
     },
     {
         id: 'gen_11',
-        text: 'Que Dieu a-t-il demandé à Abraham de sacrifier ?',
-        options: ['Un agneau', 'Son fils Isaac', 'Son serviteur', 'Tout son bétail'],
-        correctAnswer: 'Son fils Isaac',
-        explanation: 'Genèse 22:2 "Prends ton fils, ton unique... et offre-le en holocauste."'
+        text: 'What did God ask Abraham to sacrifice?',
+        options: ['A lamb', 'His son Isaac', 'His servant', 'All his livestock'],
+        correctAnswer: 'His son Isaac',
+        explanation: 'Genesis 22:2 "Take your son, your only son... sacrifice him there as a burnt offering."'
     },
     {
         id: 'gen_12',
-        text: 'Qui a vendu son droit d\'aînesse pour un plat de lentilles ?',
-        options: ['Jacob', 'Ésaü', 'Joseph', 'Benjamin'],
-        correctAnswer: 'Ésaü',
-        explanation: 'Genèse 25:34 "Il mangea et but... C\'est ainsi qu\'Ésaü méprisa le droit d\'aînesse."'
+        text: 'Who sold his birthright for a bowl of lentil stew?',
+        options: ['Jacob', 'Esau', 'Joseph', 'Benjamin'],
+        correctAnswer: 'Esau',
+        explanation: 'Genesis 25:34 "He ate and drank... So Esau despised his birthright."'
     },
     {
         id: 'gen_13',
-        text: 'Combien de fils Jacob a-t-il eus ?',
+        text: 'How many sons did Jacob have?',
         options: ['10', '12', '7', '3'],
         correctAnswer: '12',
-        explanation: 'Genèse 35:22 "Les fils de Jacob étaient au nombre de douze."'
+        explanation: 'Genesis 35:22 "Jacob had twelve sons."'
     },
     {
         id: 'gen_14',
-        text: 'Qui a reçu une tunique de plusieurs couleurs de son père ?',
-        options: ['Ruben', 'Joseph', 'Juda', 'Lévi'],
+        text: 'Who received an ornate robe (coat of many colors) from his father?',
+        options: ['Reuben', 'Joseph', 'Judah', 'Levi'],
         correctAnswer: 'Joseph',
-        explanation: 'Genèse 37:3 "Israël aimait Joseph... et il lui fit une tunique de plusieurs couleurs."'
+        explanation: 'Genesis 37:3 "Now Israel loved Joseph... and he made an ornate robe for him."'
     },
     {
         id: 'gen_15',
-        text: 'Où Joseph a-t-il été emmené comme esclave ?',
-        options: ['À Babylone', 'En Égypte', 'En Assyrie', 'À Canaan'],
-        correctAnswer: 'En Égypte',
-        explanation: 'Genèse 37:28 "Ils emmenèrent Joseph en Égypte."'
+        text: 'Where was Joseph taken as a slave?',
+        options: ['Babylon', 'Egypt', 'Assyria', 'Canaan'],
+        correctAnswer: 'Egypt',
+        explanation: 'Genesis 37:28 "They took Joseph to Egypt."'
     },
     {
         id: 'gen_16',
-        text: 'Qui a interprété les rêves de Pharaon ?',
-        options: ['Moïse', 'Joseph', 'Daniel', 'Aaron'],
+        text: 'Who interpreted Pharaoh\'s dreams?',
+        options: ['Moses', 'Joseph', 'Daniel', 'Aaron'],
         correctAnswer: 'Joseph',
-        explanation: 'Genèse 41:15 "Pharaon dit à Joseph : J\'ai eu un songe... tu l\'expliques."'
+        explanation: 'Genesis 41:15 "Pharaoh said to Joseph, \'I had a dream... I have heard it said of you that... you can interpret it.\'"'
     },
     {
         id: 'gen_17',
-        text: 'De quel pays Abraham est-il parti ?',
-        options: ['Ur en Chaldée', 'Égypte', 'Canaan', 'Haran'],
-        correctAnswer: 'Ur en Chaldée',
-        explanation: 'Genèse 15:7 "Je suis l\'Éternel, qui t\'ai fait sortir d\'Ur en Chaldée."'
+        text: 'From which country did Abraham leave?',
+        options: ['Ur of the Chaldeans', 'Egypt', 'Canaan', 'Haran'],
+        correctAnswer: 'Ur of the Chaldeans',
+        explanation: 'Genesis 15:7 "I am the Lord, who brought you out of Ur of the Chaldeans."'
     },
     {
         id: 'gen_18',
-        text: 'Comment s\'appelait la femme d\'Isaac ?',
-        options: ['Rachel', 'Rebecca', 'Léa', 'Sarah'],
-        correctAnswer: 'Rebecca',
-        explanation: 'Genèse 24:67 "Isaac conduisit Rebecca dans la tente de Sarah... et elle devint sa femme."'
+        text: 'What was the name of Isaac\'s wife?',
+        options: ['Rachel', 'Rebekah', 'Leah', 'Sarah'],
+        correctAnswer: 'Rebekah',
+        explanation: 'Genesis 24:67 "Isaac brought her into the tent of his mother Sarah... and she became his wife."'
     },
     {
         id: 'gen_19',
-        text: 'Avec qui Jacob a-t-il lutté toute la nuit ?',
-        options: ['Son frère', 'Un homme (Ange de Dieu)', 'Un lion', 'Un soldat'],
-        correctAnswer: 'Un homme (Ange de Dieu)',
-        explanation: 'Genèse 32:24 "Jacob demeura seul. Alors un homme lutta avec lui jusqu\'au lever de l\'aurore."'
+        text: 'With whom did Jacob wrestle all night?',
+        options: ['His brother', 'A man (Angel of God)', 'A lion', 'A soldier'],
+        correctAnswer: 'A man (Angel of God)',
+        explanation: 'Genesis 32:24 "So Jacob was left alone, and a man wrestled with him till daybreak."'
     },
     {
         id: 'gen_20',
-        text: 'Quel nouveau nom Dieu a-t-il donné à Jacob ?',
-        options: ['Israël', 'Édom', 'Juda', 'Éphraïm'],
-        correctAnswer: 'Israël',
-        explanation: 'Genèse 32:28 "Ton nom ne sera plus Jacob, mais tu seras appelé Israël."'
+        text: 'What new name did God give to Jacob?',
+        options: ['Israel', 'Edom', 'Judah', 'Ephraim'],
+        correctAnswer: 'Israel',
+        explanation: 'Genesis 32:28 "Your name will no longer be Jacob, but Israel."'
     }
 ];

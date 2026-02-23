@@ -44,7 +44,7 @@ const initialState: GameState = {
     totalCorrectAnswers: 0,
 };
 
-const STORAGE_KEY = '@quiz_biblique_game_state';
+const STORAGE_KEY = '@bible_quiz_game_state';
 
 function calculateStars(correctAnswers: number, totalQuestions: number): number {
     const percentage = (correctAnswers / totalQuestions) * 100;

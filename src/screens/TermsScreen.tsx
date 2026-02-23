@@ -5,68 +5,68 @@ import { typography } from '../theme/typography';
 import { useRouter } from 'expo-router';
 import { ArrowLeft, FileText } from 'lucide-react-native';
 
-const LAST_UPDATED = '17 février 2026';
+const LAST_UPDATED = 'February 17, 2026';
 
 const sections = [
     {
-        title: '1. Acceptation des conditions',
+        title: '1. Acceptance of Terms',
         content:
-            'En téléchargeant, installant ou utilisant l\'application Quiz Biblique ("l\'Application"), vous acceptez d\'être lié par ces conditions d\'utilisation. Si vous n\'acceptez pas ces conditions, veuillez ne pas utiliser l\'Application.',
+            'By downloading, installing, or using the Bible Quiz app ("the App"), you agree to be bound by these terms of service. If you do not accept these terms, please do not use the App.',
     },
     {
-        title: '2. Description du service',
+        title: '2. Description of Service',
         content:
-            'Quiz Biblique est une application de quiz éducative et ludique basée sur la Bible. L\'Application propose des questions sur différents livres de la Bible, un système de progression par niveaux, des récompenses quotidiennes et un suivi des statistiques personnelles.',
+            'Bible Quiz is an educational and fun quiz application based on the Bible. The App offers questions on different books of the Bible, a level-based progression system, daily rewards, and personal statistics tracking.',
     },
     {
-        title: '3. Utilisation de l\'Application',
+        title: '3. Use of the App',
         content:
-            'Vous vous engagez à :\n\n• Utiliser l\'Application de manière respectueuse et conformément à son objectif éducatif\n• Ne pas tenter de modifier, décompiler ou désassembler l\'Application\n• Ne pas utiliser l\'Application à des fins commerciales sans autorisation\n• Ne pas contourner les mesures de sécurité de l\'Application',
+            "You commit to:\n\n• Using the App in a respectful manner and in accordance with its educational purpose\n• Not attempting to modify, decompile, or disassemble the App\n• Not using the App for commercial purposes without authorization\n• Not bypassing the security measures of the App",
     },
     {
-        title: '4. Contenu de l\'Application',
+        title: '4. App Content',
         content:
-            'Les questions, réponses et explications fournies dans l\'Application sont basées sur la Bible et sont destinées à des fins éducatives. Nous nous efforçons de fournir des informations exactes, mais nous ne garantissons pas l\'absence totale d\'erreurs.\n\nLe contenu ne constitue pas un enseignement théologique officiel et ne remplace pas l\'étude personnelle de la Bible.',
+            "The questions, answers, and explanations provided in the App are based on the Bible and are intended for educational purposes. We strive to provide accurate information, but we do not guarantee the total absence of errors.\n\nThe content does not constitute official theological teaching and does not replace personal Bible study.",
     },
     {
-        title: '5. Propriété intellectuelle',
+        title: '5. Intellectual Property',
         content:
-            'Tous les éléments de l\'Application (design, code, contenu, graphiques, logos) sont protégés par les lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer ou créer des œuvres dérivées sans notre autorisation écrite.',
+            'All elements of the App (design, code, content, graphics, logos) are protected by intellectual property laws. You may not reproduce, distribute, or create derivative works without our written authorization.',
     },
     {
-        title: '6. Progression et données',
+        title: '6. Progression and Data',
         content:
-            'Votre progression dans le jeu est stockée localement sur votre appareil. Nous ne sommes pas responsables de la perte de données résultant de :\n\n• La désinstallation de l\'Application\n• Un changement d\'appareil\n• Une réinitialisation de l\'appareil\n• Des erreurs techniques indépendantes de notre volonté',
+            "Your game progression is stored locally on your device. We are not responsible for data loss resulting from:\n\n• Uninstalling the App\n• Changing devices\n• Resetting the device\n• Technical errors beyond our control",
     },
     {
-        title: '7. Disponibilité',
+        title: '7. Availability',
         content:
-            'Nous nous efforçons de maintenir l\'Application disponible en permanence, mais nous ne garantissons pas un fonctionnement ininterrompu. L\'Application peut être temporairement indisponible pour maintenance, mises à jour ou pour des raisons techniques.',
+            'We strive to maintain the App available at all times, but we do not guarantee uninterrupted operation. The App may be temporarily unavailable for maintenance, updates, or technical reasons.',
     },
     {
-        title: '8. Limitation de responsabilité',
+        title: '8. Limitation of Liability',
         content:
-            'L\'Application est fournie "telle quelle". Dans la mesure permise par la loi, nous déclinons toute garantie, expresse ou implicite. Nous ne serons pas responsables des dommages directs, indirects, accessoires ou consécutifs résultant de l\'utilisation de l\'Application.',
+            'The App is provided "as is". To the extent permitted by law, we disclaim all warranties, express or implied. We will not be liable for any direct, indirect, incidental, or consequential damages resulting from the use of the App.',
     },
     {
-        title: '9. Modifications des conditions',
+        title: '9. Modifications to Terms',
         content:
-            'Nous nous réservons le droit de modifier ces conditions à tout moment. Les modifications entreront en vigueur dès leur publication dans l\'Application. Votre utilisation continue de l\'Application après les modifications constitue votre acceptation des nouvelles conditions.',
+            'We reserve the right to modify these terms at any time. Changes will take effect upon their publication in the App. Your continued use of the App after modifications constitutes your acceptance of the new terms.',
     },
     {
-        title: '10. Résiliation',
+        title: '10. Termination',
         content:
-            'Nous nous réservons le droit de restreindre ou de mettre fin à votre accès à l\'Application si vous violez ces conditions d\'utilisation. Vous pouvez cesser d\'utiliser l\'Application à tout moment en la désinstallant.',
+            'We reserve the right to restrict or terminate your access to the App if you violate these terms of service. You may stop using the App at any time by uninstalling it.',
     },
     {
-        title: '11. Droit applicable',
+        title: '11. Governing Law',
         content:
-            'Ces conditions sont régies par les lois applicables. Tout litige relatif à ces conditions sera soumis à la juridiction compétente.',
+            'These terms are governed by applicable laws. Any dispute relating to these terms will be submitted to the competent jurisdiction.',
     },
     {
         title: '12. Contact',
         content:
-            'Pour toute question concernant ces conditions d\'utilisation, veuillez nous contacter à :\n\nsupport@dailyfaith.me',
+            'For any questions regarding these terms of service, please contact us at:\n\nsupport@dailyfaith.me',
     },
 ];
 
@@ -77,10 +77,20 @@ export default function TermsScreen() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                <TouchableOpacity
+                    onPress={() => {
+                        if (router.canGoBack()) {
+                            router.back();
+                        } else {
+                            router.replace('/');
+                        }
+                    }}
+                    style={styles.backButton}
+                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+                >
                     <ArrowLeft color={colors.card.text} size={24} />
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Conditions</Text>
+                <Text style={styles.headerTitle}>Terms</Text>
             </View>
 
             <ScrollView
@@ -92,8 +102,8 @@ export default function TermsScreen() {
                     <View style={styles.heroIcon}>
                         <FileText color={colors.accent} size={28} />
                     </View>
-                    <Text style={styles.heroTitle}>Conditions d'Utilisation</Text>
-                    <Text style={styles.heroDate}>Dernière mise à jour : {LAST_UPDATED}</Text>
+                    <Text style={styles.heroTitle}>Terms of Service</Text>
+                    <Text style={styles.heroDate}>Last updated: {LAST_UPDATED}</Text>
                 </View>
 
                 {/* Sections */}
@@ -120,6 +130,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         marginBottom: 8,
+        zIndex: 50,
     },
     backButton: {
         padding: 8,

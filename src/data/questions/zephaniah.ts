@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const zephaniahQuestions: Question[] = [
     {
         id: 'zep_1',
-        text: 'Sous quel roi prophétisait Sophonie ?',
-        options: ['Josias', 'Amon', 'Manassé', 'Ézéchias'],
-        correctAnswer: 'Josias',
-        explanation: 'Sophonie 1:1 Au temps du dernier bon roi de Juda.'
+        text: 'During whose reign did Zephaniah prophesy?',
+        options: ['Josiah', 'Amon', 'Manasseh', 'Hezekiah'],
+        correctAnswer: 'Josiah',
+        explanation: 'Zephaniah 1:1 During the time of the last good king of Judah.'
     },
     {
         id: 'zep_2',
-        text: 'Quel est le thème principal de Sophonie ?',
-        options: ['Le jour de l\'Éternel (Dies Irae)', 'L\'amour de Dieu', 'La construction du Temple', 'L\'exil'],
-        correctAnswer: 'Le jour de l\'Éternel (Dies Irae)',
-        explanation: 'Sophonie 1:14 "Le grand jour de l\'Éternel est proche."'
+        text: 'What is the main theme of Zephaniah?',
+        options: ['The day of the Lord (Dies Irae)', 'The love of God', 'The building of the Temple', 'The exile'],
+        correctAnswer: 'The day of the Lord (Dies Irae)',
+        explanation: 'Zephaniah 1:14 "The great day of the Lord is near."'
     },
     {
         id: 'zep_3',
-        text: 'Je fouillerai Jérusalem avec... ?',
-        options: ['Des lampes', 'Des épées', 'Des chiens', 'Des râteaux'],
-        correctAnswer: 'Des lampes',
-        explanation: 'Sophonie 1:12'
+        text: '"At that time I will search Jerusalem with...?"',
+        options: ['Lamps', 'Swords', 'Dogs', 'Rakes'],
+        correctAnswer: 'Lamps',
+        explanation: 'Zephaniah 1:12'
     },
     {
         id: 'zep_4',
-        text: 'Ni leur argent ni leur or ne pourront les délivrer... ?',
-        options: ['Au jour de la fureur de l\'Éternel', 'De la maladie', 'De la famine', 'De la vieillesse'],
-        correctAnswer: 'Au jour de la fureur de l\'Éternel',
-        explanation: 'Sophonie 1:18'
+        text: '"Neither their silver nor their gold will be able to save them...?"',
+        options: ['On the day of the Lord’s wrath', 'From sickness', 'From famine', 'From old age'],
+        correctAnswer: 'On the day of the Lord’s wrath',
+        explanation: 'Zephaniah 1:18'
     },
     {
         id: 'zep_5',
-        text: 'Cherchez l\'Éternel, vous tous, humbles du pays... Cherchez... ?',
-        options: ['La justice, cherchez l\'humilité', 'La richesse', 'La gloire', 'Le pouvoir'],
-        correctAnswer: 'La justice, cherchez l\'humilité',
-        explanation: 'Sophonie 2:3 "Peut-être serez-vous épargnés..."'
+        text: '"Seek the Lord, all you humble of the land... Seek...?"',
+        options: ['Righteousness, seek humility', 'Wealth', 'Glory', 'Power'],
+        correctAnswer: 'Righteousness, seek humility',
+        explanation: 'Zephaniah 2:3 "Perhaps you will be sheltered..."'
     },
     {
         id: 'zep_6',
-        text: 'Gaza sera délaissée, et Askalon... ?',
-        options: ['Désolée / Désertée', 'Brûlée', 'Inondée', 'Reconstruite'],
-        correctAnswer: 'Désolée / Désertée',
-        explanation: 'Sophonie 2:4 Jugement des Philistins.'
+        text: 'Gaza will be abandoned and Ashkelon...?',
+        options: ['Left in ruins / Deserted', 'Burned', 'Flooded', 'Rebuilt'],
+        correctAnswer: 'Left in ruins / Deserted',
+        explanation: 'Zephaniah 2:4 Judgment of the Philistines.'
     },
     {
         id: 'zep_7',
-        text: 'Moab sera comme Sodome, et les enfants d\'Ammon comme... ?',
-        options: ['Gomorrhe', 'Égypte', 'Ninive', 'Babylone'],
-        correctAnswer: 'Gomorrhe',
-        explanation: 'Sophonie 2:9'
+        text: 'Moab will become like Sodom, the Ammonites like...?',
+        options: ['Gomorrah', 'Egypt', 'Nineveh', 'Babylon'],
+        correctAnswer: 'Gomorrah',
+        explanation: 'Zephaniah 2:9'
     },
     {
         id: 'zep_8',
-        text: 'Il étendra sa main sur le septentrion, il détruira... ?',
-        options: ['L\'Assyrie (et fera de Ninive une solitude)', 'Babylone', 'L\'Égypte', 'La Perse'],
-        correctAnswer: 'L\'Assyrie (et fera de Ninive une solitude)',
-        explanation: 'Sophonie 2:13'
+        text: 'He will stretch out his hand against the north and destroy...?',
+        options: ['Assyria (and leave Nineveh utterly desolate)', 'Babylon', 'Egypt', 'Persia'],
+        correctAnswer: 'Assyria (and leave Nineveh utterly desolate)',
+        explanation: 'Zephaniah 2:13'
     },
     {
         id: 'zep_9',
-        text: 'Malheur à la ville rebelle et souillée (Jérusalem)... Elle n\'écoute... ?',
-        options: ['Aucune voix', 'Pas la musique', 'Pas le vent', 'Pas la rumeur'],
-        correctAnswer: 'Aucune voix',
-        explanation: 'Sophonie 3:1-2'
+        text: 'Woe to the city of oppressors, rebellious and defiled (Jerusalem)!... She obeys...?',
+        options: ['No one', 'Not the music', 'Not the wind', 'Not the rumor'],
+        correctAnswer: 'No one',
+        explanation: 'Zephaniah 3:1-2'
     },
     {
         id: 'zep_10',
-        text: 'Alors je donnerai aux peuples des lèvres... ?',
-        options: ['Pures', 'Puissantes', 'Savantes', 'Rouges'],
-        correctAnswer: 'Pures',
-        explanation: 'Sophonie 3:9 "...afin qu\'ils invoquent tous le nom de l\'Éternel."'
+        text: '"Then I will purify the lips of the...?"',
+        options: ['Peoples', 'Powerful', 'Learned', 'Red'],
+        correctAnswer: 'Peoples',
+        explanation: 'Zephaniah 3:9 "...that all of them may call on the name of the Lord."'
     },
     {
         id: 'zep_11',
-        text: 'Je laisserai au milieu de toi un peuple... ?',
-        options: ['Humble et petit', 'Grand et fort', 'Riche et puissant', 'Sage et vieux'],
-        correctAnswer: 'Humble et petit',
-        explanation: 'Sophonie 3:12 Le "Reste" fidèle.'
+        text: '"But I will leave within you a people...?"',
+        options: ['Meek and humble', 'Great and strong', 'Rich and powerful', 'Wise and old'],
+        correctAnswer: 'Meek and humble',
+        explanation: 'Zephaniah 3:12 The faithful "Remnant".'
     },
     {
         id: 'zep_12',
-        text: 'Pousse des cris de joie, fille de Sion ! ... L\'Éternel a... ?',
-        options: ['Détourné tes châtiments', 'Détruit tes maisons', 'Fermé le ciel', 'Oublié ton nom'],
-        correctAnswer: 'Détourné tes châtiments',
-        explanation: 'Sophonie 3:14-15'
+        text: 'Sing, Daughter Zion; shout aloud, Israel!... The Lord has...?',
+        options: ['Taken away your punishment', 'Destroyed your houses', 'Closed the sky', 'Forgotten your name'],
+        correctAnswer: 'Taken away your punishment',
+        explanation: 'Zephaniah 3:14-15'
     },
     {
         id: 'zep_13',
-        text: 'Le roi d\'Israël, l\'Éternel, est... ?',
-        options: ['Au milieu de toi', 'Au ciel', 'Loin', 'En colère'],
-        correctAnswer: 'Au milieu de toi',
-        explanation: 'Sophonie 3:15'
+        text: 'The Lord, the King of Israel, is...?',
+        options: ['With you', 'In heaven', 'Far away', 'Angry'],
+        correctAnswer: 'With you',
+        explanation: 'Zephaniah 3:15'
     },
     {
         id: 'zep_14',
-        text: 'Il fera de toi sa plus grande joie; il gardera le silence dans son amour; il... ?',
-        options: ['Se réjouira à ton sujet avec des chants d\'allégresse', 'Pleureras', 'S\'endormira', 'Partira'],
-        correctAnswer: 'Se réjouira à ton sujet avec des chants d\'allégresse',
-        explanation: 'Sophonie 3:17 Dieu qui chante de joie sur son peuple.'
+        text: 'He will take great delight in you; in his love he will no longer rebuke you, but...?',
+        options: ['Will rejoice over you with singing', 'Will cry', 'Will fall asleep', 'Will leave'],
+        correctAnswer: 'Will rejoice over you with singing',
+        explanation: 'Zephaniah 3:17 God who sings with joy over his people.'
     },
     {
         id: 'zep_15',
-        text: 'Je supprimerai ceux qui disent : L\'Éternel ne fait ni... ?',
-        options: ['Bien ni mal', 'Jour ni nuit', 'Chaud ni froid', 'Rien'],
-        correctAnswer: 'Bien ni mal',
-        explanation: 'Sophonie 1:12 Ceux qui croient que Dieu est inactif.'
+        text: 'I will punish those who say, "The Lord will do...?"',
+        options: ['Nothing, either good or bad', 'Day or night', 'Hot or cold', 'Nothing'],
+        correctAnswer: 'Nothing, either good or bad',
+        explanation: 'Zephaniah 1:12 Those who believe God is inactive.'
     },
     {
         id: 'zep_16',
-        text: 'Le jour de l\'Éternel est un jour de... ?',
-        options: ['Fureur', 'Fête', 'Mariage', 'Pluie'],
-        correctAnswer: 'Fureur',
-        explanation: 'Sophonie 1:15'
+        text: 'The day of the Lord is a day of...?',
+        options: ['Wrath', 'Feast', 'Marriage', 'Rain'],
+        correctAnswer: 'Wrath',
+        explanation: 'Zephaniah 1:15'
     },
     {
         id: 'zep_17',
-        text: 'Qui était l\'arrière-arrière-grand-père de Sophonie ?',
-        options: ['Le roi Ézéchias', 'David', 'Moïse', 'Amos'],
-        correctAnswer: 'Le roi Ézéchias',
-        explanation: 'Sophonie 1:1 Il est de sang royal.'
+        text: 'Who was the great-great-grandfather of Zephaniah?',
+        options: ['King Hezekiah', 'David', 'Moses', 'Amos'],
+        correctAnswer: 'King Hezekiah',
+        explanation: 'Zephaniah 1:1 He is of royal blood.'
     },
     {
         id: 'zep_18',
-        text: 'Je ravirai les hommes et les bêtes... les oiseaux... et les... ?',
-        options: ['Poissons de la mer', 'Arbres', 'Montagnes', 'Étoiles'],
-        correctAnswer: 'Poissons de la mer',
-        explanation: 'Sophonie 1:3 Jugement universel (dé-création).'
+        text: '"I will sweep away both man and beast... the birds... and the...?"',
+        options: ['Fish in the sea', 'Trees', 'Mountains', 'Stars'],
+        correctAnswer: 'Fish in the sea',
+        explanation: 'Zephaniah 1:3 Universal judgment (de-creation).'
     },
     {
         id: 'zep_19',
-        text: 'Ceux qui adorent sur les toits... ?',
-        options: ['L\'armée des cieux', 'Le soleil', 'La lune', 'Les nuages'],
-        correctAnswer: 'L\'armée des cieux',
-        explanation: 'Sophonie 1:5 Idolâtrie astrale.'
+        text: 'Those who bow down on the roofs to worship...?',
+        options: ['The starry host (army of heavens)', 'The sun', 'The moon', 'The clouds'],
+        correctAnswer: 'The starry host (army of heavens)',
+        explanation: 'Zephaniah 1:5 Astral idolatry.'
     },
     {
         id: 'zep_20',
-        text: 'Je ferai de vous un sujet de louange et de gloire... quand... ?',
-        options: ['Je ramènerai vos captifs', 'Je vous donnerai de l\'or', 'Je détruirai Rome', 'Je viendrai'],
-        correctAnswer: 'Je ramènerai vos captifs',
-        explanation: 'Sophonie 3:20'
+        text: '"I will give you honor and praise... when...?"',
+        options: ['I restore your fortunes (bring back your captives)', 'I give you gold', 'I destroy Rome', 'I come'],
+        correctAnswer: 'I restore your fortunes (bring back your captives)',
+        explanation: 'Zephaniah 3:20'
     }
 ];

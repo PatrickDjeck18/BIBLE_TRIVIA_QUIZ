@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const jobQuestions: Question[] = [
     {
         id: 'job_1',
-        text: 'Quel était le caractère de Job au début du livre ?',
-        options: ['Intègre et droit, craignant Dieu', 'Orgueilleux', 'Pécheur', 'Guerrier'],
-        correctAnswer: 'Intègre et droit, craignant Dieu',
-        explanation: 'Job 1:1 "Cet homme était intègre et droit; il craignait Dieu, et se détournait du mal."'
+        text: 'What was Job\'s character at the beginning of the book?',
+        options: ['Blameless and upright, fearing God', 'Proud', 'A sinner', 'A warrior'],
+        correctAnswer: 'Blameless and upright, fearing God',
+        explanation: 'Job 1:1 "This man was blameless and upright; he feared God and shunned evil."'
     },
     {
         id: 'job_2',
-        text: 'Qui a demandé la permission à Dieu d\'éprouver Job ?',
-        options: ['Satan', 'Un ange', 'Sa femme', 'Ses amis'],
+        text: 'Who asked God\'s permission to test Job?',
+        options: ['Satan', 'An angel', 'His wife', 'His friends'],
         correctAnswer: 'Satan',
-        explanation: 'Job 1:9-11 "Satan répondit à l\'Éternel... Mais étends ta main, touche à tout ce qui lui appartient..."'
+        explanation: 'Job 1:9-11 "Satan replied to the Lord... But now stretch out your hand and strike everything he has..."'
     },
     {
         id: 'job_3',
-        text: 'Qu\'a perdu Job lors de la première épreuve ?',
-        options: ['Ses biens (bétail) et ses enfants', 'Sa santé', 'Sa femme', 'Sa foi'],
-        correctAnswer: 'Ses biens (bétail) et ses enfants',
-        explanation: 'Job 1:13-19 Tout fut détruit ou volé, et ses enfants tués par un vent violent.'
+        text: 'What did Job lose during the first trial?',
+        options: ['His possessions (livestock) and his children', 'His health', 'His wife', 'His faith'],
+        correctAnswer: 'His possessions (livestock) and his children',
+        explanation: 'Job 1:13-19 Everything was destroyed or stolen, and his children were killed by a violent wind.'
     },
     {
         id: 'job_4',
-        text: 'Quelle maladie Job a-t-il eue lors de la seconde épreuve ?',
-        options: ['Un ulcère malin (des furoncles)', 'La lèpre', 'La cécité', 'La paralysie'],
-        correctAnswer: 'Un ulcère malin (des furoncles)',
-        explanation: 'Job 2:7 "Satan... frappa Job d\'un ulcère malin, depuis la plante du pied jusqu\'au sommet de la tête."'
+        text: 'What disease did Job have during the second trial?',
+        options: ['Painful sores (boils)', 'Leprosy', 'Blindness', 'Paralysis'],
+        correctAnswer: 'Painful sores (boils)',
+        explanation: 'Job 2:7 "Satan... afflicted Job with painful sores from the soles of his feet to the crown of his head."'
     },
     {
         id: 'job_5',
-        text: 'Qu\'a dit la femme de Job face à la souffrance ?',
-        options: ['Maudis Dieu et meurs', 'Prie encore', 'Sois patient', 'Va voir un médecin'],
-        correctAnswer: 'Maudis Dieu et meurs',
-        explanation: 'Job 2:9 "Sa femme lui dit : ...Maudis Dieu, et meurs !"'
+        text: 'What did Job\'s wife say in the face of suffering?',
+        options: ['Curse God and die', 'Pray more', 'Be patient', 'Go see a doctor'],
+        correctAnswer: 'Curse God and die',
+        explanation: 'Job 2:9 "His wife said to him, \'...Curse God and die!\'"'
     },
     {
         id: 'job_6',
-        text: 'Combien d\'amis "consolateurs" sont venus voir Job au début ?',
-        options: ['Trois (Éliphaz, Bildad, Tsophar)', 'Sept', 'Douze', 'Un seul'],
-        correctAnswer: 'Trois (Éliphaz, Bildad, Tsophar)',
+        text: 'How many "comforter" friends came to see Job at the beginning?',
+        options: ['Three (Eliphaz, Bildad, Zophar)', 'Seven', 'Twelve', 'Only one'],
+        correctAnswer: 'Three (Eliphaz, Bildad, Zophar)',
         explanation: 'Job 2:11'
     },
     {
         id: 'job_7',
-        text: 'Quelle était l\'explication des amis de Job pour sa souffrance ?',
-        options: ['Qu\'il avait péché secrètement', 'Que Dieu est injuste', 'Que c\'était le hasard', 'Qu\'il était maudit'],
-        correctAnswer: 'Qu\'il avait péché secrètement',
-        explanation: 'Ils soutenaient la théologie de la rétribution : si tu souffres, c\'est que tu as péché.'
+        text: 'What was Job\'s friends\' explanation for his suffering?',
+        options: ['That he had sinned secretly', 'That God is unjust', 'That it was by chance', 'That he was cursed'],
+        correctAnswer: 'That he had sinned secretly',
+        explanation: 'They held to the theology of retribution: if you suffer, it is because you have sinned.'
     },
     {
         id: 'job_8',
-        text: 'Qui est le quatrième jeune homme qui a pris la parole à la fin ?',
-        options: ['Élihu', 'David', 'Salomon', 'Moïse'],
-        correctAnswer: 'Élihu',
-        explanation: 'Job 32:2 "La colère d\'Élihu... s\'enflamma."'
+        text: 'Who is the fourth young man who spoke at the end?',
+        options: ['Elihu', 'David', 'Solomon', 'Moses'],
+        correctAnswer: 'Elihu',
+        explanation: 'Job 32:2 "Elihu... became very angry."'
     },
     {
         id: 'job_9',
-        text: 'Comment Dieu a-t-il finalement répondu à Job ?',
-        options: ['Du milieu de la tempête (tourbillon)', 'Par un rêve', 'Par un prophète', 'Par un livre'],
-        correctAnswer: 'Du milieu de la tempête (tourbillon)',
-        explanation: 'Job 38:1 "L\'Éternel répondit à Job du milieu de la tempête."'
+        text: 'How did God finally answer Job?',
+        options: ['Out of the storm (whirlwind)', 'Through a dream', 'Through a prophet', 'Through a book'],
+        correctAnswer: 'Out of the storm (whirlwind)',
+        explanation: 'Job 38:1 "Then the Lord spoke to Job out of the storm."'
     },
     {
         id: 'job_10',
-        text: 'Quelle question Dieu pose-t-il à Job ?',
-        options: ['Où étais-tu quand je fondais la terre ?', 'Pourquoi as-tu péché ?', 'Veux-tu être riche ?', 'Qui est ton père ?'],
-        correctAnswer: 'Où étais-tu quand je fondais la terre ?',
-        explanation: 'Job 38:4 Pour lui montrer sa souveraineté et la petitesse de l\'homme.'
+        text: 'What question does God ask Job?',
+        options: ['Where were you when I laid the earth’s foundation?', 'Why did you sin?', 'Do you want to be rich?', 'Who is your father?'],
+        correctAnswer: 'Where were you when I laid the earth’s foundation?',
+        explanation: 'Job 38:4 To show him his sovereignty and the smallness of man.'
     },
     {
         id: 'job_11',
-        text: 'Quel animal puissant (monstre marin/terrestre) Dieu décrit-il ?',
-        options: ['Le Léviathan (et le Béhémoth)', 'Le Lion', 'L\'Aigle', 'Le Dragon'],
-        correctAnswer: 'Le Léviathan (et le Béhémoth)',
-        explanation: 'Job 40-41 Description de créatures indomptables par l\'homme.'
+        text: 'What powerful animal (sea/land monster) does God describe?',
+        options: ['Leviathan (and Behemoth)', 'The Lion', 'The Eagle', 'The Dragon'],
+        correctAnswer: 'Leviathan (and Behemoth)',
+        explanation: 'Job 40-41 Description of creatures indomitable by man.'
     },
     {
         id: 'job_12',
-        text: 'Qu\'a fait Job à la fin, après que Dieu ait parlé ?',
-        options: ['Il s\'est repenti (sur la poussière et la cendre)', 'Il a argumenté', 'Il s\'est enfui', 'Il est mort'],
-        correctAnswer: 'Il s\'est repenti (sur la poussière et la cendre)',
-        explanation: 'Job 42:6 "C\'est pourquoi je me condamne et je me repens..."'
+        text: 'What did Job do at the end, after God had spoken?',
+        options: ['He repented (in dust and ashes)', 'He argued', 'He fled', 'He died'],
+        correctAnswer: 'He repented (in dust and ashes)',
+        explanation: 'Job 42:6 "Therefore I despise myself and repent in dust and ashes."'
     },
     {
         id: 'job_13',
-        text: 'Qu\'est-ce que Dieu a demandé à Job de faire pour ses amis ?',
-        options: ['De prier pour eux', 'De les chasser', 'De les maudire', 'De les payer'],
-        correctAnswer: 'De prier pour eux',
-        explanation: 'Job 42:10 "L\'Éternel rétablit Job dans son premier état, quand Job eut prié pour ses amis."'
+        text: 'What did God ask Job to do for his friends?',
+        options: ['Pray for them', 'Drive them away', 'Curse them', 'Pay them'],
+        correctAnswer: 'Pray for them',
+        explanation: 'Job 42:10 "After Job had prayed for his friends, the Lord restored his fortunes."'
     },
     {
         id: 'job_14',
-        text: 'Comment Dieu a-t-il béni la fin de la vie de Job ?',
-        options: ['Il lui a rendu le double de tout ce qu\'il avait', 'Il l\'a fait roi', 'Il l\'a emmené au ciel immédiatement', 'Il l\'a laissé pauvre mais sage'],
-        correctAnswer: 'Il lui a rendu le double de tout ce qu\'il avait',
-        explanation: 'Job 42:10 "...et l\'Éternel lui accorda le double de tout ce qu\'il avait possédé."'
+        text: 'How did God bless the end of Job\'s life?',
+        options: ['He gave him twice as much as he had before', 'He made him king', 'He took him to heaven immediately', 'He left him poor but wise'],
+        correctAnswer: 'He gave him twice as much as he had before',
+        explanation: 'Job 42:10 "...the Lord restored his fortunes and gave him twice as much as he had before."'
     },
     {
         id: 'job_15',
-        text: 'Quelle phrase célèbre Job a-t-il dite au milieu de sa souffrance ?',
-        options: ['Je sais que mon Rédempteur est vivant', 'Tout est vanité', 'Dieu est mort', 'Rien n\'a de sens'],
-        correctAnswer: 'Je sais que mon Rédempteur est vivant',
-        explanation: 'Job 19:25 "Mais je sais que mon rédempteur est vivant, et qu\'il se lèvera le dernier..."'
+        text: 'What famous phrase did Job say in the middle of his suffering?',
+        options: ['I know that my Redeemer lives', 'Everything is vanity', 'God is dead', 'Nothing makes sense'],
+        correctAnswer: 'I know that my Redeemer lives',
+        explanation: 'Job 19:25 "I know that my redeemer lives, and that in the end he will stand on the earth."'
     },
     {
         id: 'job_16',
-        text: 'Combien d\'années Job a-t-il vécu après ses épreuves ?',
-        options: ['140 ans', '70 ans', '10 ans', '40 ans'],
-        correctAnswer: '140 ans',
-        explanation: 'Job 42:16 "Job vécut après cela cent quarante ans."'
+        text: 'How many years did Job live after his trials?',
+        options: ['140 years', '70 years', '10 years', '40 years'],
+        correctAnswer: '140 years',
+        explanation: 'Job 42:16 "After this, Job lived a hundred and forty years."'
     },
     {
         id: 'job_17',
-        text: 'Quel était le pays de Job ?',
-        options: ['Le pays d\'Uts', 'L\'Égypte', 'Canaan', 'Babylone'],
-        correctAnswer: 'Le pays d\'Uts',
-        explanation: 'Job 1:1 "Il y avait dans le pays d\'Uts un homme..."'
+        text: 'What was Job\'s country?',
+        options: ['The land of Uz', 'Egypt', 'Canaan', 'Babylon'],
+        correctAnswer: 'The land of Uz',
+        explanation: 'Job 1:1 "In the land of Uz there lived a man..."'
     },
     {
         id: 'job_18',
-        text: 'Quelle accusation Satan a-t-il portée contre Job ?',
-        options: ['Qu\'il ne servait Dieu que pour ses bénédictions (intérêt)', 'Qu\'il était un meurtrier', 'Qu\'il volait', 'Qu\'il mentait'],
-        correctAnswer: 'Qu\'il ne servait Dieu que pour ses bénédictions (intérêt)',
-        explanation: 'Job 1:9 "Est-ce d\'une manière désintéressée que Job craint Dieu ?"'
+        text: 'What accusation did Satan bring against Job?',
+        options: ['That he only served God for his blessings (self-interest)', 'That he was a murderer', 'That he stole', 'That he lied'],
+        correctAnswer: 'That he only served God for his blessings (self-interest)',
+        explanation: 'Job 1:9 "Does Job fear God for nothing?"'
     },
     {
         id: 'job_19',
-        text: 'Comment Job a-t-il réagi à l\'annonce de la perte de ses enfants ?',
-        options: ['Il déchira son manteau, adora et dit : L\'Éternel a donné, l\'Éternel a repris', 'Il a maudit Dieu', 'Il s\'est suicidé', 'Il est parti en guerre'],
-        correctAnswer: 'Il déchira son manteau, adora et dit : L\'Éternel a donné, l\'Éternel a repris',
+        text: 'How did Job react to the news of the loss of his children?',
+        options: ['He tore his robe, worshiped and said: The Lord gave and the Lord has taken away', 'He cursed God', 'He committed suicide', 'He went to war'],
+        correctAnswer: 'He tore his robe, worshiped and said: The Lord gave and the Lord has taken away',
         explanation: 'Job 1:20-21'
     },
     {
         id: 'job_20',
-        text: 'De quel oiseau est-il dit qu\'il est privé d\'intelligence ?',
-        options: ['L\'autruche', 'L\'aigle', 'Le hibou', 'Le corbeau'],
-        correctAnswer: 'L\'autruche',
-        explanation: 'Job 39:17 "Car Dieu lui a refusé la sagesse, il ne lui a pas donné l\'intelligence en partage."'
+        text: 'Of which bird is it said that it is deprived of wisdom?',
+        options: ['The ostrich', 'The eagle', 'The owl', 'The raven'],
+        correctAnswer: 'The ostrich',
+        explanation: 'Job 39:17 "For God did not endow her with wisdom or give her a share of good sense."'
     }
 ];

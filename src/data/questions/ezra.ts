@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const ezraQuestions: Question[] = [
     {
         id: 'ezr_1',
-        text: 'Qui était Esdras ?',
-        options: ['Un scribe et sacrificateur', 'Un roi', 'Un prophète', 'Un soldat'],
-        correctAnswer: 'Un scribe et sacrificateur',
-        explanation: 'Esdras 7:6 "C\'était un scribe versé dans la loi de Moïse."'
+        text: 'Who was Ezra?',
+        options: ['A scribe and priest', 'A king', 'A prophet', 'A soldier'],
+        correctAnswer: 'A scribe and priest',
+        explanation: 'Ezra 7:6 "He was a scribe well versed in the Law of Moses."'
     },
     {
         id: 'ezr_2',
-        text: 'Quel empereur perse a décrété la reconstruction du Temple ?',
-        options: ['Cyrus', 'Darius', 'Xerxès', 'Artaxerxès'],
+        text: 'Which Persian emperor decreed the rebuilding of the Temple?',
+        options: ['Cyrus', 'Darius', 'Xerxes', 'Artaxerxes'],
         correctAnswer: 'Cyrus',
-        explanation: 'Esdras 1:1 "L\'Éternel réveilla l\'esprit de Cyrus, roi de Perse."'
+        explanation: 'Ezra 1:1 "The Lord moved the heart of Cyrus king of Persia."'
     },
     {
         id: 'ezr_3',
-        text: 'Qui a conduit le premier groupe de retour d\'exil ?',
-        options: ['Zorobabel', 'Esdras', 'Néhémie', 'Josué'],
-        correctAnswer: 'Zorobabel',
-        explanation: 'Esdras 2:2 "Ils vinrent avec Zorobabel..."'
+        text: 'Who led the first group of returnees from exile?',
+        options: ['Zerubbabel', 'Ezra', 'Nehemiah', 'Joshua'],
+        correctAnswer: 'Zerubbabel',
+        explanation: 'Ezra 2:2 "They came with Zerubbabel..."'
     },
     {
         id: 'ezr_4',
-        text: 'Qu\'ont-ils fait en premier en arrivant à Jérusalem ?',
-        options: ['Ils ont rétabli l\'autel et les sacrifices', 'Ils ont construit les murs', 'Ils ont construit des maisons', 'Ils ont planté des vignes'],
-        correctAnswer: 'Ils ont rétabli l\'autel et les sacrifices',
-        explanation: 'Esdras 3:2 "Josué... et Zorobabel... se levèrent et bâtirent l\'autel."'
+        text: 'What did they do first upon arriving in Jerusalem?',
+        options: ['They rebuilt the altar and the sacrifices', 'They built the walls', 'They built houses', 'They planted vineyards'],
+        correctAnswer: 'They rebuilt the altar and the sacrifices',
+        explanation: 'Ezra 3:2 "Joshua... and Zerubbabel... began to build the altar."'
     },
     {
         id: 'ezr_5',
-        text: 'Quelle a été la réaction lors de la pose des fondations du Temple ?',
-        options: ['Joie (cris) et pleurs des anciens', 'Indifférence', 'Colère', 'Silence'],
-        correctAnswer: 'Joie (cris) et pleurs des anciens',
-        explanation: 'Esdras 3:12 "...pleuraient à haute voix... beaucoup d\'autres faisaient éclatier leur joie..."'
+        text: 'What was the reaction when the foundations of the Temple were laid?',
+        options: ['Shouts of joy and weeping from the elders', 'Indifference', 'Anger', 'Silence'],
+        correctAnswer: 'Shouts of joy and weeping from the elders',
+        explanation: 'Ezra 3:12 "...many shouted for joy. But many of the older... wept aloud."'
     },
     {
         id: 'ezr_6',
-        text: 'Pourquoi la construction s\'est-elle arrêtée ?',
-        options: ['À cause de l\'opposition des ennemis locaux', 'Manque d\'argent', 'Tremblement de terre', 'Mort de Cyrus'],
-        correctAnswer: 'À cause de l\'opposition des ennemis locaux',
-        explanation: 'Esdras 4:24 "Le travail... fut interrompu."'
+        text: 'Why did the construction stop?',
+        options: ['Because of opposition from local enemies', 'Lack of money', 'Earthquake', 'Death of Cyrus'],
+        correctAnswer: 'Because of opposition from local enemies',
+        explanation: 'Ezra 4:24 "Thus the work... came to a standstill."'
     },
     {
         id: 'ezr_7',
-        text: 'Quels prophètes ont encouragé à reprendre la construction ?',
-        options: ['Aggée et Zacharie', 'Ésaïe et Jérémie', 'Élie et Élisée', 'Joël et Amos'],
-        correctAnswer: 'Aggée et Zacharie',
-        explanation: 'Esdras 5:1 "Aggée... et Zacharie... prophétisèrent."'
+        text: 'Which prophets encouraged the resumption of construction?',
+        options: ['Haggai and Zechariah', 'Isaiah and Jeremiah', 'Elijah and Elisha', 'Joel and Amos'],
+        correctAnswer: 'Haggai and Zechariah',
+        explanation: 'Ezra 5:1 "Haggai... and Zechariah... prophesied."'
     },
     {
         id: 'ezr_8',
-        text: 'Quel péché Esdras a-t-il dû confronter sévèrement ?',
-        options: ['Les mariages avec des femmes étrangères', 'L\'idolâtrie', 'Le vol', 'Le meurtre'],
-        correctAnswer: 'Les mariages avec des femmes étrangères',
-        explanation: 'Esdras 9:2 "Ils ont pris de leurs filles pour eux..."'
+        text: 'What sin did Ezra have to confront severely?',
+        options: ['Marriages with foreign women', 'Idolatry', 'Theft', 'Murder'],
+        correctAnswer: 'Marriages with foreign women',
+        explanation: 'Ezra 9:2 "They have taken some of their daughters as wives for themselves..."'
     },
     {
         id: 'ezr_9',
-        text: 'Qu\'a fait Esdras en apprenant ce péché ?',
-        options: ['Il a déchiré ses vêtements et s\'est arraché les cheveux', 'Il a frappé le peuple', 'Il est retourné à Babylone', 'Il a ri'],
-        correctAnswer: 'Il a déchiré ses vêtements et s\'est arraché les cheveux',
-        explanation: 'Esdras 9:3 "Je déchirai ma tunique... je m\'arrachai les cheveux..."'
+        text: 'What did Ezra do upon learning of this sin?',
+        options: ['He tore his clothes and pulled hair from his head', 'He struck the people', 'He returned to Babylon', 'He laughed'],
+        correctAnswer: 'He tore his clothes and pulled hair from his head',
+        explanation: 'Ezra 9:3 "I tore my tunic... pulled hair from my head..."'
     },
     {
         id: 'ezr_10',
-        text: 'Quelle solution le peuple a-t-il proposée pour ce péché ?',
-        options: ['Renvoyer les femmes étrangères et leurs enfants', 'Les tuer', 'Ne rien faire', 'Payer une amende'],
-        correctAnswer: 'Renvoyer les femmes étrangères et leurs enfants',
-        explanation: 'Esdras 10:3 "Faisons maintenant alliance... pour renvoyer toutes ces femmes..."'
+        text: 'What solution did the people propose for this sin?',
+        options: ['To put away the foreign wives and their children', 'To kill them', 'To do nothing', 'To pay a fine'],
+        correctAnswer: 'To put away the foreign wives and their children',
+        explanation: 'Ezra 10:3 "Let us make a covenant... to put away all these wives..."'
     },
     {
         id: 'ezr_11',
-        text: 'Qui était le grand-prêtre lors de la reconstruction ?',
-        options: ['Josué (Jeschua)', 'Aaron', 'Eliaschib', 'Esdras'],
-        correctAnswer: 'Josué (Jeschua)',
-        explanation: 'Esdras 3:2 "Jeschua, fils de Jotsadak."'
+        text: 'Who was the high priest during the reconstruction?',
+        options: ['Joshua (Jeshua)', 'Aaron', 'Eliashib', 'Ezra'],
+        correctAnswer: 'Joshua (Jeshua)',
+        explanation: 'Ezra 3:2 "Jeshua son of Jozadak."'
     },
     {
         id: 'ezr_12',
-        text: 'D\'où venait Esdras pour aller à Jérusalem ?',
-        options: ['De Babylone', 'D\'Égypte', 'De Suse', 'De Rome'],
-        correctAnswer: 'De Babylone',
-        explanation: 'Esdras 7:6 "Cet Esdras vint de Babylone."'
+        text: 'From where did Ezra come to go to Jerusalem?',
+        options: ['Babylon', 'Egypt', 'Susa', 'Rome'],
+        correctAnswer: 'Babylon',
+        explanation: 'Ezra 7:6 "This Ezra came up from Babylon."'
     },
     {
         id: 'ezr_13',
-        text: 'Combien de temps a duré le voyage d\'Esdras ?',
-        options: ['4 mois', '1 an', '2 semaines', '10 jours'],
-        correctAnswer: '4 mois',
-        explanation: 'Esdras 7:9 "Le premier jour du cinquième mois, il arriva à Jérusalem."'
+        text: 'How long did Ezra\'s journey take?',
+        options: ['4 months', '1 year', '2 weeks', '10 days'],
+        correctAnswer: '4 months',
+        explanation: 'Ezra 7:9 "He arrived in Jerusalem on the first day of the fifth month."'
     },
     {
         id: 'ezr_14',
-        text: 'Pourquoi Esdras a-t-il eu honte de demander une escorte au roi ?',
-        options: ['Car il avait dit que la main de Dieu était sur eux pour les protéger', 'Car il n\'avait pas d\'argent', 'Car le roi était méchant', 'Car il voulait voyager seul'],
-        correctAnswer: 'Car il avait dit que la main de Dieu était sur eux pour les protéger',
-        explanation: 'Esdras 8:22 "J\'aurais eu honte de demander au roi... car nous avions dit au roi : La main de notre Dieu est pour leur bien..."'
+        text: 'Why was Ezra ashamed to ask the king for an escort?',
+        options: ['Because he had said that the hand of God was on them for protection', 'Because he had no money', 'Because the king was wicked', 'Because he wanted to travel alone'],
+        correctAnswer: 'Because he had said that the hand of God was on them for protection',
+        explanation: 'Ezra 8:22 "I was ashamed to ask the king... because we had told the king, \'The gracious hand of our God is on everyone who looks to him...\'"'
     },
     {
         id: 'ezr_15',
-        text: 'Qu\'est-ce que le roi Artaxerxès a donné à Esdras ?',
-        options: ['Une lettre d\'autorisation et des fonds', 'Un cheval', 'Une épée', 'Une nouvelle loi'],
-        correctAnswer: 'Une lettre d\'autorisation et des fonds',
-        explanation: 'Esdras 7:11'
+        text: 'What did King Artaxerxes give to Ezra?',
+        options: ['A letter of authorization and funds', 'A horse', 'A sword', 'A new law'],
+        correctAnswer: 'A letter of authorization and funds',
+        explanation: 'Ezra 7:11'
     },
     {
         id: 'ezr_16',
-        text: 'Quel peuple s\'est opposé à la reconstruction ?',
-        options: ['Les Samaritains (gens du pays)', 'Les Grecs', 'Les Romains', 'Les Égyptiens'],
-        correctAnswer: 'Les Samaritains (gens du pays)',
-        explanation: 'Esdras 4:1 "Les ennemis de Juda et de Benjamin..."'
+        text: 'Which people opposed the rebuilding?',
+        options: ['The Samaritans (people of the land)', 'The Greeks', 'The Romans', 'The Egyptians'],
+        correctAnswer: 'The Samaritans (people of the land)',
+        explanation: 'Ezra 4:1 "The enemies of Judah and Benjamin..."'
     },
     {
         id: 'ezr_17',
-        text: 'Où Esdras a-t-il rassemblé ceux qui partaient avec lui ?',
-        options: ['Près du fleuve d\'Ahava', 'Au bord de l\'Euphrate', 'Au Temple', 'Dans le désert'],
-        correctAnswer: 'Près du fleuve d\'Ahava',
-        explanation: 'Esdras 8:15 "Je les rassemblai près du fleuve... Ahava."'
+        text: 'Where did Ezra assemble those who were leaving with him?',
+        options: ['By the Ahava Canal (River)', 'On the banks of the Euphrates', 'At the Temple', 'In the desert'],
+        correctAnswer: 'By the Ahava Canal (River)',
+        explanation: 'Ezra 8:15 "I assembled them at the canal that flows toward Ahava."'
     },
     {
         id: 'ezr_18',
-        text: 'Qu\'ont-ils fait avant de partir ?',
-        options: ['Ils ont jeûné et prié', 'Ils ont fait la fête', 'Ils ont dormi', 'Ils ont vendu leurs biens'],
-        correctAnswer: 'Ils ont jeûné et prié',
-        explanation: 'Esdras 8:21 "Là... je publiai un jeûne d\'humiliation devant notre Dieu."'
+        text: 'What did they do before leaving?',
+        options: ['They fasted and prayed', 'They had a party', 'They slept', 'They sold their goods'],
+        correctAnswer: 'They fasted and prayed',
+        explanation: 'Ezra 8:21 "There... I proclaimed a fast, so that we might humble ourselves before our God."'
     },
     {
         id: 'ezr_19',
-        text: 'En quelle langue certaines parties d\'Esdras (documents officiels) sont-elles écrites ?',
-        options: ['Araméen', 'Grec', 'Latin', 'Égyptien'],
-        correctAnswer: 'Araméen',
-        explanation: 'Une partie du livre est en araméen (langue diplomatique de l\'empire perse).'
+        text: 'In what language are parts of Ezra (official documents) written?',
+        options: ['Aramaic', 'Greek', 'Latin', 'Egyptian'],
+        correctAnswer: 'Aramaic',
+        explanation: 'Part of the book is in Aramaic (the diplomatic language of the Persian Empire).'
     },
     {
         id: 'ezr_20',
-        text: 'Quel était le but principal de la mission d\'Esdras ?',
-        options: ['Enseigner la Loi et rétablir le culte', 'Construire les murs', 'Devenir roi', 'Faire la guerre'],
-        correctAnswer: 'Enseigner la Loi et rétablir le culte',
-        explanation: 'Esdras 7:10 "Car Esdras avait appliqué son coeur... à mettre en pratique et à enseigner... la loi."'
+        text: 'What was the main purpose of Ezra\'s mission?',
+        options: ['To teach the Law and restore worship', 'To build the walls', 'To become king', 'To make war'],
+        correctAnswer: 'To teach the Law and restore worship',
+        explanation: 'Ezra 7:10 "For Ezra had devoted himself to the study and observance of the Law... and to teaching..."'
     }
 ];

@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const peter2Questions: Question[] = [
     {
         id: '2pe_1',
-        text: 'Sa divine puissance nous a donné tout ce qui contribue à... ?',
-        options: ['La vie et à la piété', 'La richesse', 'La santé', 'Le bonheur'],
-        correctAnswer: 'La vie et à la piété',
-        explanation: '2 Pierre 1:3'
+        text: 'His divine power has given us everything we need for...?',
+        options: ['A godly life', 'Wealth', 'Health', 'Happiness'],
+        correctAnswer: 'A godly life',
+        explanation: '2 Peter 1:3'
     },
     {
         id: '2pe_2',
-        text: 'Faites tous vos efforts pour joindre à votre foi la vertu, à la vertu... ?',
-        options: ['La science (connaissance)', 'L\'argent', 'La gloire', 'Le pouvoir'],
-        correctAnswer: 'La science (connaissance)',
-        explanation: '2 Pierre 1:5 Échelle des vertus.'
+        text: 'Make every effort to add to your faith goodness; and to goodness...?',
+        options: ['Knowledge', 'Money', 'Glory', 'Power'],
+        correctAnswer: 'Knowledge',
+        explanation: '2 Peter 1:5 The ladder of virtues.'
     },
     {
         id: '2pe_3',
-        text: 'Car ce n\'est pas par une volonté d\'homme qu\'une prophétie a jamais été apportée, mais c\'est poussés par... ?',
-        options: ['Le Saint-Esprit que des hommes ont parlé de la part de Dieu', 'Leur intelligence', 'Les anges', 'Le roi'],
-        correctAnswer: 'Le Saint-Esprit que des hommes ont parlé de la part de Dieu',
-        explanation: '2 Pierre 1:21'
+        text: 'For prophecy never had its origin in the human will, but prophets, though human, spoke from God as they were carried along by...?',
+        options: ['The Holy Spirit', 'Their intelligence', 'Angels', 'The king'],
+        correctAnswer: 'The Holy Spirit',
+        explanation: '2 Peter 1:21'
     },
     {
         id: '2pe_4',
-        text: 'Il y aura parmi vous de faux docteurs, qui introduiront des... ?',
-        options: ['Sectes pernicieuses', 'Lois nouvelles', 'Dieux étrangers', 'Livres'],
-        correctAnswer: 'Sectes pernicieuses',
-        explanation: '2 Pierre 2:1'
+        text: 'There will be false teachers among you. They will secretly introduce...?',
+        options: ['Destructive heresies', 'New laws', 'Foreign gods', 'Books'],
+        correctAnswer: 'Destructive heresies',
+        explanation: '2 Peter 2:1'
     },
     {
         id: '2pe_5',
-        text: 'Dieu n\'a pas épargné les anges qui ont péché, mais... ?',
-        options: ['Il les a précipités dans les abîmes de ténèbres (Tartare)', 'Il les a pardonnés', 'Il les a chassés', 'Il les a tués'],
-        correctAnswer: 'Il les a précipités dans les abîmes de ténèbres (Tartare)',
-        explanation: '2 Pierre 2:4'
+        text: 'God did not spare angels when they sinned, but...?',
+        options: ['Sent them to hell (Tartarus), putting them in chains of darkness', 'Forgave them', 'Drove them away', 'Killed them'],
+        correctAnswer: 'Sent them to hell (Tartarus), putting them in chains of darkness',
+        explanation: '2 Peter 2:4'
     },
     {
         id: '2pe_6',
-        text: 'Il a sauvé le juste Lot... ?',
-        options: ['Qui était profondément attristé de la conduite de ces hommes', 'Qui était riche', 'Qui était fort', 'Qui était roi'],
-        correctAnswer: 'Qui était profondément attristé de la conduite de ces hommes',
-        explanation: '2 Pierre 2:7'
+        text: 'He rescued Lot, a righteous man...?',
+        options: ['Who was distressed by the depraved conduct of the lawless', 'Who was rich', 'Who was strong', 'Who was king'],
+        correctAnswer: 'Who was distressed by the depraved conduct of the lawless',
+        explanation: '2 Peter 2:7'
     },
     {
         id: '2pe_7',
-        text: 'Ils promettent la liberté, quand ils sont eux-mêmes esclaves de... ?',
-        options: ['La corruption', 'La loi', 'L\'argent', 'La peur'],
-        correctAnswer: 'La corruption',
-        explanation: '2 Pierre 2:19'
+        text: 'They promise them freedom, while they themselves are slaves of...?',
+        options: ['Depravity (corruption)', 'The law', 'Money', 'Fear'],
+        correctAnswer: 'Depravity (corruption)',
+        explanation: '2 Peter 2:19'
     },
     {
         id: '2pe_8',
-        text: 'Le chien est retourné à ce qu\'il avait vomi, et la truie lavée s\'est... ?',
-        options: ['Vautrée dans le bourbier', 'Enfuie', 'Cachée', 'Endormie'],
-        correctAnswer: 'Vautrée dans le bourbier',
-        explanation: '2 Pierre 2:22'
+        text: 'A dog returns to its vomit, and, a sow that is washed...?',
+        options: ['Returns to her wallowing in the mud', 'Runs away', 'Hides', 'Falls asleep'],
+        correctAnswer: 'Returns to her wallowing in the mud',
+        explanation: '2 Peter 2:22'
     },
     {
         id: '2pe_9',
-        text: 'Dans les derniers jours, il viendra des moqueurs... disant : Où est... ?',
-        options: ['La promesse de son avènement ?', 'Dieu ?', 'La vérité ?', 'La justice ?'],
-        correctAnswer: 'La promesse de son avènement ?',
-        explanation: '2 Pierre 3:3-4'
+        text: 'In the last days scoffers will come... saying, "Where is...?"',
+        options: ['This "coming" he promised?', 'God?', 'The truth?', 'Justice?'],
+        correctAnswer: 'This "coming" he promised?',
+        explanation: '2 Peter 3:3-4'
     },
     {
         id: '2pe_10',
-        text: 'Devant le Seigneur, un jour est comme mille ans, et mille ans sont comme... ?',
-        options: ['Un jour', 'Une seconde', 'Une heure', 'Une nuit'],
-        correctAnswer: 'Un jour',
-        explanation: '2 Pierre 3:8'
+        text: 'With the Lord a day is like a thousand years, and a thousand years are like...?',
+        options: ['A day', 'A second', 'An hour', 'A night'],
+        correctAnswer: 'A day',
+        explanation: '2 Peter 3:8'
     },
     {
         id: '2pe_11',
-        text: 'Le Seigneur ne tarde pas... mais il use de patience, ne voulant pas qu\'aucun... ?',
-        options: ['Périsse', 'Souffre', 'Meure', 'Pèche'],
-        correctAnswer: 'Périsse',
-        explanation: '2 Pierre 3:9'
+        text: 'The Lord is not slow... instead he is patient with you, not wanting anyone to...?',
+        options: ['Perish', 'Suffer', 'Die', 'Sin'],
+        correctAnswer: 'Perish',
+        explanation: '2 Peter 3:9'
     },
     {
         id: '2pe_12',
-        text: 'Le jour du Seigneur viendra comme un voleur; en ce jour, les cieux passeront avec fracas, les éléments... ?',
-        options: ['Embrasés se dissoudront', 'Tomberont', 'Brilleront', 'Disparaîtront'],
-        correctAnswer: 'Embrasés se dissoudront',
-        explanation: '2 Pierre 3:10'
+        text: 'The day of the Lord will come like a thief. The heavens will disappear with a roar; the elements...?',
+        options: ['Will be destroyed by fire', 'Will fall', 'Will shine', 'Will disappear'],
+        correctAnswer: 'Will be destroyed by fire',
+        explanation: '2 Peter 3:10'
     },
     {
         id: '2pe_13',
-        text: 'Nous attendons, selon sa promesse, de nouveaux cieux et... ?',
-        options: ['Une nouvelle terre, où la justice habitera', 'Une nouvelle ville', 'Un nouveau temple', 'Un nouveau roi'],
-        correctAnswer: 'Une nouvelle terre, où la justice habitera',
-        explanation: '2 Pierre 3:13'
+        text: 'In keeping with his promise we are looking forward to a new heaven and...?',
+        options: ['A new earth, where righteousness dwells', 'A new city', 'A new temple', 'A new king'],
+        correctAnswer: 'A new earth, where righteousness dwells',
+        explanation: '2 Peter 3:13'
     },
     {
         id: '2pe_14',
-        text: 'Croissez dans la grâce et dans la connaissance de... ?',
-        options: ['Notre Seigneur et Sauveur Jésus-Christ', 'La loi', 'La science', 'L\'histoire'],
-        correctAnswer: 'Notre Seigneur et Sauveur Jésus-Christ',
-        explanation: '2 Pierre 3:18'
+        text: 'Grow in the grace and knowledge of...?',
+        options: ['Our Lord and Savior Jesus Christ', 'The law', 'Science', 'History'],
+        correctAnswer: 'Our Lord and Savior Jesus Christ',
+        explanation: '2 Peter 3:18'
     },
     {
         id: '2pe_15',
-        text: 'Pierre mentionne les lettres de quel autre apôtre, difficiles à comprendre ?',
-        options: ['Paul', 'Jean', 'Jacques', 'Jude'],
+        text: 'Peter mentions the letters of which other apostle as being hard to understand?',
+        options: ['Paul', 'John', 'James', 'Jude'],
         correctAnswer: 'Paul',
-        explanation: '2 Pierre 3:15-16 Il classe les lettres de Paul avec les "autres Écritures".'
+        explanation: '2 Peter 3:15-16 He classifies Paul’s letters with the "other Scriptures".'
     },
     {
         id: '2pe_16',
-        text: 'Nous avons vu sa gloire (transfiguration) sur... ?',
-        options: ['La sainte montagne', 'La mer', 'Le temple', 'Le ciel'],
-        correctAnswer: 'La sainte montagne',
-        explanation: '2 Pierre 1:18'
+        text: 'We saw his glory (transfiguration) on...?',
+        options: ['The sacred mountain', 'The sea', 'The temple', 'The sky'],
+        correctAnswer: 'The sacred mountain',
+        explanation: '2 Peter 1:18'
     },
     {
         id: '2pe_17',
-        text: 'Une ânesse muette, faisant entendre une voix d\'homme, arrêta la démence du prophète... ?',
-        options: ['Balaam', 'Jonas', 'Élie', 'Moïse'],
+        text: 'A donkey—an animal without speech—spoke with a human voice and restrained the prophet’s madness. Which prophet?',
+        options: ['Balaam', 'Jonah', 'Elijah', 'Moses'],
         correctAnswer: 'Balaam',
-        explanation: '2 Pierre 2:16'
+        explanation: '2 Peter 2:16'
     },
     {
         id: '2pe_18',
-        text: 'Ils ont quitté le droit chemin, ils se sont égarés en suivant la voie de... ?',
-        options: ['Balaam', 'Caïn', 'Koré', 'Saül'],
+        text: 'They have left the straight way and wandered off to follow the way of...?',
+        options: ['Balaam', 'Cain', 'Korah', 'Saul'],
         correctAnswer: 'Balaam',
-        explanation: '2 Pierre 2:15'
+        explanation: '2 Peter 2:15'
     },
     {
         id: '2pe_19',
-        text: 'La terre avec les oeuvres qu\'elle renferme sera... ?',
-        options: ['Consumée (ou mise à découvert)', 'Sauvée', 'Cachée', 'Vendue'],
-        correctAnswer: 'Consumée (ou mise à découvert)',
-        explanation: '2 Pierre 3:10'
+        text: 'The earth and everything done in it will be...?',
+        options: ['Laid bare (or consumed)', 'Saved', 'Hidden', 'Sold'],
+        correctAnswer: 'Laid bare (or consumed)',
+        explanation: '2 Peter 3:10'
     },
     {
         id: '2pe_20',
-        text: 'L\'étoile du matin se lève dans vos... ?',
-        options: ['Coeurs', 'Yeux', 'Esprits', 'Mains'],
-        correctAnswer: 'Coeurs',
-        explanation: '2 Pierre 1:19'
+        text: 'The morning star rises in your...?',
+        options: ['Hearts', 'Eyes', 'Minds', 'Hands'],
+        correctAnswer: 'Hearts',
+        explanation: '2 Peter 1:19'
     }
 ];

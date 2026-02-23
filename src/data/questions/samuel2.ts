@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const samuel2Questions: Question[] = [
     {
         id: '2sa_1',
-        text: 'Quelle ville David a-t-il conquise pour en faire sa capitale ?',
-        options: ['Jérusalem', 'Hébron', 'Silo', 'Samarie'],
-        correctAnswer: 'Jérusalem',
-        explanation: '2 Samuel 5:7 "David s\'empara de la forteresse de Sion : c\'est la cité de David."'
+        text: 'Which city did David conquer to make his capital?',
+        options: ['Jerusalem', 'Hebron', 'Shiloh', 'Samaria'],
+        correctAnswer: 'Jerusalem',
+        explanation: '2 Samuel 5:7 "David captured the fortress of Zion—which is the City of David."'
     },
     {
         id: '2sa_2',
-        text: 'Combien d\'années David a-t-il régné au total ?',
-        options: ['40 ans', '7 ans', '33 ans', '50 ans'],
-        correctAnswer: '40 ans',
-        explanation: '2 Samuel 5:4 "David régna quarante ans."'
+        text: 'How many years did David reign in total?',
+        options: ['40 years', '7 years', '33 years', '50 years'],
+        correctAnswer: '40 years',
+        explanation: '2 Samuel 5:4 "David... reigned forty years."'
     },
     {
         id: '2sa_3',
-        text: 'Qui a touché l\'Arche et est mort sur place ?',
-        options: ['Uzza', 'Ahio', 'Obed-Édom', 'Michal'],
-        correctAnswer: 'Uzza',
-        explanation: '2 Samuel 6:7 "La colère de l\'Éternel s\'enflamma contre Uzza, et Dieu le frappa sur place."'
+        text: 'Who touched the Ark and died on the spot?',
+        options: ['Uzzah', 'Ahio', 'Obed-Edom', 'Michal'],
+        correctAnswer: 'Uzzah',
+        explanation: '2 Samuel 6:7 "The Lord’s anger burned against Uzzah because of his irreverent act; therefore God struck him down."'
     },
     {
         id: '2sa_4',
-        text: 'Pourquoi Michal a-t-elle méprisé David ?',
-        options: ['Parce qu\'il dansait devant l\'Arche', 'Parce qu\'il avait tué son père', 'Parce qu\'il était pauvre', 'Parce qu\'il a perdu la guerre'],
-        correctAnswer: 'Parce qu\'il dansait devant l\'Arche',
-        explanation: '2 Samuel 6:16 "Michal... vit le roi David sauter et danser... et elle le méprisa dans son coeur."'
+        text: 'Why did Michal despise David in her heart?',
+        options: ['Because he was dancing before the Ark', 'Because he had killed her father', 'Because he was poor', 'Because he lost the war'],
+        correctAnswer: 'Because he was dancing before the Ark',
+        explanation: '2 Samuel 6:16 "Michal... saw King David leaping and dancing... she despised him in her heart."'
     },
     {
         id: '2sa_5',
-        text: 'Avec qui David a-t-il commis un adultère ?',
-        options: ['Bath-Schéba', 'Tamar', 'Abigaïl', 'Michal'],
-        correctAnswer: 'Bath-Schéba',
-        explanation: '2 Samuel 11:4 "David... et elle (Bath-Schéba) vint vers lui, et il coucha avec elle."'
+        text: 'With whom did David commit adultery?',
+        options: ['Bathsheba', 'Tamar', 'Abigail', 'Michal'],
+        correctAnswer: 'Bathsheba',
+        explanation: '2 Samuel 11:4 "Then David sent messengers to get her; she came to him, and he slept with her."'
     },
     {
         id: '2sa_6',
-        text: 'Qui était le mari de Bath-Schéba que David a fait tuer ?',
-        options: ['Urie le Hittite', 'Joab', 'Abner', 'Amasa'],
-        correctAnswer: 'Urie le Hittite',
-        explanation: '2 Samuel 11:15 "Placez Urie au plus fort du combat... afin qu\'il soit frappé et qu\'il meure."'
+        text: 'Who was Bathsheba’s husband whom David had killed?',
+        options: ['Uriah the Hittite', 'Joab', 'Abner', 'Amasa'],
+        correctAnswer: 'Uriah the Hittite',
+        explanation: '2 Samuel 11:15 "Put Uriah out in front where the fighting is fiercest... so he will be struck down and die."'
     },
     {
         id: '2sa_7',
-        text: 'Quel prophète a réprimandé David avec une parabole ?',
-        options: ['Nathan', 'Samuel', 'Gad', 'Élie'],
+        text: 'Which prophet rebuked David with a parable?',
+        options: ['Nathan', 'Samuel', 'Gad', 'Elijah'],
         correctAnswer: 'Nathan',
-        explanation: '2 Samuel 12:1 "L\'Éternel envoya Nathan vers David."'
+        explanation: '2 Samuel 12:1 "The Lord sent Nathan to David."'
     },
     {
         id: '2sa_8',
-        text: 'Quel fils de David s\'est révolté contre lui ?',
-        options: ['Absalom', 'Salomon', 'Adonija', 'Amnon'],
+        text: 'Which son of David rebelled against him?',
+        options: ['Absalom', 'Solomon', 'Adonijah', 'Amnon'],
         correctAnswer: 'Absalom',
-        explanation: '2 Samuel 15:10 "Dès que vous entendrez le son de la trompette, vous direz : Absalom règne à Hébron."'
+        explanation: '2 Samuel 15:10 "As soon as you hear the sound of the trumpets, then say, \'Absalom is king in Hebron.\'"'
     },
     {
         id: '2sa_9',
-        text: 'Comment Absalom est-il mort ?',
-        options: ['Ses cheveux se sont pris dans un arbre et Joab l\'a tué', 'Au combat singulier avec David', 'Maladie', 'Accident de char'],
-        correctAnswer: 'Ses cheveux se sont pris dans un arbre et Joab l\'a tué',
-        explanation: '2 Samuel 18:9 "La tête d\'Absalom se prit au térébinthe..."'
+        text: 'How did Absalom die?',
+        options: ['His hair got caught in a tree and Joab killed him', 'In single combat with David', 'Sickness', 'Chariot accident'],
+        correctAnswer: 'His hair got caught in a tree and Joab killed him',
+        explanation: '2 Samuel 18:9 "Absalom’s head got caught in the tree..."'
     },
     {
         id: '2sa_10',
-        text: 'Qui était le chef de l\'armée de David ?',
-        options: ['Joab', 'Abner', 'Benaïa', 'Asaël'],
+        text: 'Who was the commander of David’s army?',
+        options: ['Joab', 'Abner', 'Benaiah', 'Asahel'],
         correctAnswer: 'Joab',
-        explanation: '2 Samuel 20:23 "Joab commandait toute l\'armée d\'Israël."'
+        explanation: '2 Samuel 20:23 "Joab was over Israel’s entire army."'
     },
     {
         id: '2sa_11',
-        text: 'Quel ami de David a feint de rallier Absalom pour l\'espionner ?',
-        options: ['Huschaï', 'Ahithophel', 'Tsiba', 'Schimeï'],
-        correctAnswer: 'Huschaï',
-        explanation: '2 Samuel 15:34 "...si tu (Huschaï) retournes à la ville... tu anéantiras pour moi le conseil d\'Ahithophel."'
+        text: 'Which friend of David pretended to join Absalom to spy on him?',
+        options: ['Hushai', 'Ahithophel', 'Ziba', 'Shimei'],
+        correctAnswer: 'Hushai',
+        explanation: '2 Samuel 15:34 "...if you (Hushai) go back to the city... you can help me by frustrating Ahithophel’s advice."'
     },
     {
         id: '2sa_12',
-        text: 'Quel fils de Jonathan, estropié, David a-t-il accueilli à sa table ?',
-        options: ['Mephiboscheth', 'Mica', 'Hanun', 'Ziba'],
-        correctAnswer: 'Mephiboscheth',
-        explanation: '2 Samuel 9:7 "Tu mangeras toujours à ma table."'
+        text: 'Which crippled son of Jonathan did David welcome to his table?',
+        options: ['Mephibosheth', 'Mica', 'Hanun', 'Ziba'],
+        correctAnswer: 'Mephibosheth',
+        explanation: '2 Samuel 9:7 "You will always eat at my table."'
     },
     {
         id: '2sa_13',
-        text: 'Quelle alliance Dieu a-t-il faite avec David (2 Samuel 7) ?',
-        options: ['Que son trône serait affermi pour toujours', 'Qu\'il ne mourrait jamais', 'Qu\'il serait le plus riche', 'Qu\'il n\'aurait pas de guerres'],
-        correctAnswer: 'Que son trône serait affermi pour toujours',
-        explanation: 'Alliance Davidique promettant une lignée éternelle (le Messie).'
+        text: 'What covenant did God make with David (2 Samuel 7)?',
+        options: ['That his throne would be established forever', 'That he would never die', 'That he would be the richest', 'That he would have no more wars'],
+        correctAnswer: 'That his throne would be established forever',
+        explanation: 'The Davidic Covenant promising an eternal dynasty (the Messiah).'
     },
     {
         id: '2sa_14',
-        text: 'Qui a maudit David en lui jetant des pierres ?',
-        options: ['Schimeï', 'Ziba', 'Nabal', 'Doëg'],
-        correctAnswer: 'Schimeï',
-        explanation: '2 Samuel 16:5-6 "Il s\'appelait Schimeï... Il jetait des pierres à David."'
+        text: 'Who cursed David and threw stones at him?',
+        options: ['Shimei', 'Ziba', 'Nabal', 'Doeg'],
+        correctAnswer: 'Shimei',
+        explanation: '2 Samuel 16:5-6 "His name was Shimei... He pelted David... with stones."'
     },
     {
         id: '2sa_15',
-        text: 'Pourquoi David n\'a-t-il pas pu construire le Temple ?',
-        options: ['Parce qu\'il avait versé trop de sang (guerres)', 'Par manque d\'argent', 'Parce qu\'il était trop vieux', 'Dieu ne voulait pas de maison'],
-        correctAnswer: 'Parce qu\'il avait versé trop de sang (guerres)',
-        explanation: '1 Chroniques 22:8 explique ce qui est implicite dans 2 Samuel 7.'
+        text: 'Why was David not allowed to build the Temple?',
+        options: ['Because he had shed too much blood (wars)', 'Lack of money', 'Because he was too old', 'God did not want a house'],
+        correctAnswer: 'Because he had shed too much blood (wars)',
+        explanation: '1 Chronicles 22:8 explains what is implied in 2 Samuel 7.'
     },
     {
         id: '2sa_16',
-        text: 'Quel péché David a-t-il commis à la fin du livre ?',
-        options: ['Il a fait le dénombrement du peuple (orgueil)', 'Il a adoré une idole', 'Il a tué un prêtre', 'Il a volé de l\'or'],
-        correctAnswer: 'Il a fait le dénombrement du peuple (orgueil)',
-        explanation: '2 Samuel 24:10 "David sentit battre son coeur après qu\'il eut dénombré le peuple."'
+        text: 'What sin did David commit at the end of the book?',
+        options: ['He took a census of the people (pride)', 'He worshiped an idol', 'He killed a priest', 'He stole gold'],
+        correctAnswer: 'He took a census of the people (pride)',
+        explanation: '2 Samuel 24:10 "David was conscience-stricken after he had counted the fighting men."'
     },
     {
         id: '2sa_17',
-        text: 'Quel châtiment David a-t-il choisi pour ce péché ?',
-        options: ['3 jours de peste', '7 ans de famine', '3 mois de fuite', 'La mort immédiate'],
-        correctAnswer: '3 jours de peste',
+        text: 'Which punishment did David choose for this sin?',
+        options: ['3 days of plague', '7 years of famine', '3 months of fleeing from enemies', 'Immediate death'],
+        correctAnswer: '3 days of plague',
         explanation: '2 Samuel 24:13'
     },
     {
         id: '2sa_18',
-        text: 'Où David a-t-il acheté une aire pour bâtir un autel (futur site du Temple) ?',
-        options: ['Chez Arauna le Jébusien', 'Chez Nabal', 'À Silo', 'Au mont Sinaï'],
-        correctAnswer: 'Chez Arauna le Jébusien',
-        explanation: '2 Samuel 24:24 "David acheta l\'aire et les boeufs pour cinquante sicles d\'argent."'
+        text: 'Where did David buy a threshing floor to build an altar (future Temple site)?',
+        options: ['From Araunah the Jebusite', 'From Nabal', 'In Shiloh', 'On Mount Sinai'],
+        correctAnswer: 'From Araunah the Jebusite',
+        explanation: '2 Samuel 24:24 "So David bought the threshing floor and the oxen and paid fifty shekels of silver."'
     },
     {
         id: '2sa_19',
-        text: 'Comment s\'appelait le premier enfant de David et Bath-Schéba ?',
-        options: ['Il n\'avait pas de nom (il est mort bébé)', 'Salomon', 'Nathan', 'Amnon'],
-        correctAnswer: 'Il n\'avait pas de nom (il est mort bébé)',
-        explanation: '2 Samuel 12:18 "Le septième jour, l\'enfant mourut."'
+        text: 'What happened to the first child of David and Bathsheba?',
+        options: ['He died as a baby', 'He became King Solomon', 'He was named Nathan', 'He was named Amnon'],
+        correctAnswer: 'He died as a baby',
+        explanation: '2 Samuel 12:18 "On the seventh day the child died."'
     },
     {
         id: '2sa_20',
-        text: 'Que signifie le nom "Salomon" (Jedidja) ?',
-        options: ['Paisible / Aimé de l\'Éternel', 'Guerrier', 'Roi', 'Juge'],
-        correctAnswer: 'Paisible / Aimé de l\'Éternel',
-        explanation: 'Nathan l\'appela Jedidja, à cause de l\'Éternel (Aimé de l\'Éternel).'
+        text: 'What does the name "Solomon" (Jedidiah) mean?',
+        options: ['Peaceful / Loved by the Lord', 'Warrior', 'King', 'Judge'],
+        correctAnswer: 'Peaceful / Loved by the Lord',
+        explanation: 'Nathan named him Jedidiah, because the Lord loved him.'
     }
 ];

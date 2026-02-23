@@ -5,58 +5,58 @@ import { typography } from '../theme/typography';
 import { useRouter } from 'expo-router';
 import { ArrowLeft, Shield } from 'lucide-react-native';
 
-const LAST_UPDATED = '17 février 2026';
+const LAST_UPDATED = 'February 17, 2026';
 
 const sections = [
     {
         title: '1. Introduction',
         content:
-            'Quiz Biblique ("nous", "notre", "l\'application") s\'engage à protéger votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application mobile.',
+            'Bible Quiz ("we", "our", "the App") is committed to protecting your privacy. This privacy policy explains how we collect, use, and protect your information when you use our mobile application.',
     },
     {
-        title: '2. Informations collectées',
+        title: '2. Information Collected',
         content:
-            'Nous collectons les types d\'informations suivants :\n\n• Données de progression : Vos scores, niveaux complétés, séries et statistiques de jeu sont stockés localement sur votre appareil.\n\n• Données d\'utilisation : Nous pouvons collecter des données anonymes sur la façon dont vous utilisez l\'application (fréquence d\'utilisation, fonctionnalités utilisées) pour améliorer notre service.\n\n• Identifiants de l\'appareil : Nous pouvons collecter des identifiants anonymes de l\'appareil à des fins d\'analyse.',
+            "We collect the following types of information:\n\n• Progression Data: Your scores, completed levels, streaks, and game statistics are stored locally on your device.\n\n• Usage Data: We may collect anonymous data on how you use the app (frequency of use, features used) to improve our service.\n\n• Device Identifiers: We may collect anonymous device identifiers for analysis purposes.",
     },
     {
-        title: '3. Utilisation des informations',
+        title: '3. Use of Information',
         content:
-            'Nous utilisons vos informations pour :\n\n• Fournir et maintenir l\'application\n• Sauvegarder votre progression de jeu\n• Améliorer l\'expérience utilisateur\n• Analyser les tendances d\'utilisation\n• Communiquer des mises à jour importantes',
+            "We use your information to:\n\n• Provide and maintain the app\n• Save your game progress\n• Improve the user experience\n• Analyze usage trends\n• Communicate important updates",
     },
     {
-        title: '4. Stockage des données',
+        title: '4. Data Storage',
         content:
-            'Vos données de progression sont stockées localement sur votre appareil à l\'aide d\'AsyncStorage. Nous ne transférons pas ces données vers des serveurs externes sans votre consentement explicite.',
+            'Your progression data is stored locally on your device using AsyncStorage. We do not transfer this data to external servers without your explicit consent.',
     },
     {
-        title: '5. Services tiers',
+        title: '5. Third-Party Services',
         content:
-            'L\'application peut utiliser des services tiers qui collectent des informations utilisées pour vous identifier. Ces services incluent :\n\n• Expo / React Native (infrastructure de l\'application)\n• Services d\'analyse anonymes\n\nChacun de ces services a sa propre politique de confidentialité concernant le traitement des données.',
+            "The App may use third-party services that collect information used to identify you. These services include:\n\n• Expo / React Native (app infrastructure)\n• Anonymous analysis services\n\nEach of these services has its own privacy policy regarding data processing.",
     },
     {
-        title: '6. Sécurité',
+        title: '6. Security',
         content:
-            'Nous prenons la sécurité de vos données au sérieux. Bien qu\'aucune méthode de transmission sur Internet ou de stockage électronique ne soit 100% sécurisée, nous nous efforçons d\'utiliser des moyens commercialement acceptables pour protéger vos informations.',
+            'We take the security of your data seriously. While no method of transmission over the Internet or electronic storage is 100% secure, we strive to use commercially acceptable means to protect your information.',
     },
     {
-        title: '7. Droits des utilisateurs',
+        title: '7. User Rights',
         content:
-            'Vous avez le droit de :\n\n• Accéder à vos données personnelles\n• Demander la suppression de vos données\n• Réinitialiser votre progression à tout moment via les paramètres\n• Désactiver les notifications',
+            'You have the right to:\n\n• Access your personal data\n• Request the deletion of your data\n• Reset your progress at any time via the settings\n• Disable notifications',
     },
     {
-        title: '8. Enfants',
+        title: '8. Children',
         content:
-            'Notre application est adaptée à tous les âges. Nous ne collectons pas sciemment d\'informations personnelles auprès d\'enfants de moins de 13 ans sans le consentement parental.',
+            'Our app is suitable for all ages. We do not knowingly collect personal information from children under 13 without parental consent.',
     },
     {
-        title: '9. Modifications',
+        title: '9. Changes',
         content:
-            'Nous pouvons mettre à jour cette politique de confidentialité de temps en temps. Nous vous informerons de tout changement en publiant la nouvelle politique dans l\'application. Nous vous conseillons de consulter cette page régulièrement.',
+            "We may update this privacy policy from time to time. We will inform you of any changes by posting the new policy in the app. We advise you to check this page regularly.",
     },
     {
         title: '10. Contact',
         content:
-            'Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :\n\nsupport@dailyfaith.me',
+            'If you have any questions regarding this privacy policy, please contact us at:\n\nsupport@dailyfaith.me',
     },
 ];
 
@@ -67,10 +67,20 @@ export default function PrivacyScreen() {
         <View style={styles.container}>
             {/* Header */}
             <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
+                <TouchableOpacity
+                    onPress={() => {
+                        if (router.canGoBack()) {
+                            router.back();
+                        } else {
+                            router.replace('/');
+                        }
+                    }}
+                    style={styles.backButton}
+                    hitSlop={{ top: 20, bottom: 20, left: 20, right: 20 }}
+                >
                     <ArrowLeft color={colors.card.text} size={24} />
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Confidentialité</Text>
+                <Text style={styles.headerTitle}>Privacy</Text>
             </View>
 
             <ScrollView
@@ -82,8 +92,8 @@ export default function PrivacyScreen() {
                     <View style={styles.heroIcon}>
                         <Shield color={colors.accent} size={28} />
                     </View>
-                    <Text style={styles.heroTitle}>Politique de Confidentialité</Text>
-                    <Text style={styles.heroDate}>Dernière mise à jour : {LAST_UPDATED}</Text>
+                    <Text style={styles.heroTitle}>Privacy Policy</Text>
+                    <Text style={styles.heroDate}>Last updated: {LAST_UPDATED}</Text>
                 </View>
 
                 {/* Sections */}
@@ -110,6 +120,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 20,
         marginBottom: 8,
+        zIndex: 50,
     },
     backButton: {
         padding: 8,

@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const jeremiahQuestions: Question[] = [
     {
         id: 'jer_1',
-        text: 'Quel est le surnom de Jérémie ?',
-        options: ['Le prophète pleureur', 'Le prophète joyeux', 'Le prophète du feu', 'Le prophète roi'],
-        correctAnswer: 'Le prophète pleureur',
-        explanation: 'À cause de sa grande tristesse pour son peuple et son livre "Lamentations".'
+        text: 'What is Jeremiah\'s nickname?',
+        options: ['The weeping prophet', 'The joyful prophet', 'The prophet of fire', 'The royal prophet'],
+        correctAnswer: 'The weeping prophet',
+        explanation: 'Because of his great sadness for his people and его book "Lamentations".'
     },
     {
         id: 'jer_2',
-        text: 'Quand Dieu a-t-il connu Jérémie ?',
-        options: ['Avant de le former dans le ventre de sa mère', 'À sa naissance', 'À 30 ans', 'Quand il a commencé à prêcher'],
-        correctAnswer: 'Avant de le former dans le ventre de sa mère',
-        explanation: 'Jérémie 1:5 "Avant que je t\'eusse formé dans le ventre de ta mère, je te connaissais."'
+        text: 'When did God know Jeremiah?',
+        options: ['Before he was formed in his mother\'s womb', 'At his birth', 'At 30 years old', 'When he began to preach'],
+        correctAnswer: 'Before he was formed in his mother\'s womb',
+        explanation: 'Jeremiah 1:5 "Before I formed you in the womb I knew you..."'
     },
     {
         id: 'jer_3',
-        text: 'Quelle excuse Jérémie a-t-il donnée pour ne pas être prophète ?',
-        options: ['Ah ! Seigneur Éternel ! Je ne sais point parler, car je suis un enfant', 'Je suis trop vieux', 'Je suis malade', 'J\'ai peur'],
-        correctAnswer: 'Ah ! Seigneur Éternel ! Je ne sais point parler, car je suis un enfant',
-        explanation: 'Jérémie 1:6'
+        text: 'What excuse did Jeremiah give for not being a prophet?',
+        options: ['"Alas, Sovereign Lord," I said, "I do not know how to speak; I am too young"', 'I am too old', 'I am sick', 'I am afraid'],
+        correctAnswer: '"Alas, Sovereign Lord," I said, "I do not know how to speak; I am too young"',
+        explanation: 'Jeremiah 1:6'
     },
     {
         id: 'jer_4',
-        text: 'Que voyait Jérémie dans sa première vision ?',
-        options: ['Une branche d\'amandier et une chaudière bouillante', 'Un char de feu', 'Des ossements desséchés', 'Un rouleau volant'],
-        correctAnswer: 'Une branche d\'amandier et une chaudière bouillante',
-        explanation: 'Jérémie 1:11,13'
+        text: 'What did Jeremiah see in his first vision?',
+        options: ['An almond tree branch and a boiling pot', 'A chariot of fire', 'Dry bones', 'A flying scroll'],
+        correctAnswer: 'An almond tree branch and a boiling pot',
+        explanation: 'Jeremiah 1:11,13'
     },
     {
         id: 'jer_5',
-        text: 'Ils m\'ont abandonné, moi, la source d\'eau vive, pour se creuser... ?',
-        options: ['Des citernes crevassées qui ne retiennent pas l\'eau', 'Des puits profonds', 'Des rivières', 'Des lacs'],
-        correctAnswer: 'Des citernes crevassées qui ne retiennent pas l\'eau',
-        explanation: 'Jérémie 2:13'
+        text: 'They have forsaken me, the spring of living water, and have dug...?',
+        options: ['Broken cisterns that cannot hold water', 'Deep wells', 'Rivers', 'Lakes'],
+        correctAnswer: 'Broken cisterns that cannot hold water',
+        explanation: 'Jeremiah 2:13'
     },
     {
         id: 'jer_6',
-        text: 'Auprès de quelle maison Jérémie a-t-il été envoyé pour une leçon ?',
-        options: ['La maison du potier', 'La maison du roi', 'La maison du tisserand', 'La maison du forgeron'],
-        correctAnswer: 'La maison du potier',
-        explanation: 'Jérémie 18:2 "Lève-toi, et descends dans la maison du potier."'
+        text: 'To whose house was Jeremiah sent for a lesson?',
+        options: ['The potter\'s house', 'The king\'s house', 'The weaver\'s house', 'The blacksmith\'s house'],
+        correctAnswer: 'The potter\'s house',
+        explanation: 'Jeremiah 18:2 "Go down to the potter’s house, and there I will give you my message."'
     },
     {
         id: 'jer_7',
-        text: 'Quel roi a brûlé le rouleau des prophéties de Jérémie ?',
-        options: ['Jojakim', 'Josias', 'Sédécias', 'Ézéchias'],
-        correctAnswer: 'Jojakim',
-        explanation: 'Jérémie 36:23 Le roi coupait le livre et le jetait au feu.'
+        text: 'Which king burned the scroll of Jeremiah\'s prophecies?',
+        options: ['Jehoiakim', 'Josiah', 'Zedekiah', 'Hezekiah'],
+        correctAnswer: 'Jehoiakim',
+        explanation: 'Jeremiah 36:23 The king would cut the scroll and throw it into the fire.'
     },
     {
         id: 'jer_8',
-        text: 'Où Jérémie a-t-il été jeté par ses ennemis ?',
-        options: ['Dans une citerne pleine de boue', 'Dans la fosse aux lions', 'En prison', 'Dans le feu'],
-        correctAnswer: 'Dans une citerne pleine de boue',
-        explanation: 'Jérémie 38:6 "Ils descendirent Jérémie avec des cordes... il enfonça dans la boue."'
+        text: 'Where was Jeremiah thrown by his enemies?',
+        options: ['Into a cistern full of mud', 'Into the lions\' den', 'Into prison', 'Into the fire'],
+        correctAnswer: 'Into a cistern full of mud',
+        explanation: 'Jeremiah 38:6 "They lowered Jeremiah by ropes into the cistern... Jeremiah sank down into the mud."'
     },
     {
         id: 'jer_9',
-        text: 'Qui a aidé Jérémie à sortir de la citerne ?',
-        options: ['Ebed-Mélec l\'Éthiopien', 'Baruc', 'Le roi Sédécias', 'Un ange'],
-        correctAnswer: 'Ebed-Mélec l\'Éthiopien',
-        explanation: 'Jérémie 38:7'
+        text: 'Who helped Jeremiah out of the cistern?',
+        options: ['Ebed-Melek the Cushite (Ethiopian)', 'Baruch', 'King Zedekiah', 'An angel'],
+        correctAnswer: 'Ebed-Melek the Cushite (Ethiopian)',
+        explanation: 'Jeremiah 38:7'
     },
     {
         id: 'jer_10',
-        text: 'Combien d\'années devait durer la captivité à Babylone selon Jérémie ?',
-        options: ['70 ans', '40 ans', '400 ans', '7 ans'],
-        correctAnswer: '70 ans',
-        explanation: 'Jérémie 25:11 "Ces nations seront asservies au roi de Babylone pendant soixante-dix ans."'
+        text: 'How many years was the Babylonian captivity to last according to Jeremiah?',
+        options: ['70 years', '40 years', '400 years', '7 years'],
+        correctAnswer: '70 years',
+        explanation: 'Jeremiah 25:11 "These nations will serve the king of Babylon seventy years."'
     },
     {
         id: 'jer_11',
-        text: 'Car je connais les projets que j\'ai formés sur vous... projets de... ?',
-        options: ['Paix et non de malheur', 'Guerre', 'Richesse', 'Gloire'],
-        correctAnswer: 'Paix et non de malheur',
-        explanation: 'Jérémie 29:11 "...afin de vous donner un avenir et de l\'espérance."'
+        text: '"For I know the plans I have for you..." plans to...?',
+        options: ['Prosper you and not to harm you', 'War', 'Wealth', 'Glory'],
+        correctAnswer: 'Prosper you and not to harm you',
+        explanation: 'Jeremiah 29:11 "...plans to give you hope and a future."'
     },
     {
         id: 'jer_12',
-        text: 'Quelle "Nouvelle Alliance" Jérémie annonce-t-il ?',
-        options: ['Une loi écrite dans leur cœur', 'Une alliance de sel', 'Une alliance de guerre', 'Une alliance politique'],
-        correctAnswer: 'Une loi écrite dans leur cœur',
-        explanation: 'Jérémie 31:33 "Je mettrai ma loi au-dedans d\'eux, je l\'écrirai dans leur coeur."'
+        text: 'What "New Covenant" does Jeremiah announce?',
+        options: ['A law written in their hearts', 'A covenant of salt', 'A covenant of war', 'A political alliance'],
+        correctAnswer: 'A law written in their hearts',
+        explanation: 'Jeremiah 31:33 "I will put my law in their minds and write it on their hearts."'
     },
     {
         id: 'jer_13',
-        text: 'Qui était le fidèle scribe de Jérémie ?',
-        options: ['Baruc', 'Ebed-Mélec', 'Guéhazi', 'Séraphin'],
-        correctAnswer: 'Baruc',
-        explanation: 'Jérémie 36:4 "Jérémie appela Baruc, fils de Nérija."'
+        text: 'Who was Jeremiah\'s faithful scribe?',
+        options: ['Baruch', 'Ebed-Melek', 'Gehazi', 'Seraphim'],
+        correctAnswer: 'Baruch',
+        explanation: 'Jeremiah 36:4 "So Jeremiah called Baruch son of Neriah."'
     },
     {
         id: 'jer_14',
-        text: 'Pourquoi Jérémie a-t-il acheté un champ à Anathoth pendant le siège ?',
-        options: ['Pour montrer sa foi que le peuple reviendrait dans le pays', 'Pour investir', 'Pour se cacher', 'Parce qu\'il était riche'],
-        correctAnswer: 'Pour montrer sa foi que le peuple reviendrait dans le pays',
-        explanation: 'Jérémie 32:15 "On achètera encore des maisons, des champs et des vignes dans ce pays."'
+        text: 'Why did Jeremiah buy a field at Anathoth during the siege?',
+        options: ['To show his faith that the people would return to the land', 'To invest', 'To hide', 'Because he was rich'],
+        correctAnswer: 'To show his faith that the people would return to the land',
+        explanation: 'Jeremiah 32:15 "Houses, fields and vineyards will again be bought in this land."'
     },
     {
         id: 'jer_15',
-        text: 'Le coeur est tortueux par-dessus tout, et il est... ?',
-        options: ['Méchant / Incurable', 'Bon', 'Pur', 'Sage'],
-        correctAnswer: 'Méchant / Incurable',
-        explanation: 'Jérémie 17:9'
+        text: 'The heart is deceitful above all things and...?',
+        options: ['Beyond cure / Desperately wicked', 'Good', 'Pure', 'Wise'],
+        correctAnswer: 'Beyond cure / Desperately wicked',
+        explanation: 'Jeremiah 17:9'
     },
     {
         id: 'jer_16',
-        text: 'Si tu te sépares ce qui est précieux de ce qui est vil, tu seras comme... ?',
-        options: ['Ma bouche', 'Mon bras', 'Mon prophète', 'Mon roi'],
-        correctAnswer: 'Ma bouche',
-        explanation: 'Jérémie 15:19'
+        text: 'If you utter worthy, not worthless, words, you will be...?',
+        options: ['My spokesman', 'My arm', 'My prophet', 'My king'],
+        correctAnswer: 'My spokesman',
+        explanation: 'Jeremiah 15:19'
     },
     {
         id: 'jer_17',
-        text: 'Jérémie a porté un joug de bois sur son cou pour symboliser quoi ?',
-        options: ['La soumission au roi de Babylone', 'L\'esclavage en Égypte', 'Le travail des champs', 'La repentance'],
-        correctAnswer: 'La soumission au roi de Babylone',
-        explanation: 'Jérémie 27:2'
+        text: 'Jeremiah wore a wooden yoke on his neck to symbolize what?',
+        options: ['Submission to the king of Babylon', 'Slavery in Egypt', 'Working the fields', 'Repentance'],
+        correctAnswer: 'Submission to the king of Babylon',
+        explanation: 'Jeremiah 27:2'
     },
     {
         id: 'jer_18',
-        text: 'Quel faux prophète a brisé le joug de Jérémie ?',
-        options: ['Hanania', 'Pashhur', 'Séméia', 'Achab'],
-        correctAnswer: 'Hanania',
-        explanation: 'Jérémie 28:10'
+        text: 'Which false prophet broke Jeremiah\'s yoke?',
+        options: ['Hananiah', 'Pashhur', 'Shemaiah', 'Ahab'],
+        correctAnswer: 'Hananiah',
+        explanation: 'Jeremiah 28:10'
     },
     {
         id: 'jer_19',
-        text: 'Où Jérémie a-t-il été emmené de force à la fin de sa vie ?',
-        options: ['En Égypte', 'À Babylone', 'À Rome', 'À Tarse'],
-        correctAnswer: 'En Égypte',
-        explanation: 'Jérémie 43:6-7 Le peuple rebelle l\'a emmené avec eux en Égypte.'
+        text: 'Where was Jeremiah forcibly taken at the end of his life?',
+        options: ['To Egypt', 'To Babylon', 'To Rome', 'To Tarsus'],
+        correctAnswer: 'To Egypt',
+        explanation: 'Jeremiah 43:6-7 The rebellious people took him with them to Egypt.'
     },
     {
         id: 'jer_20',
-        text: 'J\'ai mis mes paroles dans ta bouche... pour arracher et pour abattre, pour... ?',
-        options: ['Bâtir et pour planter', 'Tuer et détruire', 'Juger et punir', 'Pleurer et gémir'],
-        correctAnswer: 'Bâtir et pour planter',
-        explanation: 'Jérémie 1:10 La double mission du prophète.'
+        text: 'I have put my words in your mouth... to uproot and tear down, to...?',
+        options: ['Build and to plant', 'Kill and destroy', 'Judge and punish', 'Weep and wail'],
+        correctAnswer: 'Build and to plant',
+        explanation: 'Jeremiah 1:10 The double mission of the prophet.'
     }
 ];

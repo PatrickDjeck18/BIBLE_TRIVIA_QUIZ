@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const nehemiahQuestions: Question[] = [
     {
         id: 'neh_1',
-        text: 'Quelle était la fonction de Néhémie auprès du roi ?',
-        options: ['Échanson', 'Général', 'Scribe', 'Magicien'],
-        correctAnswer: 'Échanson',
-        explanation: 'Néhémie 1:11 "J\'étais échanson du roi."'
+        text: 'What was Nehemiah’s position under the king?',
+        options: ['Cupbearer', 'General', 'Scribe', 'Magician'],
+        correctAnswer: 'Cupbearer',
+        explanation: 'Nehemiah 1:11 "I was cupbearer to the king."'
     },
     {
         id: 'neh_2',
-        text: 'Quelle mauvaise nouvelle a attristé Néhémie ?',
-        options: ['La muraille de Jérusalem est en ruines', 'Le Temple est détruit', 'Il n\'y a plus de nourriture', 'Le roi est mort'],
-        correctAnswer: 'La muraille de Jérusalem est en ruines',
-        explanation: 'Néhémie 1:3 "La muraille de Jérusalem est en ruines..."'
+        text: 'What bad news saddened Nehemiah?',
+        options: ['The wall of Jerusalem is in ruins', 'The Temple is destroyed', 'There is no more food', 'The king is dead'],
+        correctAnswer: 'The wall of Jerusalem is in ruins',
+        explanation: 'Nehemiah 1:3 "The wall of Jerusalem is broken down..."'
     },
     {
         id: 'neh_3',
-        text: 'Quel roi a permis à Néhémie de partir ?',
-        options: ['Artaxerxès', 'Cyrus', 'Darius', 'Xerxès'],
-        correctAnswer: 'Artaxerxès',
-        explanation: 'Néhémie 2:1 "Au mois de Nisan, la vingtième année du roi Artaxerxès..."'
+        text: 'Which king allowed Nehemiah to go?',
+        options: ['Artaxerxes', 'Cyrus', 'Darius', 'Xerxes'],
+        correctAnswer: 'Artaxerxes',
+        explanation: 'Nehemiah 2:1 "In the month of Nisan in the twentieth year of King Artaxerxes..."'
     },
     {
         id: 'neh_4',
-        text: 'Combien de jours a-t-il fallu pour reconstruire la muraille ?',
-        options: ['52 jours', '7 ans', '3 mois', '100 jours'],
-        correctAnswer: '52 jours',
-        explanation: 'Néhémie 6:15 "La muraille fut achevée... en cinquante-deux jours."'
+        text: 'How many days did it take to rebuild the wall?',
+        options: ['52 days', '7 years', '3 months', '100 days'],
+        correctAnswer: '52 days',
+        explanation: 'Nehemiah 6:15 "So the wall was completed... in fifty-two days."'
     },
     {
         id: 'neh_5',
-        text: 'Qui étaient les principaux opposants à Néhémie ?',
-        options: ['Sanballat et Tobija', 'Haman et ses fils', 'Les Babyloniens', 'Les Égyptiens'],
-        correctAnswer: 'Sanballat et Tobija',
-        explanation: 'Néhémie 2:19 "Sanballat... Tobija... et Guéschem... se moquèrent de nous."'
+        text: 'Who were the main opponents of Nehemiah?',
+        options: ['Sanballat and Tobiah', 'Haman and his sons', 'The Babylonians', 'The Egyptians'],
+        correctAnswer: 'Sanballat and Tobiah',
+        explanation: 'Nehemiah 2:19 "Sanballat... Tobiah... and Geshem... mocked and despised us."'
     },
     {
         id: 'neh_6',
-        text: 'Comment les ouvriers travaillaient-ils à cause de la menace ?',
-        options: ['D\'une main ils travaillaient, de l\'autre ils tenaient une arme', 'Uniquement la nuit', 'Cachés dans des tunnels', 'Ils ne travaillaient plus'],
-        correctAnswer: 'D\'une main ils travaillaient, de l\'autre ils tenaient une arme',
-        explanation: 'Néhémie 4:17 "Chacun d\'une main travaillait, et de l\'autre tenait l\'arme."'
+        text: 'How did the builders work because of the threat?',
+        options: ['With one hand they worked, and with the other they held a weapon', 'Only at night', 'Hidden in tunnels', 'They stopped working'],
+        correctAnswer: 'With one hand they worked, and with the other they held a weapon',
+        explanation: 'Nehemiah 4:17 "Those who were... building the wall... with one hand did the work and with the other held a weapon."'
     },
     {
         id: 'neh_7',
-        text: 'Qu\'a fait Néhémie quand ses ennemis ont voulu le rencontrer pour le piéger ?',
-        options: ['Il a refusé disant "J\'ai un grand ouvrage à exécuter"', 'Il est allé les voir', 'Il s\'est enfui', 'Il a envoyé un assassin'],
-        correctAnswer: 'Il a refusé disant "J\'ai un grand ouvrage à exécuter"',
-        explanation: 'Néhémie 6:3'
+        text: 'What did Nehemiah do when his enemies wanted to meet him to trap him?',
+        options: ['He refused saying, "I am carrying on a great project"', 'He went to see them', 'He fled', 'He sent an assassin'],
+        correctAnswer: 'He refused saying, "I am carrying on a great project"',
+        explanation: 'Nehemiah 6:3'
     },
     {
         id: 'neh_8',
-        text: 'Qui a lu la Loi devant le peuple rassemblé ?',
-        options: ['Esdras', 'Néhémie', 'Moïse', 'Josué'],
-        correctAnswer: 'Esdras',
-        explanation: 'Néhémie 8:1 "Ils dirent à Esdras... d\'apporter le livre de la loi."'
+        text: 'Who read the Law before the gathered people?',
+        options: ['Ezra', 'Nehemiah', 'Moses', 'Joshua'],
+        correctAnswer: 'Ezra',
+        explanation: 'Nehemiah 8:1 "They told Ezra the teacher of the Law to bring out the Book of the Law of Moses."'
     },
     {
         id: 'neh_9',
-        text: 'Quelle a été la réaction du peuple à l\'écoute de la Loi ?',
-        options: ['Ils pleuraient', 'Ils riaient', 'Ils dormaient', 'Ils sont partis'],
-        correctAnswer: 'Ils pleuraient',
-        explanation: 'Néhémie 8:9 "Tout le peuple pleurait en entendant les paroles de la loi."'
+        text: 'What was the people’s reaction to hearing the Law?',
+        options: ['They were weeping', 'They were laughing', 'They were sleeping', 'They left'],
+        correctAnswer: 'They were weeping',
+        explanation: 'Nehemiah 8:9 "For all the people had been weeping as they listened to the words of the Law."'
     },
     {
         id: 'neh_10',
-        text: 'Qu\'a dit Néhémie pour les encourager ?',
-        options: ['La joie de l\'Éternel est votre force', 'Tout ira bien', 'Soyez courageux', 'Dieu est grand'],
-        correctAnswer: 'La joie de l\'Éternel est votre force',
-        explanation: 'Néhémie 8:10 "Ne vous affligez pas, car la joie de l\'Éternel sera votre force."'
+        text: 'What did Nehemiah say to encourage them?',
+        options: ['The joy of the Lord is your strength', 'Everything will be fine', 'Be courageous', 'God is great'],
+        correctAnswer: 'The joy of the Lord is your strength',
+        explanation: 'Nehemiah 8:10 "Do not grieve, for the joy of the Lord is your strength."'
     },
     {
         id: 'neh_11',
-        text: 'Quelle fête ont-ils célébrée après la lecture de la Loi ?',
-        options: ['La fête des Tabernacles', 'La Pâque', 'Noël', 'La Pentecôte'],
-        correctAnswer: 'La fête des Tabernacles',
-        explanation: 'Néhémie 8:14'
+        text: 'What festival did they celebrate after the reading of the Law?',
+        options: ['The Festival of Tabernacles (Booths)', 'Passover', 'Christmas', 'Pentecost'],
+        correctAnswer: 'The Festival of Tabernacles (Booths)',
+        explanation: 'Nehemiah 8:14'
     },
     {
         id: 'neh_12',
-        text: 'Quel problème social Néhémie a-t-il réglé ?',
-        options: ['L\'usure (dettes) entre Juifs', 'Le vol de bétail', 'Le manque d\'eau', 'La maladie'],
-        correctAnswer: 'L\'usure (dettes) entre Juifs',
-        explanation: 'Néhémie 5:7 "Quoi ! vous exigez de l\'intérêt de vos frères !"'
+        text: 'What social problem did Nehemiah resolve?',
+        options: ['Usury (debts) between Jews', 'Cattle theft', 'Lack of water', 'Sickness'],
+        correctAnswer: 'Usury (debts) between Jews',
+        explanation: 'Nehemiah 5:7 "You are charging your own people interest!"'
     },
     {
         id: 'neh_13',
-        text: 'Quel abus concernant le Temple Néhémie a-t-il corrigé à son retour ?',
-        options: ['Tobija avait une chambre dans le Temple', 'On y vendait des animaux', 'Il était vide', 'Il était brûlé'],
-        correctAnswer: 'Tobija avait une chambre dans le Temple',
-        explanation: 'Néhémie 13:7-8 "Avoir disposé une chambre pour Tobija... Je jetai hors... tous les objets..."'
+        text: 'What abuse concerning the Temple did Nehemiah correct upon his return?',
+        options: ['Tobiah had a room in the Temple', 'Animals were being sold there', 'It was empty', 'It was burned'],
+        correctAnswer: 'Tobiah had a room in the Temple',
+        explanation: 'Nehemiah 13:7-8 "I learned about the evil thing Eliashib had done in providing Tobiah a room... I threw all Tobiah’s household goods out of the room."'
     },
     {
         id: 'neh_14',
-        text: 'Pourquoi Néhémie s\'est-il fâché concernant le Sabbat ?',
-        options: ['Les gens vendaient et achetaient ce jour-là', 'Personne ne venait au Temple', 'Ils dormaient trop', 'Ils chantaient trop fort'],
-        correctAnswer: 'Les gens vendaient et achetaient ce jour-là',
-        explanation: 'Néhémie 13:15 "Je vis... des gens qui... apportaient des fardeaux le jour du sabbat."'
+        text: 'Why was Nehemiah angry concerning the Sabbath?',
+        options: ['People were selling and buying on that day', 'No one came to the Temple', 'They slept too much', 'They sang too loud'],
+        correctAnswer: 'People were selling and buying on that day',
+        explanation: 'Nehemiah 13:15 "I saw people... bringing in loads of grain... on the Sabbath."'
     },
     {
         id: 'neh_15',
-        text: 'Qu\'a fait Néhémie aux portes de Jérusalem le jour du Sabbat ?',
-        options: ['Il les a fait fermer', 'Il les a ouvertes en grand', 'Il les a peintes en rouge', 'Il les a brûlées'],
-        correctAnswer: 'Il les a fait fermer',
-        explanation: 'Néhémie 13:19 "J\'ordonnai qu\'elles fussent fermées."'
+        text: 'What did Nehemiah do at the gates of Jerusalem on the Sabbath day?',
+        options: ['He had them closed', 'He opened them wide', 'He painted them red', 'He burned them'],
+        correctAnswer: 'He had them closed',
+        explanation: 'Nehemiah 13:19 "I ordered the doors to be shut."'
     },
     {
         id: 'neh_16',
-        text: 'Comment Néhémie a-t-il réagi aux mariages mixtes à la fin du livre ?',
-        options: ['Il a maudit et frappé certains hommes', 'Il a pleuré', 'Il n\'a rien dit', 'Il les a bénis'],
-        correctAnswer: 'Il a maudit et frappé certains hommes',
-        explanation: 'Néhémie 13:25 "Je leur fis des réprimandes... j\'en frappai plusieurs..."'
+        text: 'How did Nehemiah react to intermarriages at the end of the book?',
+        options: ['He rebuked and beat some of the men', 'He wept', 'He said nothing', 'He blessed them'],
+        correctAnswer: 'He rebuked and beat some of the men',
+        explanation: 'Nehemiah 13:25 "I rebuked them... I beat some of the men..."'
     },
     {
         id: 'neh_17',
-        text: 'Quelle phrase revient souvent dans les prières de Néhémie ?',
-        options: ['Souviens-toi de moi, ô mon Dieu', 'Pardonne-nous', 'Bénis Israël', 'Détruis mes ennemis'],
-        correctAnswer: 'Souviens-toi de moi, ô mon Dieu',
-        explanation: 'Néhémie 5:19, 13:14, 13:22, 13:31.'
+        text: 'Which phrase is frequently repeated in Nehemiah’s prayers?',
+        options: ['Remember me, O my God', 'Forgive us', 'Bless Israel', 'Destroy my enemies'],
+        correctAnswer: 'Remember me, O my God',
+        explanation: 'Nehemiah 5:19, 13:14, 13:22, 13:31.'
     },
     {
         id: 'neh_18',
-        text: 'Qui était le frère de Néhémie qui lui a apporté les nouvelles ?',
-        options: ['Hanani', 'Esdras', 'Daniel', 'Joël'],
+        text: 'Who was Nehemiah’s brother who brought him the news?',
+        options: ['Hanani', 'Ezra', 'Daniel', 'Joel'],
         correctAnswer: 'Hanani',
-        explanation: 'Néhémie 1:2 "Hanani, l\'un de mes frères... arriva."'
+        explanation: 'Nehemiah 1:2 "Hanani, one of my brothers, came..."'
     },
     {
         id: 'neh_19',
-        text: 'Que faisait Néhémie avant de demander quelque chose au roi ?',
-        options: ['Il priait le Dieu des cieux', 'Il écrivait un discours', 'Il demandait conseil à sa femme', 'Il buvait du vin'],
-        correctAnswer: 'Il priait le Dieu des cieux',
-        explanation: 'Néhémie 2:4 "Je priai le Dieu des cieux, et je répondis au roi."'
+        text: 'What did Nehemiah do before asking anything of the king?',
+        options: ['He prayed to the God of heaven', 'He wrote a speech', 'He asked his wife for advice', 'He drank wine'],
+        correctAnswer: 'He prayed to the God of heaven',
+        explanation: 'Nehemiah 2:4 "Then I prayed to the God of heaven, and I answered the king."'
     },
     {
         id: 'neh_20',
-        text: 'Quelle part de la population a accepté de vivre à Jérusalem (ville sainte) ?',
-        options: ['Un dixième (par tirage au sort)', 'Tout le monde', 'Personne', 'La moitié'],
-        correctAnswer: 'Un dixième (par tirage au sort)',
-        explanation: 'Néhémie 11:1 "Le reste du peuple tira au sort... pour qu\'un sur dix vînt habiter à Jérusalem."'
+        text: 'What portion of the population agreed to live in Jerusalem (the holy city)?',
+        options: ['One tenth (by lot)', 'Everyone', 'No one', 'Half'],
+        correctAnswer: 'One tenth (by lot)',
+        explanation: 'Nehemiah 11:1 "The rest of the people cast lots to bring one out of every ten of them to live in Jerusalem."'
     }
 ];

@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const johnQuestions: Question[] = [
     {
         id: 'jhn_1',
-        text: 'Au commencement était... ?',
-        options: ['La Parole (le Logos)', 'Dieu', 'La Lumière', 'La Vie'],
-        correctAnswer: 'La Parole (le Logos)',
-        explanation: 'Jean 1:1'
+        text: 'In the beginning was...?',
+        options: ['The Word (Logos)', 'God', 'The Light', 'The Life'],
+        correctAnswer: 'The Word (Logos)',
+        explanation: 'John 1:1'
     },
     {
         id: 'jhn_2',
-        text: 'Et la Parole a été faite... ?',
-        options: ['Chair', 'Esprit', 'Lumière', 'Roi'],
-        correctAnswer: 'Chair',
-        explanation: 'Jean 1:14 (L\'incarnation).'
+        text: 'And the Word became...?',
+        options: ['Flesh', 'Spirit', 'Light', 'King'],
+        correctAnswer: 'Flesh',
+        explanation: 'John 1:14 (The Incarnation).'
     },
     {
         id: 'jhn_3',
-        text: 'Quel fut le premier miracle de Jésus (signe) ?',
-        options: ['Changer l\'eau en vin à Cana', 'La multiplication des pains', 'La guérison d\'un aveugle', 'La marche sur l\'eau'],
-        correctAnswer: 'Changer l\'eau en vin à Cana',
-        explanation: 'Jean 2:11'
+        text: 'What was Jesus\' first miracle (sign)?',
+        options: ['Changing water into wine at Cana', 'The multiplication of the loaves', 'The healing of a blind man', 'Walking on water'],
+        correctAnswer: 'Changing water into wine at Cana',
+        explanation: 'John 2:11'
     },
     {
         id: 'jhn_4',
-        text: 'Car Dieu a tant aimé le monde qu\'il a donné... ?',
-        options: ['Son Fils unique', 'Sa richesse', 'Ses anges', 'Sa loi'],
-        correctAnswer: 'Son Fils unique',
-        explanation: 'Jean 3:16 Verset le plus célèbre.'
+        text: 'For God so loved the world that he gave...?',
+        options: ['His one and only Son', 'His wealth', 'His angels', 'His law'],
+        correctAnswer: 'His one and only Son',
+        explanation: 'John 3:16 The most famous verse.'
     },
     {
         id: 'jhn_5',
-        text: 'À qui Jésus a-t-il dit : "Il faut que vous naissiez de nouveau" ?',
-        options: ['Nicodème', 'Pierre', 'La Samaritaine', 'Pilate'],
-        correctAnswer: 'Nicodème',
-        explanation: 'Jean 3:7'
+        text: 'To whom did Jesus say, "You must be born again"?',
+        options: ['Nicodemus', 'Peter', 'The Samaritan woman', 'Pilate'],
+        correctAnswer: 'Nicodemus',
+        explanation: 'John 3:7'
     },
     {
         id: 'jhn_6',
-        text: 'Qui Jésus a-t-il rencontré au puits de Jacob ?',
-        options: ['Une femme samaritaine', 'Marie-Madeleine', 'Marthe', 'Sa mère'],
-        correctAnswer: 'Une femme samaritaine',
-        explanation: 'Jean 4:7'
+        text: 'Who did Jesus meet at Jacob\'s well?',
+        options: ['A Samaritan woman', 'Mary Magdalene', 'Martha', 'His mother'],
+        correctAnswer: 'A Samaritan woman',
+        explanation: 'John 4:7'
     },
     {
         id: 'jhn_7',
-        text: 'Je suis le pain de... ?',
-        options: ['Vie', 'Dieu', 'Ciel', 'Monde'],
-        correctAnswer: 'Vie',
-        explanation: 'Jean 6:35 Un des "Je suis".'
+        text: 'I am the bread of...?',
+        options: ['Life', 'God', 'Heaven', 'World'],
+        correctAnswer: 'Life',
+        explanation: 'John 6:35 One of the "I am" statements.'
     },
     {
         id: 'jhn_8',
-        text: 'Que font les brebis quand le Bon Berger les appelle ?',
-        options: ['Elles écoutent sa voix et le suivent', 'Elles fuient', 'Elles dorment', 'Elles mangent'],
-        correctAnswer: 'Elles écoutent sa voix et le suivent',
-        explanation: 'Jean 10:27'
+        text: 'What do the sheep do when the Good Shepherd calls them?',
+        options: ['They listen to his voice and follow him', 'They flee', 'They sleep', 'They eat'],
+        correctAnswer: 'They listen to his voice and follow him',
+        explanation: 'John 10:27'
     },
     {
         id: 'jhn_9',
-        text: 'Qui Jésus a-t-il ressuscité après 4 jours dans la tombe ?',
-        options: ['Lazare', 'Jaïrus', 'Étienne', 'Joseph'],
-        correctAnswer: 'Lazare',
-        explanation: 'Jean 11:43'
+        text: 'Who did Jesus raise after being in the tomb for 4 days?',
+        options: ['Lazarus', 'Jairus', 'Stephen', 'Joseph'],
+        correctAnswer: 'Lazarus',
+        explanation: 'John 11:43'
     },
     {
         id: 'jhn_10',
-        text: 'Jésus pleura. À quelle occasion ?',
-        options: ['Devant le tombeau de Lazare', 'Sur la croix', 'À Gethsémané', 'À sa naissance'],
-        correctAnswer: 'Devant le tombeau de Lazare',
-        explanation: 'Jean 11:35 Le verset le plus court.'
+        text: 'Jesus wept. On what occasion?',
+        options: ['At the tomb of Lazarus', 'On the cross', 'At Gethsemane', 'At his birth'],
+        correctAnswer: 'At the tomb of Lazarus',
+        explanation: 'John 11:35 The shortest verse.'
     },
     {
         id: 'jhn_11',
-        text: 'Je suis le chemin, la vérité, et... ?',
-        options: ['La vie', 'La lumière', 'La porte', 'Le berger'],
-        correctAnswer: 'La vie',
-        explanation: 'Jean 14:6'
+        text: 'I am the way and the truth and...?',
+        options: ['The life', 'The light', 'The door', 'The shepherd'],
+        correctAnswer: 'The life',
+        explanation: 'John 14:6'
     },
     {
         id: 'jhn_12',
-        text: 'Quel Consolateur Jésus a-t-il promis d\'envoyer ?',
-        options: ['L\'Esprit de vérité (Saint-Esprit)', 'L\'ange Gabriel', 'Élie', 'Moïse'],
-        correctAnswer: 'L\'Esprit de vérité (Saint-Esprit)',
-        explanation: 'Jean 14:16'
+        text: 'What Counselor did Jesus promise to send?',
+        options: ['The Spirit of truth (Holy Spirit)', 'The angel Gabriel', 'Elijah', 'Moses'],
+        correctAnswer: 'The Spirit of truth (Holy Spirit)',
+        explanation: 'John 14:16'
     },
     {
         id: 'jhn_13',
-        text: 'Je suis le cep, vous êtes... ?',
-        options: ['Les sarments', 'Les racines', 'Les feuilles', 'Les fruits'],
-        correctAnswer: 'Les sarments',
-        explanation: 'Jean 15:5'
+        text: 'I am the vine; you are...?',
+        options: ['The branches', 'The roots', 'The leaves', 'The fruits'],
+        correctAnswer: 'The branches',
+        explanation: 'John 15:5'
     },
     {
         id: 'jhn_14',
-        text: 'Qu\'a fait Jésus à ses disciples lors du dernier repas (signe d\'humilité) ?',
-        options: ['Il leur a lavé les pieds', 'Il leur a donné de l\'argent', 'Il les a oints d\'huile', 'Il les a bénis'],
-        correctAnswer: 'Il leur a lavé les pieds',
-        explanation: 'Jean 13:5'
+        text: 'What did Jesus do for his disciples at the Last Supper (sign of humility)?',
+        options: ['He washed their feet', 'He gave them money', 'He anointed them with oil', 'He blessed them'],
+        correctAnswer: 'He washed their feet',
+        explanation: 'John 13:5'
     },
     {
         id: 'jhn_15',
-        text: 'Qu\'est-ce que Pilate a fait inscrire sur la croix ?',
-        options: ['Jésus de Nazareth, Roi des Juifs (INRI)', 'Le fils de Dieu', 'Criminel', 'Blasphémateur'],
-        correctAnswer: 'Jésus de Nazareth, Roi des Juifs (INRI)',
-        explanation: 'Jean 19:19'
+        text: 'What did Pilate have written on the cross?',
+        options: ['Jesus of Nazareth, King of the Jews (INRI)', 'The Son of God', 'Criminal', 'Blasphemer'],
+        correctAnswer: 'Jesus of Nazareth, King of the Jews (INRI)',
+        explanation: 'John 19:19'
     },
     {
         id: 'jhn_16',
-        text: 'Quelle est la dernière parole de Jésus sur la croix selon Jean ?',
-        options: ['Tout est accompli', 'J\'ai soif', 'Père, reçois mon esprit', 'Pardonne-leur'],
-        correctAnswer: 'Tout est accompli',
-        explanation: 'Jean 19:30'
+        text: 'What was Jesus\' last word on the cross according to John?',
+        options: ['It is finished', 'I am thirsty', 'Father, receive my spirit', 'Forgive them'],
+        correctAnswer: 'It is finished',
+        explanation: 'John 19:30'
     },
     {
         id: 'jhn_17',
-        text: 'Qui a refusé de croire à la résurrection sans voir les marques des clous ?',
-        options: ['Thomas', 'Pierre', 'Jean', 'André'],
+        text: 'Who refused to believe in the resurrection without seeing the nail marks?',
+        options: ['Thomas', 'Peter', 'John', 'Andrew'],
         correctAnswer: 'Thomas',
-        explanation: 'Jean 20:25'
+        explanation: 'John 20:25'
     },
     {
         id: 'jhn_18',
-        text: 'Parce que tu m\'as vu, tu as cru. Heureux ceux... ?',
-        options: ['Qui n\'ont pas vu, et qui ont cru', 'Qui voient', 'Qui savent', 'Qui doutent'],
-        correctAnswer: 'Qui n\'ont pas vu, et qui ont cru',
-        explanation: 'Jean 20:29'
+        text: 'Because you have seen me, you have believed; blessed are those...?',
+        options: ['Who have not seen and yet have believed', 'Who see', 'Who know', 'Who doubt'],
+        correctAnswer: 'Who have not seen and yet have believed',
+        explanation: 'John 20:29'
     },
     {
         id: 'jhn_19',
-        text: 'Combien de fois Jésus a-t-il demandé à Pierre "M\'aimes-tu ?" ?',
-        options: ['Trois fois', 'Sept fois', 'Une fois', 'Douze fois'],
-        correctAnswer: 'Trois fois',
-        explanation: 'Jean 21:17 (Pour restaurer son triple reniement).'
+        text: 'How many times did Jesus ask Peter, "Do you love me?"',
+        options: ['Three times', 'Seven times', 'Once', 'Twelve times'],
+        correctAnswer: 'Three times',
+        explanation: 'John 21:17 (To restore his triple denial).'
     },
     {
         id: 'jhn_20',
-        text: 'Pourquoi ces choses ont-elles été écrites (but de l\'Évangile) ?',
-        options: ['Afin que vous croyiez que Jésus est le Christ... et que vous ayez la vie', 'Pour l\'histoire', 'Pour plaire à Dieu', 'Pour Israël'],
-        correctAnswer: 'Afin que vous croyiez que Jésus est le Christ... et que vous ayez la vie',
-        explanation: 'Jean 20:31'
+        text: 'Why were these things written (purpose of the Gospel)?',
+        options: ['That you may believe that Jesus is the Christ... and that by believing you may have life', 'For history', 'To please God', 'For Israel'],
+        correctAnswer: 'That you may believe that Jesus is the Christ... and that by believing you may have life',
+        explanation: 'John 20:31'
     }
 ];

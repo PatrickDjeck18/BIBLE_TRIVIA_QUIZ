@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const ecclesiastesQuestions: Question[] = [
     {
         id: 'ecc_1',
-        text: 'Quelle est la phrase clé de l\'Ecclésiaste ?',
-        options: ['Vanité des vanités, tout est vanité', 'Dieu est amour', 'La vie est belle', 'Tout est possible'],
-        correctAnswer: 'Vanité des vanités, tout est vanité',
-        explanation: 'Ecclésiaste 1:2'
+        text: 'What is the key phrase of Ecclesiastes?',
+        options: ['Meaningless! Meaningless! Everything is meaningless', 'God is love', 'Life is beautiful', 'Everything is possible'],
+        correctAnswer: 'Meaningless! Meaningless! Everything is meaningless',
+        explanation: 'Ecclesiastes 1:2'
     },
     {
         id: 'ecc_2',
-        text: 'Que signifie "sous le soleil" dans ce livre ?',
-        options: ['La vie terrestre sans perspective divine', 'Quand il fait beau', 'Géographiquement en Israël', 'La jeunesse'],
-        correctAnswer: 'La vie terrestre sans perspective divine',
-        explanation: 'Expression répétée pour décrire la vie humaine limitée et passagère.'
+        text: 'What does "under the sun" mean in this book?',
+        options: ['Earthly life without divine perspective', 'When the weather is nice', 'Geographically in Israel', 'Youth'],
+        correctAnswer: 'Earthly life without divine perspective',
+        explanation: 'Repeated expression to describe limited and transient human life.'
     },
     {
         id: 'ecc_3',
-        text: 'Il y a un temps pour tout... et un temps pour... ?',
-        options: ['Toute chose sous les cieux', 'Dormir', 'Manger', 'Jouer'],
-        correctAnswer: 'Toute chose sous les cieux',
-        explanation: 'Ecclésiaste 3:1'
+        text: 'There is a time for everything... and a season for...?',
+        options: ['Every activity under the heavens', 'Sleeping', 'Eating', 'Playing'],
+        correctAnswer: 'Every activity under the heavens',
+        explanation: 'Ecclesiastes 3:1'
     },
     {
         id: 'ecc_4',
-        text: 'Mieux vaut être deux que seul, car... ?',
-        options: ['S\'ils tombent, l\'un relève son compagnon', 'Ils s\'ennuient moins', 'Ils voyagent plus vite', 'C\'est la loi'],
-        correctAnswer: 'S\'ils tombent, l\'un relève son compagnon',
-        explanation: 'Ecclésiaste 4:10'
+        text: 'Two are better than one, because...?',
+        options: ['If either of them falls down, one can help the other up', 'They are less bored', 'They travel faster', 'It is the law'],
+        correctAnswer: 'If either of them falls down, one can help the other up',
+        explanation: 'Ecclesiastes 4:10'
     },
     {
         id: 'ecc_5',
-        text: 'La corde à trois fils ne se rompt pas... ?',
-        options: ['Facilement', 'Jamais', 'Vite', 'Seule'],
-        correctAnswer: 'Facilement',
-        explanation: 'Ecclésiaste 4:12'
+        text: 'A cord of three strands is not... broken?',
+        options: ['Quickly', 'Never', 'Fast', 'Alone'],
+        correctAnswer: 'Quickly',
+        explanation: 'Ecclesiastes 4:12'
     },
     {
         id: 'ecc_6',
-        text: 'Jette ton pain à la surface des eaux, car... ?',
-        options: ['Avec le temps tu le retrouveras', 'Les poissons le mangeront', 'Il disparaîtra', 'C\'est un sacrifice'],
-        correctAnswer: 'Avec le temps tu le retrouveras',
-        explanation: 'Ecclésiaste 11:1 (Encouragement à la générosité ou au commerce risqué).'
+        text: 'Ship your grain across the sea; after many days...?',
+        options: ['You may receive a return', 'The fish will eat it', 'It will disappear', 'It is a sacrifice'],
+        correctAnswer: 'You may receive a return',
+        explanation: 'Ecclesiastes 11:1 (Encouragement to generosity or risky trade).'
     },
     {
         id: 'ecc_7',
-        text: 'Souviens-toi de ton Créateur... ?',
-        options: ['Pendant les jours de ta jeunesse', 'Avant de mourir', 'Le dimanche', 'Quand tu es malade'],
-        correctAnswer: 'Pendant les jours de ta jeunesse',
-        explanation: 'Ecclésiaste 12:1'
+        text: 'Remember your Creator...?',
+        options: ['In the days of your youth', 'Before you die', 'On Sunday', 'When you are sick'],
+        correctAnswer: 'In the days of your youth',
+        explanation: 'Ecclesiastes 12:1'
     },
     {
         id: 'ecc_8',
-        text: 'Quel est le devoir de tout homme (conclusion du livre) ?',
-        options: ['Crains Dieu et observe ses commandements', 'Sois heureux', 'Travaille dur', 'Fais des enfants'],
-        correctAnswer: 'Crains Dieu et observe ses commandements',
-        explanation: 'Ecclésiaste 12:13'
+        text: 'What is the duty of all mankind (conclusion of the book)?',
+        options: ['Fear God and keep his commandments', 'Be happy', 'Work hard', 'Have children'],
+        correctAnswer: 'Fear God and keep his commandments',
+        explanation: 'Ecclesiastes 12:13'
     },
     {
         id: 'ecc_9',
-        text: 'Que dit l\'Ecclésiaste sur l\'argent ?',
-        options: ['Celui qui aime l\'argent n\'est pas rassasié par l\'argent', 'L\'argent fait le bonheur', 'Il faut le cacher', 'C\'est la racine de tous les maux'],
-        correctAnswer: 'Celui qui aime l\'argent n\'est pas rassasié par l\'argent',
-        explanation: 'Ecclésiaste 5:10'
+        text: 'What does Ecclesiastes say about money?',
+        options: ['Whoever loves money never has enough', 'Money brings happiness', 'It must be hidden', 'It is the root of all evil'],
+        correctAnswer: 'Whoever loves money never has enough',
+        explanation: 'Ecclesiastes 5:10'
     },
     {
         id: 'ecc_10',
-        text: 'Mieux vaut aller dans une maison de deuil que... ?',
-        options: ['Dans une maison de festin', 'Au travail', 'Au marché', 'À la guerre'],
-        correctAnswer: 'Dans une maison de festin',
-        explanation: 'Ecclésiaste 7:2 "Car c\'est là la fin de tout homme, et celui qui vit prend la chose à coeur."'
+        text: 'It is better to go to a house of mourning than to go to...?',
+        options: ['A house of feasting', 'Work', 'The market', 'War'],
+        correctAnswer: 'A house of feasting',
+        explanation: 'Ecclesiastes 7:2 "For death is the destiny of everyone; the living should take this to heart."'
     },
     {
         id: 'ecc_11',
-        text: 'Dieu a fait toute chose belle... ?',
-        options: ['En son temps', 'Au ciel', 'Pour les riches', 'Au commencement'],
-        correctAnswer: 'En son temps',
-        explanation: 'Ecclésiaste 3:11'
+        text: 'He has made everything beautiful...?',
+        options: ['In its time', 'In heaven', 'For the rich', 'In the beginning'],
+        correctAnswer: 'In its time',
+        explanation: 'Ecclesiastes 3:11'
     },
     {
         id: 'ecc_12',
-        text: 'Qu\'a-t-Il mis dans le cœur de l\'homme (Eccl 3:11) ?',
-        options: ['La pensée de l\'éternité', 'La joie', 'La peur', 'L\'amour'],
-        correctAnswer: 'La pensée de l\'éternité',
-        explanation: 'Seul Dieu peut combler ce besoin d\'éternité.'
+        text: 'What has He set in the human heart (Eccl 3:11)?',
+        options: ['Eternity', 'Joy', 'Fear', 'Love'],
+        correctAnswer: 'Eternity',
+        explanation: 'Only God can fill this need for eternity.'
     },
     {
         id: 'ecc_13',
-        text: 'Mieux vaut la fin d\'une chose que... ?',
-        options: ['Son commencement', 'Son milieu', 'Sa destruction', 'Son oubli'],
-        correctAnswer: 'Son commencement',
-        explanation: 'Ecclésiaste 7:8'
+        text: 'The end of a matter is better than...?',
+        options: ['Its beginning', 'Its middle', 'Its destruction', 'Its forgetting'],
+        correctAnswer: 'Its beginning',
+        explanation: 'Ecclesiastes 7:8'
     },
     {
         id: 'ecc_14',
-        text: 'Un chien vivant vaut mieux qu\'un... ?',
-        options: ['Lion mort', 'Lion vivant', 'Cheval mort', 'Roi mort'],
-        correctAnswer: 'Lion mort',
-        explanation: 'Ecclésiaste 9:4 (Il y a de l\'espérance pour celui qui vit).'
+        text: 'A live dog is better off than...?',
+        options: ['A dead lion', 'A live lion', 'A dead horse', 'A dead king'],
+        correctAnswer: 'A dead lion',
+        explanation: 'Ecclesiastes 9:4 (There is hope for anyone who is among the living).'
     },
     {
         id: 'ecc_15',
-        text: 'Qui est le "Qohélet" (l\'Ecclésiaste) ?',
-        options: ['Le Prédicateur / L\'Assembleur (implique Salomon)', 'Moïse', 'David', 'Joseph'],
-        correctAnswer: 'Le Prédicateur / L\'Assembleur (implique Salomon)',
-        explanation: 'Fils de David, roi à Jérusalem.'
+        text: 'Who is the "Qoheleth" (the Ecclesiastes)?',
+        options: ['The Teacher / The Assembler (implies Solomon)', 'Moses', 'David', 'Joseph'],
+        correctAnswer: 'The Teacher / The Assembler (implies Solomon)',
+        explanation: 'Son of David, king in Jerusalem.'
     },
     {
         id: 'ecc_16',
-        text: 'Où vont tous les fleuves ?',
-        options: ['Dans la mer (et la mer ne se remplit pas)', 'Dans le ciel', 'Dans la terre', 'Nulle part'],
-        correctAnswer: 'Dans la mer (et la mer ne se remplit pas)',
-        explanation: 'Ecclésiaste 1:7 (Cycle de la nature, vanité de la répétition).'
+        text: 'Where do all the streams flow?',
+        options: ['Into the sea (yet the sea is never full)', 'Into the sky', 'Into the earth', 'Nowhere'],
+        correctAnswer: 'Into the sea (yet the sea is never full)',
+        explanation: 'Ecclesiastes 1:7 (Cycle of nature, vanity of repetition).'
     },
     {
         id: 'ecc_17',
-        text: 'Il n\'y a rien de nouveau... ?',
-        options: ['Sous le soleil', 'Sur la lune', 'Dans la mer', 'Dans le cœur'],
-        correctAnswer: 'Sous le soleil',
-        explanation: 'Ecclésiaste 1:9 "Ce qui a été, c\'est ce qui sera."'
+        text: 'There is nothing new...?',
+        options: ['Under the sun', 'On the moon', 'In the sea', 'In the heart'],
+        correctAnswer: 'Under the sun',
+        explanation: 'Ecclesiastes 1:9 "What has been will be again."'
     },
     {
         id: 'ecc_18',
-        text: 'Fais vœu à Dieu et... ?',
-        options: ['Ne tarde pas à l\'accomplir', 'Oublie-le', 'Change d\'avis', 'Demande pardon'],
-        correctAnswer: 'Ne tarde pas à l\'accomplir',
-        explanation: 'Ecclésiaste 5:4 "Mieux vaut ne pas faire de voeu que d\'en faire un et de ne pas l\'accomplir."'
+        text: 'When you make a vow to God...?',
+        options: ['Do not delay to fulfill it', 'Forget it', 'Change your mind', 'Ask for forgiveness'],
+        correctAnswer: 'Do not delay to fulfill it',
+        explanation: 'Ecclesiastes 5:4 "It is better not to make a vow than to make one and not fulfill it."'
     },
     {
         id: 'ecc_19',
-        text: 'Pourquoi la sentence contre les mauvaises actions ne s\'exécute pas vite ?',
-        options: ['C\'est pourquoi le cœur des hommes se remplit du désir de faire le mal', 'Car Dieu ne voit pas', 'Car Dieu est lent', 'Car il n\'y a pas de justice'],
-        correctAnswer: 'C\'est pourquoi le cœur des hommes se remplit du désir de faire le mal',
-        explanation: 'Ecclésiaste 8:11'
+        text: 'Why does the sentence for a crime not quickly executed?',
+        options: ['Because people\'s hearts are filled with schemes to do wrong', 'Because God does not see', 'Because God is slow', 'Because there is no justice'],
+        correctAnswer: 'Because people\'s hearts are filled with schemes to do wrong',
+        explanation: 'Ecclesiastes 8:11'
     },
     {
         id: 'ecc_20',
-        text: 'Les paroles des sages sont comme des... ?',
-        options: ['Aiguillons', 'Épées', 'Fleurs', 'Rivières'],
-        correctAnswer: 'Aiguillons',
-        explanation: 'Ecclésiaste 12:11'
+        text: 'The words of the wise are like...?',
+        options: ['Goads', 'Swords', 'Flowers', 'Rivers'],
+        correctAnswer: 'Goads',
+        explanation: 'Ecclesiastes 12:11'
     }
 ];

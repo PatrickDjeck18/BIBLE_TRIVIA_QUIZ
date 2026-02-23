@@ -154,7 +154,7 @@ export const getQuestionsForBook = (bookId: string): Question[] => {
             return [
                 {
                     id: `${bookId}_1`,
-                    text: `Question pour ${books.find(b => b.id === bookId)?.title || bookId}...`,
+                    text: `Question for ${books.find(b => b.id === bookId)?.title || bookId}...`,
                     options: ['Option A', 'Option B', 'Option C', 'Option D'],
                     correctAnswer: 'Option A',
                 }

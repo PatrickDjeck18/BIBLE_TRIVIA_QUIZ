@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const revelationQuestions: Question[] = [
     {
         id: 'rev_1',
-        text: 'Où était Jean quand il a reçu l\'Apocalypse ?',
-        options: ['Dans l\'île de Patmos', 'À Éphèse', 'À Rome', 'À Jérusalem'],
-        correctAnswer: 'Dans l\'île de Patmos',
-        explanation: 'Apocalypse 1:9 Exilé à cause de la parole de Dieu.'
+        text: 'Where was John when he received the Revelation?',
+        options: ['On the island of Patmos', 'In Ephesus', 'In Rome', 'In Jerusalem'],
+        correctAnswer: 'On the island of Patmos',
+        explanation: 'Revelation 1:9 Exiled because of the word of God.'
     },
     {
         id: 'rev_2',
-        text: 'Je suis l\'Alpha et... ?',
-        options: ['L\'Oméga', 'Le Bêta', 'Le début', 'La fin'],
-        correctAnswer: 'L\'Oméga',
-        explanation: 'Apocalypse 1:8'
+        text: 'I am the Alpha and...?',
+        options: ['The Omega', 'The Beta', 'The beginning', 'The end'],
+        correctAnswer: 'The Omega',
+        explanation: 'Revelation 1:8'
     },
     {
         id: 'rev_3',
-        text: 'Combien d\'églises d\'Asie Jean adresse-t-il ?',
-        options: ['Sept', 'Douze', 'Trois', 'Une'],
-        correctAnswer: 'Sept',
-        explanation: 'Apocalypse 1:11'
+        text: 'How many churches in Asia does John address?',
+        options: ['Seven', 'Twelve', 'Three', 'One'],
+        correctAnswer: 'Seven',
+        explanation: 'Revelation 1:11'
     },
     {
         id: 'rev_4',
-        text: 'Voici, je me tiens à la porte, et je frappe. Si quelqu\'un... ?',
-        options: ['Entend ma voix et ouvre la porte, j\'entrerai chez lui', 'Ne répond pas, je pars', 'Me chasse, je le punis', 'Dort, je le réveille'],
-        correctAnswer: 'Entend ma voix et ouvre la porte, j\'entrerai chez lui',
-        explanation: 'Apocalypse 3:20'
+        text: 'Here I am! I stand at the door and knock. If anyone...?',
+        options: ['Hears my voice and opens the door, I will come in', 'Does not answer, I leave', 'Drives me away, I punish him', 'Is asleep, I wake him up'],
+        correctAnswer: 'Hears my voice and opens the door, I will come in',
+        explanation: 'Revelation 3:20'
     },
     {
         id: 'rev_5',
-        text: 'Ils disaient : Saint, saint, saint est le Seigneur Dieu... ?',
-        options: ['Le Tout-Puissant', 'Le Grand', 'Le Roi', 'Le Juge'],
-        correctAnswer: 'Le Tout-Puissant',
-        explanation: 'Apocalypse 4:8 Les quatre êtres vivants.'
+        text: 'They said: Holy, holy, holy is the Lord God...?',
+        options: ['Almighty', 'Great', 'King', 'Judge'],
+        correctAnswer: 'Almighty',
+        explanation: 'Revelation 4:8 The four living creatures.'
     },
     {
         id: 'rev_6',
-        text: 'Voici, le lion de la tribu de Juda... a vaincu pour ouvrir le... ?',
-        options: ['Livre et ses sept sceaux', 'Ciel', 'Temple', 'Puits'],
-        correctAnswer: 'Livre et ses sept sceaux',
-        explanation: 'Apocalypse 5:5'
+        text: 'See, the Lion of the tribe of Judah... has triumphed. He is able to open...?',
+        options: ['The scroll and its seven seals', 'Heaven', 'The temple', 'The pit'],
+        correctAnswer: 'The scroll and its seven seals',
+        explanation: 'Revelation 5:5'
     },
     {
         id: 'rev_7',
-        text: 'Jean vit un cheval pâle; celui qui le montait se nommait... ?',
-        options: ['La mort', 'La guerre', 'La famine', 'La peste'],
-        correctAnswer: 'La mort',
-        explanation: 'Apocalypse 6:8 4ème chevalier.'
+        text: 'John saw a pale horse; its rider was named...?',
+        options: ['Death', 'War', 'Famine', 'Pestilence'],
+        correctAnswer: 'Death',
+        explanation: 'Revelation 6:8 4th rider.'
     },
     {
         id: 'rev_8',
-        text: 'Qui sont les 144 000 marqués du sceau ?',
-        options: ['Des serviteurs de Dieu de toutes les tribus d\'Israël', 'Des anges', 'Des prêtres', 'Des rois'],
-        correctAnswer: 'Des serviteurs de Dieu de toutes les tribus d\'Israël',
-        explanation: 'Apocalypse 7:4'
+        text: 'Who are the 144,000 marked with the seal?',
+        options: ['Servants of God from all the tribes of Israel', 'Angels', 'Priests', 'Kings'],
+        correctAnswer: 'Servants of God from all the tribes of Israel',
+        explanation: 'Revelation 7:4'
     },
     {
         id: 'rev_9',
-        text: 'Ils ont lavé leurs robes et les ont blanchies dans... ?',
-        options: ['Le sang de l\'Agneau', 'L\'eau', 'La lessive', 'Le feu'],
-        correctAnswer: 'Le sang de l\'Agneau',
-        explanation: 'Apocalypse 7:14'
+        text: 'They have washed their robes and made them white in...?',
+        options: ['The blood of the Lamb', 'Water', 'Detergent', 'Fire'],
+        correctAnswer: 'The blood of the Lamb',
+        explanation: 'Revelation 7:14'
     },
     {
         id: 'rev_10',
-        text: 'Quel est le nombre de la bête ?',
+        text: 'What is the number of the beast?',
         options: ['666', '777', '12', '144000'],
         correctAnswer: '666',
-        explanation: 'Apocalypse 13:18'
+        explanation: 'Revelation 13:18'
     },
     {
         id: 'rev_11',
-        text: 'Babylone la grande est... ?',
-        options: ['Tombée', 'Grande', 'Belle', 'Riche'],
-        correctAnswer: 'Tombée',
-        explanation: 'Apocalypse 18:2'
+        text: 'Babylon the Great is...?',
+        options: ['Fallen', 'Great', 'Beautiful', 'Rich'],
+        correctAnswer: 'Fallen',
+        explanation: 'Revelation 18:2'
     },
     {
         id: 'rev_12',
-        text: 'Heureux ceux qui sont appelés au festin de... ?',
-        options: ['Noces de l\'Agneau', 'Roi', 'Dieu', 'Anges'],
-        correctAnswer: 'Noces de l\'Agneau',
-        explanation: 'Apocalypse 19:9'
+        text: 'Blessed are those who are invited to the wedding supper of...?',
+        options: ['The Lamb', 'The King', 'God', 'Angels'],
+        correctAnswer: 'The Lamb',
+        explanation: 'Revelation 19:9'
     },
     {
         id: 'rev_13',
-        text: 'Je vis un nouveau ciel et une... ?',
-        options: ['Nouvelle terre', 'Nouvelle mer', 'Nouvelle île', 'Nouvelle étoile'],
-        correctAnswer: 'Nouvelle terre',
-        explanation: 'Apocalypse 21:1'
+        text: 'I saw a new heaven and a...?',
+        options: ['New earth', 'New sea', 'New island', 'New star'],
+        correctAnswer: 'New earth',
+        explanation: 'Revelation 21:1'
     },
     {
         id: 'rev_14',
-        text: 'Il essuiera toute larme de leurs yeux, et la mort... ?',
-        options: ['Ne sera plus', 'Sera vaincue', 'Sera douce', 'Sera longue'],
-        correctAnswer: 'Ne sera plus',
-        explanation: 'Apocalypse 21:4'
+        text: 'He will wipe every tear from their eyes. There will be no more...?',
+        options: ['Death', 'Defeat', 'Mildness', 'Length'],
+        correctAnswer: 'Death',
+        explanation: 'Revelation 21:4'
     },
     {
         id: 'rev_15',
-        text: 'Je suis l\'étoile brillante du... ?',
-        options: ['Matin', 'Soir', 'Nord', 'Sud'],
-        correctAnswer: 'Matin',
-        explanation: 'Apocalypse 22:16'
+        text: 'I am the bright... star?',
+        options: ['Morning', 'Evening', 'North', 'South'],
+        correctAnswer: 'Morning',
+        explanation: 'Revelation 22:16'
     },
     {
         id: 'rev_16',
-        text: 'Que celui qui a soif vienne; que celui qui veut, prenne de... ?',
-        options: ['L\'eau de la vie, gratuitement', 'L\'or', 'Le pain', 'Le vin'],
-        correctAnswer: 'L\'eau de la vie, gratuitement',
-        explanation: 'Apocalypse 22:17'
+        text: 'Let the one who is thirsty come; and let the one who wishes take...?',
+        options: ['The free gift of the water of life', 'Gold', 'Bread', 'Wine'],
+        correctAnswer: 'The free gift of the water of life',
+        explanation: 'Revelation 22:17'
     },
     {
         id: 'rev_17',
-        text: 'Si quelqu\'un retranche quelque chose des paroles de ce livre prophétique... ?',
-        options: ['Dieu retranchera sa part de l\'arbre de la vie', 'Il sera puni', 'Il mourra', 'Il sera pauvre'],
-        correctAnswer: 'Dieu retranchera sa part de l\'arbre de la vie',
-        explanation: 'Apocalypse 22:19'
+        text: 'If anyone takes words away from this scroll of prophecy...?',
+        options: ['God will take away from that person any share in the tree of life', 'He will be punished', 'He will die', 'He will be poor'],
+        correctAnswer: 'God will take away from that person any share in the tree of life',
+        explanation: 'Revelation 22:19'
     },
     {
         id: 'rev_18',
-        text: 'Celui qui atteste ces choses dit : Oui, je viens... ?',
-        options: ['Bientôt', 'Jamais', 'Demain', 'Peut-être'],
-        correctAnswer: 'Bientôt',
-        explanation: 'Apocalypse 22:20'
+        text: 'He who testifies to these things says: Yes, I am coming...?',
+        options: ['Soon', 'Never', 'Tomorrow', 'Perhaps'],
+        correctAnswer: 'Soon',
+        explanation: 'Revelation 22:20'
     },
     {
         id: 'rev_19',
-        text: 'Amen ! Viens... ?',
-        options: ['Seigneur Jésus', 'Roi', 'Esprit', 'Dieu'],
-        correctAnswer: 'Seigneur Jésus',
-        explanation: 'Apocalypse 22:20 Dernière prière de la Bible.'
+        text: 'Amen. Come...?',
+        options: ['Lord Jesus', 'King', 'Spirit', 'God'],
+        correctAnswer: 'Lord Jesus',
+        explanation: 'Revelation 22:20 Last prayer of the Bible.'
     },
     {
         id: 'rev_20',
-        text: 'Ils l\'ont vaincu à cause du sang de l\'Agneau et à cause de... ?',
-        options: ['La parole de leur témoignage', 'Leur force', 'Leur épée', 'Leurs amis'],
-        correctAnswer: 'La parole de leur témoignage',
-        explanation: 'Apocalypse 12:11'
+        text: 'They triumphed over him by the blood of the Lamb and by...?',
+        options: ['The word of their testimony', 'Their strength', 'Their sword', 'Their friends'],
+        correctAnswer: 'The word of their testimony',
+        explanation: 'Revelation 12:11'
     }
 ];

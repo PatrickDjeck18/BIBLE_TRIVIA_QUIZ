@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const lukeQuestions: Question[] = [
     {
         id: 'luk_1',
-        text: 'À qui Luc adresse-t-il son Évangile ?',
-        options: ['Théophile', 'Pierre', 'Paul', 'César'],
-        correctAnswer: 'Théophile',
-        explanation: 'Luc 1:3 "Excellent Théophile."'
+        text: 'To whom does Luke address his Gospel?',
+        options: ['Theophilus', 'Peter', 'Paul', 'Caesar'],
+        correctAnswer: 'Theophilus',
+        explanation: 'Luke 1:3 "Most excellent Theophilus."'
     },
     {
         id: 'luk_2',
-        text: 'Quel métier exerçait Luc ?',
-        options: ['Médecin', 'Pêcheur', 'Charpentier', 'Collecteur d\'impôts'],
-        correctAnswer: 'Médecin',
-        explanation: 'Colossiens 4:14 "Luc, le médecin bien-aimé."'
+        text: 'What was Luke\'s profession?',
+        options: ['Doctor', 'Fisherman', 'Carpenter', 'Tax collector'],
+        correctAnswer: 'Doctor',
+        explanation: 'Colossians 4:14 "Luke, the beloved physician."'
     },
     {
         id: 'luk_3',
-        text: 'L\'ange Gabriel a annoncé la naissance de Jean à... ?',
-        options: ['Zacharie', 'Joseph', 'Siméon', 'Hérode'],
-        correctAnswer: 'Zacharie',
-        explanation: 'Luc 1:11'
+        text: 'The angel Gabriel announced the birth of John to...?',
+        options: ['Zechariah', 'Joseph', 'Simeon', 'Herod'],
+        correctAnswer: 'Zechariah',
+        explanation: 'Luke 1:11'
     },
     {
         id: 'luk_4',
-        text: 'Que s\'est-il passé quand Elisabeth a entendu la salutation de Marie ?',
-        options: ['L\'enfant a tressailli dans son sein', 'Elle a pleuré', 'Elle s\'est endormie', 'Elle a eu peur'],
-        correctAnswer: 'L\'enfant a tressailli dans son sein',
-        explanation: 'Luc 1:41'
+        text: 'What happened when Elizabeth heard Mary\'s greeting?',
+        options: ['The baby leaped in her womb', 'She cried', 'She fell asleep', 'She was afraid'],
+        correctAnswer: 'The baby leaped in her womb',
+        explanation: 'Luke 1:41'
     },
     {
         id: 'luk_5',
-        text: 'Comment s\'appelle le cantique de Marie ?',
-        options: ['Le Magnificat', 'Le Benedictus', 'Le Nunc Dimittis', 'Le Gloria'],
-        correctAnswer: 'Le Magnificat',
-        explanation: 'Luc 1:46 "Mon âme exalte le Seigneur..."'
+        text: 'What is Mary\'s song called?',
+        options: ['The Magnificat', 'The Benedictus', 'The Nunc Dimittis', 'The Gloria'],
+        correctAnswer: 'The Magnificat',
+        explanation: 'Luke 1:46 "My soul glorifies the Lord..."'
     },
     {
         id: 'luk_6',
-        text: 'Pourquoi Joseph et Marie sont-ils allés à Bethléhem ?',
-        options: ['Pour le recensement ordonné par César Auguste', 'Pour fuir Hérode', 'Pour visiter la famille', 'Pour la Pâque'],
-        correctAnswer: 'Pour le recensement ordonné par César Auguste',
-        explanation: 'Luc 2:1'
+        text: 'Why did Joseph and Mary go to Bethlehem?',
+        options: ['For the census ordered by Caesar Augustus', 'To flee from Herod', 'To visit family', 'For the Passover'],
+        correctAnswer: 'For the census ordered by Caesar Augustus',
+        explanation: 'Luke 2:1'
     },
     {
         id: 'luk_7',
-        text: 'Il n\'y avait pas de place pour eux dans... ?',
-        options: ['L\'hôtellerie', 'Le palais', 'Le temple', 'La maison'],
-        correctAnswer: 'L\'hôtellerie',
-        explanation: 'Luc 2:7'
+        text: 'There was no guest room available for them in...?',
+        options: ['The inn', 'The palace', 'The temple', 'The house'],
+        correctAnswer: 'The inn',
+        explanation: 'Luke 2:7'
     },
     {
         id: 'luk_8',
-        text: 'Qui a dit "Car mes yeux ont vu ton salut" ?',
-        options: ['Siméon', 'Zacharie', 'Anne', 'Joseph'],
-        correctAnswer: 'Siméon',
-        explanation: 'Luc 2:30 (Le Nunc Dimittis).'
+        text: 'Who said "For my eyes have seen your salvation"?',
+        options: ['Simeon', 'Zechariah', 'Anna', 'Joseph'],
+        correctAnswer: 'Simeon',
+        explanation: 'Luke 2:30 (The Nunc Dimittis).'
     },
     {
         id: 'luk_9',
-        text: 'À 12 ans, où Jésus a-t-il été retrouvé par ses parents ?',
-        options: ['Dans le temple, assis au milieu des docteurs', 'Au marché', 'Dans le désert', 'Chez un ami'],
-        correctAnswer: 'Dans le temple, assis au milieu des docteurs',
-        explanation: 'Luc 2:46'
+        text: 'At age 12, where was Jesus found by his parents?',
+        options: ['In the temple, sitting among the teachers', 'At the market', 'In the desert', 'At a friend’s house'],
+        correctAnswer: 'In the temple, sitting among the teachers',
+        explanation: 'Luke 2:46'
     },
     {
         id: 'luk_10',
-        text: 'L\'Esprit du Seigneur est sur moi... pour annoncer une année de... ?',
-        options: ['Grâce du Seigneur', 'Vengeance', 'Guerre', 'Jugement'],
-        correctAnswer: 'Grâce du Seigneur',
-        explanation: 'Luc 4:19'
+        text: 'The Spirit of the Lord is on me... to proclaim the year of...?',
+        options: ['The Lord’s favor', 'Vengeance', 'War', 'Judgment'],
+        correctAnswer: 'The Lord’s favor',
+        explanation: 'Luke 4:19'
     },
     {
         id: 'luk_11',
-        text: 'Quelle parabole met en scène un voyageur blessé ?',
-        options: ['Le bon Samaritain', 'Le fils prodigue', 'La brebis perdue', 'Le pharisien et le publicain'],
-        correctAnswer: 'Le bon Samaritain',
-        explanation: 'Luc 10:30'
+        text: 'Which parable features a wounded traveler?',
+        options: ['The Good Samaritan', 'The Prodigal Son', 'The Lost Sheep', 'The Pharisee and the Publican'],
+        correctAnswer: 'The Good Samaritan',
+        explanation: 'Luke 10:30'
     },
     {
         id: 'luk_12',
-        text: 'Marthe, Marthe, tu t\'inquiètes et tu t\'agites pour beaucoup de choses. Une seule est... ?',
-        options: ['Nécessaire (Marie a choisi la bonne part)', 'Importante', 'Interdite', 'Dure'],
-        correctAnswer: 'Nécessaire (Marie a choisi la bonne part)',
-        explanation: 'Luc 10:42'
+        text: 'Martha, Martha, you are worried and upset about many things. Only one is...?',
+        options: ['Needed (Mary has chosen what is better)', 'Important', 'Forbidden', 'Hard'],
+        correctAnswer: 'Needed (Mary has chosen what is better)',
+        explanation: 'Luke 10:42'
     },
     {
         id: 'luk_13',
-        text: 'Réjouissez-vous avec moi, car j\'ai retrouvé ma brebis... ?',
-        options: ['Perdue', 'Morte', 'Malade', 'Volée'],
-        correctAnswer: 'Perdue',
-        explanation: 'Luc 15:6'
+        text: 'Rejoice with me; I have found my... sheep?',
+        options: ['Lost', 'Dead', 'Sick', 'Stolen'],
+        correctAnswer: 'Lost',
+        explanation: 'Luke 15:6'
     },
     {
         id: 'luk_14',
-        text: 'Que demande le fils prodigue à son père ?',
-        options: ['La part de biens qui lui revient', 'Pardon', 'De l\'argent', 'Un travail'],
-        correctAnswer: 'La part de biens qui lui revient',
-        explanation: 'Luc 15:12'
+        text: 'What does the prodigal son ask of his father?',
+        options: ['The share of the estate that comes to me', 'Forgiveness', 'Money', 'A job'],
+        correctAnswer: 'The share of the estate that comes to me',
+        explanation: 'Luke 15:12'
     },
     {
         id: 'luk_15',
-        text: 'Qui était Zachée ?',
-        options: ['Un chef des publicains, riche et de petite taille', 'Un pharisien', 'Un pêcheur', 'Un soldat'],
-        correctAnswer: 'Un chef des publicains, riche et de petite taille',
-        explanation: 'Luc 19:2'
+        text: 'Who was Zacchaeus?',
+        options: ['A chief tax collector, wealthy and short', 'A Pharisee', 'A fisherman', 'A soldier'],
+        correctAnswer: 'A chief tax collector, wealthy and short',
+        explanation: 'Luke 19:2'
     },
     {
         id: 'luk_16',
-        text: 'Père, pardonne-leur, car... ?',
-        options: ['Ils ne savent ce qu\'ils font', 'Ils sont méchants', 'Je les aime', 'Ils sont perdus'],
-        correctAnswer: 'Ils ne savent ce qu\'ils font',
-        explanation: 'Luc 23:34'
+        text: 'Father, forgive them, for...?',
+        options: ['They do not know what they are doing', 'They are wicked', 'I love them', 'They are lost'],
+        correctAnswer: 'They do not know what they are doing',
+        explanation: 'Luke 23:34'
     },
     {
         id: 'luk_17',
-        text: 'En vérité je te le dis, aujourd\'hui tu seras avec moi dans le paradis. À qui Jésus parle-t-il ?',
-        options: ['Au brigand repenti (sur la croix)', 'À Pierre', 'À Jean', 'À Marie'],
-        correctAnswer: 'Au brigand repenti (sur la croix)',
-        explanation: 'Luc 23:43'
+        text: 'Truly I tell you, today you will be with me in paradise. To whom does Jesus speak?',
+        options: ['The repentant thief (on the cross)', 'Peter', 'John', 'Mary'],
+        correctAnswer: 'The repentant thief (on the cross)',
+        explanation: 'Luke 23:43'
     },
     {
         id: 'luk_18',
-        text: 'Où allaient les deux disciples qui ont rencontré Jésus ressuscité sans le reconnaître ?',
-        options: ['À Emmaüs', 'À Jéricho', 'À Béthanie', 'À Galilée'],
-        correctAnswer: 'À Emmaüs',
-        explanation: 'Luc 24:13'
+        text: 'Where were the two disciples going who met the resurrected Jesus without recognizing him?',
+        options: ['To Emmaus', 'To Jericho', 'To Bethany', 'To Galilee'],
+        correctAnswer: 'To Emmaus',
+        explanation: 'Luke 24:13'
     },
     {
         id: 'luk_19',
-        text: 'Car le Fils de l\'homme est venu chercher et sauver... ?',
-        options: ['Ce qui était perdu', 'Les justes', 'Les riches', 'Les sages'],
-        correctAnswer: 'Ce qui était perdu',
-        explanation: 'Luc 19:10'
+        text: 'For the Son of Man came to seek and to save...?',
+        options: ['The lost', 'The righteous', 'The rich', 'The wise'],
+        correctAnswer: 'The lost',
+        explanation: 'Luke 19:10'
     },
     {
         id: 'luk_20',
-        text: 'Que fit Jésus avant de monter au ciel (Ascension) ?',
-        options: ['Il leva les mains et les bénit', 'Il chanta', 'Il pleura', 'Il mangea'],
-        correctAnswer: 'Il leva les mains et les bénit',
-        explanation: 'Luc 24:50'
+        text: 'What did Jesus do before ascending to heaven (Ascension)?',
+        options: ['He lifted up his hands and blessed them', 'He sang', 'He wept', 'He ate'],
+        correctAnswer: 'He lifted up his hands and blessed them',
+        explanation: 'Luke 24:50'
     }
 ];

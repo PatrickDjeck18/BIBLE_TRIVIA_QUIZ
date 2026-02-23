@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const chronicles2Questions: Question[] = [
     {
         id: '2ch_1',
-        text: 'Sur quoi se concentre 2 Chroniques ?',
-        options: ['Les rois de Juda (Lignée de David)', 'Les rois d\'Israël (Nord)', 'La conquête de Canaan', 'La vie de Jésus'],
-        correctAnswer: 'Les rois de Juda (Lignée de David)',
-        explanation: 'Le livre ignore presque totalement le royaume du Nord pour se focaliser sur le Temple et la lignée davidique.'
+        text: 'What does 2 Chronicles focus on?',
+        options: ['The kings of Judah (Lineage of David)', 'The kings of Israel (North)', 'The conquest of Canaan', 'The life of Jesus'],
+        correctAnswer: 'The kings of Judah (Lineage of David)',
+        explanation: 'The book almost entirely ignores the Northern Kingdom to focus on the Temple and the Davidic line.'
     },
     {
         id: '2ch_2',
-        text: 'Que s\'est-il passé lors de la dédicace du Temple ?',
-        options: ['La gloire de Dieu a rempli la maison et le feu est descendu', 'Un tremblement de terre', 'Rien', 'Il a plu'],
-        correctAnswer: 'La gloire de Dieu a rempli la maison et le feu est descendu',
-        explanation: '2 Chroniques 7:1 "Le feu descendit du ciel... et la gloire de l\'Éternel remplit la maison."'
+        text: 'What happened during the dedication of the Temple?',
+        options: ['God\'s glory filled the house and fire came down', 'An earthquake', 'Nothing', 'It rained'],
+        correctAnswer: 'God\'s glory filled the house and fire came down',
+        explanation: '2 Chronicles 7:1 "Fire came down from heaven... and the glory of the Lord filled the temple."'
     },
     {
         id: '2ch_3',
-        text: 'Quel verset célèbre sur le réveil se trouve dans 2 Chroniques 7 ?',
-        options: ['Si mon peuple... s\'humilie, prie...', 'Car Dieu a tant aimé le monde', 'L\'Éternel est mon berger', 'Au commencement'],
-        correctAnswer: 'Si mon peuple... s\'humilie, prie...',
-        explanation: '2 Chroniques 7:14 "Si mon peuple sur qui est invoqué mon nom s\'humilie, prie..."'
+        text: 'Which famous verse on revival is found in 2 Chronicles 7?',
+        options: ['If my people... humble themselves and pray...', 'For God so loved the world', 'The Lord is my shepherd', 'In the beginning'],
+        correctAnswer: 'If my people... humble themselves and pray...',
+        explanation: '2 Chronicles 7:14 "If my people, who are called by my name, will humble themselves and pray..."'
     },
     {
         id: '2ch_4',
-        text: 'Quel roi a été frappé par une maladie des pieds pour ne pas avoir cherché Dieu ?',
-        options: ['Asa', 'Joas', 'Josias', 'Ézéchias'],
+        text: 'Which king was afflicted with a foot disease for not seeking God?',
+        options: ['Asa', 'Joash', 'Josiah', 'Hezekiah'],
         correctAnswer: 'Asa',
-        explanation: '2 Chroniques 16:12 "Il ne chercha pas l\'Éternel, mais consulta les médecins."'
+        explanation: '2 Chronicles 16:12 "He did not seek help from the Lord, but only from the physicians."'
     },
     {
         id: '2ch_5',
-        text: 'Quel bon roi a fait alliance avec le méchant Achab par mariage ?',
-        options: ['Josaphat', 'Ézéchias', 'Josias', 'Ozias'],
-        correctAnswer: 'Josaphat',
-        explanation: '2 Chroniques 18:1 "Il s\'allia par mariage avec Achab."'
+        text: 'Which good king made an alliance with the wicked Ahab by marriage?',
+        options: ['Jehoshaphat', 'Hezekiah', 'Josiah', 'Uzziah'],
+        correctAnswer: 'Jehoshaphat',
+        explanation: '2 Chronicles 18:1 "He allied himself with Ahab by marriage."'
     },
     {
         id: '2ch_6',
-        text: 'Comment Josaphat a-t-il gagné la bataille contre une immense armée ?',
-        options: ['En plaçant des chantres devant l\'armée', 'Avec des chars', 'Par la famine', 'En fuyant'],
-        correctAnswer: 'En plaçant des chantres devant l\'armée',
-        explanation: '2 Chroniques 20:21 "Il en nomma... qui célébraient la majesté sainte en marchant devant l\'armée."'
+        text: 'How did Jehoshaphat win the battle against a vast army?',
+        options: ['By placing singers in front of the army', 'With chariots', 'Through famine', 'By fleeing'],
+        correctAnswer: 'By placing singers in front of the army',
+        explanation: '2 Chronicles 20:21 "He appointed men to sing to the Lord... as they went out at the head of the army."'
     },
     {
         id: '2ch_7',
-        text: 'Quel roi est devenu lépreux pour avoir voulu offrir l\'encens dans le Temple ?',
-        options: ['Ozias (Azaria)', 'Joas', 'Manassé', 'Amon'],
-        correctAnswer: 'Ozias (Azaria)',
-        explanation: '2 Chroniques 26:19 "La lèpre éclata sur son front."'
+        text: 'Which king became leprous for wanting to offer incense in the Temple?',
+        options: ['Uzziah (Azariah)', 'Joash', 'Manasseh', 'Amon'],
+        correctAnswer: 'Uzziah (Azariah)',
+        explanation: '2 Chronicles 26:19 "Leprosy broke out on his forehead."'
     },
     {
         id: '2ch_8',
-        text: 'Quel roi très méchant s\'est repenti en captivité à Babylone ?',
-        options: ['Manassé', 'Amon', 'Achab', 'Saül'],
-        correctAnswer: 'Manassé',
-        explanation: '2 Chroniques 33:12 "Lorsqu\'il fut dans la détresse, il implora l\'Éternel."'
+        text: 'Which very wicked king repented while in captivity in Babylon?',
+        options: ['Manasseh', 'Amon', 'Ahab', 'Saul'],
+        correctAnswer: 'Manasseh',
+        explanation: '2 Chronicles 33:12 "In his distress he sought the favor of the Lord his God."'
     },
     {
         id: '2ch_9',
-        text: 'Qui a caché Joas et a dirigé la réforme religieuse à sa place au début ?',
-        options: ['Le sacrificateur Jehojada', 'Élisée', 'Jérémie', 'Ésaïe'],
-        correctAnswer: 'Le sacrificateur Jehojada',
-        explanation: '2 Chroniques 23-24'
+        text: 'Who hid Joash and led the religious reform in his place at the beginning?',
+        options: ['Jehoiada the priest', 'Elisha', 'Jeremiah', 'Isaiah'],
+        correctAnswer: 'Jehoiada the priest',
+        explanation: '2 Chronicles 23-24'
     },
     {
         id: '2ch_10',
-        text: 'Quel roi a célébré une Pâque mémorable après avoir purifié le Temple (réouverture) ?',
-        options: ['Ézéchias', 'Roboam', 'Abija', 'Jotham'],
-        correctAnswer: 'Ézéchias',
-        explanation: '2 Chroniques 29-30'
+        text: 'Which king celebrated a memorable Passover after purifying the Temple (reopening)?',
+        options: ['Hezekiah', 'Rehoboam', 'Abijah', 'Jotham'],
+        correctAnswer: 'Hezekiah',
+        explanation: '2 Chronicles 29-30'
     },
     {
         id: '2ch_11',
-        text: 'Qu\'a fait Josias à 8 ans ?',
-        options: ['Il devint roi et fit ce qui est droit', 'Il mourut', 'Il s\'enfuit', 'Il construisit un palais'],
-        correctAnswer: 'Il devint roi et fit ce qui est droit',
-        explanation: '2 Chroniques 34:1-2'
+        text: 'What did Josiah do at age 8?',
+        options: ['He became king and did what was right', 'He died', 'He fled', 'He built a palace'],
+        correctAnswer: 'He became king and did what was right',
+        explanation: '2 Chronicles 34:1-2'
     },
     {
         id: '2ch_12',
-        text: 'Comment le livre des Chroniques se termine-t-il ?',
-        options: ['Par le décret de Cyrus autorisant le retour', 'Par la mort de David', 'Par la destruction de Jérusalem', 'Par la venue de Jésus'],
-        correctAnswer: 'Par le décret de Cyrus autorisant le retour',
-        explanation: '2 Chroniques 36:23 "Cyrus... dit : ...Qu\'il monte à Jérusalem..."'
+        text: 'How does the book of Chronicles end?',
+        options: ['With the decree of Cyrus authorizing the return', 'With the death of David', 'With the destruction of Jerusalem', 'With the coming of Jesus'],
+        correctAnswer: 'With the decree of Cyrus authorizing the return',
+        explanation: '2 Chronicles 36:23 "Cyrus... said: ...May he go up to Jerusalem..."'
     },
     {
         id: '2ch_13',
-        text: 'Pourquoi Jérusalem est-elle restée en friche 70 ans ?',
-        options: ['Pour que la terre jouisse de ses sabbats', 'Parce qu\'elle était maudite', 'Personne ne voulait y vivre', 'Il n\'y avait pas d\'eau'],
-        correctAnswer: 'Pour que la terre jouisse de ses sabbats',
-        explanation: '2 Chroniques 36:21 "...jusqu\'à ce que le pays eût joui de ses sabbats."'
+        text: 'Why did Jerusalem remain desolate for 70 years?',
+        options: ['So the land could enjoy its sabbaths', 'Because it was cursed', 'No one wanted to live there', 'There was no water'],
+        correctAnswer: 'So the land could enjoy its sabbaths',
+        explanation: '2 Chronicles 36:21 "...until the land had enjoyed its sabbaths."'
     },
     {
         id: '2ch_14',
-        text: 'Quel prophète a encouragé le roi Asa ?',
-        options: ['Azaria', 'Oded', 'Nathan', 'Gad'],
-        correctAnswer: 'Azaria',
-        explanation: '2 Chroniques 15:1 "L\'esprit de Dieu fut sur Azaria..."'
+        text: 'Which prophet encouraged King Asa?',
+        options: ['Azariah', 'Oded', 'Nathan', 'Gad'],
+        correctAnswer: 'Azariah',
+        explanation: '2 Chronicles 15:1 "The Spirit of God came on Azariah..."'
     },
     {
         id: '2ch_15',
-        text: 'Quel prophète a réprimandé Josaphat après son alliance avec Achab ?',
-        options: ['Jéhu, fils de Hanani', 'Élie', 'Michée', 'Jérémie'],
-        correctAnswer: 'Jéhu, fils de Hanani',
-        explanation: '2 Chroniques 19:2'
+        text: 'Which prophet rebuked Jehoshaphat after his alliance with Ahab?',
+        options: ['Jehu son of Hanani', 'Elijah', 'Micaiah', 'Jeremiah'],
+        correctAnswer: 'Jehu son of Hanani',
+        explanation: '2 Chronicles 19:2'
     },
     {
         id: '2ch_16',
-        text: 'Qui a pillé le Temple sous le règne de Roboam ?',
-        options: ['Schischak, roi d\'Égypte', 'Nebucadnetsar', 'Le roi d\'Assyrie', 'Les Philistins'],
-        correctAnswer: 'Schischak, roi d\'Égypte',
-        explanation: '2 Chroniques 12:9'
+        text: 'Who plundered the Temple during Rehoboam\'s reign?',
+        options: ['Shishak king of Egypt', 'Nebuchadnezzar', 'The king of Assyria', 'The Philistines'],
+        correctAnswer: 'Shishak king of Egypt',
+        explanation: '2 Chronicles 12:9'
     },
     {
         id: '2ch_17',
-        text: 'Quelle reine est venue admirer la gloire de Salomon ?',
-        options: ['La reine de Séba', 'La reine d\'Éthiopie', 'La reine de Tyr', 'La reine de Perse'],
-        correctAnswer: 'La reine de Séba',
-        explanation: '2 Chroniques 9:1'
+        text: 'Which queen came to admire Solomon\'s glory?',
+        options: ['The Queen of Sheba', 'The Queen of Ethiopia', 'The Queen of Tyre', 'The Queen of Persia'],
+        correctAnswer: 'The Queen of Sheba',
+        explanation: '2 Chronicles 9:1'
     },
     {
         id: '2ch_18',
-        text: 'Combien de tribus ont suivi Roboam (Royaume de Juda) ?',
-        options: ['2 (Juda et Benjamin)', '10', '12', '5'],
-        correctAnswer: '2 (Juda et Benjamin)',
-        explanation: '2 Chroniques 11'
+        text: 'How many tribes followed Rehoboam (Kingdom of Judah)?',
+        options: ['2 (Judah and Benjamin)', '10', '12', '5'],
+        correctAnswer: '2 (Judah and Benjamin)',
+        explanation: '2 Chronicles 11'
     },
     {
         id: '2ch_19',
-        text: 'Quel roi a été tué par une flèche tirée "au hasard" ?',
-        options: ['Achab', 'Josias', 'Saül', 'Joram'],
-        correctAnswer: 'Achab',
-        explanation: '2 Chroniques 18:33 (Parallèle à 1 Rois 22).'
+        text: 'Which king was killed by an arrow shot "randomly"?',
+        options: ['Ahab', 'Josiah', 'Saul', 'Jehoram'],
+        correctAnswer: 'Ahab',
+        explanation: '2 Chronicles 18:33 (Parallel to 1 Kings 22).'
     },
     {
         id: '2ch_20',
-        text: 'Quelle fête Ézéchias a-t-il invitée tout Israël (même le Nord) à célébrer ?',
-        options: ['La Pâque', 'La fête des Tentes', 'Le Nouvel An', 'La fête des Semaines'],
-        correctAnswer: 'La Pâque',
-        explanation: '2 Chroniques 30:1'
+        text: 'Which festival did Hezekiah invite all Israel (even the North) to celebrate?',
+        options: ['Passover', 'The Feast of Tabernacles', 'New Year', 'The Feast of Weeks'],
+        correctAnswer: 'Passover',
+        explanation: '2 Chronicles 30:1'
     }
 ];

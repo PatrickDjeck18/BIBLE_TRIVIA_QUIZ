@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const philippiansQuestions: Question[] = [
     {
         id: 'phi_1',
-        text: 'Celui qui a commencé en vous cette bonne oeuvre la rendra parfaite pour... ?',
-        options: ['Le jour de Jésus-Christ', 'Votre mort', 'La fin du monde', 'Toujours'],
-        correctAnswer: 'Le jour de Jésus-Christ',
-        explanation: 'Philippiens 1:6'
+        text: 'He who began a good work in you will carry it on to completion until...?',
+        options: ['The day of Christ Jesus', 'Your death', 'The end of the world', 'Always'],
+        correctAnswer: 'The day of Christ Jesus',
+        explanation: 'Philippians 1:6'
     },
     {
         id: 'phi_2',
-        text: 'Christ est ma vie, et la mort m\'est un... ?',
-        options: ['Gain', 'Perte', 'Passage', 'Mystère'],
+        text: 'For to me, to live is Christ and to die is...?',
+        options: ['Gain', 'Loss', 'Passage', 'Mystery'],
         correctAnswer: 'Gain',
-        explanation: 'Philippiens 1:21'
+        explanation: 'Philippians 1:21'
     },
     {
         id: 'phi_3',
-        text: 'Ayez en vous les sentiments qui étaient en... ?',
-        options: ['Jésus-Christ', 'David', 'Moïse', 'Paul'],
-        correctAnswer: 'Jésus-Christ',
-        explanation: 'Philippiens 2:5'
+        text: 'In your relationships with one another, have the same mindset as...?',
+        options: ['Christ Jesus', 'David', 'Moses', 'Paul'],
+        correctAnswer: 'Christ Jesus',
+        explanation: 'Philippians 2:5'
     },
     {
         id: 'phi_4',
-        text: 'Il s\'est humilié lui-même, se rendant obéissant jusqu\'à la mort... ?',
-        options: ['Même jusqu\'à la mort de la croix', 'De vieillesse', 'Par lapidation', 'Au combat'],
-        correctAnswer: 'Même jusqu\'à la mort de la croix',
-        explanation: 'Philippiens 2:8'
+        text: 'He humbled himself by becoming obedient to death—...?',
+        options: ['Even death on a cross!', 'Of old age', 'By stoning', 'In battle'],
+        correctAnswer: 'Even death on a cross!',
+        explanation: 'Philippians 2:8'
     },
     {
         id: 'phi_5',
-        text: 'Afin qu\'au nom de Jésus tout genou fléchisse... et que toute langue confesse que... ?',
-        options: ['Jésus-Christ est Seigneur', 'Dieu est grand', 'La vie est belle', 'Le ciel est bleu'],
-        correctAnswer: 'Jésus-Christ est Seigneur',
-        explanation: 'Philippiens 2:10-11'
+        text: 'That at the name of Jesus every knee should bow... and every tongue acknowledge that...?',
+        options: ['Jesus Christ is Lord', 'God is great', 'Life is beautiful', 'The sky is blue'],
+        correctAnswer: 'Jesus Christ is Lord',
+        explanation: 'Philippians 2:10-11'
     },
     {
         id: 'phi_6',
-        text: 'Faites toutes choses sans... ?',
-        options: ['Murmures ni hésitations', 'Prier', 'Payer', 'Peur'],
-        correctAnswer: 'Murmures ni hésitations',
-        explanation: 'Philippiens 2:14'
+        text: 'Do everything without...?',
+        options: ['Grumbling or arguing', 'Praying', 'Paying', 'Fear'],
+        correctAnswer: 'Grumbling or arguing',
+        explanation: 'Philippians 2:14'
     },
     {
         id: 'phi_7',
-        text: 'Je regarde toutes choses comme une perte, à cause de... ?',
-        options: ['L\'excellence de la connaissance de Jésus-Christ', 'Mes épreuves', 'Ma pauvreté', 'Mon âge'],
-        correctAnswer: 'L\'excellence de la connaissance de Jésus-Christ',
-        explanation: 'Philippiens 3:8'
+        text: 'I consider everything a loss because of...?',
+        options: ['The surpassing worth of knowing Christ Jesus', 'My trials', 'My poverty', 'My age'],
+        correctAnswer: 'The surpassing worth of knowing Christ Jesus',
+        explanation: 'Philippians 3:8'
     },
     {
         id: 'phi_8',
-        text: 'Je cours vers le but, pour remporter... ?',
-        options: ['Le prix de la vocation céleste de Dieu en Jésus-Christ', 'Une couronne d\'or', 'L\'argent', 'La gloire'],
-        correctAnswer: 'Le prix de la vocation céleste de Dieu en Jésus-Christ',
-        explanation: 'Philippiens 3:14'
+        text: 'I press on toward the goal to win...?',
+        options: ['The prize for which God has called me heavenward in Christ Jesus', 'A crown of gold', 'Money', 'Glory'],
+        correctAnswer: 'The prize for which God has called me heavenward in Christ Jesus',
+        explanation: 'Philippians 3:14'
     },
     {
         id: 'phi_9',
-        text: 'Notre cité à nous est... ?',
-        options: ['Dans les cieux', 'Sur la terre', 'À Rome', 'À Jérusalem'],
-        correctAnswer: 'Dans les cieux',
-        explanation: 'Philippiens 3:20'
+        text: 'Our citizenship is...?',
+        options: ['In heaven', 'On earth', 'In Rome', 'In Jerusalem'],
+        correctAnswer: 'In heaven',
+        explanation: 'Philippians 3:20'
     },
     {
         id: 'phi_10',
-        text: 'Réjouissez-vous toujours dans le Seigneur; je le répète... ?',
-        options: ['Réjouissez-vous', 'Priez', 'Chantez', 'Dansez'],
-        correctAnswer: 'Réjouissez-vous',
-        explanation: 'Philippiens 4:4'
+        text: 'Rejoice in the Lord always. I will say it again...?',
+        options: ['Rejoice!', 'Pray', 'Sing', 'Dance'],
+        correctAnswer: 'Rejoice!',
+        explanation: 'Philippians 4:4'
     },
     {
         id: 'phi_11',
-        text: 'Ne vous inquiétez de rien; mais en toute chose faites connaître vos besoins à Dieu par... ?',
-        options: ['Des prières et des supplications, avec des actions de grâces', 'Des cris', 'Des pleurs', 'Des jeûnes'],
-        correctAnswer: 'Des prières et des supplications, avec des actions de grâces',
-        explanation: 'Philippiens 4:6'
+        text: 'Do not be anxious about anything, but in every situation, by...?',
+        options: ['Prayer and petition, with thanksgiving, present your requests to God', 'Cries', 'Tears', 'Fastings'],
+        correctAnswer: 'Prayer and petition, with thanksgiving, present your requests to God',
+        explanation: 'Philippians 4:6'
     },
     {
         id: 'phi_12',
-        text: 'Et la paix de Dieu, qui surpasse toute intelligence, gardera... ?',
-        options: ['Vos coeurs et vos pensées en Jésus-Christ', 'Vos maisons', 'Vos corps', 'Vos richesses'],
-        correctAnswer: 'Vos coeurs et vos pensées en Jésus-Christ',
-        explanation: 'Philippiens 4:7'
+        text: 'And the peace of God, which transcends all understanding, will guard...?',
+        options: ['Your hearts and your minds in Christ Jesus', 'Your houses', 'Your bodies', 'Your wealth'],
+        correctAnswer: 'Your hearts and your minds in Christ Jesus',
+        explanation: 'Philippians 4:7'
     },
     {
         id: 'phi_13',
-        text: 'Je puis tout par... ?',
-        options: ['Celui qui me fortifie', 'Ma force', 'Ma foi', 'Mon courage'],
-        correctAnswer: 'Celui qui me fortifie',
-        explanation: 'Philippiens 4:13'
+        text: 'I can do all this through...?',
+        options: ['Him who gives me strength', 'My strength', 'My faith', 'My courage'],
+        correctAnswer: 'Him who gives me strength',
+        explanation: 'Philippians 4:13'
     },
     {
         id: 'phi_14',
-        text: 'Mon Dieu pourvoira à tous vos besoins selon... ?',
-        options: ['Sa richesse, avec gloire, en Jésus-Christ', 'Vos désirs', 'Vos mérites', 'Votre travail'],
-        correctAnswer: 'Sa richesse, avec gloire, en Jésus-Christ',
-        explanation: 'Philippiens 4:19'
+        text: 'My God will meet all your needs according to...?',
+        options: ['The riches of his glory in Christ Jesus', 'Your desires', 'Your merits', 'Your work'],
+        correctAnswer: 'The riches of his glory in Christ Jesus',
+        explanation: 'Philippians 4:19'
     },
     {
         id: 'phi_15',
-        text: 'Qui a failli mourir pour l\'oeuvre de Christ et a apporté l\'aide des Philippiens à Paul ?',
-        options: ['Épaphrodite', 'Timothée', 'Tite', 'Luc'],
-        correctAnswer: 'Épaphrodite',
-        explanation: 'Philippiens 2:25,30'
+        text: 'Who almost died for the work of Christ and brought the assistance of the Philippians to Paul?',
+        options: ['Epaphroditus', 'Timothy', 'Titus', 'Luke'],
+        correctAnswer: 'Epaphroditus',
+        explanation: 'Philippians 2:25, 30'
     },
     {
         id: 'phi_16',
-        text: 'Où était Paul quand il a écrit cette épître ?',
-        options: ['En prison (probablement à Rome)', 'À Athènes', 'À Jérusalem', 'En voyage'],
-        correctAnswer: 'En prison (probablement à Rome)',
-        explanation: 'Philippiens 1:13 Mention du prétoire.'
+        text: 'Where was Paul when he wrote this epistle?',
+        options: ['In prison (probably in Rome)', 'In Athens', 'In Jerusalem', 'On a journey'],
+        correctAnswer: 'In prison (probably in Rome)',
+        explanation: 'Philippians 1:13 Mention of the palace guard.'
     },
     {
         id: 'phi_17',
-        text: 'Que vos regards se portent par vertu et digne de louange sur tout ce qui est... ?',
-        options: ['Vrai, honorable, juste, pur, aimable', 'Riche, grand, fort', 'Nouveau, moderne', 'Drôle'],
-        correctAnswer: 'Vrai, honorable, juste, pur, aimable',
-        explanation: 'Philippiens 4:8'
+        text: 'Whatever is true, whatever is noble, whatever is right, whatever is pure, whatever is lovely... If anything is...?',
+        options: ['Excellent or praiseworthy—think about such things', 'Rich, great, strong', 'New, modern', 'Funny'],
+        correctAnswer: 'Excellent or praiseworthy—think about such things',
+        explanation: 'Philippians 4:8'
     },
     {
         id: 'phi_18',
-        text: 'Paul dit qu\'il a appris à être... dans toutes les situations ?',
-        options: ['Content (satisfait)', 'Riche', 'Triste', 'En colère'],
-        correctAnswer: 'Content (satisfait)',
-        explanation: 'Philippiens 4:11'
+        text: 'Paul says he has learned to be... in any and every situation?',
+        options: ['Content', 'Rich', 'Sad', 'Angry'],
+        correctAnswer: 'Content',
+        explanation: 'Philippians 4:11'
     },
     {
         id: 'phi_19',
-        text: 'Prenez garde aux chiens, prenez garde aux mauvais ouvriers, prenez garde aux... ?',
-        options: ['Faux circoncis (les mutilés)', 'Romains', 'Grecs', 'Voleurs'],
-        correctAnswer: 'Faux circoncis (les mutilés)',
-        explanation: 'Philippiens 3:2'
+        text: 'Watch out for those dogs, those evildoers, those...?',
+        options: ['Mutilators of the flesh (false circumcision)', 'Romans', 'Greeks', 'Thieves'],
+        correctAnswer: 'Mutilators of the flesh (false circumcision)',
+        explanation: 'Philippians 3:2'
     },
     {
         id: 'phi_20',
-        text: 'Paul désirait s\'en aller et être avec Christ, ce qui est... ?',
-        options: ['De beaucoup le meilleur', 'La fin', 'Triste', 'Fait peur'],
-        correctAnswer: 'De beaucoup le meilleur',
-        explanation: 'Philippiens 1:23'
+        text: 'Paul desired to depart and be with Christ, which is...?',
+        options: ['Better by far', 'The end', 'Sad', 'Scary'],
+        correctAnswer: 'Better by far',
+        explanation: 'Philippians 1:23'
     }
 ];

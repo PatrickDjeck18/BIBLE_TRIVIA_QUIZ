@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const haggaiQuestions: Question[] = [
     {
         id: 'hag_1',
-        text: 'Quel était le message principal d\'Aggée ?',
-        options: ['Reconstruire le Temple', 'Arrêter de pécher', 'Prier pour la pluie', 'Combattre les Perses'],
-        correctAnswer: 'Reconstruire le Temple',
-        explanation: 'Aggée 1:8 "Montez sur la montagne... et bâtissez la maison."'
+        text: 'What was Haggai\'s main message?',
+        options: ['To rebuild the Temple', 'To stop sinning', 'To pray for rain', 'To fight the Persians'],
+        correctAnswer: 'To rebuild the Temple',
+        explanation: 'Haggai 1:8 "Go up into the mountains... and build my house."'
     },
     {
         id: 'hag_2',
-        text: 'Sous quel roi perse Aggée a-t-il prophétisé ?',
-        options: ['Darius', 'Cyrus', 'Xerxès', 'Artaxerxès'],
+        text: 'Under which Persian king did Haggai prophesy?',
+        options: ['Darius', 'Cyrus', 'Xerxes', 'Artaxerxes'],
         correctAnswer: 'Darius',
-        explanation: 'Aggée 1:1 "La seconde année du roi Darius..."'
+        explanation: 'Haggai 1:1 "In the second year of King Darius..."'
     },
     {
         id: 'hag_3',
-        text: 'Est-ce le temps pour vous d\'habiter vos maisons lambrissées, quand... ?',
-        options: ['Cette maison (le Temple) est détruite', 'Il pleut', 'Vous êtes pauvres', 'La guerre est là'],
-        correctAnswer: 'Cette maison (le Temple) est détruite',
-        explanation: 'Aggée 1:4'
+        text: 'Is it a time for you yourselves to be living in your paneled houses, while...?',
+        options: ['This house (the Temple) remains a ruin', 'It is raining', 'You are poor', 'War is here'],
+        correctAnswer: 'This house (the Temple) remains a ruin',
+        explanation: 'Haggai 1:4'
     },
     {
         id: 'hag_4',
-        text: 'Considérez attentivement vos... ?',
-        options: ['Voies', 'Mains', 'Enfants', 'Champs'],
-        correctAnswer: 'Voies',
-        explanation: 'Aggée 1:5,7 Expression répétée.'
+        text: 'Give careful thought to your...?',
+        options: ['Ways', 'Hands', 'Children', 'Fields'],
+        correctAnswer: 'Ways',
+        explanation: 'Haggai 1:5,7 Repeated expression.'
     },
     {
         id: 'hag_5',
-        text: 'Vous semez beaucoup, et vous recueillez... ?',
-        options: ['Peu', 'Beaucoup', 'Rien', 'De l\'or'],
-        correctAnswer: 'Peu',
-        explanation: 'Aggée 1:6 Jugement divin sur l\'économie à cause de la négligence du Temple.'
+        text: 'You have planted much, but harvested...?',
+        options: ['Little', 'Much', 'Nothing', 'Gold'],
+        correctAnswer: 'Little',
+        explanation: 'Haggai 1:6 Divine judgment on the economy due to negligence of the Temple.'
     },
     {
         id: 'hag_6',
-        text: 'Qui était le gouverneur de Juda à cette époque ?',
-        options: ['Zorobabel', 'Néhémie', 'Esdras', 'Josué'],
-        correctAnswer: 'Zorobabel',
-        explanation: 'Aggée 1:1'
+        text: 'Who was the governor of Judah at that time?',
+        options: ['Zerubbabel', 'Nehemiah', 'Ezra', 'Joshua'],
+        correctAnswer: 'Zerubbabel',
+        explanation: 'Haggai 1:1'
     },
     {
         id: 'hag_7',
-        text: 'Qui était le souverain sacrificateur ?',
-        options: ['Josué', 'Aaron', 'Eli', 'Esdras'],
-        correctAnswer: 'Josué',
-        explanation: 'Aggée 1:1'
+        text: 'Who was the high priest?',
+        options: ['Joshua', 'Aaron', 'Eli', 'Ezra'],
+        correctAnswer: 'Joshua',
+        explanation: 'Haggai 1:1'
     },
     {
         id: 'hag_8',
-        text: 'Quel encouragement Dieu donne-t-il au peuple qui travaille ?',
-        options: ['Je suis avec vous, dit l\'Éternel', 'Vous allez devenir riches', 'Vous vaincrez', 'N\'ayez pas peur'],
-        correctAnswer: 'Je suis avec vous, dit l\'Éternel',
-        explanation: 'Aggée 1:13'
+        text: 'What encouragement does God give to the people who work?',
+        options: ['"I am with you," declares the Lord', 'You will become rich', 'You will be victorious', 'Do not be afraid'],
+        correctAnswer: '"I am with you," declares the Lord',
+        explanation: 'Haggai 1:13'
     },
     {
         id: 'hag_9',
-        text: 'La gloire de cette dernière maison sera plus grande que... ?',
-        options: ['Celle de la première (Temple de Salomon)', 'Le palais du roi', 'Les pyramides', 'Les cieux'],
-        correctAnswer: 'Celle de la première (Temple de Salomon)',
-        explanation: 'Aggée 2:9'
+        text: 'The glory of this present house will be greater than...?',
+        options: ['The glory of the former house (Solomon\'s Temple)', 'The king\'s palace', 'The pyramids', 'The heavens'],
+        correctAnswer: 'The glory of the former house (Solomon\'s Temple)',
+        explanation: 'Haggai 2:9'
     },
     {
         id: 'hag_10',
-        text: 'À moi l\'argent, et à moi... ?',
-        options: ['L\'or', 'Le bronze', 'Le fer', 'Les pierres'],
-        correctAnswer: 'L\'or',
-        explanation: 'Aggée 2:8'
+        text: 'The silver is mine and the... is mine?',
+        options: ['Gold', 'Bronze', 'Iron', 'Stones'],
+        correctAnswer: 'Gold',
+        explanation: 'Haggai 2:8'
     },
     {
         id: 'hag_11',
-        text: 'L\'objet de désir de toutes les nations viendra... De qui cela parle-t-il ?',
-        options: ['Du Messie', 'De l\'or', 'De la paix', 'D\'un roi perse'],
-        correctAnswer: 'Du Messie',
-        explanation: 'Aggée 2:7 (Interprétation messianique traditionnelle).'
+        text: '"The desired of all nations will come..." Who does this speak of?',
+        options: ['The Messiah', 'Gold', 'Peace', 'A Persian king'],
+        correctAnswer: 'The Messiah',
+        explanation: 'Haggai 2:7 (Traditional messianic interpretation).'
     },
     {
         id: 'hag_12',
-        text: 'Si quelqu\'un porte de la viande sainte... et touche un aliment, sera-t-il sanctifié ?',
-        options: ['Non (La sainteté n\'est pas contagieuse, mais la souillure si)', 'Oui', 'Peut-être', 'Seulement si c\'est du pain'],
-        correctAnswer: 'Non (La sainteté n\'est pas contagieuse, mais la souillure si)',
-        explanation: 'Aggée 2:12 Leçon sur la pureté rituelle.'
+        text: 'If someone carries consecrated meat... and touches some other food, does it become consecrated?',
+        options: ['No (holiness is not contagious, but defilement is)', 'Yes', 'Perhaps', 'Only if it is bread'],
+        correctAnswer: 'No (holiness is not contagious, but defilement is)',
+        explanation: 'Haggai 2:12 Lesson on ritual purity.'
     },
     {
         id: 'hag_13',
-        text: 'Je te prendrai, Zorobabel... et je te garderai comme un... ?',
-        options: ['Sceau (Anneau sigillaire)', 'Trésor', 'Fils', 'Roi'],
-        correctAnswer: 'Sceau (Anneau sigillaire)',
-        explanation: 'Aggée 2:23 Signe d\'élection et d\'autorité.'
+        text: '"I will make you, Zerubbabel... like my...?"',
+        options: ['Signet ring', 'Treasure', 'Son', 'King'],
+        correctAnswer: 'Signet ring',
+        explanation: 'Haggai 2:23 Sign of election and authority.'
     },
     {
         id: 'hag_14',
-        text: 'Je ferai trembler... ?',
-        options: ['Les cieux et la terre', 'Les murs', 'Les ennemis', 'Les arbres'],
-        correctAnswer: 'Les cieux et la terre',
-        explanation: 'Aggée 2:6'
+        text: 'I will shake...?',
+        options: ['The heavens and the earth', 'The walls', 'The enemies', 'The trees'],
+        correctAnswer: 'The heavens and the earth',
+        explanation: 'Haggai 2:6'
     },
     {
         id: 'hag_15',
-        text: 'Pourquoi les cieux ont-ils retenu la rosée ?',
-        options: ['À cause de ma maison qui est détruite', 'C\'est l\'été', 'Pas de nuages', 'Le hasard'],
-        correctAnswer: 'À cause de ma maison qui est détruite',
-        explanation: 'Aggée 1:9-10'
+        text: 'Why have the heavens withheld their dew?',
+        options: ['Because of my house, which remains a ruin', 'It is summer', 'No clouds', 'Chance'],
+        correctAnswer: 'Because of my house, which remains a ruin',
+        explanation: 'Haggai 1:9-10'
     },
     {
         id: 'hag_16',
-        text: 'Combien de messages (oracles) contient le livre d\'Aggée ?',
-        options: ['Quatre', 'Un seul', 'Douze', 'Sept'],
-        correctAnswer: 'Quatre',
-        explanation: 'Datés précisément sur une période de 4 mois.'
+        text: 'How many messages (oracles) does the book of Haggai contain?',
+        options: ['Four', 'One only', 'Twelve', 'Seven'],
+        correctAnswer: 'Four',
+        explanation: 'Precisely dated over a period of 4 months.'
     },
     {
         id: 'hag_17',
-        text: 'Celui qui reçoit un salaire le met dans... ?',
-        options: ['Un sac percé', 'Une banque', 'Un trou', 'Sa poche'],
-        correctAnswer: 'Un sac percé',
-        explanation: 'Aggée 1:6 Image de l\'inflation/perte de pouvoir d\'achat.'
+        text: 'Whoever earns wages, puts them into...?',
+        options: ['A purse with holes in it', 'A bank', 'A hole', 'Their pocket'],
+        correctAnswer: 'A purse with holes in it',
+        explanation: 'Haggai 1:6 Image of inflation/loss of purchasing power.'
     },
     {
         id: 'hag_18',
-        text: 'Quel effet la prédication d\'Aggée a-t-elle eu ?',
-        options: ['Ils écoutèrent la voix de l\'Éternel et se mirent à l\'oeuvre', 'Ils se moquèrent', 'Ils le tuèrent', 'Ils l\'ignorèrent'],
-        correctAnswer: 'Ils écoutèrent la voix de l\'Éternel et se mirent à l\'oeuvre',
-        explanation: 'Aggée 1:12 Un rare succès prophétique immédiat !'
+        text: 'What effect did Haggai\'s preaching have?',
+        options: ['They obeyed the voice of the Lord and began to work', 'They mocked him', 'They killed him', 'They ignored him'],
+        correctAnswer: 'They obeyed the voice of the Lord and began to work',
+        explanation: 'Haggai 1:12 A rare case of immediate prophetic success!'
     },
     {
         id: 'hag_19',
-        text: 'Qui a prophétisé en même temps qu\'Aggée ?',
-        options: ['Zacharie', 'Malachie', 'Ésaïe', 'Jérémie'],
-        correctAnswer: 'Zacharie',
-        explanation: 'Esdras 5:1 mentionne les deux ensemble.'
+        text: 'Who prophesied at the same time as Haggai?',
+        options: ['Zechariah', 'Malachi', 'Isaiah', 'Jeremiah'],
+        correctAnswer: 'Zechariah',
+        explanation: 'Ezra 5:1 mentions both together.'
     },
     {
         id: 'hag_20',
-        text: 'Dans ce lieu, je donnerai... ?',
-        options: ['La paix', 'La guerre', 'La richesse', 'La victoire'],
-        correctAnswer: 'La paix',
-        explanation: 'Aggée 2:9'
+        text: '"In this place I will grant...?"',
+        options: ['Peace', 'War', 'Wealth', 'Victory'],
+        correctAnswer: 'Peace',
+        explanation: 'Haggai 2:9'
     }
 ];

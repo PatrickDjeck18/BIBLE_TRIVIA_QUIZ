@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const nahumQuestions: Question[] = [
     {
         id: 'nah_1',
-        text: 'Contre quelle ville Nahum prophétise-t-il ?',
-        options: ['Ninive', 'Babylone', 'Tyr', 'Damas'],
-        correctAnswer: 'Ninive',
-        explanation: 'Nahum 1:1 "Oracle sur Ninive."'
+        text: 'Against which city does Nahum prophesy?',
+        options: ['Nineveh', 'Babylon', 'Tyre', 'Damascus'],
+        correctAnswer: 'Nineveh',
+        explanation: 'Nahum 1:1 "An oracle concerning Nineveh."'
     },
     {
         id: 'nah_2',
-        text: 'De quelle ville venait Nahum ?',
-        options: ['Elkosch', 'Jérusalem', 'Moréscheth', 'Tekoa'],
-        correctAnswer: 'Elkosch',
+        text: 'From which city did Nahum come?',
+        options: ['Elkosh', 'Jerusalem', 'Moresheth', 'Tekoa'],
+        correctAnswer: 'Elkosh',
         explanation: 'Nahum 1:1'
     },
     {
         id: 'nah_3',
-        text: 'Quel autre prophète avait été envoyé à Ninive environ 100-150 ans avant Nahum ?',
-        options: ['Jonas', 'Amos', 'Élisée', 'Ésaïe'],
-        correctAnswer: 'Jonas',
-        explanation: 'Mais cette fois, il n\'y aura pas de repentance ni de sursis.'
+        text: 'Which other prophet had been sent to Nineveh about 100-150 years before Nahum?',
+        options: ['Jonah', 'Amos', 'Elisha', 'Isaiah'],
+        correctAnswer: 'Jonah',
+        explanation: 'But this time, there will be no repentance or reprieve.'
     },
     {
         id: 'nah_4',
-        text: 'L\'Éternel est lent à la colère, il est grand par sa force; il ne laisse pas... ?',
-        options: ['Impuni le coupable', 'Le juste souffrir', 'La terre trembler', 'Le méchant vivre'],
-        correctAnswer: 'Impuni le coupable',
+        text: 'The Lord is slow to anger and great in power; he will not leave...?',
+        options: ['The guilty unpunished', 'The righteous to suffer', 'The earth to tremble', 'The wicked to live'],
+        correctAnswer: 'The guilty unpunished',
         explanation: 'Nahum 1:3'
     },
     {
         id: 'nah_5',
-        text: 'L\'Éternel est bon, il est un... au jour de la détresse ?',
-        options: ['Refuge', 'Juge', 'Guerrier', 'Roi'],
+        text: 'The Lord is good, a... in times of trouble?',
+        options: ['Refuge', 'Judge', 'Warrior', 'King'],
         correctAnswer: 'Refuge',
         explanation: 'Nahum 1:7'
     },
     {
         id: 'nah_6',
-        text: 'Pourquoi Ninive est-elle détruite ?',
-        options: ['À cause de sa cruauté et de ses mensonges', 'Parce qu\'elle est pauvre', 'Parce qu\'elle n\'a pas d\'eau', 'Par accident'],
-        correctAnswer: 'À cause de sa cruauté et de ses mensonges',
-        explanation: 'Nahum 3:1 "Malheur à la ville sanguinaire, pleine de mensonge..."'
+        text: 'Why is Nineveh destroyed?',
+        options: ['Because of her cruelty and lies', 'Because she is poor', 'Because she has no water', 'By accident'],
+        correctAnswer: 'Because of her cruelty and lies',
+        explanation: 'Nahum 3:1 "Woe to the city of blood, full of lies..."'
     },
     {
         id: 'nah_7',
-        text: 'Voici sur les montagnes les pieds du messager qui annonce... ?',
-        options: ['La paix', 'La guerre', 'La pluie', 'La fin'],
-        correctAnswer: 'La paix',
-        explanation: 'Nahum 1:15 (Semblable à Ésaïe 52:7).'
+        text: 'Look, there on the mountains, the feet of one who brings...?',
+        options: ['Good news (peace)', 'War', 'Rain', 'The end'],
+        correctAnswer: 'Good news (peace)',
+        explanation: 'Nahum 1:15 (Similar to Isaiah 52:7).'
     },
     {
         id: 'nah_8',
-        text: 'Les chars s\'élancent dans les rues comme... ?',
-        options: ['La foudre (des éclairs)', 'Le vent', 'Des lions', 'Des aigles'],
-        correctAnswer: 'La foudre (des éclairs)',
-        explanation: 'Nahum 2:4 Description de la bataille.'
+        text: 'The chariots storm through the streets like...?',
+        options: ['Flashing torches (lightning)', 'The wind', 'Lions', 'Eagles'],
+        correctAnswer: 'Flashing torches (lightning)',
+        explanation: 'Nahum 2:4 Description of the battle.'
     },
     {
         id: 'nah_9',
-        text: 'Ninive est comme un réservoir... ?',
-        options: ['Plein d\'eau qui s\'écoule', 'Vide', 'Brûlant', 'Cassé'],
-        correctAnswer: 'Plein d\'eau qui s\'écoule',
-        explanation: 'Nahum 2:8 Image de la fuite de ses habitants.'
+        text: 'Nineveh is like a...?',
+        options: ['Pool whose water is draining away', 'Empty reservoir', 'Burning one', 'Broken one'],
+        correctAnswer: 'Pool whose water is draining away',
+        explanation: 'Nahum 2:8 Image of her residents fleeing.'
     },
     {
         id: 'nah_10',
-        text: 'Où est le repaire des... ?',
-        options: ['Lions', 'Ours', 'Loups', 'Serpents'],
-        correctAnswer: 'Lions',
-        explanation: 'Nahum 2:11 Ninive était souvent comparée à un lion (symbole assyrien).'
+        text: 'Where now is the... lair?',
+        options: ['Lions’', 'Bears’', 'Wolves’', 'Snakes’'],
+        correctAnswer: 'Lions’',
+        explanation: 'Nahum 2:11 Nineveh was often compared to a lion (Assyrian symbol).'
     },
     {
         id: 'nah_11',
-        text: 'Tes bergers sommeillent, roi... ?',
-        options: ['D\'Assyrie', 'De Babylone', 'D\'Égypte', 'De Perse'],
-        correctAnswer: 'D\'Assyrie',
+        text: 'King of..., your shepherds slumber?',
+        options: ['Assyria', 'Babylon', 'Egypt', 'Persia'],
+        correctAnswer: 'Assyria',
         explanation: 'Nahum 3:18'
     },
     {
         id: 'nah_12',
-        text: 'Il n\'y a point de remède à ta blessure, ta plaie est... ?',
-        options: ['Mortelle', 'Guérissable', 'Légère', 'Cachée'],
-        correctAnswer: 'Mortelle',
+        text: 'Nothing can heal you; your wound is...?',
+        options: ['Fatal', 'Healable', 'Slight', 'Hidden'],
+        correctAnswer: 'Fatal',
         explanation: 'Nahum 3:19'
     },
     {
         id: 'nah_13',
-        text: 'Tous ceux qui apprendront ta nouvelle... ?',
-        options: ['Battent des mains à ton sujet (se réjouissent de ta chute)', 'Pleurent', 'Ont peur', 'Prient'],
-        correctAnswer: 'Battent des mains à ton sujet (se réjouissent de ta chute)',
-        explanation: 'Nahum 3:19 Car sa méchanceté a atteint tout le monde.'
+        text: 'Everyone who hears the news about you...?',
+        options: ['Claps their hands (rejoices at your fall)', 'Weeps', 'Is afraid', 'Prays'],
+        correctAnswer: 'Claps their hands (rejoices at your fall)',
+        explanation: 'Nahum 3:19 For her endless cruelty has reached everyone.'
     },
     {
         id: 'nah_14',
-        text: 'Es-tu meilleure que No-Amon (Thèbes) ?',
-        options: ['Non, elle aussi a été emmenée captive', 'Oui, tu es plus forte', 'Oui, tu es plus belle', 'Non, tu es plus petite'],
-        correctAnswer: 'Non, elle aussi a été emmenée captive',
-        explanation: 'Nahum 3:8 Rappel historique de la chute de Thèbes en Égypte.'
+        text: 'Are you better than Thebes (No-Amon)?',
+        options: ['No, she also went into captivity', 'Yes, you are stronger', 'Yes, you are more beautiful', 'No, you are smaller'],
+        correctAnswer: 'No, she also went into captivity',
+        explanation: 'Nahum 3:8 Historical reminder of the fall of Thebes in Egypt.'
     },
     {
         id: 'nah_15',
-        text: 'Tes forteresses sont comme... ?',
-        options: ['Des figuiers avec les premiers fruits (si on les secoue, ils tombent)', 'Des rochers', 'Des murs de fer', 'Des montagnes'],
-        correctAnswer: 'Des figuiers avec les premiers fruits (si on les secoue, ils tombent)',
+        text: 'Your fortresses are like...?',
+        options: ['Fig trees with first-ripe fruit (if shaken, they fall)', 'Rocks', 'Iron walls', 'Mountains'],
+        correctAnswer: 'Fig trees with first-ripe fruit (if shaken, they fall)',
         explanation: 'Nahum 3:12'
     },
     {
         id: 'nah_16',
-        text: 'Le peuple qui est au milieu de toi, ce sont des... ?',
-        options: ['Femmes (faiblesse)', 'Guerriers', 'Géants', 'Rois'],
-        correctAnswer: 'Femmes (faiblesse)',
+        text: 'The people in your midst are all...?',
+        options: ['Women (weakness)', 'Warriors', 'Giants', 'Kings'],
+        correctAnswer: 'Women (weakness)',
         explanation: 'Nahum 3:13'
     },
     {
         id: 'nah_17',
-        text: 'Puise de l\'eau pour le siège ! Fortifie tes... ?',
-        options: ['Remparts', 'Puits', 'Maisons', 'Portes'],
-        correctAnswer: 'Remparts',
+        text: 'Draw water for the siege! Strengthen your...?',
+        options: ['Defenses', 'Wells', 'Houses', 'Gates'],
+        correctAnswer: 'Defenses',
         explanation: 'Nahum 3:14'
     },
     {
         id: 'nah_18',
-        text: 'Qui a pillé l\'argent et l\'or ?',
-        options: ['L\'ennemi (Babylone/Mèdes)', 'Israël', 'Égypte', 'Jonas'],
-        correctAnswer: 'L\'ennemi (Babylone/Mèdes)',
+        text: 'Who pillaged the silver and gold?',
+        options: ['The enemy (Babylon/Medes)', 'Israel', 'Egypt', 'Jonah'],
+        correctAnswer: 'The enemy (Babylon/Medes)',
         explanation: 'Nahum 2:9'
     },
     {
         id: 'nah_19',
-        text: 'L\'Éternel rétablit la gloire... ?',
-        options: ['De Jacob', 'De Ninive', 'D\'Assur', 'De Pharaon'],
-        correctAnswer: 'De Jacob',
+        text: 'The Lord will restore the splendor of...?',
+        options: ['Jacob', 'Nineveh', 'Assur', 'Pharaoh'],
+        correctAnswer: 'Jacob',
         explanation: 'Nahum 2:2'
     },
     {
         id: 'nah_20',
-        text: 'Qui se tient devant son indignation ?',
-        options: ['Personne', 'Les rois', 'Les anges', 'Les montagnes'],
-        correctAnswer: 'Personne',
+        text: 'Who can withstand his indignation?',
+        options: ['No one', 'The kings', 'The angels', 'The mountains'],
+        correctAnswer: 'No one',
         explanation: 'Nahum 1:6'
     }
 ];

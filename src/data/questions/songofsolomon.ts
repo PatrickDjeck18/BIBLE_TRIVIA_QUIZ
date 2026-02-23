@@ -3,142 +3,142 @@ import { Question } from '../questions';
 export const songofsolomonQuestions: Question[] = [
     {
         id: 'sng_1',
-        text: 'De quoi parle le Cantique des Cantiques ?',
-        options: ['De l\'amour entre un homme et une femme (et Christ/Église)', 'De la guerre', 'De la création', 'DuTemple'],
-        correctAnswer: 'De l\'amour entre un homme et une femme (et Christ/Église)',
-        explanation: 'C\'est un poème d\'amour célébrant le mariage.'
+        text: 'What is the Song of Solomon about?',
+        options: ['The love between a man and a woman (and Christ/Church)', 'War', 'Creation', 'The Temple'],
+        correctAnswer: 'The love between a man and a woman (and Christ/Church)',
+        explanation: 'It is a love poem celebrating marriage.'
     },
     {
         id: 'sng_2',
-        text: 'Je suis noire, mais je suis... ?',
-        options: ['Belle', 'Triste', 'Forte', 'Riche'],
-        correctAnswer: 'Belle',
-        explanation: 'Cantique 1:5'
+        text: '"I am dark, but I am...?"',
+        options: ['Beautiful / Lovely', 'Sad', 'Strong', 'Rich'],
+        correctAnswer: 'Beautiful / Lovely',
+        explanation: 'Song of Solomon 1:5'
     },
     {
         id: 'sng_3',
-        text: 'Qui est l\'auteur du livre ?',
-        options: ['Salomon', 'David', 'Héman', 'Asaph'],
-        correctAnswer: 'Salomon',
-        explanation: 'Cantique 1:1 "Cantique des cantiques, de Salomon."'
+        text: 'Who is the author of the book?',
+        options: ['Solomon', 'David', 'Heman', 'Asaph'],
+        correctAnswer: 'Solomon',
+        explanation: 'Song of Solomon 1:1 "The Song of Songs, which is Solomon’s."'
     },
     {
         id: 'sng_4',
-        text: 'Ne réveillez pas l\'amour avant... ?',
-        options: ['Qu\'il ne le veuille', 'Le matin', 'Le mariage', 'La nuit'],
-        correctAnswer: 'Qu\'il ne le veuille',
-        explanation: 'Cantique 2:7 (Refrain répété : patience dans l\'amour).'
+        text: 'Do not arouse or awaken love until...?',
+        options: ['It so desires', 'The morning', 'Marriage', 'The night'],
+        correctAnswer: 'It so desires',
+        explanation: 'Song of Solomon 2:7 (Repeated refrain: patience in love).'
     },
     {
         id: 'sng_5',
-        text: 'Mon bien-aimé est à moi, et je suis... ?',
-        options: ['À lui', 'Heureuse', 'Seule', 'Riche'],
-        correctAnswer: 'À lui',
-        explanation: 'Cantique 2:16'
+        text: '"My beloved is mine and I am...?"',
+        options: ['His', 'Happy', 'Alone', 'Rich'],
+        correctAnswer: 'His',
+        explanation: 'Song of Solomon 2:16'
     },
     {
         id: 'sng_6',
-        text: 'À quoi l\'époux compare-t-il sa bien-aimée ?',
-        options: ['À un lys au milieu des épines', 'À un roseau', 'À une pierre précieuse', 'À un oiseau'],
-        correctAnswer: 'À un lys au milieu des épines',
-        explanation: 'Cantique 2:2'
+        text: 'To what does the groom compare his beloved?',
+        options: ['A lily among thorns', 'A reed', 'A precious stone', 'A bird'],
+        correctAnswer: 'A lily among thorns',
+        explanation: 'Song of Solomon 2:2'
     },
     {
         id: 'sng_7',
-        text: 'Attrapez-nous les... ?',
-        options: ['Renards qui ravagent les vignes', 'Lions', 'Oiseaux', 'Voleurs'],
-        correctAnswer: 'Renards qui ravagent les vignes',
-        explanation: 'Cantique 2:15 (Image des petits problèmes qui nuisent au couple).'
+        text: '"Catch for us the...?"',
+        options: ['Foxes that ruin the vineyards', 'Lions', 'Birds', 'Thieves'],
+        correctAnswer: 'Foxes that ruin the vineyards',
+        explanation: 'Song of Solomon 2:15 (Image of small problems that harm a couple).'
     },
     {
         id: 'sng_8',
-        text: 'L\'amour est fort comme... ?',
-        options: ['La mort', 'Un lion', 'Le roc', 'Le soleil'],
-        correctAnswer: 'La mort',
-        explanation: 'Cantique 8:6'
+        text: '"Love is as strong as...?"',
+        options: ['Death', 'A lion', 'A rock', 'The sun'],
+        correctAnswer: 'Death',
+        explanation: 'Song of Solomon 8:6'
     },
     {
         id: 'sng_9',
-        text: 'Les grandes eaux ne peuvent... ?',
-        options: ['Éteindre l\'amour', 'Noyer la terre', 'Laver les péchés', 'Couler plus vite'],
-        correctAnswer: 'Éteindre l\'amour',
-        explanation: 'Cantique 8:7'
+        text: '"Many waters cannot...?"',
+        options: ['Quench love', 'Drown the earth', 'Wash away sins', 'Flow faster'],
+        correctAnswer: 'Quench love',
+        explanation: 'Song of Solomon 8:7'
     },
     {
         id: 'sng_10',
-        text: 'Comment appelle-t-il sa bien-aimée dans le chapitre 4 ?',
-        options: ['Ma soeur, ma fiancée', 'Ma reine', 'Mon esclave', 'Mon amie'],
-        correctAnswer: 'Ma soeur, ma fiancée',
-        explanation: 'Cantique 4:9'
+        text: 'What does the groom call his beloved in chapter 4?',
+        options: ['My sister, my bride', 'My queen', 'My slave', 'My friend'],
+        correctAnswer: 'My sister, my bride',
+        explanation: 'Song of Solomon 4:9'
     },
     {
         id: 'sng_11',
-        text: 'Quel fruit est mentionné pour son ombre et son goût ?',
-        options: ['Le pommier', 'La vigne', 'Le figuier', 'L\'olivier'],
-        correctAnswer: 'Le pommier',
-        explanation: 'Cantique 2:3 "Comme un pommier... j\'ai désiré m\'asseoir à son ombre."'
+        text: 'Which fruit tree is mentioned for its shade and its sweetness?',
+        options: ['An apple tree', 'A vine', 'A fig tree', 'An olive tree'],
+        correctAnswer: 'An apple tree',
+        explanation: 'Song of Solomon 2:3 "Like an apple tree... I delight to sit in his shade."'
     },
     {
         id: 'sng_12',
-        text: 'Où le bien-aimé fait-il paître son troupeau ?',
-        options: ['Parmi les lys', 'Dans le désert', 'Sur la montagne', 'Près de la mer'],
-        correctAnswer: 'Parmi les lys',
-        explanation: 'Cantique 2:16'
+        text: 'Where does the beloved browse among his flock?',
+        options: ['Among the lilies', 'In the desert', 'On the mountain', 'Near the sea'],
+        correctAnswer: 'Among the lilies',
+        explanation: 'Song of Solomon 2:16'
     },
     {
         id: 'sng_13',
-        text: 'Qu\'est-ce qui est comme un fil de cramoisi ?',
-        options: ['Tes lèvres', 'Tes cheveux', 'Ta robe', 'Ton sang'],
-        correctAnswer: 'Tes lèvres',
-        explanation: 'Cantique 4:3'
+        text: 'What is compared to a scarlet thread?',
+        options: ['Your lips', 'Your hair', 'Your dress', 'Your blood'],
+        correctAnswer: 'Your lips',
+        explanation: 'Song of Solomon 4:3'
     },
     {
         id: 'sng_14',
-        text: 'Je dors, mais mon coeur... ?',
-        options: ['Veille', 'Rêve', 'S\'arrête', 'Pleure'],
-        correctAnswer: 'Veille',
-        explanation: 'Cantique 5:2'
+        text: '"I slept but my heart...?"',
+        options: ['Was awake', 'Was dreaming', 'Stopped', 'Was crying'],
+        correctAnswer: 'Was awake',
+        explanation: 'Song of Solomon 5:2'
     },
     {
         id: 'sng_15',
-        text: 'Qui sont les "filles de Jérusalem" ?',
-        options: ['Les amies / le choeur qui observe', 'Les ennemies', 'Les anges', 'Les servantes'],
-        correctAnswer: 'Les amies / le choeur qui observe',
-        explanation: 'Interlocutrices fréquentes de la Sulamithe.'
+        text: 'Who are the "daughters of Jerusalem"?',
+        options: ['Friends / the chorus that observes', 'Enemies', 'Angels', 'Servants'],
+        correctAnswer: 'Friends / the chorus that observes',
+        explanation: 'Frequent interlocutors of the Shulammite.'
     },
     {
         id: 'sng_16',
-        text: 'Quelle est la bannière qu\'il déploie sur moi ?',
-        options: ['L\'amour', 'La paix', 'La victoire', 'La joie'],
-        correctAnswer: 'L\'amour',
-        explanation: 'Cantique 2:4 "La bannière qu\'il déploie sur moi, c\'est l\'amour."'
+        text: 'What is the banner he waves over me?',
+        options: ['Love', 'Peace', 'Victory', 'Joy'],
+        correctAnswer: 'Love',
+        explanation: 'Song of Solomon 2:4 "His banner over me is love."'
     },
     {
         id: 'sng_17',
-        text: 'Tes dents sont comme un troupeau de... ?',
-        options: ['Brebis tondues', 'Chevaux blancs', 'Perles', 'Nuages'],
-        correctAnswer: 'Brebis tondues',
-        explanation: 'Cantique 4:2'
+        text: 'Your teeth are like a flock of...?',
+        options: ['Sheep just shorn', 'White horses', 'Pearls', 'Clouds'],
+        correctAnswer: 'Sheep just shorn',
+        explanation: 'Song of Solomon 4:2'
     },
     {
         id: 'sng_18',
-        text: 'D\'où vient la bien-aimée (Sulamithe) ?',
-        options: ['De Sunem (Shulem)', 'De Jérusalem', 'D\'Égypte', 'Du Liban'],
-        correctAnswer: 'De Sunem (Shulem)',
-        explanation: 'D\'où le nom Sulamithe (Cantique 6:13).'
+        text: 'Where is the beloved (the Shulammite) from?',
+        options: ['Shunem (Shulem)', 'Jerusalem', 'Egypt', 'Lebanon'],
+        correctAnswer: 'Shunem (Shulem)',
+        explanation: 'Hence the name Shulammite (Song of Solomon 6:13).'
     },
     {
         id: 'sng_19',
-        text: 'Que demande-t-elle à la fin du livre ?',
-        options: ['Fuis, mon bien-aimé', 'Reviens', 'Reste', 'Chante'],
-        correctAnswer: 'Fuis, mon bien-aimé',
-        explanation: 'Cantique 8:14 (Invitation à courir ensemble comme une gazelle).'
+        text: 'What does she ask for at the end of the book?',
+        options: ['Come away, my beloved', 'Return', 'Stay', 'Sing'],
+        correctAnswer: 'Come away, my beloved',
+        explanation: 'Song of Solomon 8:14 (Invitation to run together like a gazelle).'
     },
     {
         id: 'sng_20',
-        text: 'Si un homme donnait tous les biens de sa maison pour l\'amour... ?',
-        options: ['Il n\'en obtiendrait que du mépris', 'Il l\'achèterait', 'Il serait sage', 'Tout le monde l\'aimerait'],
-        correctAnswer: 'Il n\'en obtiendrait que du mépris',
-        explanation: 'Cantique 8:7 L\'amour ne s\'achète pas.'
+        text: 'If a man were to give all the wealth of his house for love...?',
+        options: ['It would be utterly scorned', 'He would buy it', 'He would be wise', 'Everyone would love him'],
+        correctAnswer: 'It would be utterly scorned',
+        explanation: 'Song of Solomon 8:7 Love cannot be bought.'
     }
 ];
